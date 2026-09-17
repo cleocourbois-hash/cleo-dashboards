@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ивенты</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  --bg: #f8f9fb; --surface: #fff; --text: #1a1a2e; --text2: #6b7280;
+  --accent: #2563eb; --accent-light: #eff6ff; --border: #e5e7eb;
+  --green: #059669; --orange: #d97706; --red: #dc2626;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1117; --surface: #1a1d2e; --text: #e5e7eb; --text2: #9ca3af;
+    --accent: #60a5fa; --accent-light: #1e293b; --border: #2d3348;
+    --green: #34d399; --orange: #fbbf24; --red: #f87171;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1117; --surface: #1a1d2e; --text: #e5e7eb; --text2: #9ca3af;
+  --accent: #60a5fa; --accent-light: #1e293b; --border: #2d3348;
+  --green: #34d399; --orange: #fbbf24; --red: #f87171;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+.container { max-width: 1100px; margin: 0 auto; padding: 32px 16px; }
+a.back { color: var(--accent); text-decoration: none; font-size: 13px; }
+h1 { font-size: 24px; font-weight: 700; margin: 8px 0 24px; }
+.tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+.tab {
+  padding: 8px 20px; border-radius: 8px; font-size: 14px; font-weight: 500;
+  background: var(--surface); border: 1px solid var(--border); cursor: pointer;
+}
+.tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.kpi-row { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+.kpi-sm {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 20px; font-size: 12px; color: var(--text2);
+}
+.kpi-sm strong { font-size: 20px; color: var(--text); display: block; font-variant-numeric: tabular-nums; }
+.filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.filter-btn {
+  padding: 4px 12px; border-radius: 4px; font-size: 12px;
+  background: var(--surface); border: 1px solid var(--border); cursor: pointer; color: var(--text);
+}
+.filter-btn.active { background: var(--accent-light); border-color: var(--accent); color: var(--accent); }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+tr:hover td { background: var(--accent-light); }
+.tag {
+  display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 500;
+}
+.tag-tp { background: #dbeafe; color: #1e40af; }
+.tag-jf { background: #fef3c7; color: #92400e; }
+.tag-both { background: #ede9fe; color: #5b21b6; }
+.tag-future { background: #dcfce7; color: #166534; }
+.tag-past { background: #f3f4f6; color: #6b7280; }
+.tag-online { background: #e0f2fe; color: #0369a1; }
+.tag-offline { background: #fce7f3; color: #9d174d; }
+.tag-hybrid { background: #f0fdf4; color: #15803d; }
+a.site-link { color: var(--accent); text-decoration: none; font-size: 12px; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tag-tp { background: #1e3a5f; color: #93c5fd; }
+  :root:not([data-theme="light"]) .tag-jf { background: #451a03; color: #fcd34d; }
+  :root:not([data-theme="light"]) .tag-both { background: #2e1065; color: #c4b5fd; }
+  :root:not([data-theme="light"]) .tag-future { background: #064e3b; color: #6ee7b7; }
+  :root:not([data-theme="light"]) .tag-past { background: #1f2937; color: #9ca3af; }
+}
+#edem-section, #events-section { display: none; }
+#edem-section.visible, #events-section.visible { display: block; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back">&larr; Все дашборды</a>
+  <h1>Ивенты</h1>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('edem')">ЕДЕМ</div>
+    <div class="tab" onclick="showTab('events')">Все ивенты</div>
+  </div>
+
+  <div id="edem-section" class="visible">
+    <div class="kpi-row" id="edem-kpis"></div>
+    <div class="table-wrap">
+      <table id="edem-table"><thead></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div id="events-section">
+    <div class="kpi-row" id="events-kpis"></div>
+    <div class="filters" id="event-filters"></div>
+    <div class="table-wrap">
+      <table id="events-table"><thead></thead><tbody></tbody></table>
+    </div>
+  </div>
+</div>
+
+<script>
+let eventsData, edemData;
+let activeFilter = 'future';
+
+function showTab(tab) {
+  document.querySelectorAll('.tab').forEach((t,i) => t.classList.toggle('active', (tab==='edem'?i===0:i===1)));
+  document.getElementById('edem-section').classList.toggle('visible', tab==='edem');
+  document.getElementById('events-section').classList.toggle('visible', tab==='events');
+}
+
+async function init() {
+  [eventsData, edemData] = await Promise.all([
+    fetch('data/events.json').then(r=>r.json()),
+    fetch('data/edem.json').then(r=>r.json()),
+  ]);
+  renderEdem();
+  renderEventsKPIs();
+  renderEventFilters();
+  renderEvents();
+}
+
+function renderEdem() {
+  const count = edemData.length;
+  document.getElementById('edem-kpis').innerHTML = `
+    <div class="kpi-sm">Ивентов<strong>${count}</strong></div>
+  `;
+  const thead = document.querySelector('#edem-table thead');
+  const tbody = document.querySelector('#edem-table tbody');
+  thead.innerHTML = '<tr><th>Ивент</th><th>Дата</th><th>ГЕО</th><th>Продукт</th><th>Сейлз</th><th>Билет</th><th>Стоимость</th><th>Нетворк</th></tr>';
+  tbody.innerHTML = edemData.map(e => {
+    const prodTag = (e.product||'').toLowerCase().includes('tp') && (e.product||'').toLowerCase().includes('jf')
+      ? 'both' : (e.product||'').toLowerCase().includes('jf') ? 'jf' : 'tp';
+    return `<tr>
+      <td><strong>${e.name}</strong></td>
+      <td style="white-space:nowrap">${e.date}</td>
+      <td>${e.geo}</td>
+      <td><span class="tag tag-${prodTag}">${e.product}</span></td>
+      <td>${e.sales}</td>
+      <td>${e.ticket}</td>
+      <td>${e.cost}</td>
+      <td>${e.network}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderEventsKPIs() {
+  const total = eventsData.length;
+  const future = eventsData.filter(e => e.timing === 'future').length;
+  const okd = eventsData.filter(e => e.ok_andrey === 'TRUE').length;
+  document.getElementById('events-kpis').innerHTML = `
+    <div class="kpi-sm">Всего<strong>${total}</strong></div>
+    <div class="kpi-sm">Предстоящих<strong>${future}</strong></div>
+    <div class="kpi-sm">OK Андрея<strong>${okd}</strong></div>
+  `;
+}
+
+function renderEventFilters() {
+  const filters = ['future', 'past', 'all'];
+  const labels = {future: 'Предстоящие', past: 'Прошедшие', all: 'Все'};
+  document.getElementById('event-filters').innerHTML = filters.map(f =>
+    `<div class="filter-btn ${f===activeFilter?'active':''}" onclick="setFilter('${f}')">${labels[f]}</div>`
+  ).join('');
+}
+
+function setFilter(f) { activeFilter = f; renderEventFilters(); renderEvents(); }
+
+function renderEvents() {
+  let filtered = eventsData;
+  if (activeFilter !== 'all') filtered = filtered.filter(e => e.timing === activeFilter);
+
+  const thead = document.querySelector('#events-table thead');
+  const tbody = document.querySelector('#events-table tbody');
+  thead.innerHTML = '<tr><th>Дата</th><th>Мероприятие</th><th>ГЕО</th><th>Формат</th><th>Фокус</th><th>Сайт</th><th>OK</th><th>Решение</th></tr>';
+  tbody.innerHTML = filtered.map(e => {
+    const fmtTag = (e.format||'').toLowerCase();
+    const fmtClass = fmtTag.includes('online') ? 'online' : fmtTag.includes('hybrid') ? 'hybrid' : 'offline';
+    const focusTag = (e.focus||'').toLowerCase().includes('tp') && (e.focus||'').toLowerCase().includes('jf')
+      ? 'both' : (e.focus||'').toLowerCase().includes('jf') ? 'jf' : 'tp';
+    const site = e.site ? `<a class="site-link" href="${e.site}" target="_blank">ссылка</a>` : '';
+    const ok = e.ok_andrey === 'TRUE' ? '✅' : '';
+    return `<tr>
+      <td style="white-space:nowrap">${e.date}</td>
+      <td><strong>${e.name}</strong></td>
+      <td>${e.geo}</td>
+      <td><span class="tag tag-${fmtClass}">${e.format}</span></td>
+      <td><span class="tag tag-${focusTag}">${e.focus}</span></td>
+      <td>${site}</td>
+      <td>${ok}</td>
+      <td>${e.decision}</td>
+    </tr>`;
+  }).join('');
+}
+
+init();
+</script>
+</body>
+</html>

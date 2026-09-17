@@ -1,0 +1,5659 @@
+{
+  "month": "2026-09",
+  "updated_at": "2026-09-17T15:59:28.277653Z",
+  "errors": {},
+  "plan": null,
+  "brands": {
+    "tp": {
+      "total": {
+        "sent": 1361,
+        "replied": 294,
+        "mql": 46,
+        "qual": 9,
+        "zvonok": 7,
+        "kp": 7,
+        "dogovor": 0,
+        "sdelka": 0
+      },
+      "pos": {
+        "CEO / Founder / Владелец": {
+          "sent": 911,
+          "replied": 181,
+          "mql": 27,
+          "qual": 6,
+          "zvonok": 5,
+          "kp": 5,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Директор / Руководитель": {
+          "sent": 138,
+          "replied": 20,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Прочее / не указано": {
+          "sent": 106,
+          "replied": 27,
+          "mql": 6,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CTO / IT": {
+          "sent": 48,
+          "replied": 13,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CMO / Маркетинг": {
+          "sent": 44,
+          "replied": 10,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Продажи / BizDev": {
+          "sent": 42,
+          "replied": 18,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "COO / Операционка": {
+          "sent": 19,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CPO / Продукт": {
+          "sent": 16,
+          "replied": 4,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CFO / Финансы": {
+          "sent": 16,
+          "replied": 6,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "HRD": {
+          "sent": 15,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "HR": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Рекрутер": {
+          "sent": 2,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "geo": {
+        "Не указано": {
+          "sent": 657,
+          "replied": 181,
+          "mql": 34,
+          "qual": 6,
+          "zvonok": 4,
+          "kp": 4,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Россия": {
+          "sent": 506,
+          "replied": 88,
+          "mql": 9,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Дубай/Международная": {
+          "sent": 37,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Московская область": {
+          "sent": 11,
+          "replied": 3,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Свердловская область": {
+          "sent": 10,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ростовская область": {
+          "sent": 10,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Республика Татарстан": {
+          "sent": 10,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Пермский край": {
+          "sent": 8,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Удмуртская Республика": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тульская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Челябинская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Новосибирская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Самарская область": {
+          "sent": 6,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Краснодарский край": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тюменская область": {
+          "sent": 5,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Саратовская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ульяновская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Севастополь": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Иркутская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Красноярский край": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ярославская область": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Калининградская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Томская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Башкортостан (Республика)": {
+          "sent": 3,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Пензенская область": {
+          "sent": 3,
+          "replied": 2,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Омская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Амурская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ставропольский край": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нижегородская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Воронежская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Европа": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "СНГ": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Международная": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Португалия": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Алтайский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Астраханская область": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Коми (Республика)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Саха (Республика) (Якутия)": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Липецкая область": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Чувашская Республика-Чувашия": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Курская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ленинградская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Оренбургская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Рязанская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Камчатский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Республика Крым": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Белгородская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ивановская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Архангельская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тамбовская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Хабаровский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Смоленская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Вологодская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Северная Осетия-Алания (Республика)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Россия (Москва/Сколково)": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "src": {
+        "Покупная база IT (Денис Калинин)": {
+          "sent": 286,
+          "replied": 35,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@StartupSchool_Sk.": {
+          "sent": 170,
+          "replied": 43,
+          "mql": 4,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@digital_partners_chat (комментаторы)": {
+          "sent": 102,
+          "replied": 21,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Oskar_Hartmann (комментаторы)": {
+          "sent": 74,
+          "replied": 10,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@mspiridonov (комментаторы)": {
+          "sent": 71,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@kutergin_on_fire (комментаторы)": {
+          "sent": 58,
+          "replied": 7,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "ABC Conclave": {
+          "sent": 53,
+          "replied": 7,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Resident Accounting": {
+          "sent": 52,
+          "replied": 14,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Startups & Apps Collaboration (коммента": {
+          "sent": 50,
+          "replied": 12,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@startupoftheday (комментаторы)": {
+          "sent": 44,
+          "replied": 14,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Digital CPA CLUB (комментаторы)": {
+          "sent": 40,
+          "replied": 14,
+          "mql": 5,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Rusprofile parsing (Сергей ручной рисерч": {
+          "sent": 39,
+          "replied": 6,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@cryptodubaicom1 (комментаторы)": {
+          "sent": 37,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@potok_gitelman (комментаторы)": {
+          "sent": 32,
+          "replied": 6,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "TMA collaboration": {
+          "sent": 29,
+          "replied": 17,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@mikhaildashkiev (комментаторы)": {
+          "sent": 29,
+          "replied": 6,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Innovators_msk_chat (комментаторы)": {
+          "sent": 28,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Digital Club": {
+          "sent": 19,
+          "replied": 12,
+          "mql": 6,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@iGaming chat (комментаторы)": {
+          "sent": 17,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "DeFrens (комментаторы)": {
+          "sent": 16,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Dubai Startups": {
+          "sent": 13,
+          "replied": 3,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovodubai": {
+          "sent": 13,
+          "replied": 2,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovo_city (авторы сообщений)": {
+          "sent": 12,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@yandexbusiness (комментаторы)": {
+          "sent": 12,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovo_channel (комментаторы)": {
+          "sent": 11,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@CIO_CIO_CIO / CIO-ЧАТ (комментаторы)": {
+          "sent": 9,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@ruminblog (комментаторы)": {
+          "sent": 8,
+          "replied": 4,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Телеграм база 10к": {
+          "sent": 7,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "iGaming Chat": {
+          "sent": 7,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Не указано": {
+          "sent": 6,
+          "replied": 6,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@portnyaginlive (комментаторы)": {
+          "sent": 5,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Belgrade Entrepreneurs (комментаторы)": {
+          "sent": 4,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Бехруз 2": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нетворк — сообщество от Точка Банк": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "BalticDigitalDays chat — участники (@bdd": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Португалия ИТ (@portugal_it) — участники": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@baza_directorov": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@singularityfm (комментаторы)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Правила проекта Сколково (участники)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "LLM под капотом": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Клео (передала, @kurbuma)": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      }
+    },
+    "jft": {
+      "total": {
+        "sent": 1150,
+        "replied": 228,
+        "mql": 23,
+        "qual": 4,
+        "zvonok": 1,
+        "kp": 1,
+        "dogovor": 0,
+        "sdelka": 0
+      },
+      "pos": {
+        "CEO / Founder / Владелец": {
+          "sent": 782,
+          "replied": 138,
+          "mql": 11,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Директор / Руководитель": {
+          "sent": 132,
+          "replied": 18,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Прочее / не указано": {
+          "sent": 63,
+          "replied": 17,
+          "mql": 1,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CTO / IT": {
+          "sent": 40,
+          "replied": 13,
+          "mql": 3,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CMO / Маркетинг": {
+          "sent": 39,
+          "replied": 8,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Продажи / BizDev": {
+          "sent": 33,
+          "replied": 13,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "COO / Операционка": {
+          "sent": 16,
+          "replied": 3,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "HRD": {
+          "sent": 15,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CPO / Продукт": {
+          "sent": 14,
+          "replied": 3,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CFO / Финансы": {
+          "sent": 11,
+          "replied": 5,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "HR": {
+          "sent": 3,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Рекрутер": {
+          "sent": 2,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "geo": {
+        "Не указано": {
+          "sent": 502,
+          "replied": 128,
+          "mql": 16,
+          "qual": 2,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Россия": {
+          "sent": 490,
+          "replied": 80,
+          "mql": 5,
+          "qual": 2,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Московская область": {
+          "sent": 11,
+          "replied": 3,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Свердловская область": {
+          "sent": 10,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ростовская область": {
+          "sent": 10,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Республика Татарстан": {
+          "sent": 10,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Пермский край": {
+          "sent": 8,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Удмуртская Республика": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тульская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Челябинская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Новосибирская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Самарская область": {
+          "sent": 6,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Краснодарский край": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тюменская область": {
+          "sent": 5,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Саратовская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ульяновская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Севастополь": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Иркутская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Красноярский край": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ярославская область": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Калининградская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Томская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Башкортостан (Республика)": {
+          "sent": 3,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Пензенская область": {
+          "sent": 3,
+          "replied": 2,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Омская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Амурская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ставропольский край": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нижегородская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Воронежская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Международная": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Алтайский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Астраханская область": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Коми (Республика)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Саха (Республика) (Якутия)": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Липецкая область": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Чувашская Республика-Чувашия": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Курская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ленинградская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Оренбургская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Рязанская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Камчатский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Республика Крым": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Белгородская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ивановская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Архангельская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тамбовская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Хабаровский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Смоленская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Вологодская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Северная Осетия-Алания (Республика)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "src": {
+        "Покупная база IT (Денис Калинин)": {
+          "sent": 286,
+          "replied": 35,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@StartupSchool_Sk.": {
+          "sent": 170,
+          "replied": 43,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@digital_partners_chat (комментаторы)": {
+          "sent": 102,
+          "replied": 21,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Oskar_Hartmann (комментаторы)": {
+          "sent": 74,
+          "replied": 10,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@mspiridonov (комментаторы)": {
+          "sent": 71,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@kutergin_on_fire (комментаторы)": {
+          "sent": 58,
+          "replied": 7,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Startups & Apps Collaboration (коммента": {
+          "sent": 50,
+          "replied": 12,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Resident Accounting": {
+          "sent": 48,
+          "replied": 13,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@startupoftheday (комментаторы)": {
+          "sent": 44,
+          "replied": 14,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Digital CPA CLUB (комментаторы)": {
+          "sent": 39,
+          "replied": 14,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Rusprofile parsing (Сергей ручной рисерч": {
+          "sent": 39,
+          "replied": 6,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@potok_gitelman (комментаторы)": {
+          "sent": 32,
+          "replied": 6,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@mikhaildashkiev (комментаторы)": {
+          "sent": 29,
+          "replied": 6,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Innovators_msk_chat (комментаторы)": {
+          "sent": 28,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "DeFrens (комментаторы)": {
+          "sent": 12,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovo_city (авторы сообщений)": {
+          "sent": 12,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@yandexbusiness (комментаторы)": {
+          "sent": 12,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovo_channel (комментаторы)": {
+          "sent": 11,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@CIO_CIO_CIO / CIO-ЧАТ (комментаторы)": {
+          "sent": 9,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@ruminblog (комментаторы)": {
+          "sent": 8,
+          "replied": 4,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "iGaming Chat": {
+          "sent": 6,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@portnyaginlive (комментаторы)": {
+          "sent": 5,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "BalticDigitalDays chat — участники (@bdd": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@baza_directorov": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@singularityfm (комментаторы)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Правила проекта Сколково (участники)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Dubai Startups": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Не указано": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Сайт": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      }
+    },
+    "cleo": {
+      "total": {
+        "sent": 154,
+        "replied": 36,
+        "mql": 9,
+        "qual": 1,
+        "zvonok": 0,
+        "kp": 0,
+        "dogovor": 0,
+        "sdelka": 0
+      },
+      "pos": {
+        "Прочее / не указано": {
+          "sent": 60,
+          "replied": 15,
+          "mql": 5,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CFO / Финансы": {
+          "sent": 56,
+          "replied": 7,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CEO / Founder / Владелец": {
+          "sent": 23,
+          "replied": 8,
+          "mql": 4,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CTO / IT": {
+          "sent": 7,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Директор / Руководитель": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Продажи / BizDev": {
+          "sent": 2,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CMO / Маркетинг": {
+          "sent": 2,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "geo": {
+        "Россия": {
+          "sent": 89,
+          "replied": 20,
+          "mql": 8,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Казахстан": {
+          "sent": 46,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Беларусь": {
+          "sent": 16,
+          "replied": 11,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Международная": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "src": {
+        "buhifinkaz": {
+          "sent": 47,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Бухгалтеры всея Руси": {
+          "sent": 41,
+          "replied": 8,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "heg.ai митап 27.08.2026": {
+          "sent": 18,
+          "replied": 9,
+          "mql": 5,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "C-Level Days": {
+          "sent": 14,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Чат Переводчика с бухгалтерского": {
+          "sent": 13,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Бизнес нетворкинг Худякова": {
+          "sent": 13,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "heg.ai офлайн-митап Москва": {
+          "sent": 6,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "C-Level Days VIP + C-Level Days": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "C-Level Days VIP": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      }
+    }
+  },
+  "groups": {
+    "Все": {
+      "total": {
+        "sent": 1516,
+        "replied": 330,
+        "mql": 55,
+        "qual": 14,
+        "zvonok": 8,
+        "kp": 8,
+        "dogovor": 0,
+        "sdelka": 0
+      },
+      "pos": {
+        "CEO / Founder / Владелец": {
+          "sent": 935,
+          "replied": 189,
+          "mql": 31,
+          "qual": 8,
+          "zvonok": 5,
+          "kp": 5,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Директор / Руководитель": {
+          "sent": 142,
+          "replied": 21,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Прочее / не указано": {
+          "sent": 166,
+          "replied": 42,
+          "mql": 11,
+          "qual": 2,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CTO / IT": {
+          "sent": 55,
+          "replied": 15,
+          "mql": 3,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CMO / Маркетинг": {
+          "sent": 46,
+          "replied": 11,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Продажи / BizDev": {
+          "sent": 44,
+          "replied": 20,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "COO / Операционка": {
+          "sent": 19,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CPO / Продукт": {
+          "sent": 16,
+          "replied": 4,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CFO / Финансы": {
+          "sent": 72,
+          "replied": 13,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "HRD": {
+          "sent": 15,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "HR": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Рекрутер": {
+          "sent": 2,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "geo": {
+        "Не указано": {
+          "sent": 657,
+          "replied": 181,
+          "mql": 34,
+          "qual": 8,
+          "zvonok": 4,
+          "kp": 4,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Россия": {
+          "sent": 595,
+          "replied": 108,
+          "mql": 17,
+          "qual": 4,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Дубай/Международная": {
+          "sent": 37,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Московская область": {
+          "sent": 11,
+          "replied": 3,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Свердловская область": {
+          "sent": 10,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ростовская область": {
+          "sent": 10,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Республика Татарстан": {
+          "sent": 10,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Пермский край": {
+          "sent": 8,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Удмуртская Республика": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тульская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Челябинская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Новосибирская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Самарская область": {
+          "sent": 6,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Краснодарский край": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тюменская область": {
+          "sent": 5,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Саратовская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ульяновская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Севастополь": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Иркутская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Красноярский край": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ярославская область": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Калининградская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Томская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Башкортостан (Республика)": {
+          "sent": 3,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Пензенская область": {
+          "sent": 3,
+          "replied": 2,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Омская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Амурская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ставропольский край": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нижегородская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Воронежская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Европа": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "СНГ": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Международная": {
+          "sent": 5,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Португалия": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Алтайский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Астраханская область": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Коми (Республика)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Саха (Республика) (Якутия)": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Липецкая область": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Чувашская Республика-Чувашия": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Курская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ленинградская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Оренбургская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Рязанская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Камчатский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Республика Крым": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Белгородская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ивановская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Архангельская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тамбовская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Хабаровский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Смоленская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Вологодская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Северная Осетия-Алания (Республика)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Россия (Москва/Сколково)": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Казахстан": {
+          "sent": 46,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Беларусь": {
+          "sent": 16,
+          "replied": 11,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "src": {
+        "Покупная база IT (Денис Калинин)": {
+          "sent": 286,
+          "replied": 35,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@StartupSchool_Sk.": {
+          "sent": 170,
+          "replied": 43,
+          "mql": 4,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@digital_partners_chat (комментаторы)": {
+          "sent": 102,
+          "replied": 21,
+          "mql": 3,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Oskar_Hartmann (комментаторы)": {
+          "sent": 74,
+          "replied": 10,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@mspiridonov (комментаторы)": {
+          "sent": 71,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@kutergin_on_fire (комментаторы)": {
+          "sent": 58,
+          "replied": 7,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "ABC Conclave": {
+          "sent": 53,
+          "replied": 7,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Resident Accounting": {
+          "sent": 52,
+          "replied": 14,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Startups & Apps Collaboration (коммента": {
+          "sent": 50,
+          "replied": 12,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@startupoftheday (комментаторы)": {
+          "sent": 44,
+          "replied": 14,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Digital CPA CLUB (комментаторы)": {
+          "sent": 40,
+          "replied": 14,
+          "mql": 5,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Rusprofile parsing (Сергей ручной рисерч": {
+          "sent": 39,
+          "replied": 6,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@cryptodubaicom1 (комментаторы)": {
+          "sent": 37,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@potok_gitelman (комментаторы)": {
+          "sent": 32,
+          "replied": 6,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "TMA collaboration": {
+          "sent": 29,
+          "replied": 17,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@mikhaildashkiev (комментаторы)": {
+          "sent": 29,
+          "replied": 6,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Innovators_msk_chat (комментаторы)": {
+          "sent": 28,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Digital Club": {
+          "sent": 19,
+          "replied": 12,
+          "mql": 6,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@iGaming chat (комментаторы)": {
+          "sent": 17,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "DeFrens (комментаторы)": {
+          "sent": 16,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Dubai Startups": {
+          "sent": 13,
+          "replied": 3,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovodubai": {
+          "sent": 13,
+          "replied": 2,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovo_city (авторы сообщений)": {
+          "sent": 12,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@yandexbusiness (комментаторы)": {
+          "sent": 12,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovo_channel (комментаторы)": {
+          "sent": 11,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@CIO_CIO_CIO / CIO-ЧАТ (комментаторы)": {
+          "sent": 9,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@ruminblog (комментаторы)": {
+          "sent": 8,
+          "replied": 4,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Телеграм база 10к": {
+          "sent": 7,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "iGaming Chat": {
+          "sent": 7,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Не указано": {
+          "sent": 6,
+          "replied": 6,
+          "mql": 4,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@portnyaginlive (комментаторы)": {
+          "sent": 5,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Belgrade Entrepreneurs (комментаторы)": {
+          "sent": 4,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Бехруз 2": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нетворк — сообщество от Точка Банк": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "BalticDigitalDays chat — участники (@bdd": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Португалия ИТ (@portugal_it) — участники": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@baza_directorov": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@singularityfm (комментаторы)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Правила проекта Сколково (участники)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "LLM под капотом": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Клео (передала, @kurbuma)": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Сайт": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "buhifinkaz": {
+          "sent": 47,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Бухгалтеры всея Руси": {
+          "sent": 41,
+          "replied": 8,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "heg.ai митап 27.08.2026": {
+          "sent": 18,
+          "replied": 9,
+          "mql": 5,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "C-Level Days": {
+          "sent": 14,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Чат Переводчика с бухгалтерского": {
+          "sent": 13,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Бизнес нетворкинг Худякова": {
+          "sent": 13,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "heg.ai офлайн-митап Москва": {
+          "sent": 6,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "C-Level Days VIP + C-Level Days": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "C-Level Days VIP": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "hyp": {
+        "C-level Россия": {
+          "sent": 325,
+          "replied": 41,
+          "mql": 4,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Без гипотезы": {
+          "sent": 501,
+          "replied": 149,
+          "mql": 31,
+          "qual": 7,
+          "zvonok": 4,
+          "kp": 4,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Комментаторы каналов бизнесменов": {
+          "sent": 550,
+          "replied": 115,
+          "mql": 16,
+          "qual": 4,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "C-level / founders Дубай": {
+          "sent": 103,
+          "replied": 14,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Сколково": {
+          "sent": 37,
+          "replied": 11,
+          "mql": 2,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      }
+    },
+    "TalentPay": {
+      "total": {
+        "sent": 1361,
+        "replied": 294,
+        "mql": 46,
+        "qual": 9,
+        "zvonok": 7,
+        "kp": 7,
+        "dogovor": 0,
+        "sdelka": 0
+      },
+      "pos": {
+        "CEO / Founder / Владелец": {
+          "sent": 911,
+          "replied": 181,
+          "mql": 27,
+          "qual": 6,
+          "zvonok": 5,
+          "kp": 5,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Директор / Руководитель": {
+          "sent": 138,
+          "replied": 20,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Прочее / не указано": {
+          "sent": 106,
+          "replied": 27,
+          "mql": 6,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CTO / IT": {
+          "sent": 48,
+          "replied": 13,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CMO / Маркетинг": {
+          "sent": 44,
+          "replied": 10,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Продажи / BizDev": {
+          "sent": 42,
+          "replied": 18,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "COO / Операционка": {
+          "sent": 19,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CPO / Продукт": {
+          "sent": 16,
+          "replied": 4,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CFO / Финансы": {
+          "sent": 16,
+          "replied": 6,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "HRD": {
+          "sent": 15,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "HR": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Рекрутер": {
+          "sent": 2,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "geo": {
+        "Не указано": {
+          "sent": 657,
+          "replied": 181,
+          "mql": 34,
+          "qual": 6,
+          "zvonok": 4,
+          "kp": 4,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Россия": {
+          "sent": 506,
+          "replied": 88,
+          "mql": 9,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Дубай/Международная": {
+          "sent": 37,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Московская область": {
+          "sent": 11,
+          "replied": 3,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Свердловская область": {
+          "sent": 10,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ростовская область": {
+          "sent": 10,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Республика Татарстан": {
+          "sent": 10,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Пермский край": {
+          "sent": 8,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Удмуртская Республика": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тульская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Челябинская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Новосибирская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Самарская область": {
+          "sent": 6,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Краснодарский край": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тюменская область": {
+          "sent": 5,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Саратовская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ульяновская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Севастополь": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Иркутская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Красноярский край": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ярославская область": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Калининградская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Томская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Башкортостан (Республика)": {
+          "sent": 3,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Пензенская область": {
+          "sent": 3,
+          "replied": 2,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Омская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Амурская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ставропольский край": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нижегородская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Воронежская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Европа": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "СНГ": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Международная": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Португалия": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Алтайский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Астраханская область": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Коми (Республика)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Саха (Республика) (Якутия)": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Липецкая область": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Чувашская Республика-Чувашия": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Курская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ленинградская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Оренбургская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Рязанская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Камчатский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Республика Крым": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Белгородская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ивановская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Архангельская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тамбовская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Хабаровский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Смоленская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Вологодская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Северная Осетия-Алания (Республика)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Россия (Москва/Сколково)": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "src": {
+        "Покупная база IT (Денис Калинин)": {
+          "sent": 286,
+          "replied": 35,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@StartupSchool_Sk.": {
+          "sent": 170,
+          "replied": 43,
+          "mql": 4,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@digital_partners_chat (комментаторы)": {
+          "sent": 102,
+          "replied": 21,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Oskar_Hartmann (комментаторы)": {
+          "sent": 74,
+          "replied": 10,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@mspiridonov (комментаторы)": {
+          "sent": 71,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@kutergin_on_fire (комментаторы)": {
+          "sent": 58,
+          "replied": 7,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "ABC Conclave": {
+          "sent": 53,
+          "replied": 7,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Resident Accounting": {
+          "sent": 52,
+          "replied": 14,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Startups & Apps Collaboration (коммента": {
+          "sent": 50,
+          "replied": 12,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@startupoftheday (комментаторы)": {
+          "sent": 44,
+          "replied": 14,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Digital CPA CLUB (комментаторы)": {
+          "sent": 40,
+          "replied": 14,
+          "mql": 5,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Rusprofile parsing (Сергей ручной рисерч": {
+          "sent": 39,
+          "replied": 6,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@cryptodubaicom1 (комментаторы)": {
+          "sent": 37,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@potok_gitelman (комментаторы)": {
+          "sent": 32,
+          "replied": 6,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "TMA collaboration": {
+          "sent": 29,
+          "replied": 17,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@mikhaildashkiev (комментаторы)": {
+          "sent": 29,
+          "replied": 6,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Innovators_msk_chat (комментаторы)": {
+          "sent": 28,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Digital Club": {
+          "sent": 19,
+          "replied": 12,
+          "mql": 6,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@iGaming chat (комментаторы)": {
+          "sent": 17,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "DeFrens (комментаторы)": {
+          "sent": 16,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Dubai Startups": {
+          "sent": 13,
+          "replied": 3,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovodubai": {
+          "sent": 13,
+          "replied": 2,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovo_city (авторы сообщений)": {
+          "sent": 12,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@yandexbusiness (комментаторы)": {
+          "sent": 12,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovo_channel (комментаторы)": {
+          "sent": 11,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@CIO_CIO_CIO / CIO-ЧАТ (комментаторы)": {
+          "sent": 9,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@ruminblog (комментаторы)": {
+          "sent": 8,
+          "replied": 4,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Телеграм база 10к": {
+          "sent": 7,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "iGaming Chat": {
+          "sent": 7,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Не указано": {
+          "sent": 6,
+          "replied": 6,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@portnyaginlive (комментаторы)": {
+          "sent": 5,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Belgrade Entrepreneurs (комментаторы)": {
+          "sent": 4,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Бехруз 2": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нетворк — сообщество от Точка Банк": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "BalticDigitalDays chat — участники (@bdd": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Португалия ИТ (@portugal_it) — участники": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@baza_directorov": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@singularityfm (комментаторы)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Правила проекта Сколково (участники)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "LLM под капотом": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Клео (передала, @kurbuma)": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "hyp": {
+        "C-level Россия": {
+          "sent": 325,
+          "replied": 41,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Без гипотезы": {
+          "sent": 346,
+          "replied": 113,
+          "mql": 22,
+          "qual": 4,
+          "zvonok": 3,
+          "kp": 3,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Комментаторы каналов бизнесменов": {
+          "sent": 550,
+          "replied": 115,
+          "mql": 16,
+          "qual": 3,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "C-level / founders Дубай": {
+          "sent": 103,
+          "replied": 14,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Сколково": {
+          "sent": 37,
+          "replied": 11,
+          "mql": 2,
+          "qual": 2,
+          "zvonok": 2,
+          "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      }
+    },
+    "JustFinTech": {
+      "total": {
+        "sent": 1150,
+        "replied": 228,
+        "mql": 23,
+        "qual": 4,
+        "zvonok": 1,
+        "kp": 1,
+        "dogovor": 0,
+        "sdelka": 0
+      },
+      "pos": {
+        "CEO / Founder / Владелец": {
+          "sent": 782,
+          "replied": 138,
+          "mql": 11,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Директор / Руководитель": {
+          "sent": 132,
+          "replied": 18,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Прочее / не указано": {
+          "sent": 63,
+          "replied": 17,
+          "mql": 1,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CTO / IT": {
+          "sent": 40,
+          "replied": 13,
+          "mql": 3,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CMO / Маркетинг": {
+          "sent": 39,
+          "replied": 8,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Продажи / BizDev": {
+          "sent": 33,
+          "replied": 13,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "COO / Операционка": {
+          "sent": 16,
+          "replied": 3,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "HRD": {
+          "sent": 15,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CPO / Продукт": {
+          "sent": 14,
+          "replied": 3,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "CFO / Финансы": {
+          "sent": 11,
+          "replied": 5,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "HR": {
+          "sent": 3,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Рекрутер": {
+          "sent": 2,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "geo": {
+        "Не указано": {
+          "sent": 502,
+          "replied": 128,
+          "mql": 16,
+          "qual": 2,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Россия": {
+          "sent": 490,
+          "replied": 80,
+          "mql": 5,
+          "qual": 2,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Московская область": {
+          "sent": 11,
+          "replied": 3,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Свердловская область": {
+          "sent": 10,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ростовская область": {
+          "sent": 10,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Республика Татарстан": {
+          "sent": 10,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Пермский край": {
+          "sent": 8,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Удмуртская Республика": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тульская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Челябинская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Новосибирская область": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Самарская область": {
+          "sent": 6,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Краснодарский край": {
+          "sent": 6,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тюменская область": {
+          "sent": 5,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Саратовская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ульяновская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Севастополь": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Иркутская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Красноярский край": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ярославская область": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Калининградская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Томская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Башкортостан (Республика)": {
+          "sent": 3,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Пензенская область": {
+          "sent": 3,
+          "replied": 2,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Омская область": {
+          "sent": 3,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Амурская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ставропольский край": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нижегородская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Воронежская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Международная": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Алтайский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Астраханская область": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Коми (Республика)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Саха (Республика) (Якутия)": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Липецкая область": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Чувашская Республика-Чувашия": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Курская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ленинградская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Оренбургская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Рязанская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Камчатский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Республика Крым": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Белгородская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ивановская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Архангельская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Тамбовская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Хабаровский край": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Смоленская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Вологодская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Северная Осетия-Алания (Республика)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "src": {
+        "Покупная база IT (Денис Калинин)": {
+          "sent": 286,
+          "replied": 35,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@StartupSchool_Sk.": {
+          "sent": 170,
+          "replied": 43,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@digital_partners_chat (комментаторы)": {
+          "sent": 102,
+          "replied": 21,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Oskar_Hartmann (комментаторы)": {
+          "sent": 74,
+          "replied": 10,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@mspiridonov (комментаторы)": {
+          "sent": 71,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@kutergin_on_fire (комментаторы)": {
+          "sent": 58,
+          "replied": 7,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Startups & Apps Collaboration (коммента": {
+          "sent": 50,
+          "replied": 12,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Resident Accounting": {
+          "sent": 48,
+          "replied": 13,
+          "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@startupoftheday (комментаторы)": {
+          "sent": 44,
+          "replied": 14,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Digital CPA CLUB (комментаторы)": {
+          "sent": 39,
+          "replied": 14,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Rusprofile parsing (Сергей ручной рисерч": {
+          "sent": 39,
+          "replied": 6,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@potok_gitelman (комментаторы)": {
+          "sent": 32,
+          "replied": 6,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@mikhaildashkiev (комментаторы)": {
+          "sent": 29,
+          "replied": 6,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@Innovators_msk_chat (комментаторы)": {
+          "sent": 28,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "DeFrens (комментаторы)": {
+          "sent": 12,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovo_city (авторы сообщений)": {
+          "sent": 12,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@yandexbusiness (комментаторы)": {
+          "sent": 12,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@skolkovo_channel (комментаторы)": {
+          "sent": 11,
+          "replied": 4,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@CIO_CIO_CIO / CIO-ЧАТ (комментаторы)": {
+          "sent": 9,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@ruminblog (комментаторы)": {
+          "sent": 8,
+          "replied": 4,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "iGaming Chat": {
+          "sent": 6,
+          "replied": 5,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@portnyaginlive (комментаторы)": {
+          "sent": 5,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "BalticDigitalDays chat — участники (@bdd": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@baza_directorov": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@singularityfm (комментаторы)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Правила проекта Сколково (участники)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Dubai Startups": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Не указано": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Сайт": {
+          "sent": 0,
+          "replied": 0,
+          "mql": 0,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      },
+      "hyp": {
+        "C-level Россия": {
+          "sent": 325,
+          "replied": 41,
+          "mql": 3,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Без гипотезы": {
+          "sent": 276,
+          "replied": 74,
+          "mql": 9,
+          "qual": 2,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Комментаторы каналов бизнесменов": {
+          "sent": 524,
+          "replied": 103,
+          "mql": 10,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Сколково": {
+          "sent": 24,
+          "replied": 9,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "C-level / founders Дубай": {
+          "sent": 1,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        }
+      }
+    }
+  },
+  "group_order": [
+    "Все",
+    "TalentPay",
+    "JustFinTech"
+  ]
+}

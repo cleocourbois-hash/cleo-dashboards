@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Воронка аутрича</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  --bg: #f8f9fb; --surface: #fff; --text: #1a1a2e; --text2: #6b7280;
+  --accent: #2563eb; --accent-light: #eff6ff; --border: #e5e7eb;
+  --green: #059669; --orange: #d97706; --red: #dc2626; --purple: #7c3aed;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1117; --surface: #1a1d2e; --text: #e5e7eb; --text2: #9ca3af;
+    --accent: #60a5fa; --accent-light: #1e293b; --border: #2d3348;
+    --green: #34d399; --orange: #fbbf24; --red: #f87171; --purple: #a78bfa;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1117; --surface: #1a1d2e; --text: #e5e7eb; --text2: #9ca3af;
+  --accent: #60a5fa; --accent-light: #1e293b; --border: #2d3348;
+  --green: #34d399; --orange: #fbbf24; --red: #f87171; --purple: #a78bfa;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+.container { max-width: 1100px; margin: 0 auto; padding: 32px 16px; }
+a.back { color: var(--accent); text-decoration: none; font-size: 13px; }
+h1 { font-size: 24px; font-weight: 700; margin: 8px 0 4px; }
+.meta { color: var(--text2); font-size: 13px; margin-bottom: 24px; }
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-bottom: 32px; }
+.kpi {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px; text-align: center;
+}
+.kpi-label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.05em; }
+.kpi-value { font-size: 28px; font-weight: 700; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.kpi-sub { font-size: 11px; color: var(--text2); margin-top: 2px; }
+.section { margin-bottom: 32px; }
+.section-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; padding: 8px 12px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+td { padding: 8px 12px; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; }
+tr:hover td { background: var(--accent-light); }
+.bar-cell { position: relative; }
+.bar { height: 4px; border-radius: 2px; background: var(--accent); position: absolute; bottom: 4px; left: 12px; }
+.pace-box {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 20px; display: flex; gap: 32px; align-items: center; flex-wrap: wrap;
+}
+.pace-num { font-size: 36px; font-weight: 700; }
+.pace-label { font-size: 13px; color: var(--text2); }
+.pace-delta { font-size: 14px; font-weight: 600; }
+.pace-delta.up { color: var(--green); }
+.pace-delta.down { color: var(--red); }
+.brand-tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.brand-tab {
+  padding: 6px 16px; border-radius: 6px; font-size: 13px; font-weight: 500;
+  background: var(--surface); border: 1px solid var(--border); cursor: pointer;
+}
+.brand-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.table-wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back">&larr; Все дашборды</a>
+  <h1>Воронка аутрича</h1>
+  <p class="meta" id="meta">Загрузка...</p>
+
+  <div class="section">
+    <div class="pace-box" id="pace"></div>
+  </div>
+
+  <div class="kpi-grid" id="kpis"></div>
+
+  <div class="section">
+    <div class="brand-tabs" id="brand-tabs"></div>
+    <div class="section-title">Воронка по должностям</div>
+    <div class="table-wrap">
+      <table id="pos-table"><thead></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Топ источников (по ответам)</div>
+    <div class="table-wrap">
+      <table id="sources-table"><thead></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Гипотезы</div>
+    <div class="table-wrap">
+      <table id="hyp-table"><thead></thead><tbody></tbody></table>
+    </div>
+  </div>
+</div>
+
+<script>
+let funnelData, overviewData, paceData, hypData;
+let currentBrand = 'tp';
+
+async function init() {
+  [funnelData, overviewData, paceData, hypData] = await Promise.all([
+    fetch('data/funnel.json').then(r=>r.json()),
+    fetch('data/overview.json').then(r=>r.json()),
+    fetch('data/pace.json').then(r=>r.json()),
+    fetch('data/hypotheses.json').then(r=>r.json()),
+  ]);
+
+  document.getElementById('meta').textContent =
+    `${overviewData.month} - обновлено ${overviewData.updated_at.slice(0,10)}`;
+
+  renderPace();
+  renderKPIs();
+  renderBrandTabs();
+  renderPositions();
+  renderSources();
+  renderHypotheses();
+}
+
+function renderPace() {
+  const p = paceData;
+  const dir = p.delta >= 0 ? 'up' : 'down';
+  const sign = p.delta >= 0 ? '+' : '';
+  document.getElementById('pace').innerHTML = `
+    <div>
+      <div class="pace-label">Отправлено (TG) за ${p.cur_month}</div>
+      <div class="pace-num">${p.cur_to_date.toLocaleString()}</div>
+    </div>
+    <div>
+      <div class="pace-label">За тот же период ${p.prev_month}</div>
+      <div style="font-size:24px;font-weight:600">${p.prev_to_date.toLocaleString()}</div>
+    </div>
+    <div>
+      <div class="pace-label">Разница</div>
+      <div class="pace-delta ${dir}">${sign}${p.delta} (${sign}${p.pct}%)</div>
+    </div>
+    <div>
+      <div class="pace-label">Прошлый месяц итого</div>
+      <div style="font-size:24px;font-weight:600">${p.prev_full.toLocaleString()}</div>
+    </div>
+  `;
+}
+
+function renderKPIs() {
+  const tg = overviewData.tg;
+  const ap = overviewData.apollo;
+  const replyRate = tg.sent ? (tg.replied / tg.sent * 100).toFixed(1) : 0;
+  const mqlRate = tg.replied ? (tg.mql / tg.replied * 100).toFixed(1) : 0;
+
+  document.getElementById('kpis').innerHTML = `
+    <div class="kpi"><div class="kpi-label">TG Отправлено</div><div class="kpi-value">${tg.sent.toLocaleString()}</div><div class="kpi-sub">цель: ${overviewData.targets.tg.toLocaleString()}</div></div>
+    <div class="kpi"><div class="kpi-label">TG Ответы</div><div class="kpi-value">${tg.replied}</div><div class="kpi-sub">${replyRate}%</div></div>
+    <div class="kpi"><div class="kpi-label">MQL</div><div class="kpi-value" style="color:var(--accent)">${tg.mql}</div><div class="kpi-sub">${mqlRate}% от ответов</div></div>
+    <div class="kpi"><div class="kpi-label">Квалы</div><div class="kpi-value">${tg.qual}</div></div>
+    <div class="kpi"><div class="kpi-label">Звонки</div><div class="kpi-value">${tg.zvonok}</div></div>
+    <div class="kpi"><div class="kpi-label">КП</div><div class="kpi-value" style="color:var(--green)">${tg.kp}</div></div>
+    <div class="kpi"><div class="kpi-label">Apollo Sent</div><div class="kpi-value">${ap.sent.toLocaleString()}</div><div class="kpi-sub">цель: ${overviewData.targets.apollo.toLocaleString()}</div></div>
+    <div class="kpi"><div class="kpi-label">Apollo Replied</div><div class="kpi-value">${ap.replied}</div></div>
+  `;
+}
+
+function renderBrandTabs() {
+  const brands = Object.keys(funnelData.brands);
+  document.getElementById('brand-tabs').innerHTML = brands.map(b =>
+    `<div class="brand-tab ${b===currentBrand?'active':''}" onclick="switchBrand('${b}')">${b.toUpperCase()}</div>`
+  ).join('');
+}
+
+function switchBrand(b) {
+  currentBrand = b;
+  renderBrandTabs();
+  renderPositions();
+}
+
+function renderPositions() {
+  const brand = funnelData.brands[currentBrand];
+  if (!brand) return;
+  const pos = brand.pos;
+  const thead = document.querySelector('#pos-table thead');
+  const tbody = document.querySelector('#pos-table tbody');
+  thead.innerHTML = '<tr><th>Должность</th><th>Sent</th><th>Replied</th><th>%</th><th>MQL</th><th>Qual</th><th>KP</th></tr>';
+
+  const rows = Object.entries(pos).sort((a,b) => b[1].sent - a[1].sent);
+  tbody.innerHTML = rows.map(([name, d]) => {
+    const rate = d.sent ? (d.replied/d.sent*100).toFixed(1) : '0';
+    return `<tr><td>${name}</td><td>${d.sent}</td><td>${d.replied}</td><td>${rate}%</td><td>${d.mql}</td><td>${d.qual}</td><td>${d.kp}</td></tr>`;
+  }).join('');
+}
+
+function renderSources() {
+  const sources = overviewData.sources.filter(s => s.sent > 0).sort((a,b) => b.replied - a.replied).slice(0, 20);
+  const maxSent = Math.max(...sources.map(s => s.sent));
+  const thead = document.querySelector('#sources-table thead');
+  const tbody = document.querySelector('#sources-table tbody');
+  thead.innerHTML = '<tr><th>Канал</th><th>Источник</th><th>Sent</th><th>Replied</th><th>%</th><th>KP</th></tr>';
+  tbody.innerHTML = sources.map(s => {
+    const rate = s.sent ? (s.replied/s.sent*100).toFixed(1) : '0';
+    return `<tr><td>${s.channel}</td><td>${s.name}</td><td>${s.sent}</td><td>${s.replied}</td><td>${rate}%</td><td>${s.kp}</td></tr>`;
+  }).join('');
+}
+
+function renderHypotheses() {
+  const hyps = hypData.hypotheses;
+  const thead = document.querySelector('#hyp-table thead');
+  const tbody = document.querySelector('#hyp-table tbody');
+  thead.innerHTML = '<tr><th>Гипотеза</th><th>Статус</th><th>Sent</th><th>Replied</th><th>MQL</th><th>KP</th></tr>';
+  tbody.innerHTML = hyps.map(h => {
+    const totals = (h.members||[]).reduce((acc, m) => {
+      acc.sent += m.sent||0; acc.replied += m.replied||0; acc.mql += m.mql||0; acc.kp += m.kp||0;
+      return acc;
+    }, {sent:0, replied:0, mql:0, kp:0});
+    return `<tr><td>${h.name}</td><td>${h.status}</td><td>${totals.sent}</td><td>${totals.replied}</td><td>${totals.mql}</td><td>${totals.kp}</td></tr>`;
+  }).join('');
+}
+
+init();
+</script>
+</body>
+</html>

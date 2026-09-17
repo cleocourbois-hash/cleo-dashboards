@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гипотезы лидгена</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  --bg: #f8f9fb; --surface: #fff; --text: #1a1a2e; --text2: #6b7280;
+  --accent: #2563eb; --accent-light: #eff6ff; --border: #e5e7eb;
+  --green: #059669; --orange: #d97706; --red: #dc2626;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1117; --surface: #1a1d2e; --text: #e5e7eb; --text2: #9ca3af;
+    --accent: #60a5fa; --accent-light: #1e293b; --border: #2d3348;
+    --green: #34d399; --orange: #fbbf24; --red: #f87171;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1117; --surface: #1a1d2e; --text: #e5e7eb; --text2: #9ca3af;
+  --accent: #60a5fa; --accent-light: #1e293b; --border: #2d3348;
+  --green: #34d399; --orange: #fbbf24; --red: #f87171;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+.container { max-width: 1100px; margin: 0 auto; padding: 32px 16px; }
+a.back { color: var(--accent); text-decoration: none; font-size: 13px; }
+h1 { font-size: 24px; font-weight: 700; margin: 8px 0 24px; }
+.tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.tab {
+  padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 500;
+  background: var(--surface); border: 1px solid var(--border); cursor: pointer;
+}
+.tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.kpi-row { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+.kpi-sm {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 20px; font-size: 12px; color: var(--text2);
+}
+.kpi-sm strong { font-size: 20px; color: var(--text); display: block; font-variant-numeric: tabular-nums; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; }
+td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+tr:hover td { background: var(--accent-light); }
+.tag { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 500; }
+.tag-active { background: #dcfce7; color: #166534; }
+.tag-paused { background: #fef3c7; color: #92400e; }
+.tag-done { background: #f3f4f6; color: #6b7280; }
+.bar-bg { background: var(--border); border-radius: 2px; height: 6px; width: 100px; display: inline-block; vertical-align: middle; }
+.bar-fill { height: 6px; border-radius: 2px; background: var(--accent); display: block; }
+.section { margin-bottom: 32px; }
+.section-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tag-active { background: #064e3b; color: #6ee7b7; }
+  :root:not([data-theme="light"]) .tag-paused { background: #451a03; color: #fcd34d; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back">&larr; Все дашборды</a>
+  <h1>Гипотезы лидгена</h1>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('funnel')">Воронка по гипотезам</div>
+    <div class="tab" onclick="showTab('map')">Карта гипотез</div>
+    <div class="tab" onclick="showTab('bases')">Базы и источники</div>
+  </div>
+
+  <div id="funnel-section" class="section">
+    <div class="kpi-row" id="hyp-kpis"></div>
+    <div class="table-wrap">
+      <table id="hyp-funnel"><thead></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div id="map-section" class="section" style="display:none">
+    <div class="table-wrap">
+      <table id="hyp-map"><thead></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div id="bases-section" class="section" style="display:none">
+    <div class="kpi-row" id="bases-kpis"></div>
+    <div class="table-wrap">
+      <table id="bases-table"><thead></thead><tbody></tbody></table>
+    </div>
+  </div>
+</div>
+
+<script>
+let hypData, basesData, collectedData, dashboardData;
+
+function showTab(tab) {
+  const tabs = ['funnel','map','bases'];
+  document.querySelectorAll('.tab').forEach((t,i) => t.classList.toggle('active', tabs[i]===tab));
+  tabs.forEach(t => {
+    document.getElementById(t+'-section').style.display = t===tab ? 'block' : 'none';
+  });
+}
+
+async function init() {
+  [hypData, basesData, collectedData, dashboardData] = await Promise.all([
+    fetch('data/hypotheses.json').then(r=>r.json()),
+    fetch('data/bases.json').then(r=>r.json()),
+    fetch('data/source_collected.json').then(r=>r.json()),
+    fetch('data/hyp_dashboard.json').then(r=>r.json()),
+  ]);
+  renderHypFunnel();
+  renderMap();
+  renderBases();
+}
+
+function renderHypFunnel() {
+  const hyps = hypData.hypotheses;
+  const totals = hyps.reduce((acc, h) => {
+    (h.members||[]).forEach(m => {
+      acc.sent += m.sent||0; acc.replied += m.replied||0; acc.mql += m.mql||0; acc.kp += m.kp||0;
+    });
+    return acc;
+  }, {sent:0, replied:0, mql:0, kp:0});
+
+  document.getElementById('hyp-kpis').innerHTML = `
+    <div class="kpi-sm">Гипотез<strong>${hyps.length}</strong></div>
+    <div class="kpi-sm">Sent<strong>${totals.sent.toLocaleString()}</strong></div>
+    <div class="kpi-sm">Replied<strong>${totals.replied}</strong></div>
+    <div class="kpi-sm">MQL<strong>${totals.mql}</strong></div>
+    <div class="kpi-sm">КП<strong>${totals.kp}</strong></div>
+  `;
+
+  const maxSent = Math.max(...hyps.map(h => (h.members||[]).reduce((s,m) => s+(m.sent||0), 0)));
+  const thead = document.querySelector('#hyp-funnel thead');
+  const tbody = document.querySelector('#hyp-funnel tbody');
+  thead.innerHTML = '<tr><th>Гипотеза</th><th>Статус</th><th>Sent</th><th></th><th>Replied</th><th>%</th><th>MQL</th><th>Qual</th><th>KP</th></tr>';
+
+  const rows = hyps.map(h => {
+    const t = (h.members||[]).reduce((acc, m) => {
+      acc.sent += m.sent||0; acc.replied += m.replied||0; acc.mql += m.mql||0; acc.qual += m.qual||0; acc.kp += m.kp||0;
+      return acc;
+    }, {sent:0, replied:0, mql:0, qual:0, kp:0});
+    return {name: h.name, status: h.status, note: h.note, ...t};
+  }).sort((a,b) => b.sent - a.sent);
+
+  tbody.innerHTML = rows.map(r => {
+    const rate = r.sent ? (r.replied/r.sent*100).toFixed(1) : '0';
+    const barW = maxSent ? (r.sent/maxSent*100) : 0;
+    const statusClass = r.status === 'в работе' ? 'active' : r.status === 'пауза' ? 'paused' : 'done';
+    return `<tr>
+      <td><strong>${r.name}</strong><br><span style="font-size:11px;color:var(--text2)">${r.note||''}</span></td>
+      <td><span class="tag tag-${statusClass}">${r.status}</span></td>
+      <td>${r.sent}</td>
+      <td><div class="bar-bg"><div class="bar-fill" style="width:${barW}%"></div></div></td>
+      <td>${r.replied}</td>
+      <td>${rate}%</td>
+      <td>${r.mql}</td>
+      <td>${r.qual}</td>
+      <td>${r.kp}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderMap() {
+  if (!dashboardData || dashboardData.length < 2) return;
+  const header = dashboardData[0];
+  const rows = dashboardData.slice(1);
+  const thead = document.querySelector('#hyp-map thead');
+  const tbody = document.querySelector('#hyp-map tbody');
+
+  const displayCols = [0,1,2,4,5,7,8,9,10];
+  thead.innerHTML = '<tr>' + displayCols.map(i => `<th>${(header[i]||'').replace(/\n/g,' ')}</th>`).join('') + '</tr>';
+  tbody.innerHTML = rows.map(r => {
+    r = r.concat(Array(11).fill('')).slice(0,11);
+    return '<tr>' + displayCols.map(i => `<td>${r[i]||''}</td>`).join('') + '</tr>';
+  }).join('');
+}
+
+function renderBases() {
+  if (!basesData || !basesData.bases) return;
+  const bases = basesData.bases.sort((a,b) => (b.sent||0) - (a.sent||0));
+
+  const totSent = bases.reduce((s,b) => s+(b.sent||0), 0);
+  const totRepl = bases.reduce((s,b) => s+(b.replied||0), 0);
+  document.getElementById('bases-kpis').innerHTML = `
+    <div class="kpi-sm">Баз<strong>${bases.length}</strong></div>
+    <div class="kpi-sm">Всего отправлено<strong>${totSent.toLocaleString()}</strong></div>
+    <div class="kpi-sm">Всего ответов<strong>${totRepl}</strong></div>
+  `;
+
+  const thead = document.querySelector('#bases-table thead');
+  const tbody = document.querySelector('#bases-table tbody');
+  thead.innerHTML = '<tr><th>Источник</th><th>Sent</th><th>Replied</th><th>Reply%</th><th>MQL</th><th>MQL%</th></tr>';
+  tbody.innerHTML = bases.filter(b => b.sent > 0).map(b => {
+    const rr = b.sent ? (b.replied/b.sent*100).toFixed(1) : '0';
+    const mr = b.replied ? ((b.mql||0)/b.replied*100).toFixed(1) : '0';
+    return `<tr><td>${b.source||b.name||''}</td><td>${b.sent}</td><td>${b.replied||0}</td><td>${rr}%</td><td>${b.mql||0}</td><td>${mr}%</td></tr>`;
+  }).join('');
+}
+
+init();
+</script>
+</body>
+</html>

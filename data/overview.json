@@ -1,0 +1,507 @@
+{
+  "month": "2026-09",
+  "updated_at": "2026-09-17T15:59:28.277653Z",
+  "apollo_snapshot": "2026-09-17",
+  "apollo_error": null,
+  "tg": {
+    "sent": 1516,
+    "replied": 330,
+    "mql": 55,
+    "qual": 14,
+    "zvonok": 8,
+    "kp": 8,
+    "dogovor": 0,
+    "sdelka": 0
+  },
+  "apollo": {
+    "sent": 2282,
+    "replied": 2,
+    "opened": 0
+  },
+  "targets": {
+    "tg": 3000,
+    "apollo": 4000
+  },
+  "sources": [
+    {
+      "channel": "Мартина (TG)",
+      "name": "Покупная база IT (Денис Калинин)",
+      "sent": 286,
+      "replied": 35,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@StartupSchool_Sk.",
+      "sent": 170,
+      "replied": 43,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@digital_partners_chat (комментаторы)",
+      "sent": 102,
+      "replied": 21,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@Oskar_Hartmann (комментаторы)",
+      "sent": 74,
+      "replied": 10,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@mspiridonov (комментаторы)",
+      "sent": 71,
+      "replied": 8,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@kutergin_on_fire (комментаторы)",
+      "sent": 58,
+      "replied": 7,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "ABC Conclave",
+      "sent": 53,
+      "replied": 7,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@Resident Accounting",
+      "sent": 52,
+      "replied": 14,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@Startups & Apps Collaboration (коммента",
+      "sent": 50,
+      "replied": 12,
+      "kp": 1,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@startupoftheday (комментаторы)",
+      "sent": 44,
+      "replied": 14,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@Digital CPA CLUB (комментаторы)",
+      "sent": 40,
+      "replied": 14,
+      "kp": 2,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Rusprofile parsing (Сергей ручной рисерч",
+      "sent": 39,
+      "replied": 6,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@cryptodubaicom1 (комментаторы)",
+      "sent": 37,
+      "replied": 4,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@potok_gitelman (комментаторы)",
+      "sent": 32,
+      "replied": 6,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "TMA collaboration",
+      "sent": 29,
+      "replied": 17,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@mikhaildashkiev (комментаторы)",
+      "sent": 29,
+      "replied": 6,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@Innovators_msk_chat (комментаторы)",
+      "sent": 28,
+      "replied": 9,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Digital Club",
+      "sent": 19,
+      "replied": 12,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@iGaming chat (комментаторы)",
+      "sent": 17,
+      "replied": 9,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "DeFrens (комментаторы)",
+      "sent": 16,
+      "replied": 2,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Dubai Startups",
+      "sent": 13,
+      "replied": 3,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@skolkovodubai",
+      "sent": 13,
+      "replied": 2,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@skolkovo_city (авторы сообщений)",
+      "sent": 12,
+      "replied": 5,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@yandexbusiness (комментаторы)",
+      "sent": 12,
+      "replied": 2,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@skolkovo_channel (комментаторы)",
+      "sent": 11,
+      "replied": 4,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@CIO_CIO_CIO / CIO-ЧАТ (комментаторы)",
+      "sent": 9,
+      "replied": 0,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@ruminblog (комментаторы)",
+      "sent": 8,
+      "replied": 4,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Телеграм база 10к",
+      "sent": 7,
+      "replied": 1,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "iGaming Chat",
+      "sent": 7,
+      "replied": 5,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Не указано",
+      "sent": 6,
+      "replied": 6,
+      "kp": 1,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@portnyaginlive (комментаторы)",
+      "sent": 5,
+      "replied": 1,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@Belgrade Entrepreneurs (комментаторы)",
+      "sent": 4,
+      "replied": 2,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Бехруз 2",
+      "sent": 2,
+      "replied": 0,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Нетворк — сообщество от Точка Банк",
+      "sent": 1,
+      "replied": 1,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "BalticDigitalDays chat — участники (@bdd",
+      "sent": 2,
+      "replied": 0,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Португалия ИТ (@portugal_it) — участники",
+      "sent": 1,
+      "replied": 1,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@baza_directorov",
+      "sent": 1,
+      "replied": 1,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@singularityfm (комментаторы)",
+      "sent": 1,
+      "replied": 0,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Правила проекта Сколково (участники)",
+      "sent": 1,
+      "replied": 0,
+      "kp": 2,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "buhifinkaz",
+      "sent": 47,
+      "replied": 5,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Бухгалтеры всея Руси",
+      "sent": 41,
+      "replied": 8,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "heg.ai митап 27.08.2026",
+      "sent": 18,
+      "replied": 9,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "C-Level Days",
+      "sent": 14,
+      "replied": 9,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Чат Переводчика с бухгалтерского",
+      "sent": 13,
+      "replied": 1,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Бизнес нетворкинг Худякова",
+      "sent": 13,
+      "replied": 2,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "heg.ai офлайн-митап Москва",
+      "sent": 6,
+      "replied": 0,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "C-Level Days VIP + C-Level Days",
+      "sent": 1,
+      "replied": 1,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "C-Level Days VIP",
+      "sent": 1,
+      "replied": 1,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "Head of AI / Russia / AI offer",
+      "sent": 19,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "JF - CTO/CIO Rusprofile — AI и зарубежное ПО",
+      "sent": 0,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "JFT-1 CTO/CIO RU Tech — Поставки ПО",
+      "sent": 0,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "TP - Balkans CEO IT — Cross-border Payments",
+      "sent": 26,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "TP - HRD IT Russia — Выплаты команде",
+      "sent": 1,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "TalentPay",
+      "sent": 2,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "europe",
+      "sent": 0,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "tadviser",
+      "sent": 2,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "Рассылка для США",
+      "sent": 0,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "Рассылка для США",
+      "sent": 0,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "Россия",
+      "sent": 2232,
+      "replied": 2,
+      "kp": null,
+      "sdelka": null
+    },
+    {
+      "channel": "Apollo (email)",
+      "name": "международные",
+      "sent": 0,
+      "replied": 0,
+      "kp": null,
+      "sdelka": null
+    }
+  ]
+}

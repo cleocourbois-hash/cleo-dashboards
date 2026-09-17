@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinkedIn из TG-чатов</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  --bg: #f8f9fb; --surface: #fff; --text: #1a1a2e; --text2: #6b7280;
+  --accent: #2563eb; --accent-light: #eff6ff; --border: #e5e7eb;
+  --green: #059669; --orange: #d97706;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1117; --surface: #1a1d2e; --text: #e5e7eb; --text2: #9ca3af;
+    --accent: #60a5fa; --accent-light: #1e293b; --border: #2d3348;
+    --green: #34d399; --orange: #fbbf24;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1117; --surface: #1a1d2e; --text: #e5e7eb; --text2: #9ca3af;
+  --accent: #60a5fa; --accent-light: #1e293b; --border: #2d3348;
+  --green: #34d399; --orange: #fbbf24;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+.container { max-width: 1100px; margin: 0 auto; padding: 32px 16px; }
+a.back { color: var(--accent); text-decoration: none; font-size: 13px; }
+h1 { font-size: 24px; font-weight: 700; margin: 8px 0 24px; }
+.kpi-row { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+.kpi-sm { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 20px; font-size: 12px; color: var(--text2); }
+.kpi-sm strong { font-size: 20px; color: var(--text); display: block; }
+.filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.filter-btn { padding: 4px 12px; border-radius: 4px; font-size: 12px; background: var(--surface); border: 1px solid var(--border); cursor: pointer; color: var(--text); }
+.filter-btn.active { background: var(--accent-light); border-color: var(--accent); color: var(--accent); }
+.search { padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; width: 240px; background: var(--surface); color: var(--text); margin-bottom: 16px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; cursor: pointer; white-space: nowrap; }
+th:hover { color: var(--accent); }
+td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+tr:hover td { background: var(--accent-light); }
+a.link { color: var(--accent); text-decoration: none; font-size: 12px; }
+.tag { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 500; }
+.tag-a { background: #dcfce7; color: #166534; }
+.tag-b { background: #dbeafe; color: #1e40af; }
+.tag-c { background: #fef3c7; color: #92400e; }
+.tag-d { background: #f3e8ff; color: #6b21a8; }
+.tag-e { background: #f3f4f6; color: #6b7280; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tag-a { background: #064e3b; color: #6ee7b7; }
+  :root:not([data-theme="light"]) .tag-b { background: #1e3a5f; color: #93c5fd; }
+  :root:not([data-theme="light"]) .tag-c { background: #451a03; color: #fcd34d; }
+  :root:not([data-theme="light"]) .tag-d { background: #2e1065; color: #c4b5fd; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back">&larr; Все дашборды</a>
+  <h1>LinkedIn из TG-чатов</h1>
+  <div class="kpi-row" id="kpis"></div>
+  <input class="search" placeholder="Поиск по имени, компании..." oninput="filterTable()" id="search">
+  <div class="filters" id="prio-filters"></div>
+  <div class="table-wrap">
+    <table id="contacts-table"><thead></thead><tbody></tbody></table>
+  </div>
+</div>
+
+<script>
+let contacts = [];
+let activePrio = 'all';
+
+async function init() {
+  const data = await fetch('data/linkedin_contacts.json?v=' + Date.now()).then(r=>r.json());
+  const header = data[0];
+  function cellText(c) { return c && typeof c === 'object' ? c.text || '' : (c || ''); }
+  function cellUrl(c) { return c && typeof c === 'object' ? c.url || '' : (c || ''); }
+
+  contacts = data.slice(1).map(r => {
+    r = r.concat(Array(10).fill('')).slice(0,10);
+    return {
+      prio: cellText(r[0]), name: cellText(r[1]), title: cellText(r[2]),
+      company: cellText(r[3]), siteUrl: cellUrl(r[4]), siteText: cellText(r[4]),
+      country: cellText(r[5]), email: cellText(r[6]),
+      linkedinUrl: cellUrl(r[7]), linkedinText: cellText(r[7]),
+      chatUrl: cellUrl(r[8]), chat: cellText(r[8]), icp: cellText(r[9])
+    };
+  });
+
+  const prioGroups = {};
+  contacts.forEach(c => { prioGroups[c.prio] = (prioGroups[c.prio]||0) + 1; });
+
+  document.getElementById('kpis').innerHTML = `
+    <div class="kpi-sm">Всего<strong>${contacts.length}</strong></div>
+    <div class="kpi-sm">С email<strong>${contacts.filter(c=>c.email).length}</strong></div>
+  `;
+
+  const prios = [...new Set(contacts.map(c=>c.prio))].sort();
+  document.getElementById('prio-filters').innerHTML =
+    `<div class="filter-btn active" onclick="setPrio('all')">Все</div>` +
+    prios.map(p => `<div class="filter-btn" onclick="setPrio('${p}')">${p} (${prioGroups[p]})</div>`).join('');
+
+  renderTable();
+}
+
+function setPrio(p) {
+  activePrio = p;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.textContent.startsWith(p) || (p==='all' && b.textContent==='Все')));
+  renderTable();
+}
+
+function filterTable() { renderTable(); }
+
+function renderTable() {
+  const q = (document.getElementById('search').value||'').toLowerCase();
+  let filtered = contacts;
+  if (activePrio !== 'all') filtered = filtered.filter(c => c.prio === activePrio);
+  if (q) filtered = filtered.filter(c => (c.name+c.company+c.title+c.chat).toLowerCase().includes(q));
+
+  const thead = document.querySelector('#contacts-table thead');
+  const tbody = document.querySelector('#contacts-table tbody');
+  thead.innerHTML = '<tr><th>Приоритет</th><th>Имя</th><th>Должность</th><th>Компания</th><th>Страна</th><th>Email</th><th>LinkedIn</th><th>Чат</th></tr>';
+
+  tbody.innerHTML = filtered.map(c => {
+    const tagClass = c.prio.startsWith('A') ? 'a' : c.prio.startsWith('B') ? 'b' : c.prio.startsWith('C') ? 'c' : c.prio.startsWith('D') ? 'd' : 'e';
+    const liLink = c.linkedinUrl ? `<a class="link" href="${c.linkedinUrl}" target="_blank">профиль</a>` : '';
+    const siteLink = c.siteUrl ? `<a class="link" href="${c.siteUrl}" target="_blank">${c.siteText||'сайт'}</a>` : '';
+    const companyCell = c.company + (siteLink ? ' '+siteLink : '');
+    return `<tr>
+      <td><span class="tag tag-${tagClass}">${c.prio}</span></td>
+      <td><strong>${c.name}</strong></td>
+      <td>${c.title}</td>
+      <td>${companyCell}</td>
+      <td>${c.country}</td>
+      <td style="font-size:12px">${c.email}</td>
+      <td>${liLink}</td>
+      <td style="font-size:12px">${c.chat}</td>
+    </tr>`;
+  }).join('');
+}
+
+init();
+</script>
+</body>
+</html>

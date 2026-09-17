@@ -1,0 +1,958 @@
+{
+  "updated_at": "2026-09-17 15:15",
+  "total_sent": 7646,
+  "bases": [
+    {
+      "source": "@baza_directorov",
+      "sent": 831,
+      "reply_pct": 11.4,
+      "mql_pct": 1.6,
+      "burn": true
+    },
+    {
+      "source": "№1 Бизнес чат Москва",
+      "sent": 476,
+      "reply_pct": 19.7,
+      "mql_pct": 2.1,
+      "burn": false
+    },
+    {
+      "source": "Правила проекта Сколково (участники)",
+      "sent": 289,
+      "reply_pct": 27.0,
+      "mql_pct": 3.1,
+      "burn": false
+    },
+    {
+      "source": "Покупная база IT (Денис Калинин)",
+      "sent": 286,
+      "reply_pct": 12.2,
+      "mql_pct": 1.0,
+      "burn": true
+    },
+    {
+      "source": "Tech Week Moscow 2026 (приложение)",
+      "sent": 248,
+      "reply_pct": 39.1,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Global tech forum",
+      "sent": 217,
+      "reply_pct": 40.1,
+      "mql_pct": 1.4,
+      "burn": false
+    },
+    {
+      "source": "Remocate — удалёнка/зарплата в валюте (@remocate)",
+      "sent": 216,
+      "reply_pct": 36.1,
+      "mql_pct": 0.5,
+      "burn": false
+    },
+    {
+      "source": "Startech Сообщество",
+      "sent": 191,
+      "reply_pct": 29.8,
+      "mql_pct": 3.1,
+      "burn": false
+    },
+    {
+      "source": "@StartupSchool_Sk.",
+      "sent": 170,
+      "reply_pct": 25.3,
+      "mql_pct": 2.4,
+      "burn": false
+    },
+    {
+      "source": "Нетворк — сообщество от Точка Банк",
+      "sent": 152,
+      "reply_pct": 24.3,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "PeopleSense 2026 (приложение)",
+      "sent": 146,
+      "reply_pct": 47.3,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@digital_partners_chat (комментаторы)",
+      "sent": 140,
+      "reply_pct": 15.0,
+      "mql_pct": 1.4,
+      "burn": false
+    },
+    {
+      "source": "Digital Club / CPA (TG-чат)",
+      "sent": 121,
+      "reply_pct": 51.2,
+      "mql_pct": 1.7,
+      "burn": false
+    },
+    {
+      "source": "enreach",
+      "sent": 121,
+      "reply_pct": 5.0,
+      "mql_pct": 0.8,
+      "burn": true
+    },
+    {
+      "source": "TMA collaboration",
+      "sent": 117,
+      "reply_pct": 32.5,
+      "mql_pct": 3.4,
+      "burn": false
+    },
+    {
+      "source": "@Innovators_msk_chat (комментаторы)",
+      "sent": 113,
+      "reply_pct": 23.9,
+      "mql_pct": 4.4,
+      "burn": false
+    },
+    {
+      "source": "AI Конфа",
+      "sent": 101,
+      "reply_pct": 48.5,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Blockchain Hunter",
+      "sent": 94,
+      "reply_pct": 14.9,
+      "mql_pct": 1.1,
+      "burn": true
+    },
+    {
+      "source": "@Oskar_Hartmann (комментаторы)",
+      "sent": 88,
+      "reply_pct": 11.4,
+      "mql_pct": 0.0,
+      "burn": true
+    },
+    {
+      "source": "DeFrens — Web3 и ИИ сообщество",
+      "sent": 86,
+      "reply_pct": 29.1,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@mspiridonov (комментаторы)",
+      "sent": 85,
+      "reply_pct": 9.4,
+      "mql_pct": 0.0,
+      "burn": true
+    },
+    {
+      "source": "iGaming chat",
+      "sent": 84,
+      "reply_pct": 45.2,
+      "mql_pct": 2.4,
+      "burn": false
+    },
+    {
+      "source": "Digital Club",
+      "sent": 79,
+      "reply_pct": 51.9,
+      "mql_pct": 7.6,
+      "burn": false
+    },
+    {
+      "source": "Moscow Connect",
+      "sent": 77,
+      "reply_pct": 29.9,
+      "mql_pct": 3.9,
+      "burn": false
+    },
+    {
+      "source": "Data Day",
+      "sent": 75,
+      "reply_pct": 50.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "StarTech",
+      "sent": 74,
+      "reply_pct": 39.2,
+      "mql_pct": 2.7,
+      "burn": false
+    },
+    {
+      "source": "Игровая Индустрия / КИИ (@RusGamesIndustry)",
+      "sent": 71,
+      "reply_pct": 67.6,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Португалия ИТ (@portugal_it) — участники",
+      "sent": 69,
+      "reply_pct": 34.8,
+      "mql_pct": 5.8,
+      "burn": false
+    },
+    {
+      "source": "BalticDigitalDays chat (@bddchat)",
+      "sent": 68,
+      "reply_pct": 100.0,
+      "mql_pct": 1.5,
+      "burn": false
+    },
+    {
+      "source": "@relocaty_jobs (вакансии, посл. 3 мес, remote)",
+      "sent": 67,
+      "reply_pct": 14.9,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Startech.networking (TG-чат)",
+      "sent": 66,
+      "reply_pct": 34.8,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "№1 Бизнес чат Екатеринбург",
+      "sent": 64,
+      "reply_pct": 15.6,
+      "mql_pct": 3.1,
+      "burn": false
+    },
+    {
+      "source": "Клуб директоров",
+      "sent": 64,
+      "reply_pct": 25.0,
+      "mql_pct": 3.1,
+      "burn": false
+    },
+    {
+      "source": "@Startups & Apps Collaboration (комментаторы)",
+      "sent": 59,
+      "reply_pct": 20.3,
+      "mql_pct": 3.4,
+      "burn": false
+    },
+    {
+      "source": "LLM под капотом",
+      "sent": 58,
+      "reply_pct": 27.6,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@kutergin_on_fire (комментаторы)",
+      "sent": 58,
+      "reply_pct": 12.1,
+      "mql_pct": 5.2,
+      "burn": false
+    },
+    {
+      "source": "ABC Conclave",
+      "sent": 57,
+      "reply_pct": 12.3,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@Digital CPA CLUB (комментаторы)",
+      "sent": 57,
+      "reply_pct": 24.6,
+      "mql_pct": 1.8,
+      "burn": false
+    },
+    {
+      "source": "Digital Club Jobs",
+      "sent": 56,
+      "reply_pct": 48.2,
+      "mql_pct": 3.6,
+      "burn": false
+    },
+    {
+      "source": "IT&B2B Sales&Marketing (@itsalesmeetup / Skademy.by)",
+      "sent": 54,
+      "reply_pct": 38.9,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Qazaq IT Community (@qazaqitcom)",
+      "sent": 52,
+      "reply_pct": 30.8,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@Resident Accounting",
+      "sent": 52,
+      "reply_pct": 26.9,
+      "mql_pct": 5.8,
+      "burn": false
+    },
+    {
+      "source": "Не указано",
+      "sent": 50,
+      "reply_pct": 32.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Silicon Pravda Chat (@siliconpravdachat)",
+      "sent": 49,
+      "reply_pct": 32.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "ЧАТ B2B маркетинг и продажи (@b2bchaat)",
+      "sent": 48,
+      "reply_pct": 39.6,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Start-up Girl (@startupGirlSilliconValley)",
+      "sent": 47,
+      "reply_pct": 31.9,
+      "mql_pct": 2.1,
+      "burn": false
+    },
+    {
+      "source": "Сообщество HR России (@recRussia24)",
+      "sent": 45,
+      "reply_pct": 33.3,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Dubai Connect",
+      "sent": 44,
+      "reply_pct": 20.5,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@startupoftheday (комментаторы)",
+      "sent": 44,
+      "reply_pct": 31.8,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "BalticDigitalDays chat — участники (@bddchat)",
+      "sent": 43,
+      "reply_pct": 20.9,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@cryptodubaicom1 (комментаторы)",
+      "sent": 42,
+      "reply_pct": 9.5,
+      "mql_pct": 2.4,
+      "burn": false
+    },
+    {
+      "source": "Web3 Founders Club by HashHire (@web3foundersclub) — участники",
+      "sent": 41,
+      "reply_pct": 17.1,
+      "mql_pct": 2.4,
+      "burn": false
+    },
+    {
+      "source": "HR EXPO 2026 (приложение)",
+      "sent": 39,
+      "reply_pct": 30.8,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Rusprofile parsing (Сергей ручной рисерч)",
+      "sent": 39,
+      "reply_pct": 15.4,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Startup Community (@Startupchat)",
+      "sent": 38,
+      "reply_pct": 28.9,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Бизнес-нетворкинг Дубай (@netw_dubai)",
+      "sent": 38,
+      "reply_pct": 13.2,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@potok_gitelman (комментаторы)",
+      "sent": 38,
+      "reply_pct": 15.8,
+      "mql_pct": 2.6,
+      "burn": false
+    },
+    {
+      "source": "HRbezHR (@HrbezHr)",
+      "sent": 37,
+      "reply_pct": 16.2,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Startup Networking (@startup_networking)",
+      "sent": 36,
+      "reply_pct": 22.2,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Айтишники в Казахстане (@itkazahstan)",
+      "sent": 36,
+      "reply_pct": 100.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@singularityfm (комментаторы)",
+      "sent": 36,
+      "reply_pct": 33.3,
+      "mql_pct": 2.8,
+      "burn": false
+    },
+    {
+      "source": "Startup 4 Startup SK",
+      "sent": 34,
+      "reply_pct": 29.4,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Startup Village",
+      "sent": 31,
+      "reply_pct": 35.5,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Чат руководителей логистических компаний (@perevozki_ceo_chat)",
+      "sent": 31,
+      "reply_pct": 3.2,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Релокация в ОАЭ",
+      "sent": 31,
+      "reply_pct": 12.9,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Телеграм база 10к",
+      "sent": 30,
+      "reply_pct": 33.3,
+      "mql_pct": 3.3,
+      "burn": false
+    },
+    {
+      "source": "AI Founders Silicon Valley (@SV_founders)",
+      "sent": 30,
+      "reply_pct": 13.3,
+      "mql_pct": 3.3,
+      "burn": false
+    },
+    {
+      "source": "@mikhaildashkiev (комментаторы)",
+      "sent": 30,
+      "reply_pct": 20.0,
+      "mql_pct": 6.7,
+      "burn": false
+    },
+    {
+      "source": "Belgrade Entrepreneurs and Startups",
+      "sent": 29,
+      "reply_pct": 100.0,
+      "mql_pct": 3.4,
+      "burn": false
+    },
+    {
+      "source": "БИЗНЕС ЧАТ | ПРЕДПРИНИМАТЕЛИ (@freelead)",
+      "sent": 28,
+      "reply_pct": 14.3,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Бизнес нетворкинг Худякова",
+      "sent": 28,
+      "reply_pct": 10.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Москва | Нетворкинг",
+      "sent": 26,
+      "reply_pct": 19.2,
+      "mql_pct": 3.8,
+      "burn": false
+    },
+    {
+      "source": "Бизнес-комьюнити Сербии HubCollab (@Belgrad_HubCollab)",
+      "sent": 25,
+      "reply_pct": 56.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Astana Hub Community",
+      "sent": 23,
+      "reply_pct": 30.4,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@spbcioclub",
+      "sent": 23,
+      "reply_pct": 34.8,
+      "mql_pct": 4.3,
+      "burn": false
+    },
+    {
+      "source": "Бизнес-клуб «Терра Дубай» (инвайт)",
+      "sent": 23,
+      "reply_pct": 39.1,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@chat_findir (bio, только новые)",
+      "sent": 23,
+      "reply_pct": 43.5,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Builder Momentum (@builder_momentum)",
+      "sent": 23,
+      "reply_pct": 39.1,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "PROJECT MANAGEMENT FORUM",
+      "sent": 22,
+      "reply_pct": 22.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Georgia expats (релокация, @GeorgiaRelocated)",
+      "sent": 22,
+      "reply_pct": 9.1,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Бизнес в Сербии (@BussinesSerbia)",
+      "sent": 22,
+      "reply_pct": 40.9,
+      "mql_pct": 4.5,
+      "burn": false
+    },
+    {
+      "source": "DeFrens (комментаторы)",
+      "sent": 22,
+      "reply_pct": 9.1,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Startup Visa Spain",
+      "sent": 20,
+      "reply_pct": 55.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "«На вершину» (@onpeak_chat)",
+      "sent": 20,
+      "reply_pct": 30.0,
+      "mql_pct": 5.0,
+      "burn": false
+    },
+    {
+      "source": "Sales & BizDev (@b2btop)",
+      "sent": 20,
+      "reply_pct": 70.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Open Eurasia Community (@oec_global)",
+      "sent": 20,
+      "reply_pct": 40.0,
+      "mql_pct": 10.0,
+      "burn": false
+    },
+    {
+      "source": "@iGaming chat (комментаторы)",
+      "sent": 20,
+      "reply_pct": 45.0,
+      "mql_pct": 5.0,
+      "burn": false
+    },
+    {
+      "source": "Tech Week Moscow 2026 (приложение, добор)",
+      "sent": 19,
+      "reply_pct": 42.1,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Бизнес в Сербии (@rsbusines)",
+      "sent": 19,
+      "reply_pct": 42.1,
+      "mql_pct": 10.5,
+      "burn": false
+    },
+    {
+      "source": "Бизнес-нетворкинг Бали (@networking_bali)",
+      "sent": 18,
+      "reply_pct": 16.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "proit_dinner",
+      "sent": 18,
+      "reply_pct": 66.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "IT Connect Belgrade",
+      "sent": 17,
+      "reply_pct": 35.3,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Digital Partners Chat",
+      "sent": 17,
+      "reply_pct": 35.3,
+      "mql_pct": 5.9,
+      "burn": false
+    },
+    {
+      "source": "HR-клуб Елены Машуковой",
+      "sent": 17,
+      "reply_pct": 17.6,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Owner — сообщество бизнеса (@Owner_HQ)",
+      "sent": 17,
+      "reply_pct": 47.1,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@chat_findir (сообщество финдиректоров)",
+      "sent": 17,
+      "reply_pct": 23.5,
+      "mql_pct": 5.9,
+      "burn": false
+    },
+    {
+      "source": "Startup Networking (@startup_networking) + Startup Community (@Startupchat)",
+      "sent": 16,
+      "reply_pct": 6.2,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Бизнес в Middle East (@dubaibusinessru)",
+      "sent": 16,
+      "reply_pct": 12.5,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Релокация в Казахстан",
+      "sent": 16,
+      "reply_pct": 31.2,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Релокация - Сербия",
+      "sent": 16,
+      "reply_pct": 25.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Influencer Marketing Chat",
+      "sent": 14,
+      "reply_pct": 35.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "ДУБАЙ | ОАЭ | Бизнес (@dubai_busines)",
+      "sent": 14,
+      "reply_pct": 7.1,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@skolkovo_city (авторы сообщений)",
+      "sent": 14,
+      "reply_pct": 35.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Dubai Startups",
+      "sent": 14,
+      "reply_pct": 21.4,
+      "mql_pct": 7.1,
+      "burn": false
+    },
+    {
+      "source": "TMA Builders Network",
+      "sent": 13,
+      "reply_pct": 38.5,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Developer Jobs EN (@developer_jobs)",
+      "sent": 12,
+      "reply_pct": 25.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "IT España (@IT_Spain)",
+      "sent": 12,
+      "reply_pct": 16.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Уругвай | Релокация",
+      "sent": 12,
+      "reply_pct": 8.3,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@skolkovo_channel (комментаторы)",
+      "sent": 12,
+      "reply_pct": 33.3,
+      "mql_pct": 8.3,
+      "burn": false
+    },
+    {
+      "source": "@yandexbusiness (комментаторы)",
+      "sent": 12,
+      "reply_pct": 16.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "G GATE / iGaming (@ggatecommunity)",
+      "sent": 11,
+      "reply_pct": 63.6,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Чат Дубай БИЗНЕС | B-G (@dubai_business_bg)",
+      "sent": 10,
+      "reply_pct": 40.0,
+      "mql_pct": 10.0,
+      "burn": false
+    },
+    {
+      "source": "Web3 Founders Club (@web3foundersclub)",
+      "sent": 10,
+      "reply_pct": 0.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "🇸🇦 Саудовская Аравия чат (@saudovskaya_araviya) — bio",
+      "sent": 10,
+      "reply_pct": 40.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Саудовская Аравия (bio, новые)",
+      "sent": 10,
+      "reply_pct": 40.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Tbilisi JS Chat (@tbilisi_js_chat)",
+      "sent": 10,
+      "reply_pct": 30.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "llc_poland",
+      "sent": 10,
+      "reply_pct": 20.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Influence Digital Club",
+      "sent": 9,
+      "reply_pct": 33.3,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "№1 Бизнес чат Бали (@businessmenbali)",
+      "sent": 9,
+      "reply_pct": 44.4,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@CIO_CIO_CIO / CIO-ЧАТ (комментаторы)",
+      "sent": 9,
+      "reply_pct": 0.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@chat_findir (bio, новые — часть 2)",
+      "sent": 8,
+      "reply_pct": 12.5,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "IT встречи Паттайя (@it_vstrechi_pattaya)",
+      "sent": 8,
+      "reply_pct": 0.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@ruminblog (комментаторы)",
+      "sent": 8,
+      "reply_pct": 50.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Бизнес-чат Ковалев",
+      "sent": 7,
+      "reply_pct": 0.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Бизнес-клуб учебных центров",
+      "sent": 7,
+      "reply_pct": 28.6,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Product Radar — Чат Радара (@productradar_chat)",
+      "sent": 7,
+      "reply_pct": 42.9,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "iGaming Chat",
+      "sent": 7,
+      "reply_pct": 71.4,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@discuss_4cio (Клуб 4CIO)",
+      "sent": 6,
+      "reply_pct": 16.7,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "PyCon Russia 2026 (-1067857366)",
+      "sent": 6,
+      "reply_pct": 100.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Бехруз 2",
+      "sent": 6,
+      "reply_pct": 33.3,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@skolkovodubai",
+      "sent": 6,
+      "reply_pct": 0.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "🦁 БИЗНЕС-ЧАТ №1",
+      "sent": 5,
+      "reply_pct": 0.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Мобильные аппки, стартапы, сервисы",
+      "sent": 5,
+      "reply_pct": 0.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Чат ULCAMP'26 (@ulcamp)",
+      "sent": 5,
+      "reply_pct": 100.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@summer_merge (bio, повторный прогон)",
+      "sent": 5,
+      "reply_pct": 80.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@portnyaginlive (комментаторы)",
+      "sent": 5,
+      "reply_pct": 20.0,
+      "mql_pct": 0.0,
+      "burn": false
+    }
+  ]
+}
