@@ -81,17 +81,18 @@ h1 { font-size: 24px; font-weight: 700; margin: 8px 0 4px; }
 /* --- Tables --- */
 .table-wrap { overflow-x: auto; }
 #roi-section .table-wrap { max-height: calc(100vh - 260px); overflow-y: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 11px; }
 thead th {
   position: sticky; top: 0; z-index: 10;
-  background: var(--surface); text-align: right; padding: 6px 8px;
+  background: var(--surface); text-align: right; padding: 4px 5px;
   border-bottom: 2px solid var(--border); color: var(--text2);
-  font-weight: 500; font-size: 10px; text-transform: uppercase;
-  letter-spacing: 0.04em; white-space: nowrap;
+  font-weight: 500; font-size: 9px; text-transform: uppercase;
+  letter-spacing: 0.03em; white-space: nowrap;
 }
 thead th:first-child, thead th:nth-child(2), thead th:nth-child(3), thead th:nth-child(4) { text-align: left; }
-td { padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: right; font-variant-numeric: tabular-nums; }
+td { padding: 4px 5px; border-bottom: 1px solid var(--border); text-align: right; font-variant-numeric: tabular-nums; }
 td:first-child, td:nth-child(2), td:nth-child(3), td:nth-child(4) { text-align: left; }
+.has-tip { cursor: help; border-bottom: 1px dashed var(--text2); }
 tr:hover td { background: var(--accent-light); }
 tr.month-row td {
   background: var(--surface); font-weight: 700; font-size: 13px;
@@ -375,6 +376,15 @@ function renderProductToggle() {
   `;
 }
 
+function tip(val, companies, costLabel) {
+  if (val <= 0) return '<span class="num-zero">0</span>';
+  const parts = [];
+  if (companies && companies.length) parts.push(companies.join(', '));
+  if (costLabel) parts.push(costLabel);
+  if (parts.length) return `<span class="num-good has-tip" title="${parts.join('\n')}">${val}</span>`;
+  return `<span class="num-good">${val}</span>`;
+}
+
 function renderROI() {
   let data = funnelData;
   if (activeProduct === 'tp') data = data.filter(r => r.product === 'TP');
@@ -383,14 +393,13 @@ function renderROI() {
   const thead = document.querySelector('#roi-table thead');
   const tbody = document.querySelector('#roi-table tbody');
 
-  const colSpan = 18;
+  const colSpan = 12;
   thead.innerHTML = `<tr>
     <th>Ивент</th><th>Дата</th><th>Прод.</th><th>Кто</th>
-    <th class="col-sep">Контакты</th><th>Цена/конт.</th>
-    <th class="col-sep">MQL</th><th>Цена/MQL</th><th>Конв. конт.→MQL</th>
-    <th class="col-sep">Квалов</th><th>Цена/квал</th><th>MQL→квал</th>
-    <th class="col-sep">КП</th><th>Цена/КП</th><th>Квал→КП</th>
-    <th class="col-sep">Договор</th><th>Цена/дог.</th><th>КП→дог.</th>
+    <th class="col-sep">Конт.</th><th class="col-sep">MQL</th><th>%</th>
+    <th class="col-sep">Квал</th><th>%</th>
+    <th class="col-sep">КП</th><th>%</th>
+    <th class="col-sep">Дог.</th>
   </tr>`;
 
   tbody.innerHTML = data.map(r => {
@@ -400,15 +409,16 @@ function renderROI() {
     if (r.name === 'ИТОГО') {
       return `<tr class="totals-row">
         <td colspan="4"><strong>ИТОГО</strong></td>
-        <td class="col-sep"><strong>${r.contacts.toLocaleString()}</strong></td><td class="cost-cell">${costPer(r.cost, r.contacts)}</td>
-        <td class="col-sep"><strong>${r.mql}</strong></td><td class="cost-cell">${costPer(r.cost, r.mql)}</td><td class="pct">${pct(r.mql, r.contacts)}</td>
-        <td class="col-sep"><strong>${r.qual}</strong></td><td class="cost-cell">${costPer(r.cost, r.qual)}</td><td class="pct">${pct(r.qual, r.mql)}</td>
-        <td class="col-sep"><strong>${r.kp}</strong></td><td class="cost-cell">${costPer(r.cost, r.kp)}</td><td class="pct">${pct(r.kp, r.qual)}</td>
-        <td class="col-sep"><strong>${r.contract}</strong></td><td class="cost-cell">${costPer(r.cost, r.contract)}</td><td class="pct">${pct(r.contract, r.kp)}</td>
+        <td class="col-sep"><strong>${r.contacts.toLocaleString()}</strong></td>
+        <td class="col-sep"><strong>${r.mql}</strong></td><td class="pct">${pct(r.mql, r.contacts)}</td>
+        <td class="col-sep"><strong>${r.qual}</strong></td><td class="pct">${pct(r.qual, r.mql)}</td>
+        <td class="col-sep"><strong>${r.kp}</strong></td><td class="pct">${pct(r.kp, r.qual)}</td>
+        <td class="col-sep"><strong>${r.contract}</strong></td>
       </tr>`;
     }
 
     const prodTag = r.product === 'TP' ? 'tp' : 'jf';
+    const cp = (n) => r.cost > 0 && n > 0 ? 'Цена: ' + Math.round(r.cost / n).toLocaleString() + ' ₽' : '';
 
     return `<tr>
       <td><strong>${r.name}</strong></td>
@@ -416,19 +426,13 @@ function renderROI() {
       <td><span class="tag tag-${prodTag}">${r.product}</span></td>
       <td>${r.who}</td>
       <td class="col-sep">${r.contacts > 0 ? r.contacts.toLocaleString() : '-'}</td>
-      <td class="cost-cell">${costPer(r.cost, r.contacts)}</td>
-      <td class="col-sep">${nv(r.mql)}</td>
-      <td class="cost-cell">${costPer(r.cost, r.mql)}</td>
+      <td class="col-sep">${r.mql > 0 ? `<span class="num-good" title="${cp(r.mql)}">${r.mql}</span>` : '<span class="num-zero">0</span>'}</td>
       <td class="pct">${pct(r.mql, r.contacts)}</td>
-      <td class="col-sep">${nv(r.qual)}</td>
-      <td class="cost-cell">${costPer(r.cost, r.qual)}</td>
+      <td class="col-sep">${tip(r.qual, r.qual_companies, cp(r.qual))}</td>
       <td class="pct">${pct(r.qual, r.mql)}</td>
-      <td class="col-sep">${nv(r.kp)}</td>
-      <td class="cost-cell">${costPer(r.cost, r.kp)}</td>
+      <td class="col-sep">${tip(r.kp, r.kp_companies, cp(r.kp))}</td>
       <td class="pct">${pct(r.kp, r.qual)}</td>
-      <td class="col-sep">${nv(r.contract)}</td>
-      <td class="cost-cell">${costPer(r.cost, r.contract)}</td>
-      <td class="pct">${pct(r.contract, r.kp)}</td>
+      <td class="col-sep">${tip(r.contract, r.contract_companies, cp(r.contract))}</td>
     </tr>`;
   }).join('');
 }

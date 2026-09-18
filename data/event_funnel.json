@@ -14,6 +14,19 @@
     "kp": 2,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "Space Lead Ltd",
+      "ДЕЛИМОБИЛЬ ХОЛДИНГ",
+      "ОРБО",
+      "Ошвинцева Татьяна Ивановна",
+      "ПЭК"
+    ],
+    "kp_companies": [
+      "Space Lead Ltd",
+      "ДЕЛИМОБИЛЬ ХОЛДИНГ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": "—"
   },
   {
@@ -31,6 +44,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -48,6 +65,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -65,6 +86,25 @@
     "kp": 2,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "Al Cases",
+      "Functor Team",
+      "АИ ЗИОН",
+      "Ассоциация НАСС",
+      "ИНТЕРИКА ЛАБ",
+      "ЛЕТСВОРК",
+      "ПАРАДОКС",
+      "СЕЛЕКТЕЛ ООО",
+      "СТД ПЕТРОВИЧ",
+      "Сбертех",
+      "Старлаб Айти"
+    ],
+    "kp_companies": [
+      "Al Cases",
+      "ЛЕТСВОРК"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": "👎 Много стартаперов/малых компаний, все продают, с каждым годом хуже. Блокеры: бейджи без компаний (нельзя таргетить), ЦА не та."
   },
   {
@@ -82,6 +122,16 @@
     "kp": 1,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "БИСМАРТ",
+      "СПЛАТ ГЛОБАЛ",
+      "ТАЛЕНТ"
+    ],
+    "kp_companies": [
+      "БИСМАРТ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": "👎 Не сильно целевая (ивентологи, HR-фрилансеры). 2-й раз не пошли бы."
   },
   {
@@ -99,6 +149,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": "👎 Больше для экспертов. Формат не для продаж/нетворкинга."
   },
   {
@@ -116,6 +170,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -133,6 +191,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -150,6 +212,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": "самый дорогой билет месяца"
   },
   {
@@ -167,6 +233,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -184,6 +254,13 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "Ivan Klenov",
+      "Kiruta"
+    ],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -201,6 +278,17 @@
     "kp": 1,
     "contract": 1,
     "deal": 0,
+    "qual_companies": [
+      "Uzum fintech",
+      "ИА ДАЛЕЕ"
+    ],
+    "kp_companies": [
+      "ИА ДАЛЕЕ"
+    ],
+    "contract_companies": [
+      "ИА ДАЛЕЕ"
+    ],
+    "deal_companies": [],
     "verdict": "👎 Формат чистых конференций — не наш. Техноград плохая локация (3 этажа, много аудиторий, все слушают спикеров; нет кофе/нетворк-зоны; нетворкинг полупустой, одни продажники)."
   },
   {
@@ -218,6 +306,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -235,6 +327,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -252,6 +348,17 @@
     "kp": 2,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "Точка банк",
+      "Туту",
+      "ХЕЙМ СИТИ"
+    ],
+    "kp_companies": [
+      "Точка банк",
+      "ХЕЙМ СИТИ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -269,6 +376,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -286,6 +397,19 @@
     "kp": 3,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "Bronze pr",
+      "Melbet Ltd.",
+      "edna",
+      "ПГРУППА АСТРА"
+    ],
+    "kp_companies": [
+      "Bronze pr",
+      "Melbet Ltd.",
+      "ПГРУППА АСТРА"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -303,6 +427,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -320,6 +448,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -337,6 +469,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -354,6 +490,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -371,6 +511,12 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "Salesforce"
+    ],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -388,6 +534,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -405,6 +555,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -422,6 +576,16 @@
     "kp": 1,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "ProjectPro Inc.",
+      "АВРОРА-БГ",
+      "ИНТЕРНЕТ РЕШЕНИЯ"
+    ],
+    "kp_companies": [
+      "ИНТЕРНЕТ РЕШЕНИЯ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -439,6 +603,19 @@
     "kp": 2,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "Digital Future Group",
+      "Fintech",
+      "Евгений Апрель",
+      "ИКИГАЙ",
+      "МОБИЛЬНОЕ ИЗМЕРЕНИЕ"
+    ],
+    "kp_companies": [
+      "Digital Future Group",
+      "ИКИГАЙ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -456,6 +633,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -473,6 +654,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -490,6 +675,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -507,6 +696,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -524,6 +717,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -541,6 +738,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -558,6 +759,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -575,6 +780,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -592,6 +801,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": "—"
   },
   {
@@ -609,6 +822,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -626,6 +843,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -643,6 +864,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": "👎 Много стартаперов/малых компаний, все продают, с каждым годом хуже. Блокеры: бейджи без компаний (нельзя таргетить), ЦА не та."
   },
   {
@@ -660,6 +885,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": "👎 Не сильно целевая (ивентологи, HR-фрилансеры). 2-й раз не пошли бы."
   },
   {
@@ -677,6 +906,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": "👎 Больше для экспертов. Формат не для продаж/нетворкинга."
   },
   {
@@ -694,6 +927,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -711,6 +948,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -728,6 +969,29 @@
     "kp": 4,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "'АИ Лаб",
+      "2ГИС",
+      "АВИАКОМПАНИЯ СИБИРЬ",
+      "ДАТА ЛАЙТ",
+      "ИКС 5 РИТЕЙЛ ГРУПП",
+      "НМГ ТЕХ",
+      "ОПЕРАТОР-ЦРПТ",
+      "ПОЗИТИВ ТЕКНОЛОДЖИЗ",
+      "ПСБЕРБАНК",
+      "Первый бит",
+      "Сбер",
+      "ХОЛДИНГ ЭР-БИ-АЙ",
+      "ХЭДХАНТЕР"
+    ],
+    "kp_companies": [
+      "'АИ Лаб",
+      "ДАТА ЛАЙТ",
+      "ИКС 5 РИТЕЙЛ ГРУПП",
+      "Первый бит"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -745,6 +1009,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -762,6 +1030,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -779,6 +1051,12 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "ДИРЕКТУМ"
+    ],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": "👎 Формат чистых конференций — не наш. Техноград плохая локация (3 этажа, много аудиторий, все слушают спикеров; нет кофе/нетворк-зоны; нетворкинг полупустой, одни продажники)."
   },
   {
@@ -796,6 +1074,12 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "ПБАНК УРАЛСИБ"
+    ],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -813,6 +1097,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -830,6 +1118,23 @@
     "kp": 4,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "АВТОДОР-ПЛАТНЫЕ ДОРОГИ",
+      "ГРУППА КОМПАНИЙ МЕДСИ",
+      "КАРИ",
+      "МАРИЯ-РА",
+      "МЭФ ЛИГАЛ",
+      "ПАПФ ФАНАГОРИЯ",
+      "ЦРТ-ИННОВАЦИИ"
+    ],
+    "kp_companies": [
+      "АВТОДОР-ПЛАТНЫЕ ДОРОГИ",
+      "КАРИ",
+      "ПАПФ ФАНАГОРИЯ",
+      "ЦРТ-ИННОВАЦИИ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -847,6 +1152,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -864,6 +1173,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -881,6 +1194,19 @@
     "kp": 3,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "ДЕЛИМОБИЛЬ ХОЛДИНГ",
+      "ДИКСИ ГРУПП",
+      "ИНФОРМАЦИОННОЕ АГЕНТСТВО БАНКИ.РУ",
+      "ПОЗИТИВ ТЕКНОЛОДЖИЗ"
+    ],
+    "kp_companies": [
+      "ДЕЛИМОБИЛЬ ХОЛДИНГ",
+      "ДИКСИ ГРУПП",
+      "ПОЗИТИВ ТЕКНОЛОДЖИЗ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -898,6 +1224,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -915,6 +1245,26 @@
     "kp": 7,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "ВЫСШАЯ ЛИГА",
+      "НГК ХИМИК",
+      "НСИБИАР",
+      "ПЕТ РИТЕЙЛ",
+      "ПУРАЛКАЛИЙ",
+      "РЕМИ",
+      "ТРАНСПОРТНАЯ ГРУППА ФЕСКО"
+    ],
+    "kp_companies": [
+      "ВЫСШАЯ ЛИГА",
+      "НГК ХИМИК",
+      "НСИБИАР",
+      "ПЕТ РИТЕЙЛ",
+      "ПУРАЛКАЛИЙ",
+      "РЕМИ",
+      "ТРАНСПОРТНАЯ ГРУППА ФЕСКО"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -932,6 +1282,15 @@
     "kp": 1,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "НЕКСТ",
+      "Т2 МОБАЙЛ"
+    ],
+    "kp_companies": [
+      "Т2 МОБАЙЛ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -949,6 +1308,16 @@
     "kp": 2,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "Oxagile",
+      "Элемент Трейд"
+    ],
+    "kp_companies": [
+      "Oxagile",
+      "Элемент Трейд"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -966,6 +1335,20 @@
     "kp": 4,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "НЧЕРИ АВТОМОБИЛИ РУС",
+      "СЛАТА",
+      "СТРОЙТОРГОВЛЯ",
+      "ЧЕТЫРЕ ЛАПЫ - ИМ"
+    ],
+    "kp_companies": [
+      "НЧЕРИ АВТОМОБИЛИ РУС",
+      "СЛАТА",
+      "СТРОЙТОРГОВЛЯ",
+      "ЧЕТЫРЕ ЛАПЫ - ИМ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -983,6 +1366,18 @@
     "kp": 3,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "ВЕРИТАС ВЬЮ",
+      "ННКО НРД",
+      "НПЛАНЕТА УВЛЕЧЕНИЙ"
+    ],
+    "kp_companies": [
+      "ВЕРИТАС ВЬЮ",
+      "ННКО НРД",
+      "НПЛАНЕТА УВЛЕЧЕНИЙ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -1000,6 +1395,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -1017,6 +1416,12 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "БАУЦЕНТР РУС"
+    ],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -1034,6 +1439,17 @@
     "kp": 2,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "ДРОГЕРИ РИТЕЙЛ",
+      "ПМОСКОВСКАЯ БИРЖА",
+      "ЭКСАЙТ КИТ"
+    ],
+    "kp_companies": [
+      "ДРОГЕРИ РИТЕЙЛ",
+      "ЭКСАЙТ КИТ"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -1051,6 +1467,14 @@
     "kp": 1,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [
+      "АБ ИНБЕВ ЭФЕС"
+    ],
+    "kp_companies": [
+      "АБ ИНБЕВ ЭФЕС"
+    ],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -1068,6 +1492,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -1085,6 +1513,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -1102,6 +1534,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -1119,6 +1555,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -1136,6 +1576,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   },
   {
@@ -1153,6 +1597,10 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
+    "qual_companies": [],
+    "kp_companies": [],
+    "contract_companies": [],
+    "deal_companies": [],
     "verdict": ""
   }
 ]
