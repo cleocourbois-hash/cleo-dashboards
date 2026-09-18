@@ -218,7 +218,7 @@ a.site-link { color: var(--accent); text-decoration: none; font-size: 12px; }
 
   <div id="outreach-section" class="section">
     <div class="outreach-grid" id="outreach-grid"></div>
-    <h3 style="font-size:15px;font-weight:600;margin-bottom:12px">Топ источников по ответам</h3>
+    <h3 style="font-size:15px;font-weight:600;margin-bottom:12px">Аутрич с ивентов</h3>
     <div class="table-wrap">
       <table id="outreach-table"><thead></thead><tbody></tbody></table>
     </div>
@@ -400,13 +400,13 @@ function renderROI() {
   const thead = document.querySelector('#roi-table thead');
   const tbody = document.querySelector('#roi-table tbody');
 
-  const colSpan = 12;
+  const colSpan = 11;
   thead.innerHTML = `<tr>
     <th>Ивент</th><th>Дата</th><th>Прод.</th><th>Кто</th>
-    <th class="col-sep">Конт.</th><th class="col-sep">MQL</th><th>%</th>
+    <th class="col-sep">MQL</th>
     <th class="col-sep">Квал</th><th>%</th>
     <th class="col-sep">КП</th><th>%</th>
-    <th class="col-sep">Дог.</th>
+    <th class="col-sep">Дог.</th><th>%</th>
   </tr>`;
 
   let monthIdx = -1;
@@ -418,11 +418,10 @@ function renderROI() {
     if (r.name === 'ИТОГО') {
       return `<tr class="totals-row">
         <td colspan="4"><strong>ИТОГО</strong></td>
-        <td class="col-sep"><strong>${r.contacts.toLocaleString()}</strong></td>
-        <td class="col-sep"><strong>${r.mql}</strong></td><td class="pct">${pct(r.mql, r.contacts)}</td>
+        <td class="col-sep"><strong>${r.mql}</strong></td>
         <td class="col-sep"><strong>${r.qual}</strong></td><td class="pct">${pct(r.qual, r.mql)}</td>
         <td class="col-sep"><strong>${r.kp}</strong></td><td class="pct">${pct(r.kp, r.qual)}</td>
-        <td class="col-sep"><strong>${r.contract}</strong></td>
+        <td class="col-sep"><strong>${r.contract}</strong></td><td class="pct">${pct(r.contract, r.kp)}</td>
       </tr>`;
     }
 
@@ -435,14 +434,13 @@ function renderROI() {
       <td style="white-space:nowrap">${r.date}</td>
       <td><span class="tag tag-${prodTag}">${r.product}</span></td>
       <td>${r.who}</td>
-      <td class="col-sep">${r.contacts > 0 ? r.contacts.toLocaleString() : '-'}</td>
       <td class="col-sep">${r.mql > 0 ? `<span class="num-good" title="${cp(r.mql)}">${r.mql}</span>` : '<span class="num-zero">0</span>'}</td>
-      <td class="pct">${pct(r.mql, r.contacts)}</td>
       <td class="col-sep">${tip(r.qual, r.qual_companies, cp(r.qual))}</td>
       <td class="pct">${pct(r.qual, r.mql)}</td>
       <td class="col-sep">${tip(r.kp, r.kp_companies, cp(r.kp))}</td>
       <td class="pct">${pct(r.kp, r.qual)}</td>
       <td class="col-sep">${tip(r.contract, r.contract_companies, cp(r.contract))}</td>
+      <td class="pct">${pct(r.contract, r.kp)}</td>
     </tr>`;
   }).join('');
 }
@@ -477,23 +475,24 @@ function renderOutreach() {
     </div>
   `;
 
-  const sources = (overviewData.sources || [])
-    .filter(s => s.replied > 0)
-    .sort((a, b) => b.replied - a.replied)
-    .slice(0, 15);
+  const eventRows = funnelData
+    .filter(r => r.tag && r.mql > 0 && !r.name.startsWith('🟦') && !r.name.startsWith('🟧') && r.name !== 'ИТОГО')
+    .sort((a, b) => (b.kp - a.kp) || (b.qual - a.qual) || (b.mql - a.mql));
 
   const otHead = document.querySelector('#outreach-table thead');
   const otBody = document.querySelector('#outreach-table tbody');
-  otHead.innerHTML = '<tr><th>Источник</th><th>Канал</th><th>Отправлено</th><th>Ответы</th><th>Reply%</th><th>КП</th></tr>';
-  otBody.innerHTML = sources.map(s => {
-    const rr = s.sent > 0 ? (s.replied / s.sent * 100).toFixed(1) : '0';
+  otHead.innerHTML = '<tr><th>Ивент</th><th>Прод.</th><th>MQL</th><th>Квал</th><th>%</th><th>КП</th><th>%</th><th>Дог.</th></tr>';
+  otBody.innerHTML = eventRows.map(r => {
+    const prodTag = r.product === 'TP' ? 'tp' : 'jf';
     return `<tr>
-      <td><strong>${s.name}</strong></td>
-      <td>${s.channel}</td>
-      <td>${s.sent}</td>
-      <td>${nv(s.replied)}</td>
-      <td>${rr}%</td>
-      <td>${s.kp != null ? nv(s.kp) : '-'}</td>
+      <td><strong>${r.name}</strong></td>
+      <td><span class="tag tag-${prodTag}">${r.product}</span></td>
+      <td>${r.mql}</td>
+      <td>${tip(r.qual, r.qual_companies)}</td>
+      <td class="pct">${pct(r.qual, r.mql)}</td>
+      <td>${tip(r.kp, r.kp_companies)}</td>
+      <td class="pct">${pct(r.kp, r.qual)}</td>
+      <td>${tip(r.contract, r.contract_companies)}</td>
     </tr>`;
   }).join('');
 }
