@@ -1,6 +1,6 @@
 [
   {
-    "event": "Startup Village 2026 (Сколково)",
+    "event": "Startup Village 2026",
     "sent": 459,
     "replied": 121,
     "reply_rate": 26.4,
@@ -8,15 +8,9 @@
     "sources": [
       {
         "name": "Правила проекта Сколково (участники)",
-        "sent": 288,
+        "sent": 289,
         "replied": 78,
-        "kp": 1
-      },
-      {
-        "name": "Правила проекта Сколково (участники)",
-        "sent": 1,
-        "replied": 0,
-        "kp": 2
+        "kp": 3
       },
       {
         "name": "@StartupSchool_Sk.",
@@ -65,20 +59,8 @@
     "sources": [
       {
         "name": "Нетворк — сообщество от Точка Банк",
-        "sent": 65,
-        "replied": 19,
-        "kp": 0
-      },
-      {
-        "name": "Нетворк — сообщество от Точка Банк",
-        "sent": 1,
-        "replied": 1,
-        "kp": 0
-      },
-      {
-        "name": "Нетворк — сообщество от Точка Банк",
-        "sent": 1,
-        "replied": 1,
+        "sent": 67,
+        "replied": 21,
         "kp": 0
       }
     ]
@@ -92,26 +74,14 @@
     "sources": [
       {
         "name": "C-Level Days",
-        "sent": 16,
-        "replied": 10,
+        "sent": 30,
+        "replied": 19,
         "kp": 0
       },
       {
         "name": "C-Level Days VIP + C-Level Days",
-        "sent": 5,
-        "replied": 5,
-        "kp": 0
-      },
-      {
-        "name": "C-Level Days",
-        "sent": 14,
-        "replied": 9,
-        "kp": 0
-      },
-      {
-        "name": "C-Level Days VIP + C-Level Days",
-        "sent": 1,
-        "replied": 1,
+        "sent": 6,
+        "replied": 6,
         "kp": 0
       },
       {
@@ -173,14 +143,8 @@
     "sources": [
       {
         "name": "Conversations",
-        "sent": 15,
-        "replied": 12,
-        "kp": 0
-      },
-      {
-        "name": "Conversations",
-        "sent": 1,
-        "replied": 1,
+        "sent": 16,
+        "replied": 13,
         "kp": 0
       }
     ]
@@ -194,14 +158,8 @@
     "sources": [
       {
         "name": "Global tech forum",
-        "sent": 3,
-        "replied": 2,
-        "kp": 0
-      },
-      {
-        "name": "Global tech forum",
-        "sent": 3,
-        "replied": 1,
+        "sent": 6,
+        "replied": 3,
         "kp": 0
       }
     ]

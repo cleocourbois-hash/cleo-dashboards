@@ -1,20 +1,20 @@
 {
   "month": "2026-09",
-  "updated_at": "2026-09-17T15:59:28.277653Z",
-  "apollo_snapshot": "2026-09-17",
+  "updated_at": "2026-09-18T12:35:51.252872Z",
+  "apollo_snapshot": "2026-09-18",
   "apollo_error": null,
   "tg": {
-    "sent": 1516,
-    "replied": 330,
-    "mql": 55,
-    "qual": 14,
+    "sent": 1671,
+    "replied": 363,
+    "mql": 61,
+    "qual": 15,
     "zvonok": 8,
     "kp": 8,
     "dogovor": 0,
     "sdelka": 0
   },
   "apollo": {
-    "sent": 2282,
+    "sent": 2442,
     "replied": 2,
     "opened": 0
   },
@@ -44,6 +44,14 @@
       "name": "@digital_partners_chat (комментаторы)",
       "sent": 102,
       "replied": 21,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Rusprofile",
+      "sent": 84,
+      "replied": 8,
       "kp": 0,
       "sdelka": 0
     },
@@ -83,7 +91,7 @@
       "channel": "Мартина (TG)",
       "name": "@Resident Accounting",
       "sent": 52,
-      "replied": 14,
+      "replied": 15,
       "kp": 0,
       "sdelka": 0
     },
@@ -161,8 +169,24 @@
     },
     {
       "channel": "Мартина (TG)",
+      "name": "@skolkovodubai",
+      "sent": 28,
+      "replied": 8,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@spbcioclub (комментаторы)",
+      "sent": 23,
+      "replied": 7,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
       "name": "Digital Club",
-      "sent": 19,
+      "sent": 20,
       "replied": 12,
       "kp": 0,
       "sdelka": 0
@@ -185,17 +209,17 @@
     },
     {
       "channel": "Мартина (TG)",
-      "name": "Dubai Startups",
-      "sent": 13,
+      "name": "@startup_breakfast",
+      "sent": 14,
       "replied": 3,
       "kp": 0,
       "sdelka": 0
     },
     {
       "channel": "Мартина (TG)",
-      "name": "@skolkovodubai",
+      "name": "Dubai Startups",
       "sent": 13,
-      "replied": 2,
+      "replied": 3,
       "kp": 0,
       "sdelka": 0
     },
@@ -233,6 +257,22 @@
     },
     {
       "channel": "Мартина (TG)",
+      "name": "Не указано",
+      "sent": 9,
+      "replied": 9,
+      "kp": 1,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "Телеграм база 10к",
+      "sent": 8,
+      "replied": 1,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
       "name": "@ruminblog (комментаторы)",
       "sent": 8,
       "replied": 4,
@@ -241,9 +281,9 @@
     },
     {
       "channel": "Мартина (TG)",
-      "name": "Телеграм база 10к",
-      "sent": 7,
-      "replied": 1,
+      "name": "@makrushin (комментаторы)",
+      "sent": 8,
+      "replied": 3,
       "kp": 0,
       "sdelka": 0
     },
@@ -253,14 +293,6 @@
       "sent": 7,
       "replied": 5,
       "kp": 0,
-      "sdelka": 0
-    },
-    {
-      "channel": "Мартина (TG)",
-      "name": "Не указано",
-      "sent": 6,
-      "replied": 6,
-      "kp": 1,
       "sdelka": 0
     },
     {
@@ -281,9 +313,25 @@
     },
     {
       "channel": "Мартина (TG)",
+      "name": "@romancev768 (комментаторы)",
+      "sent": 4,
+      "replied": 1,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
       "name": "Бехруз 2",
       "sent": 2,
       "replied": 0,
+      "kp": 0,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@baza_directorov",
+      "sent": 2,
+      "replied": 2,
       "kp": 0,
       "sdelka": 0
     },
@@ -313,14 +361,6 @@
     },
     {
       "channel": "Мартина (TG)",
-      "name": "@baza_directorov",
-      "sent": 1,
-      "replied": 1,
-      "kp": 0,
-      "sdelka": 0
-    },
-    {
-      "channel": "Мартина (TG)",
       "name": "@singularityfm (комментаторы)",
       "sent": 1,
       "replied": 0,
@@ -333,6 +373,14 @@
       "sent": 1,
       "replied": 0,
       "kp": 2,
+      "sdelka": 0
+    },
+    {
+      "channel": "Мартина (TG)",
+      "name": "@avleonov (комментаторы)",
+      "sent": 1,
+      "replied": 0,
+      "kp": 0,
       "sdelka": 0
     },
     {
@@ -410,7 +458,7 @@
     {
       "channel": "Apollo (email)",
       "name": "Head of AI / Russia / AI offer",
-      "sent": 19,
+      "sent": 21,
       "replied": 0,
       "kp": null,
       "sdelka": null
@@ -434,7 +482,7 @@
     {
       "channel": "Apollo (email)",
       "name": "TP - Balkans CEO IT — Cross-border Payments",
-      "sent": 26,
+      "sent": 43,
       "replied": 0,
       "kp": null,
       "sdelka": null
@@ -490,7 +538,7 @@
     {
       "channel": "Apollo (email)",
       "name": "Россия",
-      "sent": 2232,
+      "sent": 2373,
       "replied": 2,
       "kp": null,
       "sdelka": null
