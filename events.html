@@ -239,7 +239,7 @@ a.site-link { color: var(--accent); text-decoration: none; font-size: 12px; }
 </div>
 
 <script>
-let funnelData, eventsData, edemData, overviewData;
+let funnelData, eventsData, edemData, overviewData, eventOutreachData;
 let activeProduct = 'all';
 let activeFilter = 'future';
 
@@ -287,11 +287,12 @@ function pct(a, b) { return b > 0 ? (a / b * 100).toFixed(1) + '%' : '-'; }
 function costPer(cost, n) { return n > 0 && cost > 0 ? Math.round(cost / n).toLocaleString() + ' ₽' : '-'; }
 
 async function init() {
-  [funnelData, eventsData, edemData, overviewData] = await Promise.all([
+  [funnelData, eventsData, edemData, overviewData, eventOutreachData] = await Promise.all([
     fetch('data/event_funnel.json').then(r => r.json()).catch(() => []),
     fetch('data/events.json').then(r => r.json()).catch(() => []),
     fetch('data/edem.json').then(r => r.json()).catch(() => []),
     fetch('data/overview.json').then(r => r.json()).catch(() => null),
+    fetch('data/event_outreach.json').then(r => r.json()).catch(() => []),
   ]);
   renderFunnelCompare();
   renderProductToggle();
@@ -475,26 +476,31 @@ function renderOutreach() {
     </div>
   `;
 
-  const eventRows = funnelData
-    .filter(r => r.tag && r.mql > 0 && !r.name.startsWith('🟦') && !r.name.startsWith('🟧') && r.name !== 'ИТОГО')
-    .sort((a, b) => (b.kp - a.kp) || (b.qual - a.qual) || (b.mql - a.mql));
+  const eoData = (eventOutreachData || []).filter(r => r.sent > 0);
+  const eoTotal = eoData.reduce((a, r) => ({ sent: a.sent + r.sent, replied: a.replied + r.replied, kp: a.kp + r.kp }), { sent: 0, replied: 0, kp: 0 });
 
   const otHead = document.querySelector('#outreach-table thead');
   const otBody = document.querySelector('#outreach-table tbody');
-  otHead.innerHTML = '<tr><th>Ивент</th><th>Прод.</th><th>MQL</th><th>Квал</th><th>%</th><th>КП</th><th>%</th><th>Дог.</th></tr>';
-  otBody.innerHTML = eventRows.map(r => {
-    const prodTag = r.product === 'TP' ? 'tp' : 'jf';
+  otHead.innerHTML = '<tr><th>Ивент</th><th>Отправлено</th><th>Ответы</th><th>Reply%</th><th>КП</th><th>Источники</th></tr>';
+  otBody.innerHTML = eoData.map(r => {
+    const rr = r.sent > 0 ? (r.replied / r.sent * 100).toFixed(1) : '0';
+    const srcList = r.sources.map(s => s.name).join(', ');
     return `<tr>
-      <td><strong>${r.name}</strong></td>
-      <td><span class="tag tag-${prodTag}">${r.product}</span></td>
-      <td>${r.mql}</td>
-      <td>${tip(r.qual, r.qual_companies)}</td>
-      <td class="pct">${pct(r.qual, r.mql)}</td>
-      <td>${tip(r.kp, r.kp_companies)}</td>
-      <td class="pct">${pct(r.kp, r.qual)}</td>
-      <td>${tip(r.contract, r.contract_companies)}</td>
+      <td><strong>${r.event}</strong></td>
+      <td>${r.sent.toLocaleString()}</td>
+      <td>${r.replied}</td>
+      <td>${rr}%</td>
+      <td>${nv(r.kp)}</td>
+      <td style="font-size:10px;color:var(--text2);max-width:200px" title="${srcList}">${r.sources.length > 1 ? r.sources.length + ' баз' : srcList}</td>
     </tr>`;
-  }).join('');
+  }).join('') + `<tr class="totals-row">
+    <td><strong>ИТОГО</strong></td>
+    <td><strong>${eoTotal.sent.toLocaleString()}</strong></td>
+    <td><strong>${eoTotal.replied}</strong></td>
+    <td><strong>${eoTotal.sent > 0 ? (eoTotal.replied / eoTotal.sent * 100).toFixed(1) : 0}%</strong></td>
+    <td><strong>${nv(eoTotal.kp)}</strong></td>
+    <td></td>
+  </tr>`;
 }
 
 function renderEdem() {

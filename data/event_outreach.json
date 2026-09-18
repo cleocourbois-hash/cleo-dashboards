@@ -1,0 +1,302 @@
+[
+  {
+    "event": "Startup Village 2026 (Сколково)",
+    "sent": 459,
+    "replied": 121,
+    "reply_rate": 26.4,
+    "kp": 3,
+    "sources": [
+      {
+        "name": "Правила проекта Сколково (участники)",
+        "sent": 288,
+        "replied": 78,
+        "kp": 1
+      },
+      {
+        "name": "Правила проекта Сколково (участники)",
+        "sent": 1,
+        "replied": 0,
+        "kp": 2
+      },
+      {
+        "name": "@StartupSchool_Sk.",
+        "sent": 170,
+        "replied": 43,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "BalticDigitalDays",
+    "sent": 217,
+    "replied": 113,
+    "reply_rate": 52.1,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "BalticDigitalDays chat (@bddchat)",
+        "sent": 134,
+        "replied": 95,
+        "kp": 0
+      },
+      {
+        "name": "BalticDigitalDays chat — участники (@bdd",
+        "sent": 81,
+        "replied": 18,
+        "kp": 0
+      },
+      {
+        "name": "BalticDigitalDays chat — участники (@bdd",
+        "sent": 2,
+        "replied": 0,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "ИИ КОНФА 2026",
+    "sent": 210,
+    "replied": 102,
+    "reply_rate": 48.6,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "AI Конфа",
+        "sent": 210,
+        "replied": 102,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "DATA DAY 2026",
+    "sent": 151,
+    "replied": 76,
+    "reply_rate": 50.3,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "Data Day",
+        "sent": 151,
+        "replied": 76,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "ТОК 2026 (Точка Банк)",
+    "sent": 67,
+    "replied": 21,
+    "reply_rate": 31.3,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "Нетворк — сообщество от Точка Банк",
+        "sent": 65,
+        "replied": 19,
+        "kp": 0
+      },
+      {
+        "name": "Нетворк — сообщество от Точка Банк",
+        "sent": 1,
+        "replied": 1,
+        "kp": 0
+      },
+      {
+        "name": "Нетворк — сообщество от Точка Банк",
+        "sent": 1,
+        "replied": 1,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "ABC Conclave",
+    "sent": 56,
+    "replied": 7,
+    "reply_rate": 12.5,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "ABC Conclave",
+        "sent": 3,
+        "replied": 0,
+        "kp": 0
+      },
+      {
+        "name": "ABC Conclave",
+        "sent": 53,
+        "replied": 7,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "C-level Days 2026",
+    "sent": 37,
+    "replied": 26,
+    "reply_rate": 70.3,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "C-Level Days",
+        "sent": 16,
+        "replied": 10,
+        "kp": 0
+      },
+      {
+        "name": "C-Level Days VIP + C-Level Days",
+        "sent": 5,
+        "replied": 5,
+        "kp": 0
+      },
+      {
+        "name": "C-Level Days",
+        "sent": 14,
+        "replied": 9,
+        "kp": 0
+      },
+      {
+        "name": "C-Level Days VIP + C-Level Days",
+        "sent": 1,
+        "replied": 1,
+        "kp": 0
+      },
+      {
+        "name": "C-Level Days VIP",
+        "sent": 1,
+        "replied": 1,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "ProIT Fest Лето 2026",
+    "sent": 35,
+    "replied": 24,
+    "reply_rate": 68.6,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "proit_dinner",
+        "sent": 33,
+        "replied": 22,
+        "kp": 0
+      },
+      {
+        "name": "@proitfest_chat (ProIT Fest, СПб)",
+        "sent": 2,
+        "replied": 2,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "heg.ai x Captain Builders Meetup",
+    "sent": 24,
+    "replied": 9,
+    "reply_rate": 37.5,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "heg.ai митап 27.08.2026",
+        "sent": 18,
+        "replied": 9,
+        "kp": 0
+      },
+      {
+        "name": "heg.ai офлайн-митап Москва",
+        "sent": 6,
+        "replied": 0,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "Conversations 2026 SPb",
+    "sent": 16,
+    "replied": 13,
+    "reply_rate": 81.2,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "Conversations",
+        "sent": 15,
+        "replied": 12,
+        "kp": 0
+      },
+      {
+        "name": "Conversations",
+        "sent": 1,
+        "replied": 1,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "GLOBAL TECH FORUM 2026",
+    "sent": 6,
+    "replied": 3,
+    "reply_rate": 50.0,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "Global tech forum",
+        "sent": 3,
+        "replied": 2,
+        "kp": 0
+      },
+      {
+        "name": "Global tech forum",
+        "sent": 3,
+        "replied": 1,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "TECH WEEK 2026",
+    "sent": 4,
+    "replied": 1,
+    "reply_rate": 25.0,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "Tech Week Moscow 2026 (приложение)",
+        "sent": 4,
+        "replied": 1,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "Project Management Forum",
+    "sent": 2,
+    "replied": 2,
+    "reply_rate": 100.0,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "PROJECT MANAGEMENT FORUM",
+        "sent": 2,
+        "replied": 2,
+        "kp": 0
+      }
+    ]
+  },
+  {
+    "event": "PeopleSense'26",
+    "sent": 1,
+    "replied": 0,
+    "reply_rate": 0.0,
+    "kp": 0,
+    "sources": [
+      {
+        "name": "PeopleSense 2026 (приложение)",
+        "sent": 1,
+        "replied": 0,
+        "kp": 0
+      }
+    ]
+  }
+]
