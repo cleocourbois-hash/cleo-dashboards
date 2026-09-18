@@ -103,6 +103,13 @@ tr.month-row td {
   color: var(--accent); text-align: left;
 }
 tr.month-row:hover td { background: var(--surface); }
+tr.subtotal-row td {
+  background: var(--surface); font-weight: 600; font-size: 11px;
+  border-top: 1px solid var(--border); border-bottom: 2px solid var(--border);
+  color: var(--text2);
+}
+tr.subtotal-row td strong { color: var(--text); }
+tr.subtotal-row:hover td { background: var(--surface); }
 tr.totals-row td {
   background: var(--accent-light); font-weight: 600;
   border-top: 2px solid var(--border);
@@ -394,7 +401,7 @@ function tip(val, companies, costLabel) {
 }
 
 function renderROI() {
-  let data = funnelData;
+  let data = funnelData.filter(r => r.tag);
   if (activeProduct === 'tp') data = data.filter(r => r.product === 'TP');
   if (activeProduct === 'jf') data = data.filter(r => r.product === 'JF');
 
@@ -410,40 +417,75 @@ function renderROI() {
     <th class="col-sep">Дог.</th><th>%</th>
   </tr>`;
 
-  let monthIdx = -1;
-  tbody.innerHTML = data.map(r => {
-    if (r.name.startsWith('🟦') || r.name.startsWith('🟧')) {
-      monthIdx++;
-      return `<tr class="month-row"><td colspan="${colSpan}">${r.name}</td></tr>`;
-    }
-    if (r.name === 'ИТОГО') {
-      return `<tr class="totals-row">
-        <td colspan="4"><strong>ИТОГО</strong></td>
-        <td class="col-sep"><strong>${r.mql}</strong></td>
-        <td class="col-sep"><strong>${r.qual}</strong></td><td class="pct">${pct(r.qual, r.mql)}</td>
-        <td class="col-sep"><strong>${r.kp}</strong></td><td class="pct">${pct(r.kp, r.qual)}</td>
-        <td class="col-sep"><strong>${r.contract}</strong></td><td class="pct">${pct(r.contract, r.kp)}</td>
-      </tr>`;
-    }
+  // Group by month, dedup by event name+date+product
+  const seen = new Set();
+  const unique = data.filter(r => {
+    const key = r.name + '|' + r.date + '|' + r.product;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 
+  const grouped = {};
+  unique.forEach(r => {
+    const m = parseMonth(r.date) || '99';
+    if (!grouped[m]) grouped[m] = [];
+    grouped[m].push(r);
+  });
+  const months = Object.keys(grouped).sort();
+
+  let html = '';
+  let monthIdx = 0;
+  let grandMql = 0, grandQual = 0, grandKp = 0, grandContract = 0;
+
+  months.forEach(m => {
+    const events = grouped[m];
+    const mName = MONTH_NAMES[m] || 'Другое';
     const stripe = monthIdx % 2 === 0 ? 'stripe-a' : 'stripe-b';
-    const prodTag = r.product === 'TP' ? 'tp' : 'jf';
-    const cp = (n) => r.cost > 0 && n > 0 ? 'Цена: ' + Math.round(r.cost / n).toLocaleString() + ' ₽' : '';
 
-    return `<tr class="${stripe}">
-      <td><strong>${r.name}</strong></td>
-      <td style="white-space:nowrap">${r.date}</td>
-      <td><span class="tag tag-${prodTag}">${r.product}</span></td>
-      <td>${r.who}</td>
-      <td class="col-sep">${r.mql > 0 ? `<span class="num-good" title="${cp(r.mql)}">${r.mql}</span>` : '<span class="num-zero">0</span>'}</td>
-      <td class="col-sep">${tip(r.qual, r.qual_companies, cp(r.qual))}</td>
-      <td class="pct">${pct(r.qual, r.mql)}</td>
-      <td class="col-sep">${tip(r.kp, r.kp_companies, cp(r.kp))}</td>
-      <td class="pct">${pct(r.kp, r.qual)}</td>
-      <td class="col-sep">${tip(r.contract, r.contract_companies, cp(r.contract))}</td>
-      <td class="pct">${pct(r.contract, r.kp)}</td>
+    html += `<tr class="month-row"><td colspan="${colSpan}">${mName}</td></tr>`;
+
+    let mMql = 0, mQual = 0, mKp = 0, mContract = 0;
+    events.forEach(r => {
+      mMql += r.mql; mQual += r.qual; mKp += r.kp; mContract += r.contract;
+      const prodTag = r.product === 'TP' ? 'tp' : 'jf';
+      const cp = (n) => r.cost > 0 && n > 0 ? 'Цена: ' + Math.round(r.cost / n).toLocaleString() + ' ₽' : '';
+      html += `<tr class="${stripe}">
+        <td><strong>${r.name}</strong></td>
+        <td style="white-space:nowrap">${r.date}</td>
+        <td><span class="tag tag-${prodTag}">${r.product}</span></td>
+        <td>${r.who}</td>
+        <td class="col-sep">${r.mql > 0 ? `<span class="num-good" title="${cp(r.mql)}">${r.mql}</span>` : '<span class="num-zero">0</span>'}</td>
+        <td class="col-sep">${tip(r.qual, r.qual_companies, cp(r.qual))}</td>
+        <td class="pct">${pct(r.qual, r.mql)}</td>
+        <td class="col-sep">${tip(r.kp, r.kp_companies, cp(r.kp))}</td>
+        <td class="pct">${pct(r.kp, r.qual)}</td>
+        <td class="col-sep">${tip(r.contract, r.contract_companies, cp(r.contract))}</td>
+        <td class="pct">${pct(r.contract, r.kp)}</td>
+      </tr>`;
+    });
+
+    html += `<tr class="subtotal-row">
+      <td colspan="4" style="text-align:right;font-size:10px"><strong>${mName}</strong></td>
+      <td class="col-sep"><strong>${mMql}</strong></td>
+      <td class="col-sep"><strong>${mQual}</strong></td><td class="pct">${pct(mQual, mMql)}</td>
+      <td class="col-sep"><strong>${mKp}</strong></td><td class="pct">${pct(mKp, mQual)}</td>
+      <td class="col-sep"><strong>${mContract}</strong></td><td class="pct">${pct(mContract, mKp)}</td>
     </tr>`;
-  }).join('');
+
+    grandMql += mMql; grandQual += mQual; grandKp += mKp; grandContract += mContract;
+    monthIdx++;
+  });
+
+  html += `<tr class="totals-row">
+    <td colspan="4"><strong>ИТОГО</strong></td>
+    <td class="col-sep"><strong>${grandMql}</strong></td>
+    <td class="col-sep"><strong>${grandQual}</strong></td><td class="pct">${pct(grandQual, grandMql)}</td>
+    <td class="col-sep"><strong>${grandKp}</strong></td><td class="pct">${pct(grandKp, grandQual)}</td>
+    <td class="col-sep"><strong>${grandContract}</strong></td><td class="pct">${pct(grandContract, grandKp)}</td>
+  </tr>`;
+
+  tbody.innerHTML = html;
 }
 
 function renderOutreach() {
