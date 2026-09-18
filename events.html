@@ -13,7 +13,6 @@
   --tp: #2563eb; --tp-bg: #dbeafe; --tp-text: #1e40af;
   --jf: #d97706; --jf-bg: #fef3c7; --jf-text: #92400e;
   --both-bg: #ede9fe; --both-text: #5b21b6;
-  --stripe-a: #ffffff; --stripe-b: #eef2ff;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -23,7 +22,6 @@
     --tp-bg: #1e3a5f; --tp-text: #93c5fd;
     --jf-bg: #451a03; --jf-text: #fcd34d;
     --both-bg: #2e1065; --both-text: #c4b5fd;
-    --stripe-a: #141724; --stripe-b: #1a1f35;
   }
 }
 :root[data-theme="dark"] {
@@ -33,7 +31,6 @@
   --tp-bg: #1e3a5f; --tp-text: #93c5fd;
   --jf-bg: #451a03; --jf-text: #fcd34d;
   --both-bg: #2e1065; --both-text: #c4b5fd;
-  --stripe-a: #141724; --stripe-b: #1a1f35;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); }
@@ -104,21 +101,17 @@ tr.month-row td {
 }
 tr.month-row:hover td { background: var(--surface); }
 tr.subtotal-row td {
-  background: var(--surface); font-weight: 600; font-size: 11px;
+  background: var(--accent-light); font-weight: 600; font-size: 11px;
   border-top: 1px solid var(--border); border-bottom: 2px solid var(--border);
   color: var(--text2);
 }
 tr.subtotal-row td strong { color: var(--text); }
-tr.subtotal-row:hover td { background: var(--surface); }
+tr.subtotal-row:hover td { background: var(--accent-light); }
 tr.totals-row td {
   background: var(--accent-light); font-weight: 600;
   border-top: 2px solid var(--border);
 }
 tr.totals-row:hover td { background: var(--accent-light); }
-tr.stripe-a td { background: var(--stripe-a); }
-tr.stripe-b td { background: var(--stripe-b); }
-tr.stripe-a:hover td { background: var(--accent-light); }
-tr.stripe-b:hover td { background: var(--accent-light); }
 
 .tag { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 500; }
 .tag-tp { background: var(--tp-bg); color: var(--tp-text); }
@@ -458,14 +451,11 @@ function renderROI() {
   const months = Object.keys(grouped).sort();
 
   let html = '';
-  let monthIdx = 0;
   let gCost = 0, gContacts = 0, gMql = 0, gQual = 0, gKp = 0, gContract = 0, gDeal = 0;
 
   months.forEach(mo => {
     const events = grouped[mo];
     const mName = MONTH_NAMES[mo] || 'Другое';
-    const stripe = monthIdx % 2 === 0 ? 'stripe-a' : 'stripe-b';
-
     html += `<tr class="month-row"><td colspan="${colSpan}">${mName}</td></tr>`;
 
     let mCost = 0, mContacts = 0, mMql = 0, mQual = 0, mKp = 0, mContract = 0, mDeal = 0;
@@ -480,7 +470,7 @@ function renderROI() {
         ? prods.map(p => `<span class="tag tag-${p==='TP'?'tp':'jf'}">${p}</span>`).join(' ')
         : `<span class="tag tag-${r.product==='TP'?'tp':'jf'}">${r.product}</span>`;
 
-      html += `<tr class="${stripe}">
+      html += `<tr>
         <td><strong>${r.name}</strong></td>
         <td style="white-space:nowrap">${r.date}</td>
         <td>${prodHtml}</td>
@@ -527,7 +517,6 @@ function renderROI() {
     </tr>`;
 
     gCost += mCost; gContacts += mContacts; gMql += mMql; gQual += mQual; gKp += mKp; gContract += mContract; gDeal += mDeal;
-    monthIdx++;
   });
 
   html += `<tr class="totals-row">
