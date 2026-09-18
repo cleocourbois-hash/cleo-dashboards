@@ -59,9 +59,26 @@ tr:hover td { background: var(--accent-light); }
 .icp-note .product-tag { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin: 0 2px; }
 .icp-note .tag-tp { background: #dcfce7; color: #166534; }
 .icp-note .tag-jf { background: #dbeafe; color: #1e40af; }
+.tag-market-mir { background: #ede9fe; color: #5b21b6; }
+.tag-market-rf { background: #fef3c7; color: #92400e; }
+.tag-prod-tp { background: #dcfce7; color: #166534; }
+.tag-prod-jf { background: #dbeafe; color: #1e40af; }
+.tag-prod-both { background: #fce7f3; color: #9d174d; }
+.vol-bar { display: flex; align-items: center; gap: 6px; }
+.vol-bar-bg { background: var(--border); border-radius: 3px; height: 8px; width: 60px; flex-shrink: 0; }
+.vol-bar-fill { height: 8px; border-radius: 3px; background: var(--green); display: block; }
+.seg-text { font-size: 12px; line-height: 1.5; }
+.seg-text .seg-label { font-weight: 700; color: var(--accent); }
+a.hyp-link { color: var(--accent); text-decoration: none; }
+a.hyp-link:hover { text-decoration: underline; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .tag-active { background: #064e3b; color: #6ee7b7; }
   :root:not([data-theme="light"]) .tag-paused { background: #451a03; color: #fcd34d; }
+  :root:not([data-theme="light"]) .tag-market-mir { background: #2e1065; color: #c4b5fd; }
+  :root:not([data-theme="light"]) .tag-market-rf { background: #451a03; color: #fcd34d; }
+  :root:not([data-theme="light"]) .tag-prod-tp { background: #064e3b; color: #6ee7b7; }
+  :root:not([data-theme="light"]) .tag-prod-jf { background: #1e3a5f; color: #93c5fd; }
+  :root:not([data-theme="light"]) .tag-prod-both { background: #4a1942; color: #f9a8d4; }
 }
 </style>
 </head>
@@ -175,19 +192,130 @@ function renderHypFunnel() {
 
 function renderMap() {
   if (!dashboardData || dashboardData.length < 2) return;
-  const header = dashboardData[0];
   const rows = dashboardData.slice(1);
   const thead = document.querySelector('#hyp-map thead');
   const tbody = document.querySelector('#hyp-map tbody');
 
-  const displayCols = [0,1,2,4,5,7,8,9,10];
-  thead.innerHTML = '<tr>' + displayCols.map(i => `<th>${(header[i]||'').replace(/\n/g,' ')}</th>`).join('') + '</tr>';
-  tbody.innerHTML = rows.map(r => {
+  const SHEET_ID = '1NKM9sXp6eTCttKEVS49LWKZHKHS6mvqkWhdLJW3mx0Q';
+  const TAB_GIDS = [
+    {gid:1657948229, keys:['рост штата','сергей']},
+    {gid:2019668150, keys:['rusprofile']},
+    {gid:1318689967, keys:['tt - digital','digital/it чат']},
+    {gid:322523529, keys:['tt - бизнес','бизнес рф чат']},
+    {gid:1973398701, keys:['tt - за рубежом','зарубежных сообществ']},
+    {gid:791061665, keys:['tt - стартапы','стартап-сообществ','стартапы рф']},
+    {gid:739983684, keys:['astana hub','it park','технопарки рф - мик','резиденты']},
+    {gid:1342331118, keys:['покупная база']},
+    {gid:944291444, keys:['технопарки 2','технопарки рф - все','расширение apollo']},
+    {gid:195439838, keys:['рекрутерские']},
+    {gid:1402012398, keys:['researchops','агентства']},
+    {gid:144664542, keys:['leadget']},
+    {gid:1060427050, keys:['4cio']},
+    {gid:1338257050, keys:['ai-интеграторы','ai интеграторы','qsoft']},
+    {gid:1338257099, keys:['linkedin рекомендации']},
+    {gid:223896132, keys:['russoft']},
+    {gid:1063201121, keys:['арпп']},
+    {gid:699977131, keys:['рейтинг рунета']},
+    {gid:601206645, keys:['раэк']},
+    {gid:2141711364, keys:['data insight']},
+    {gid:0, keys:['hh вакансии','hh_jft']},
+    {gid:2019668150, keys:['rusprofile топ','рбк-500']},
+    {gid:1240636612, keys:['tadviser']},
+    {gid:739983684, keys:['технопарки рф - все источники']},
+    {gid:1318689967, keys:['снг чаты','qazaq','айтишники в казахстане']},
+    {gid:1973398701, keys:['tg чаты зарубежных']},
+  ];
+
+  function findGid(text) {
+    const t = (text||'').toLowerCase();
+    for (const tab of TAB_GIDS) {
+      if (tab.keys.some(k => t.includes(k))) return tab.gid;
+    }
+    return null;
+  }
+  function sheetUrl(gid) { return `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=${gid}`; }
+
+  // Separate summary rows, association rows, and regular hypothesis rows
+  const regular = [];
+  const associations = [];
+  const summaries = [];
+  let curMarket = '', curProduct = '';
+
+  rows.forEach(r => {
     r = r.concat(Array(11).fill('')).slice(0,11);
-    const cell0 = (r[0]||'').toLowerCase();
-    const isSummary = cell0.startsWith('итого') || cell0 === 'итого';
-    const cls = isSummary ? ' class="summary-row"' : '';
-    return `<tr${cls}>` + displayCols.map(i => `<td>${r[i]||''}</td>`).join('') + '</tr>';
+    const c0 = (r[0]||'').toLowerCase();
+    if (r[0]) curMarket = r[0];
+    if (r[1]) curProduct = r[1];
+    if (c0.startsWith('итого')) {
+      summaries.push({row: r, market: curMarket, product: curProduct});
+    } else if (['russoft','арпп','рейтинг рунета','раэк','data insight'].some(k => c0.includes(k))) {
+      associations.push({row: r, market: r[0], product: r[1]});
+    } else {
+      regular.push({row: r, market: curMarket, product: curProduct});
+    }
+  });
+
+  // Final order: regular hypotheses, then associations, then summaries
+  const ordered = [...regular, ...associations, ...summaries];
+
+  const maxVol = Math.max(...ordered.filter(d => !d.row[0].toLowerCase().startsWith('итого')).map(d => parseInt(d.row[9])||0));
+
+  thead.innerHTML = '<tr><th>Рынок</th><th>Продукт</th><th>Гео</th><th>Гипотеза</th><th>Рыночный сегмент</th><th>Канал</th><th>Исполнитель</th><th>Объем</th></tr>';
+
+  tbody.innerHTML = ordered.map(d => {
+    const r = d.row;
+    const c0 = (r[0]||'').toLowerCase();
+    const isSummary = c0.startsWith('итого');
+    if (isSummary) {
+      return `<tr class="summary-row"><td colspan="8"><strong>${r[0]}</strong> ${r[1]||''} &nbsp; Объем: ${r[9]||''}</td></tr>`;
+    }
+
+    // Market tag
+    const mkt = d.market || '';
+    const mktLow = mkt.toLowerCase();
+    let mktTag = '';
+    if (mktLow.includes('мир-рф')) mktTag = `<span class="tag tag-market-mir">МИР-РФ</span>`;
+    else if (mktLow.includes('рф-мир')) mktTag = `<span class="tag tag-market-rf">РФ-МИР</span>`;
+    else if (mkt) mktTag = `<span class="tag" style="background:var(--accent-light);color:var(--accent)">${mkt}</span>`;
+
+    // Product tag
+    const prod = d.product || '';
+    const prodLow = prod.toLowerCase();
+    let prodTag = '';
+    if (prodLow.includes('tp') && (prodLow.includes('jf') || prodLow.includes('по'))) prodTag = `<span class="tag tag-prod-both">${prod}</span>`;
+    else if (prodLow.includes('tp')) prodTag = `<span class="tag tag-prod-tp">${prod}</span>`;
+    else if (prodLow.includes('jf') || prodLow.includes('по')) prodTag = `<span class="tag tag-prod-jf">${prod}</span>`;
+    else if (prod) prodTag = `<span class="tag">${prod}</span>`;
+
+    // Hypothesis with hyperlink
+    const hypText = r[4] || '';
+    const gid = findGid(hypText) ?? findGid(r[0]);
+    const hypHtml = gid !== null
+      ? `<a class="hyp-link" href="${sheetUrl(gid)}" target="_blank">${hypText.replace(/\n/g,'<br>')}</a>`
+      : hypText.replace(/\n/g,'<br>');
+
+    // Market segment formatting
+    let seg = r[5] || '';
+    seg = seg.replace(/\n/g, '<br>');
+    seg = seg.replace(/(ICP:\s*)/gi, '<br><span class="seg-label">ICP:</span> ');
+    seg = seg.replace(/(Боль:\s*)/gi, '<br><span class="seg-label">Боль:</span> ');
+    seg = `<div class="seg-text">${seg}</div>`;
+
+    // Volume bar
+    const vol = parseInt(r[9]) || 0;
+    const pct = maxVol ? Math.round(vol / maxVol * 100) : 0;
+    const volHtml = vol ? `<div class="vol-bar"><span>${vol.toLocaleString()}</span><div class="vol-bar-bg"><span class="vol-bar-fill" style="width:${pct}%"></span></div></div>` : '';
+
+    return `<tr>
+      <td>${mktTag}</td>
+      <td>${prodTag}</td>
+      <td>${r[2]||''}</td>
+      <td>${hypHtml}</td>
+      <td>${seg}</td>
+      <td>${r[7]||''}</td>
+      <td>${r[8]||''}</td>
+      <td>${volHtml}</td>
+    </tr>`;
   }).join('');
 }
 
