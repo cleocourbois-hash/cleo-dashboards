@@ -27,33 +27,6 @@
     ]
   },
   {
-    "event": "BalticDigitalDays",
-    "sent": 217,
-    "replied": 113,
-    "reply_rate": 52.1,
-    "kp": 0,
-    "sources": [
-      {
-        "name": "BalticDigitalDays chat (@bddchat)",
-        "sent": 134,
-        "replied": 95,
-        "kp": 0
-      },
-      {
-        "name": "BalticDigitalDays chat — участники (@bdd",
-        "sent": 81,
-        "replied": 18,
-        "kp": 0
-      },
-      {
-        "name": "BalticDigitalDays chat — участники (@bdd",
-        "sent": 2,
-        "replied": 0,
-        "kp": 0
-      }
-    ]
-  },
-  {
     "event": "ИИ КОНФА 2026",
     "sent": 210,
     "replied": 102,
@@ -106,27 +79,6 @@
         "name": "Нетворк — сообщество от Точка Банк",
         "sent": 1,
         "replied": 1,
-        "kp": 0
-      }
-    ]
-  },
-  {
-    "event": "ABC Conclave",
-    "sent": 56,
-    "replied": 7,
-    "reply_rate": 12.5,
-    "kp": 0,
-    "sources": [
-      {
-        "name": "ABC Conclave",
-        "sent": 3,
-        "replied": 0,
-        "kp": 0
-      },
-      {
-        "name": "ABC Conclave",
-        "sent": 53,
-        "replied": 7,
         "kp": 0
       }
     ]
