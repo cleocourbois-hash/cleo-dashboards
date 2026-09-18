@@ -71,6 +71,24 @@ tr:hover td { background: var(--accent-light); }
 .seg-text .seg-label { font-weight: 700; color: var(--accent); }
 a.hyp-link { color: var(--accent); text-decoration: none; }
 a.hyp-link:hover { text-decoration: underline; }
+.title-bars { display: flex; height: 10px; border-radius: 3px; overflow: hidden; min-width: 80px; }
+.title-bars span { display: block; height: 100%; }
+.tb-ceo { background: #2563eb; }
+.tb-cto { background: #7c3aed; }
+.tb-cio { background: #059669; }
+.tb-cfo { background: #d97706; }
+.tb-hr { background: #ec4899; }
+.tb-coo { background: #0891b2; }
+.tb-dir { background: #6b7280; }
+.tb-mgr { background: #a3a3a3; }
+.tb-oth { background: #d4d4d4; }
+.title-legend { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 10px; color: var(--text2); margin-top: 4px; }
+.title-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 2px; vertical-align: middle; }
+.collected-cell { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.collected-cell .pct { font-size: 10px; color: var(--text2); }
+.collected-cell .warn { color: var(--orange); }
+.collected-cell .good { color: var(--green); }
+.title-detail { font-size: 10px; color: var(--text2); margin-top: 2px; line-height: 1.4; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .tag-active { background: #064e3b; color: #6ee7b7; }
   :root:not([data-theme="light"]) .tag-paused { background: #451a03; color: #fcd34d; }
@@ -79,6 +97,9 @@ a.hyp-link:hover { text-decoration: underline; }
   :root:not([data-theme="light"]) .tag-prod-tp { background: #064e3b; color: #6ee7b7; }
   :root:not([data-theme="light"]) .tag-prod-jf { background: #1e3a5f; color: #93c5fd; }
   :root:not([data-theme="light"]) .tag-prod-both { background: #4a1942; color: #f9a8d4; }
+  :root:not([data-theme="light"]) .tb-oth { background: #525252; }
+  :root:not([data-theme="light"]) .tb-mgr { background: #737373; }
+  :root:not([data-theme="light"]) .tb-dir { background: #9ca3af; }
 }
 </style>
 </head>
@@ -106,6 +127,17 @@ a.hyp-link:hover { text-decoration: underline; }
       <span class="product-tag tag-tp">TP</span> CEO, CTO, HRD, CFO, Founders стартапов/IT с удалёнными командами<br>
       <span class="product-tag tag-jf">JF/ПО</span> CIO, CISO, директора по закупкам средних и крупных компаний
     </div>
+    <div class="title-legend" style="margin-bottom:12px">
+      <span><i class="tb-ceo"></i>CEO/Founder</span>
+      <span><i class="tb-cto"></i>CTO/Tech</span>
+      <span><i class="tb-cio"></i>CIO/IT</span>
+      <span><i class="tb-cfo"></i>CFO/Finance</span>
+      <span><i class="tb-hr"></i>HRD/HR</span>
+      <span><i class="tb-coo"></i>COO/Ops</span>
+      <span><i class="tb-dir"></i>Director</span>
+      <span><i class="tb-mgr"></i>Manager</span>
+      <span><i class="tb-oth"></i>Other</span>
+    </div>
     <div class="table-wrap">
       <table id="hyp-map"><thead></thead><tbody></tbody></table>
     </div>
@@ -120,7 +152,7 @@ a.hyp-link:hover { text-decoration: underline; }
 </div>
 
 <script>
-let hypData, basesData, collectedData, dashboardData;
+let hypData, basesData, collectedData, dashboardData, titlesData;
 
 function showTab(tab) {
   const tabs = ['funnel','map','bases'];
@@ -131,11 +163,12 @@ function showTab(tab) {
 }
 
 async function init() {
-  [hypData, basesData, collectedData, dashboardData] = await Promise.all([
+  [hypData, basesData, collectedData, dashboardData, titlesData] = await Promise.all([
     fetch('data/hypotheses.json').then(r=>r.json()),
     fetch('data/bases.json').then(r=>r.json()),
     fetch('data/source_collected.json').then(r=>r.json()),
     fetch('data/hyp_dashboard.json').then(r=>r.json()),
+    fetch('data/hyp_titles.json').then(r=>r.json()).catch(()=>({})),
   ]);
   renderHypFunnel();
   renderMap();
@@ -230,6 +263,85 @@ function renderMap() {
   }
   function sheetUrl(gid) { return `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=${gid}`; }
 
+  // Map hypothesis text to titlesData keys
+  const HYP_DATA_MAP = [
+    {keys: ['ростом штата (сергей)'], src: ['sergey']},
+    {keys: ['rusprofile крупные'], src: ['rusprofile']},
+    {keys: ['rusprofile топ-5'], src: ['rusprofile']},
+    {keys: ['tt - digital/it'], src: ['tt_digital']},
+    {keys: ['tt - бизнес рф'], src: ['tt_bizrf']},
+    {keys: ['tt - за рубежом'], src: ['tt_abroad']},
+    {keys: ['tt - стартапы'], src: ['tt_startups']},
+    {keys: ['astana hub, it park','технопарки рф - мик'], src: ['technoparks']},
+    {keys: ['технопарки рф - apollo'], src: ['technoparks']},
+    {keys: ['технопарки 2 -'], src: ['technoparks2']},
+    {keys: ['технопарки рф - все источники'], src: ['technoparks','technoparks2']},
+    {keys: ['покупная база it'], src: ['pokupnaya']},
+    {keys: ['рекрутерские tg чаты'], src: ['recruiter_chats']},
+    {keys: ['агентства researchops'], src: ['agencies']},
+    {keys: ['leadget тест'], src: ['leadget']},
+    {keys: ['4cio'], src: ['4cio']},
+    {keys: ['ai-интеграторы'], src: ['ai_integrators']},
+    {keys: ['linkedin рекомендации профилей'], src: ['linkedin_recs']},
+    {keys: ['russoft (ассоциация)','russoft\n'], src: ['russoft']},
+    {keys: ['арпп'], src: ['arpp']},
+    {keys: ['рейтинг рунета'], src: ['rating_runeta']},
+    {keys: ['раэк'], src: ['raek']},
+    {keys: ['data insight top'], src: ['data_insight']},
+  ];
+
+  function getTitleData(hypText) {
+    if (!titlesData) return null;
+    const t = (hypText||'').toLowerCase();
+    for (const m of HYP_DATA_MAP) {
+      if (m.keys.some(k => t.includes(k))) {
+        // Merge multiple sources
+        const merged = {total: 0, with_title: 0, buckets: {}};
+        for (const src of m.src) {
+          const d = titlesData[src];
+          if (!d || d.error) continue;
+          merged.total += d.total;
+          merged.with_title += d.with_title;
+          for (const [k,v] of Object.entries(d.buckets||{})) {
+            merged.buckets[k] = (merged.buckets[k]||0) + v;
+          }
+        }
+        return merged.total > 0 ? merged : null;
+      }
+    }
+    return null;
+  }
+
+  const BUCKET_COLORS = {
+    'CEO/Founder': 'tb-ceo',
+    'CTO/Tech': 'tb-cto',
+    'CIO/IT': 'tb-cio',
+    'CFO/Finance': 'tb-cfo',
+    'HRD/HR': 'tb-hr',
+    'COO/Ops': 'tb-coo',
+    'Director/Other': 'tb-dir',
+    'Manager': 'tb-mgr',
+    'Other': 'tb-oth',
+  };
+  const BUCKET_ORDER = ['CEO/Founder','CTO/Tech','CIO/IT','CFO/Finance','HRD/HR','COO/Ops','Director/Other','Manager','Other'];
+
+  function renderTitleBar(td) {
+    if (!td || td.total === 0) return '<span style="color:var(--text2);font-size:11px">-</span>';
+    const total = td.with_title || td.total;
+    let bar = '<div class="title-bars">';
+    let detail = [];
+    for (const b of BUCKET_ORDER) {
+      const n = td.buckets[b] || 0;
+      if (n === 0) continue;
+      const pct = (n / total * 100);
+      bar += `<span class="${BUCKET_COLORS[b]}" style="width:${pct}%" title="${b}: ${n}"></span>`;
+      detail.push(`${b.split('/')[0]} ${n}`);
+    }
+    bar += '</div>';
+    bar += `<div class="title-detail">${detail.join(' - ')}</div>`;
+    return bar;
+  }
+
   // Separate summary rows, association rows, and regular hypothesis rows
   const regular = [];
   const associations = [];
@@ -255,14 +367,14 @@ function renderMap() {
 
   const maxVol = Math.max(...ordered.filter(d => !d.row[0].toLowerCase().startsWith('итого')).map(d => parseInt(d.row[9])||0));
 
-  thead.innerHTML = '<tr><th>Рынок</th><th>Продукт</th><th>Гео</th><th>Гипотеза</th><th>Рыночный сегмент</th><th>Канал</th><th>Исполнитель</th><th>Объем</th></tr>';
+  thead.innerHTML = '<tr><th>Рынок</th><th>Продукт</th><th>Гео</th><th>Гипотеза</th><th>Рыночный сегмент</th><th>Канал</th><th>Исполнитель</th><th>Объем</th><th>Собрано</th><th>Должности</th></tr>';
 
   tbody.innerHTML = ordered.map(d => {
     const r = d.row;
     const c0 = (r[0]||'').toLowerCase();
     const isSummary = c0.startsWith('итого');
     if (isSummary) {
-      return `<tr class="summary-row"><td colspan="8"><strong>${r[0]}</strong> ${r[1]||''} &nbsp; Объем: ${r[9]||''}</td></tr>`;
+      return `<tr class="summary-row"><td colspan="10"><strong>${r[0]}</strong> ${r[1]||''} &nbsp; Объем: ${r[9]||''}</td></tr>`;
     }
 
     // Market tag
@@ -301,6 +413,19 @@ function renderMap() {
     const pct = maxVol ? Math.round(vol / maxVol * 100) : 0;
     const volHtml = vol ? `<div class="vol-bar"><span>${vol.toLocaleString()}</span><div class="vol-bar-bg"><span class="vol-bar-fill" style="width:${pct}%"></span></div></div>` : '';
 
+    // Collected data and title distribution
+    const td = getTitleData(hypText);
+    const target = parseInt(r[9]) || 0;
+    let collectedHtml = '<span style="color:var(--text2);font-size:11px">-</span>';
+    if (td && td.total > 0) {
+      const pctOfTarget = target > 0 ? Math.round(td.total / target * 100) : 0;
+      const pctClass = pctOfTarget >= 80 ? 'good' : pctOfTarget >= 30 ? 'warn' : '';
+      collectedHtml = `<div class="collected-cell"><strong>${td.total.toLocaleString()}</strong>`;
+      if (target > 0) collectedHtml += ` <span class="pct ${pctClass}">${pctOfTarget}%</span>`;
+      collectedHtml += '</div>';
+    }
+    const titlesHtml = renderTitleBar(td);
+
     return `<tr>
       <td>${mktTag}</td>
       <td>${prodTag}</td>
@@ -310,6 +435,8 @@ function renderMap() {
       <td>${r[7]||''}</td>
       <td>${r[8]||''}</td>
       <td>${volHtml}</td>
+      <td>${collectedHtml}</td>
+      <td>${titlesHtml}</td>
     </tr>`;
   }).join('');
 }
