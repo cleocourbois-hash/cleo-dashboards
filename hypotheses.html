@@ -10,67 +10,95 @@
   --bg: #f8f9fb; --surface: #fff; --text: #1a1a2e; --text2: #6b7280;
   --accent: #2563eb; --accent-light: #eff6ff; --border: #e5e7eb;
   --green: #059669; --orange: #d97706; --red: #dc2626;
+  --tp: #059669; --tp-bg: #dcfce7; --tp-text: #166534;
+  --jf: #2563eb; --jf-bg: #dbeafe; --jf-text: #1e40af;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0f1117; --surface: #1a1d2e; --text: #e5e7eb; --text2: #9ca3af;
     --accent: #60a5fa; --accent-light: #1e293b; --border: #2d3348;
     --green: #34d399; --orange: #fbbf24; --red: #f87171;
+    --tp: #34d399; --tp-bg: #064e3b; --tp-text: #6ee7b7;
+    --jf: #60a5fa; --jf-bg: #1e3a5f; --jf-text: #93c5fd;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0f1117; --surface: #1a1d2e; --text: #e5e7eb; --text2: #9ca3af;
   --accent: #60a5fa; --accent-light: #1e293b; --border: #2d3348;
   --green: #34d399; --orange: #fbbf24; --red: #f87171;
+  --tp: #34d399; --tp-bg: #064e3b; --tp-text: #6ee7b7;
+  --jf: #60a5fa; --jf-bg: #1e3a5f; --jf-text: #93c5fd;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); }
-.container { max-width: 1100px; margin: 0 auto; padding: 32px 16px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 32px 16px; }
 a.back { color: var(--accent); text-decoration: none; font-size: 13px; }
 h1 { font-size: 24px; font-weight: 700; margin: 8px 0 24px; }
 .tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
 .tab {
   padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 500;
-  background: var(--surface); border: 1px solid var(--border); cursor: pointer;
+  background: var(--surface); border: 1px solid var(--border); cursor: pointer; color: var(--text);
 }
 .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-.kpi-row { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
-.kpi-sm {
-  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
-  padding: 12px 20px; font-size: 12px; color: var(--text2);
+.section { display: none; }
+.section.visible { display: block; }
+
+/* --- Focus tab --- */
+.focus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+@media (max-width: 768px) { .focus-grid { grid-template-columns: 1fr; } }
+.prod-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; overflow: hidden;
 }
-.kpi-sm strong { font-size: 20px; color: var(--text); display: block; font-variant-numeric: tabular-nums; }
-.table-wrap { overflow-x: auto; max-height: calc(100vh - 240px); overflow-y: auto; }
+.prod-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.prod-card .prod-tag { padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+.prod-card .icp-list { font-size: 13px; line-height: 1.7; color: var(--text2); }
+.prod-card .icp-list .icp-role { font-weight: 600; color: var(--text); }
+.prod-card .icp-list .icp-gap { color: var(--red); font-size: 11px; font-weight: 600; }
+
+.gap-section { margin-bottom: 24px; }
+.gap-title { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+.gap-bars { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; }
+.gap-item {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 16px; display: flex; align-items: center; gap: 12px;
+}
+.gap-item .gap-role { font-size: 13px; font-weight: 600; min-width: 90px; }
+.gap-item .gap-bar-bg { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.gap-item .gap-bar-fill { height: 100%; border-radius: 4px; }
+.gap-item .gap-num { font-size: 12px; font-weight: 600; min-width: 50px; text-align: right; font-variant-numeric: tabular-nums; }
+.gap-item.gap-critical .gap-role { color: var(--red); }
+.gap-item.gap-ok .gap-bar-fill { background: var(--green); }
+.gap-item.gap-warn .gap-bar-fill { background: var(--orange); }
+.gap-item.gap-critical .gap-bar-fill { background: var(--red); }
+
+.priority-section { margin-bottom: 24px; }
+.priority-title { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+.table-wrap { overflow-x: auto; }
+#map-section .table-wrap { max-height: calc(100vh - 240px); overflow-y: auto; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
-th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; position: sticky; top: 0; z-index: 10; background: var(--surface); }
+th {
+  text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border);
+  color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase;
+  position: sticky; top: 0; z-index: 10; background: var(--surface); white-space: nowrap;
+}
 td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
 tr:hover td { background: var(--accent-light); }
 .tag { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 500; }
+.tag-tp { background: var(--tp-bg); color: var(--tp-text); }
+.tag-jf { background: var(--jf-bg); color: var(--jf-text); }
+.tag-both { background: #fce7f3; color: #9d174d; }
 .tag-active { background: #dcfce7; color: #166534; }
-.tag-paused { background: #fef3c7; color: #92400e; }
-.tag-done { background: #f3f4f6; color: #6b7280; }
-.bar-bg { background: var(--border); border-radius: 2px; height: 6px; width: 100px; display: inline-block; vertical-align: middle; }
-.bar-fill { height: 6px; border-radius: 2px; background: var(--accent); display: block; }
-.section { margin-bottom: 32px; }
-.section-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
-.summary-row td { background: var(--accent-light); font-weight: 700; border-bottom: 2px solid var(--accent); }
-.icp-note { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 20px; font-size: 13px; line-height: 1.6; }
-.icp-note strong { color: var(--accent); }
-.icp-note .product-tag { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin: 0 2px; }
-.icp-note .tag-tp { background: #dcfce7; color: #166534; }
-.icp-note .tag-jf { background: #dbeafe; color: #1e40af; }
+.tag-scale { background: #dbeafe; color: #1e40af; }
+.tag-discover { background: #fef3c7; color: #92400e; }
+.tag-partner { background: #ede9fe; color: #5b21b6; }
+.tag-plan { background: #f3f4f6; color: #6b7280; }
 .tag-market-mir { background: #ede9fe; color: #5b21b6; }
 .tag-market-rf { background: #fef3c7; color: #92400e; }
-.tag-prod-tp { background: #dcfce7; color: #166534; }
-.tag-prod-jf { background: #dbeafe; color: #1e40af; }
-.tag-prod-both { background: #fce7f3; color: #9d174d; }
-.vol-bar { display: flex; align-items: center; gap: 6px; }
-.vol-bar-bg { background: var(--border); border-radius: 3px; height: 8px; width: 60px; flex-shrink: 0; }
-.vol-bar-fill { height: 8px; border-radius: 3px; background: var(--green); display: block; }
-.seg-text { font-size: 12px; line-height: 1.5; }
-.seg-text .seg-label { font-weight: 700; color: var(--accent); }
-a.hyp-link { color: var(--accent); text-decoration: none; }
-a.hyp-link:hover { text-decoration: underline; }
+
+.summary-row td { background: var(--accent-light); font-weight: 700; border-bottom: 2px solid var(--accent); }
+
+/* ICP bars */
 .title-bars { display: flex; height: 10px; border-radius: 3px; overflow: hidden; min-width: 80px; }
 .title-bars span { display: block; height: 100%; }
 .tb-ceo { background: #2563eb; }
@@ -84,22 +112,48 @@ a.hyp-link:hover { text-decoration: underline; }
 .tb-oth { background: #d4d4d4; }
 .title-legend { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 10px; color: var(--text2); margin-top: 4px; }
 .title-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 2px; vertical-align: middle; }
+.title-detail { font-size: 10px; color: var(--text2); margin-top: 2px; line-height: 1.4; }
+
+.vol-bar { display: flex; align-items: center; gap: 6px; }
+.vol-bar-bg { background: var(--border); border-radius: 3px; height: 8px; width: 60px; flex-shrink: 0; }
+.vol-bar-fill { height: 8px; border-radius: 3px; background: var(--green); display: block; }
+
 .collected-cell { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .collected-cell .pct { font-size: 10px; color: var(--text2); }
 .collected-cell .warn { color: var(--orange); }
 .collected-cell .good { color: var(--green); }
-.title-detail { font-size: 10px; color: var(--text2); margin-top: 2px; line-height: 1.4; }
+
+.seg-text { font-size: 12px; line-height: 1.5; }
+.seg-text .seg-label { font-weight: 700; color: var(--accent); }
+a.hyp-link { color: var(--accent); text-decoration: none; }
+a.hyp-link:hover { text-decoration: underline; }
+
+/* Outreach metrics in map */
+.outreach-mini { font-size: 11px; color: var(--text2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.outreach-mini .om-val { font-weight: 600; color: var(--text); }
+
+/* Kpi row */
+.kpi-row { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+.kpi-sm {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 20px; font-size: 12px; color: var(--text2);
+}
+.kpi-sm strong { font-size: 20px; color: var(--text); display: block; font-variant-numeric: tabular-nums; }
+
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .tag-active { background: #064e3b; color: #6ee7b7; }
-  :root:not([data-theme="light"]) .tag-paused { background: #451a03; color: #fcd34d; }
+  :root:not([data-theme="light"]) .tag-scale { background: #1e3a5f; color: #93c5fd; }
+  :root:not([data-theme="light"]) .tag-discover { background: #451a03; color: #fcd34d; }
+  :root:not([data-theme="light"]) .tag-partner { background: #2e1065; color: #c4b5fd; }
+  :root:not([data-theme="light"]) .tag-both { background: #4a1942; color: #f9a8d4; }
   :root:not([data-theme="light"]) .tag-market-mir { background: #2e1065; color: #c4b5fd; }
   :root:not([data-theme="light"]) .tag-market-rf { background: #451a03; color: #fcd34d; }
-  :root:not([data-theme="light"]) .tag-prod-tp { background: #064e3b; color: #6ee7b7; }
-  :root:not([data-theme="light"]) .tag-prod-jf { background: #1e3a5f; color: #93c5fd; }
-  :root:not([data-theme="light"]) .tag-prod-both { background: #4a1942; color: #f9a8d4; }
   :root:not([data-theme="light"]) .tb-oth { background: #525252; }
   :root:not([data-theme="light"]) .tb-mgr { background: #737373; }
   :root:not([data-theme="light"]) .tb-dir { background: #9ca3af; }
+}
+@media (max-width: 640px) {
+  .gap-bars { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -109,24 +163,13 @@ a.hyp-link:hover { text-decoration: underline; }
   <h1>Гипотезы лидгена</h1>
 
   <div class="tabs">
-    <div class="tab active" onclick="showTab('funnel')">Воронка по гипотезам</div>
+    <div class="tab active" onclick="showTab('focus')">Фокус и приоритеты</div>
     <div class="tab" onclick="showTab('map')">Карта гипотез</div>
-    <div class="tab" onclick="showTab('bases')">Базы и источники</div>
   </div>
 
-  <div id="funnel-section" class="section">
-    <div class="kpi-row" id="hyp-kpis"></div>
-    <div class="table-wrap">
-      <table id="hyp-funnel"><thead></thead><tbody></tbody></table>
-    </div>
-  </div>
+  <div id="focus-section" class="section visible"></div>
 
-  <div id="map-section" class="section" style="display:none">
-    <div class="icp-note">
-      <strong>ICP по продуктам:</strong><br>
-      <span class="product-tag tag-tp">TP</span> CEO, HRD, CFO, Founders стартапов/IT с удалёнными командами<br>
-      <span class="product-tag tag-jf">JF/ПО</span> CTO, CIO, CISO, директора по закупкам средних и крупных компаний
-    </div>
+  <div id="map-section" class="section">
     <div class="title-legend" style="margin-bottom:12px">
       <span><i class="tb-ceo"></i>CEO/Founder</span>
       <span><i class="tb-cto"></i>CTO/Tech</span>
@@ -142,87 +185,294 @@ a.hyp-link:hover { text-decoration: underline; }
       <table id="hyp-map"><thead></thead><tbody></tbody></table>
     </div>
   </div>
-
-  <div id="bases-section" class="section" style="display:none">
-    <div class="kpi-row" id="bases-kpis"></div>
-    <div class="table-wrap">
-      <table id="bases-table"><thead></thead><tbody></tbody></table>
-    </div>
-  </div>
 </div>
 
 <script>
-let hypData, basesData, collectedData, dashboardData, titlesData;
+let hypData, dashboardData, titlesData;
 
 function showTab(tab) {
-  const tabs = ['funnel','map','bases'];
+  const tabs = ['focus','map'];
   document.querySelectorAll('.tab').forEach((t,i) => t.classList.toggle('active', tabs[i]===tab));
   tabs.forEach(t => {
-    document.getElementById(t+'-section').style.display = t===tab ? 'block' : 'none';
+    document.getElementById(t+'-section').classList.toggle('visible', t===tab);
   });
 }
 
 async function init() {
-  [hypData, basesData, collectedData, dashboardData, titlesData] = await Promise.all([
-    fetch('data/hypotheses.json').then(r=>r.json()),
-    fetch('data/bases.json').then(r=>r.json()),
-    fetch('data/source_collected.json').then(r=>r.json()),
-    fetch('data/hyp_dashboard.json').then(r=>r.json()),
-    fetch('data/hyp_titles.json').then(r=>r.json()).catch(()=>({})),
+  [hypData, dashboardData, titlesData] = await Promise.all([
+    fetch('data/hypotheses.json?v='+Date.now()).then(r=>r.json()).catch(()=>({hypotheses:[]})),
+    fetch('data/hyp_dashboard.json?v='+Date.now()).then(r=>r.json()).catch(()=>[]),
+    fetch('data/hyp_titles.json?v='+Date.now()).then(r=>r.json()).catch(()=>({})),
   ]);
-  renderHypFunnel();
+  renderFocus();
   renderMap();
-  renderBases();
 }
 
-function renderHypFunnel() {
-  const hyps = hypData.hypotheses;
-  const totals = hyps.reduce((acc, h) => {
-    (h.members||[]).forEach(m => {
-      acc.sent += m.sent||0; acc.replied += m.replied||0; acc.mql += m.mql||0; acc.kp += m.kp||0;
-    });
-    return acc;
-  }, {sent:0, replied:0, mql:0, kp:0});
+// --- ICP title analysis ---
+const BUCKET_COLORS = {
+  'CEO/Founder':'tb-ceo','CTO/Tech':'tb-cto','CIO/IT':'tb-cio',
+  'CFO/Finance':'tb-cfo','HRD/HR':'tb-hr','COO/Ops':'tb-coo',
+  'Director/Other':'tb-dir','Manager':'tb-mgr','Other':'tb-oth',
+};
+const BUCKET_ORDER = ['CEO/Founder','CTO/Tech','CIO/IT','CFO/Finance','HRD/HR','COO/Ops','Director/Other','Manager','Other'];
 
-  document.getElementById('hyp-kpis').innerHTML = `
-    <div class="kpi-sm">Гипотез<strong>${hyps.length}</strong></div>
-    <div class="kpi-sm">Sent<strong>${totals.sent.toLocaleString()}</strong></div>
-    <div class="kpi-sm">Replied<strong>${totals.replied}</strong></div>
-    <div class="kpi-sm">MQL<strong>${totals.mql}</strong></div>
-    <div class="kpi-sm">КП<strong>${totals.kp}</strong></div>
-  `;
+const HYP_DATA_MAP = [
+  {keys:['ростом штата (сергей)'],src:['sergey']},
+  {keys:['rusprofile крупные'],src:['rusprofile']},
+  {keys:['rusprofile топ-5'],src:['rusprofile']},
+  {keys:['tt - digital/it'],src:['tt_digital']},{keys:['tt - бизнес рф'],src:['tt_bizrf']},
+  {keys:['tt - за рубежом'],src:['tt_abroad']},{keys:['tt - стартапы'],src:['tt_startups']},
+  {keys:['astana hub, it park','технопарки рф - мик'],src:['technoparks']},
+  {keys:['технопарки рф - apollo'],src:['technoparks']},
+  {keys:['технопарки 2 -'],src:['technoparks2']},
+  {keys:['технопарки рф - все источники'],src:['technoparks','technoparks2']},
+  {keys:['покупная база it'],src:['pokupnaya']},
+  {keys:['рекрутерские tg чаты'],src:['recruiter_chats']},
+  {keys:['агентства researchops'],src:['agencies']},
+  {keys:['leadget тест'],src:['leadget']},
+  {keys:['4cio'],src:['4cio']},
+  {keys:['ai-интеграторы'],src:['ai_integrators']},
+  {keys:['linkedin рекомендации профилей'],src:['linkedin_recs']},
+  {keys:['russoft','russoft\n'],src:['russoft']},{keys:['арпп'],src:['arpp']},
+  {keys:['рейтинг рунета'],src:['rating_runeta']},{keys:['раэк'],src:['raek']},
+  {keys:['data insight top'],src:['data_insight']},
+];
 
-  const maxSent = Math.max(...hyps.map(h => (h.members||[]).reduce((s,m) => s+(m.sent||0), 0)));
-  const thead = document.querySelector('#hyp-funnel thead');
-  const tbody = document.querySelector('#hyp-funnel tbody');
-  thead.innerHTML = '<tr><th>Гипотеза</th><th>Статус</th><th>Sent</th><th></th><th>Replied</th><th>%</th><th>MQL</th><th>Qual</th><th>KP</th></tr>';
+function getTitleData(hypText) {
+  if (!titlesData) return null;
+  const t = (hypText||'').toLowerCase();
+  for (const m of HYP_DATA_MAP) {
+    if (m.keys.some(k => t.includes(k))) {
+      const merged = {total:0, with_title:0, buckets:{}};
+      for (const src of m.src) {
+        const d = titlesData[src];
+        if (!d || d.error) continue;
+        merged.total += d.total; merged.with_title += d.with_title;
+        for (const [k,v] of Object.entries(d.buckets||{})) merged.buckets[k] = (merged.buckets[k]||0) + v;
+      }
+      return merged.total > 0 ? merged : null;
+    }
+  }
+  return null;
+}
 
-  const rows = hyps.map(h => {
-    const t = (h.members||[]).reduce((acc, m) => {
-      acc.sent += m.sent||0; acc.replied += m.replied||0; acc.mql += m.mql||0; acc.qual += m.qual||0; acc.kp += m.kp||0;
-      return acc;
-    }, {sent:0, replied:0, mql:0, qual:0, kp:0});
-    return {name: h.name, status: h.status, note: h.note, ...t};
-  }).sort((a,b) => b.sent - a.sent);
+function getGlobalICP() {
+  const totals = {};
+  let grand = 0;
+  for (const [, v] of Object.entries(titlesData||{})) {
+    if (!v || !v.buckets) continue;
+    for (const [bk, bv] of Object.entries(v.buckets)) {
+      totals[bk] = (totals[bk]||0) + bv;
+      grand += bv;
+    }
+  }
+  return {totals, grand};
+}
 
-  tbody.innerHTML = rows.map(r => {
-    const rate = r.sent ? (r.replied/r.sent*100).toFixed(1) : '0';
-    const barW = maxSent ? (r.sent/maxSent*100) : 0;
-    const statusClass = r.status === 'в работе' ? 'active' : r.status === 'пауза' ? 'paused' : 'done';
-    return `<tr>
-      <td><strong>${r.name}</strong><br><span style="font-size:11px;color:var(--text2)">${r.note||''}</span></td>
-      <td><span class="tag tag-${statusClass}">${r.status}</span></td>
-      <td>${r.sent}</td>
-      <td><div class="bar-bg"><div class="bar-fill" style="width:${barW}%"></div></div></td>
-      <td>${r.replied}</td>
-      <td>${rate}%</td>
-      <td>${r.mql}</td>
-      <td>${r.qual}</td>
-      <td>${r.kp}</td>
-    </tr>`;
+function renderTitleBar(td) {
+  if (!td || td.total === 0) return '<span style="color:var(--text2);font-size:11px">-</span>';
+  const total = td.with_title || td.total;
+  let bar = '<div class="title-bars">';
+  let detail = [];
+  for (const b of BUCKET_ORDER) {
+    const n = td.buckets[b] || 0;
+    if (n === 0) continue;
+    const pct = (n / total * 100);
+    bar += `<span class="${BUCKET_COLORS[b]}" style="width:${pct}%" title="${b}: ${n}"></span>`;
+    detail.push(`${b.split('/')[0]} ${n}`);
+  }
+  bar += '</div>';
+  bar += `<div class="title-detail">${detail.join(' - ')}</div>`;
+  return bar;
+}
+
+// --- FOCUS TAB ---
+function renderFocus() {
+  const {totals, grand} = getGlobalICP();
+  const el = document.getElementById('focus-section');
+
+  // ICP gap analysis
+  const ICP_ROLES = [
+    {key:'CEO/Founder', label:'CEO / Founder', product:'TP', bar:'tb-ceo'},
+    {key:'HRD/HR', label:'HRD / HR', product:'TP', bar:'tb-hr'},
+    {key:'CFO/Finance', label:'CFO / Finance', product:'TP', bar:'tb-cfo'},
+    {key:'CTO/Tech', label:'CTO / Tech', product:'JF', bar:'tb-cto'},
+    {key:'CIO/IT', label:'CIO / IT Director', product:'JF', bar:'tb-cio'},
+    {key:'COO/Ops', label:'COO / Ops', product:'both', bar:'tb-coo'},
+    {key:'Director/Other', label:'Director (other)', product:'both', bar:'tb-dir'},
+  ];
+
+  const maxICP = Math.max(...ICP_ROLES.map(r => totals[r.key]||0));
+
+  function gapClass(n) {
+    if (n >= 200) return 'gap-ok';
+    if (n >= 50) return 'gap-warn';
+    return 'gap-critical';
+  }
+
+  const gapHtml = ICP_ROLES.map(r => {
+    const n = totals[r.key] || 0;
+    const pct = grand > 0 ? (n/grand*100).toFixed(1) : 0;
+    const barW = maxICP > 0 ? Math.round(n/maxICP*100) : 0;
+    const cls = gapClass(n);
+    const prodTag = r.product === 'TP' ? '<span class="tag tag-tp" style="font-size:9px">TP</span>'
+      : r.product === 'JF' ? '<span class="tag tag-jf" style="font-size:9px">JF</span>'
+      : '<span class="tag tag-both" style="font-size:9px">TP+JF</span>';
+    return `<div class="gap-item ${cls}">
+      <div class="gap-role">${r.label} ${prodTag}</div>
+      <div class="gap-bar-bg"><div class="gap-bar-fill" style="width:${barW}%"></div></div>
+      <div class="gap-num">${n.toLocaleString()} <span style="font-size:10px;color:var(--text2)">(${pct}%)</span></div>
+    </div>`;
   }).join('');
+
+  // Outreach summary from Martina
+  const hyps = (hypData.hypotheses || []);
+  const outTotals = hyps.reduce((a, h) => {
+    (h.members||[]).forEach(m => {
+      a.sent += m.sent||0; a.replied += m.replied||0; a.mql += m.mql||0;
+      a.qual += m.qual||0; a.kp += m.kp||0; a.dogovor += m.dogovor||0;
+    });
+    return a;
+  }, {sent:0, replied:0, mql:0, qual:0, kp:0, dogovor:0});
+
+  // Priority hypotheses from dashboard
+  const rows = (dashboardData || []).slice(1);
+  let curProduct = '';
+  const priorities = [];
+  rows.forEach(r => {
+    r = r.concat(Array(11).fill('')).slice(0,11);
+    if (r[1]) curProduct = r[1];
+    const name = (r[4]||'').split('\n')[0];
+    if (!name || name.toLowerCase().startsWith('итого')) return;
+    const vol = parseInt(r[9]) || 0;
+    const sql = r[10] || '';
+    const status = r[3] || '';
+    const channel = r[7] || '';
+    const executor = r[8] || '';
+    const td = getTitleData(r[4]||'');
+    priorities.push({name, product: curProduct, vol, sql, status, channel, executor, td, fullText: r[4]||''});
+  });
+
+  // Group by product
+  const tpHyps = priorities.filter(p => {
+    const pl = (p.product||'').toLowerCase();
+    return pl.includes('tp') && !pl.includes('jf') && !pl.includes('по');
+  });
+  const jfHyps = priorities.filter(p => {
+    const pl = (p.product||'').toLowerCase();
+    return pl.includes('jf') || pl.includes('по');
+  });
+  const partnerHyps = priorities.filter(p => (p.status||'').toLowerCase().includes('партнёр'));
+
+  function statusTag(s) {
+    const sl = (s||'').toLowerCase();
+    if (sl.includes('масштаб')) return '<span class="tag tag-scale">масштабируем</span>';
+    if (sl.includes('дискавер')) return '<span class="tag tag-discover">дискаверим</span>';
+    if (sl.includes('партнёр')) return '<span class="tag tag-partner">партнёры</span>';
+    if (sl.includes('enterprise')) return '<span class="tag tag-jf">enterprise</span>';
+    if (sl.includes('middle')) return '<span class="tag tag-discover">middle</span>';
+    if (s) return `<span class="tag tag-plan">${s}</span>`;
+    return '';
+  }
+
+  function hypRow(p) {
+    const collected = p.td ? p.td.total : 0;
+    const pctCol = p.vol > 0 ? Math.round(collected/p.vol*100) : 0;
+    const pctClass = pctCol >= 80 ? 'good' : pctCol >= 30 ? 'warn' : '';
+    const prodLow = (p.product||'').toLowerCase();
+    const prodTag = prodLow.includes('tp') && (prodLow.includes('jf')||prodLow.includes('по'))
+      ? '<span class="tag tag-both">TP+JF</span>'
+      : prodLow.includes('tp') ? '<span class="tag tag-tp">TP</span>'
+      : (prodLow.includes('jf')||prodLow.includes('по')) ? '<span class="tag tag-jf">JF</span>' : '';
+    return `<tr>
+      <td>${prodTag}</td>
+      <td><strong>${p.name}</strong></td>
+      <td>${statusTag(p.status)}</td>
+      <td style="font-size:12px">${p.channel}</td>
+      <td style="font-size:12px">${p.executor}</td>
+      <td style="text-align:right;font-variant-numeric:tabular-nums">${p.vol ? p.vol.toLocaleString() : '-'}</td>
+      <td style="text-align:right;font-variant-numeric:tabular-nums">${collected ? `<span class="${pctClass}">${collected.toLocaleString()}</span>` : '-'}</td>
+      <td style="text-align:right;font-variant-numeric:tabular-nums;font-weight:600">${p.sql || '-'}</td>
+    </tr>`;
+  }
+
+  const tpTotal = tpHyps.reduce((s,p) => s + (p.vol||0), 0);
+  const jfTotal = jfHyps.reduce((s,p) => s + (p.vol||0), 0);
+  const tpCollected = tpHyps.reduce((s,p) => s + (p.td ? p.td.total : 0), 0);
+  const jfCollected = jfHyps.reduce((s,p) => s + (p.td ? p.td.total : 0), 0);
+
+  el.innerHTML = `
+    <div class="focus-grid">
+      <div class="prod-card" style="border-left: 3px solid var(--tp)">
+        <h3><span class="prod-tag tag-tp">TalentPay</span> Международные выплаты</h3>
+        <div class="icp-list">
+          <span class="icp-role">CEO, Founders</span> стартапов/IT с удалёнными командами<br>
+          <span class="icp-role">HRD</span> компаний с распределёнными командами <span class="icp-gap">ГЭП</span><br>
+          <span class="icp-role">CFO</span> IT-компаний на УСН <span class="icp-gap">ГЭП</span>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+          Гипотез: ${tpHyps.length} - Объем: ${tpTotal.toLocaleString()} - Собрано: ${tpCollected.toLocaleString()}
+        </div>
+      </div>
+      <div class="prod-card" style="border-left: 3px solid var(--jf)">
+        <h3><span class="prod-tag tag-jf">JustFinTech</span> Оплата зарубежного ПО</h3>
+        <div class="icp-list">
+          <span class="icp-role">CTO, CIO</span> средних и крупных компаний <span class="icp-gap">ГЭП</span><br>
+          <span class="icp-role">CISO</span> компаний, закупающих ИБ-решения<br>
+          <span class="icp-role">Директора по закупкам</span> средних и крупных компаний
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+          Гипотез: ${jfHyps.length} - Объем: ${jfTotal.toLocaleString()} - Собрано: ${jfCollected.toLocaleString()}
+        </div>
+      </div>
+    </div>
+
+    <div class="gap-section">
+      <div class="gap-title">ICP-анализ собранной базы <span style="font-size:12px;font-weight:400;color:var(--text2)">(${grand.toLocaleString()} контактов с должностями)</span></div>
+      <div class="gap-bars">${gapHtml}</div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi-sm">Аутрич sent<strong>${outTotals.sent.toLocaleString()}</strong></div>
+      <div class="kpi-sm">Replied<strong>${outTotals.replied}</strong></div>
+      <div class="kpi-sm">MQL<strong>${outTotals.mql}</strong></div>
+      <div class="kpi-sm">Квалов<strong>${outTotals.qual}</strong></div>
+      <div class="kpi-sm">КП<strong>${outTotals.kp}</strong></div>
+    </div>
+
+    <div class="priority-section">
+      <div class="priority-title">TalentPay - ${tpHyps.length} гипотез</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Прод.</th><th>Гипотеза</th><th>Стадия</th><th>Канал</th><th>Кто</th><th style="text-align:right">Объем</th><th style="text-align:right">Собрано</th><th style="text-align:right">SQL цель</th></tr></thead>
+          <tbody>${tpHyps.map(hypRow).join('')}</tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="priority-section">
+      <div class="priority-title">JustFinTech / ПО - ${jfHyps.length} гипотез</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Прод.</th><th>Гипотеза</th><th>Стадия</th><th>Канал</th><th>Кто</th><th style="text-align:right">Объем</th><th style="text-align:right">Собрано</th><th style="text-align:right">SQL цель</th></tr></thead>
+          <tbody>${jfHyps.map(hypRow).join('')}</tbody>
+        </table>
+      </div>
+    </div>
+
+    ${partnerHyps.length ? `<div class="priority-section">
+      <div class="priority-title">Партнёрства - ${partnerHyps.length} гипотез</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Прод.</th><th>Гипотеза</th><th>Стадия</th><th>Канал</th><th>Кто</th><th style="text-align:right">Объем</th><th style="text-align:right">Собрано</th><th style="text-align:right">SQL цель</th></tr></thead>
+          <tbody>${partnerHyps.map(hypRow).join('')}</tbody>
+        </table>
+      </div>
+    </div>` : ''}
+  `;
 }
 
+// --- MAP TAB ---
 function renderMap() {
   if (!dashboardData || dashboardData.length < 2) return;
   const rows = dashboardData.slice(1);
@@ -231,121 +481,32 @@ function renderMap() {
 
   const SHEET_ID = '1NKM9sXp6eTCttKEVS49LWKZHKHS6mvqkWhdLJW3mx0Q';
   const TAB_GIDS = [
-    {gid:1657948229, keys:['ростом штата (сергей)']},
-    {gid:2019668150, keys:['rusprofile крупные','rusprofile топ-5']},
-    {gid:1318689967, keys:['tt - digital/it']},
-    {gid:322523529, keys:['tt - бизнес рф']},
-    {gid:1973398701, keys:['tt - за рубежом']},
-    {gid:791061665, keys:['tt - стартапы']},
-    {gid:739983684, keys:['astana hub, it park','технопарки рф - мик']},
-    {gid:1342331118, keys:['покупная база it']},
-    {gid:944291444, keys:['технопарки 2 -','технопарки рф - все источники']},
-    {gid:739983684, keys:['технопарки рф - apollo']},
-    {gid:195439838, keys:['рекрутерские tg чаты']},
-    {gid:1402012398, keys:['агентства researchops']},
-    {gid:144664542, keys:['leadget тест']},
-    {gid:1060427050, keys:['4cio']},
-    {gid:1338257050, keys:['ai-интеграторы']},
-    {gid:1338257099, keys:['linkedin рекомендации профилей']},
-    {gid:223896132, keys:['russoft (ассоциация)','russoft\n']},
-    {gid:1063201121, keys:['арпп']},
-    {gid:699977131, keys:['рейтинг рунета']},
-    {gid:601206645, keys:['раэк']},
-    {gid:2141711364, keys:['data insight top']},
+    {gid:1657948229,keys:['ростом штата (сергей)']},
+    {gid:2019668150,keys:['rusprofile крупные','rusprofile топ-5']},
+    {gid:1318689967,keys:['tt - digital/it']},{gid:322523529,keys:['tt - бизнес рф']},
+    {gid:1973398701,keys:['tt - за рубежом']},{gid:791061665,keys:['tt - стартапы']},
+    {gid:739983684,keys:['astana hub, it park','технопарки рф - мик']},
+    {gid:1342331118,keys:['покупная база it']},
+    {gid:944291444,keys:['технопарки 2 -','технопарки рф - все источники']},
+    {gid:739983684,keys:['технопарки рф - apollo']},
+    {gid:195439838,keys:['рекрутерские tg чаты']},
+    {gid:1402012398,keys:['агентства researchops']},
+    {gid:144664542,keys:['leadget тест']},{gid:1060427050,keys:['4cio']},
+    {gid:1338257050,keys:['ai-интеграторы']},
+    {gid:1338257099,keys:['linkedin рекомендации профилей']},
+    {gid:223896132,keys:['russoft (ассоциация)','russoft\n']},
+    {gid:1063201121,keys:['арпп']},{gid:699977131,keys:['рейтинг рунета']},
+    {gid:601206645,keys:['раэк']},{gid:2141711364,keys:['data insight top']},
   ];
 
   function findGid(text) {
     const t = (text||'').toLowerCase();
-    for (const tab of TAB_GIDS) {
-      if (tab.keys.some(k => t.includes(k))) return tab.gid;
-    }
+    for (const tab of TAB_GIDS) { if (tab.keys.some(k => t.includes(k))) return tab.gid; }
     return null;
   }
   function sheetUrl(gid) { return `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=${gid}`; }
 
-  // Map hypothesis text to titlesData keys
-  const HYP_DATA_MAP = [
-    {keys: ['ростом штата (сергей)'], src: ['sergey']},
-    {keys: ['rusprofile крупные'], src: ['rusprofile']},
-    {keys: ['rusprofile топ-5'], src: ['rusprofile']},
-    {keys: ['tt - digital/it'], src: ['tt_digital']},
-    {keys: ['tt - бизнес рф'], src: ['tt_bizrf']},
-    {keys: ['tt - за рубежом'], src: ['tt_abroad']},
-    {keys: ['tt - стартапы'], src: ['tt_startups']},
-    {keys: ['astana hub, it park','технопарки рф - мик'], src: ['technoparks']},
-    {keys: ['технопарки рф - apollo'], src: ['technoparks']},
-    {keys: ['технопарки 2 -'], src: ['technoparks2']},
-    {keys: ['технопарки рф - все источники'], src: ['technoparks','technoparks2']},
-    {keys: ['покупная база it'], src: ['pokupnaya']},
-    {keys: ['рекрутерские tg чаты'], src: ['recruiter_chats']},
-    {keys: ['агентства researchops'], src: ['agencies']},
-    {keys: ['leadget тест'], src: ['leadget']},
-    {keys: ['4cio'], src: ['4cio']},
-    {keys: ['ai-интеграторы'], src: ['ai_integrators']},
-    {keys: ['linkedin рекомендации профилей'], src: ['linkedin_recs']},
-    {keys: ['russoft (ассоциация)','russoft\n'], src: ['russoft']},
-    {keys: ['арпп'], src: ['arpp']},
-    {keys: ['рейтинг рунета'], src: ['rating_runeta']},
-    {keys: ['раэк'], src: ['raek']},
-    {keys: ['data insight top'], src: ['data_insight']},
-  ];
-
-  function getTitleData(hypText) {
-    if (!titlesData) return null;
-    const t = (hypText||'').toLowerCase();
-    for (const m of HYP_DATA_MAP) {
-      if (m.keys.some(k => t.includes(k))) {
-        // Merge multiple sources
-        const merged = {total: 0, with_title: 0, buckets: {}};
-        for (const src of m.src) {
-          const d = titlesData[src];
-          if (!d || d.error) continue;
-          merged.total += d.total;
-          merged.with_title += d.with_title;
-          for (const [k,v] of Object.entries(d.buckets||{})) {
-            merged.buckets[k] = (merged.buckets[k]||0) + v;
-          }
-        }
-        return merged.total > 0 ? merged : null;
-      }
-    }
-    return null;
-  }
-
-  const BUCKET_COLORS = {
-    'CEO/Founder': 'tb-ceo',
-    'CTO/Tech': 'tb-cto',
-    'CIO/IT': 'tb-cio',
-    'CFO/Finance': 'tb-cfo',
-    'HRD/HR': 'tb-hr',
-    'COO/Ops': 'tb-coo',
-    'Director/Other': 'tb-dir',
-    'Manager': 'tb-mgr',
-    'Other': 'tb-oth',
-  };
-  const BUCKET_ORDER = ['CEO/Founder','CTO/Tech','CIO/IT','CFO/Finance','HRD/HR','COO/Ops','Director/Other','Manager','Other'];
-
-  function renderTitleBar(td) {
-    if (!td || td.total === 0) return '<span style="color:var(--text2);font-size:11px">-</span>';
-    const total = td.with_title || td.total;
-    let bar = '<div class="title-bars">';
-    let detail = [];
-    for (const b of BUCKET_ORDER) {
-      const n = td.buckets[b] || 0;
-      if (n === 0) continue;
-      const pct = (n / total * 100);
-      bar += `<span class="${BUCKET_COLORS[b]}" style="width:${pct}%" title="${b}: ${n}"></span>`;
-      detail.push(`${b.split('/')[0]} ${n}`);
-    }
-    bar += '</div>';
-    bar += `<div class="title-detail">${detail.join(' - ')}</div>`;
-    return bar;
-  }
-
-  // Separate summary rows, association rows, and regular hypothesis rows
-  const regular = [];
-  const associations = [];
-  const summaries = [];
+  const regular = [], associations = [], summaries = [];
   let curMarket = '', curProduct = '';
 
   rows.forEach(r => {
@@ -354,114 +515,75 @@ function renderMap() {
     if (r[0]) curMarket = r[0];
     if (r[1]) curProduct = r[1];
     if (c0.startsWith('итого')) {
-      summaries.push({row: r, market: curMarket, product: curProduct});
+      summaries.push({row:r, market:curMarket, product:curProduct});
     } else if (['russoft','арпп','рейтинг рунета','раэк','data insight'].some(k => c0.includes(k))) {
-      associations.push({row: r, market: r[0], product: r[1]});
+      associations.push({row:r, market:r[0], product:r[1]});
     } else {
-      regular.push({row: r, market: curMarket, product: curProduct});
+      regular.push({row:r, market:curMarket, product:curProduct});
     }
   });
 
-  // Final order: regular hypotheses, then associations, then summaries
   const ordered = [...regular, ...associations, ...summaries];
-
   const maxVol = Math.max(...ordered.filter(d => !d.row[0].toLowerCase().startsWith('итого')).map(d => parseInt(d.row[9])||0));
 
-  thead.innerHTML = '<tr><th>Рынок</th><th>Продукт</th><th>Гео</th><th>Гипотеза</th><th>Рыночный сегмент</th><th>Канал</th><th>Исполнитель</th><th>Объем</th><th>Собрано</th><th>Должности</th></tr>';
+  thead.innerHTML = '<tr><th>Рынок</th><th>Продукт</th><th>Гео</th><th>Гипотеза</th><th>Рыночный сегмент</th><th>Канал</th><th>Кто</th><th>Объем</th><th>Собрано</th><th>Должности</th></tr>';
 
   tbody.innerHTML = ordered.map(d => {
     const r = d.row;
     const c0 = (r[0]||'').toLowerCase();
-    const isSummary = c0.startsWith('итого');
-    if (isSummary) {
+    if (c0.startsWith('итого')) {
       return `<tr class="summary-row"><td colspan="10"><strong>${r[0]}</strong> ${r[1]||''} &nbsp; Объем: ${r[9]||''}</td></tr>`;
     }
 
-    // Market tag
     const mkt = d.market || '';
     const mktLow = mkt.toLowerCase();
     let mktTag = '';
-    if (mktLow.includes('мир-рф')) mktTag = `<span class="tag tag-market-mir">МИР-РФ</span>`;
-    else if (mktLow.includes('рф-мир')) mktTag = `<span class="tag tag-market-rf">РФ-МИР</span>`;
+    if (mktLow.includes('мир-рф')) mktTag = '<span class="tag tag-market-mir">МИР-РФ</span>';
+    else if (mktLow.includes('рф-мир')) mktTag = '<span class="tag tag-market-rf">РФ-МИР</span>';
     else if (mkt) mktTag = `<span class="tag" style="background:var(--accent-light);color:var(--accent)">${mkt}</span>`;
 
-    // Product tag
     const prod = d.product || '';
     const prodLow = prod.toLowerCase();
     let prodTag = '';
-    if (prodLow.includes('tp') && (prodLow.includes('jf') || prodLow.includes('по'))) prodTag = `<span class="tag tag-prod-both">${prod}</span>`;
-    else if (prodLow.includes('tp')) prodTag = `<span class="tag tag-prod-tp">${prod}</span>`;
-    else if (prodLow.includes('jf') || prodLow.includes('по')) prodTag = `<span class="tag tag-prod-jf">${prod}</span>`;
+    if (prodLow.includes('tp') && (prodLow.includes('jf')||prodLow.includes('по'))) prodTag = `<span class="tag tag-both">${prod}</span>`;
+    else if (prodLow.includes('tp')) prodTag = '<span class="tag tag-tp">'+prod+'</span>';
+    else if (prodLow.includes('jf')||prodLow.includes('по')) prodTag = '<span class="tag tag-jf">'+prod+'</span>';
     else if (prod) prodTag = `<span class="tag">${prod}</span>`;
 
-    // Hypothesis with hyperlink
     const hypText = r[4] || '';
     const gid = findGid(hypText) ?? findGid(r[0]);
     const hypHtml = gid !== null
       ? `<a class="hyp-link" href="${sheetUrl(gid)}" target="_blank">${hypText.replace(/\n/g,'<br>')}</a>`
       : hypText.replace(/\n/g,'<br>');
 
-    // Market segment formatting
     let seg = r[5] || '';
     seg = seg.replace(/\n/g, '<br>');
     seg = seg.replace(/(ICP:\s*)/gi, '<br><span class="seg-label">ICP:</span> ');
     seg = seg.replace(/(Боль:\s*)/gi, '<br><span class="seg-label">Боль:</span> ');
     seg = `<div class="seg-text">${seg}</div>`;
 
-    // Volume bar
     const vol = parseInt(r[9]) || 0;
-    const pct = maxVol ? Math.round(vol / maxVol * 100) : 0;
+    const pct = maxVol ? Math.round(vol/maxVol*100) : 0;
     const volHtml = vol ? `<div class="vol-bar"><span>${vol.toLocaleString()}</span><div class="vol-bar-bg"><span class="vol-bar-fill" style="width:${pct}%"></span></div></div>` : '';
 
-    // Collected data and title distribution
     const td = getTitleData(hypText);
     const target = parseInt(r[9]) || 0;
     let collectedHtml = '<span style="color:var(--text2);font-size:11px">-</span>';
     if (td && td.total > 0) {
-      const pctOfTarget = target > 0 ? Math.round(td.total / target * 100) : 0;
+      const pctOfTarget = target > 0 ? Math.round(td.total/target*100) : 0;
       const pctClass = pctOfTarget >= 80 ? 'good' : pctOfTarget >= 30 ? 'warn' : '';
       collectedHtml = `<div class="collected-cell"><strong>${td.total.toLocaleString()}</strong>`;
       if (target > 0) collectedHtml += ` <span class="pct ${pctClass}">${pctOfTarget}%</span>`;
       collectedHtml += '</div>';
     }
-    const titlesHtml = renderTitleBar(td);
 
     return `<tr>
-      <td>${mktTag}</td>
-      <td>${prodTag}</td>
-      <td>${r[2]||''}</td>
-      <td>${hypHtml}</td>
-      <td>${seg}</td>
-      <td>${r[7]||''}</td>
-      <td>${r[8]||''}</td>
-      <td>${volHtml}</td>
-      <td>${collectedHtml}</td>
-      <td>${titlesHtml}</td>
+      <td>${mktTag}</td><td>${prodTag}</td><td>${r[2]||''}</td>
+      <td>${hypHtml}</td><td>${seg}</td>
+      <td>${r[7]||''}</td><td>${r[8]||''}</td>
+      <td>${volHtml}</td><td>${collectedHtml}</td>
+      <td>${renderTitleBar(td)}</td>
     </tr>`;
-  }).join('');
-}
-
-function renderBases() {
-  if (!basesData || !basesData.bases) return;
-  const bases = basesData.bases.sort((a,b) => (b.sent||0) - (a.sent||0));
-
-  const totSent = bases.reduce((s,b) => s+(b.sent||0), 0);
-  const totRepl = bases.reduce((s,b) => s+Math.round((b.sent||0)*(b.reply_pct||0)/100), 0);
-  document.getElementById('bases-kpis').innerHTML = `
-    <div class="kpi-sm">Баз<strong>${bases.length}</strong></div>
-    <div class="kpi-sm">Всего отправлено<strong>${totSent.toLocaleString()}</strong></div>
-    <div class="kpi-sm">Всего ответов<strong>~${totRepl.toLocaleString()}</strong></div>
-  `;
-
-  const thead = document.querySelector('#bases-table thead');
-  const tbody = document.querySelector('#bases-table tbody');
-  thead.innerHTML = '<tr><th>Источник</th><th>Sent</th><th>~Replied</th><th>Reply%</th><th>MQL%</th><th>Burn</th></tr>';
-  tbody.innerHTML = bases.filter(b => b.sent > 0).map(b => {
-    const rr = b.reply_pct != null ? b.reply_pct.toFixed(1) : '0';
-    const mr = b.mql_pct != null ? b.mql_pct.toFixed(1) : '0';
-    const replied = Math.round((b.sent||0) * (b.reply_pct||0) / 100);
-    const burnTag = b.burn ? '<span class="tag tag-paused">burn</span>' : '';
-    return `<tr><td>${b.source||b.name||''}</td><td>${b.sent}</td><td>${replied}</td><td>${rr}%</td><td>${mr}%</td><td>${burnTag}</td></tr>`;
   }).join('');
 }
 
