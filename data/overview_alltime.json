@@ -1,0 +1,21 @@
+{
+  "tg": {
+    "sent": 6792,
+    "replied": 1884,
+    "mql": 265,
+    "qual": 50,
+    "zvonok": 22,
+    "kp": 22,
+    "dogovor": 4,
+    "sdelka": 1
+  },
+  "apollo": {
+    "sent": 8300,
+    "replied": 27
+  },
+  "months": [
+    "2026-09",
+    "2026-08",
+    "2026-07"
+  ]
+}

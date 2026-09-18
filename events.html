@@ -239,7 +239,7 @@ a.site-link { color: var(--accent); text-decoration: none; font-size: 12px; }
 </div>
 
 <script>
-let funnelData, eventsData, edemData, overviewData, eventOutreachData;
+let funnelData, eventsData, edemData, overviewData, eventOutreachData, alltimeData;
 let activeProduct = 'all';
 let activeFilter = 'future';
 
@@ -289,12 +289,13 @@ function pct(a, b) { return b > 0 ? (a / b * 100).toFixed(1) + '%' : '-'; }
 function costPer(cost, n) { return n > 0 && cost > 0 ? Math.round(cost / n).toLocaleString() + ' ₽' : '-'; }
 
 async function init() {
-  [funnelData, eventsData, edemData, overviewData, eventOutreachData] = await Promise.all([
+  [funnelData, eventsData, edemData, overviewData, eventOutreachData, alltimeData] = await Promise.all([
     fetch('data/event_funnel.json?v='+Date.now()).then(r => r.json()).catch(() => []),
     fetch('data/events.json?v='+Date.now()).then(r => r.json()).catch(() => []),
     fetch('data/edem.json?v='+Date.now()).then(r => r.json()).catch(() => []),
     fetch('data/overview.json?v='+Date.now()).then(r => r.json()).catch(() => null),
     fetch('data/event_outreach.json?v='+Date.now()).then(r => r.json()).catch(() => []),
+    fetch('data/overview_alltime.json?v='+Date.now()).then(r => r.json()).catch(() => null),
   ]);
   renderFunnelCompare();
   renderProductToggle();
@@ -322,8 +323,9 @@ function renderFunnelCompare() {
   const tpContract = real.filter(r => r.product === 'TP').reduce((s, r) => s + r.contract, 0);
   const jfContract = real.filter(r => r.product === 'JF').reduce((s, r) => s + r.contract, 0);
 
-  const tg = overviewData ? overviewData.tg : {sent:0,replied:0,mql:0,qual:0,kp:0,dogovor:0,sdelka:0};
-  const apo = overviewData ? overviewData.apollo : {sent:0,replied:0};
+  const src = alltimeData || overviewData || {};
+  const tg = src.tg || {sent:0,replied:0,mql:0,qual:0,kp:0,dogovor:0,sdelka:0};
+  const apo = src.apollo || {sent:0,replied:0};
   const outSent = tg.sent + apo.sent;
   const outMql = tg.mql;
   const outKp = tg.kp;
@@ -362,7 +364,7 @@ function renderFunnelCompare() {
       </div>
     </div>
     <div class="fc-card">
-      <h2><span class="fc-icon">💬</span> Онлайн аутрич <span style="font-size:12px;font-weight:400;color:var(--text2)">(весь)</span></h2>
+      <h2><span class="fc-icon">💬</span> Онлайн аутрич <span style="font-size:12px;font-weight:400;color:var(--text2)">(всё время)</span></h2>
       <div class="fc-metrics">
         <div class="fc-metric"><div class="fc-label">MQL</div><div class="fc-val">${outMql}</div><div class="fc-sub">${outSent.toLocaleString()} отправлено</div></div>
         <div class="fc-metric"><div class="fc-label">КП</div><div class="fc-val">${outKp}</div><div class="fc-sub">${pct(outKp, outMql)} из MQL</div></div>

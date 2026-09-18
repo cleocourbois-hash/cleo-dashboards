@@ -38,6 +38,31 @@ def fetch_funnel_api():
         except Exception as e:
             print(f"ERR: {name} - {e}", file=sys.stderr)
 
+    # Build all-time overview by summing across all available months
+    try:
+        req = urllib.request.Request(f"{base}/api/source_analytics", headers=headers)
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            sa = json.loads(resp.read())
+        months = sa.get("months", [])
+
+        alltime_tg = {"sent": 0, "replied": 0, "mql": 0, "qual": 0, "zvonok": 0, "kp": 0, "dogovor": 0, "sdelka": 0}
+        alltime_apollo = {"sent": 0, "replied": 0}
+        for month in months:
+            req = urllib.request.Request(f"{base}/api/overview?month={month}", headers=headers)
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                ov = json.loads(resp.read())
+            for k in alltime_tg:
+                alltime_tg[k] += ov.get("tg", {}).get(k, 0) or 0
+            for k in alltime_apollo:
+                alltime_apollo[k] += ov.get("apollo", {}).get(k, 0) or 0
+
+        alltime = {"tg": alltime_tg, "apollo": alltime_apollo, "months": months}
+        with open(os.path.join(DATA_DIR, "overview_alltime.json"), "w") as f:
+            json.dump(alltime, f, ensure_ascii=False, indent=2)
+        print(f"OK: overview_alltime ({len(months)} months)")
+    except Exception as e:
+        print(f"ERR: overview_alltime - {e}", file=sys.stderr)
+
 
 def normalize_title(t):
     if not t:
