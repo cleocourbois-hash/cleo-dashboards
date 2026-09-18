@@ -8,7 +8,7 @@
   "mode": "kp",
   "cur_label": "сен 2026",
   "prev_label": "авг 2026",
-  "sent_total": 1516,
+  "sent_total": 1674,
   "kp_total": 8,
   "rows": [
     {
@@ -49,7 +49,7 @@
     },
     {
       "source": "Не указано",
-      "sent": 6,
+      "sent": 11,
       "reply_pct": 100.0,
       "kp": 1,
       "kp_prev": 1,
@@ -120,6 +120,18 @@
       "flag_drop": false
     },
     {
+      "source": "Rusprofile",
+      "sent": 85,
+      "reply_pct": 9.4,
+      "kp": 0,
+      "kp_prev": 0,
+      "kp1000": 0.0,
+      "small": false,
+      "flag_rocket": false,
+      "flag_waste": false,
+      "flag_drop": false
+    },
+    {
       "source": "@Oskar_Hartmann (комментаторы)",
       "sent": 74,
       "reply_pct": 13.5,
@@ -170,7 +182,7 @@
     {
       "source": "@Resident Accounting",
       "sent": 52,
-      "reply_pct": 26.9,
+      "reply_pct": 28.8,
       "kp": 0,
       "kp_prev": 0,
       "kp1000": 0.0,
@@ -276,6 +288,18 @@
       "flag_drop": false
     },
     {
+      "source": "@skolkovodubai",
+      "sent": 28,
+      "reply_pct": 28.6,
+      "kp": 0,
+      "kp_prev": 0,
+      "kp1000": 0.0,
+      "small": false,
+      "flag_rocket": false,
+      "flag_waste": false,
+      "flag_drop": false
+    },
+    {
       "source": "@Innovators_msk_chat (комментаторы)",
       "sent": 28,
       "reply_pct": 32.1,
@@ -300,13 +324,25 @@
       "flag_drop": false
     },
     {
-      "source": "Digital Club",
-      "sent": 19,
-      "reply_pct": 63.2,
+      "source": "@spbcioclub (комментаторы)",
+      "sent": 23,
+      "reply_pct": 34.8,
       "kp": 0,
       "kp_prev": 0,
-      "kp1000": null,
-      "small": true,
+      "kp1000": 0.0,
+      "small": false,
+      "flag_rocket": false,
+      "flag_waste": false,
+      "flag_drop": false
+    },
+    {
+      "source": "Digital Club",
+      "sent": 20,
+      "reply_pct": 60.0,
+      "kp": 0,
+      "kp_prev": 0,
+      "kp1000": 0.0,
+      "small": false,
       "flag_rocket": false,
       "flag_waste": false,
       "flag_drop": false
@@ -336,9 +372,9 @@
       "flag_drop": false
     },
     {
-      "source": "C-Level Days",
+      "source": "@startup_breakfast",
       "sent": 14,
-      "reply_pct": 64.3,
+      "reply_pct": 21.4,
       "kp": 0,
       "kp_prev": 0,
       "kp1000": null,
@@ -348,9 +384,9 @@
       "flag_drop": false
     },
     {
-      "source": "@skolkovodubai",
-      "sent": 13,
-      "reply_pct": 15.4,
+      "source": "C-Level Days",
+      "sent": 14,
+      "reply_pct": 64.3,
       "kp": 0,
       "kp_prev": 0,
       "kp1000": null,
@@ -444,6 +480,18 @@
       "flag_drop": false
     },
     {
+      "source": "@makrushin (комментаторы)",
+      "sent": 8,
+      "reply_pct": 37.5,
+      "kp": 0,
+      "kp_prev": 0,
+      "kp1000": null,
+      "small": true,
+      "flag_rocket": false,
+      "flag_waste": false,
+      "flag_drop": false
+    },
+    {
       "source": "@ruminblog (комментаторы)",
       "sent": 8,
       "reply_pct": 50.0,
@@ -457,8 +505,8 @@
     },
     {
       "source": "Телеграм база 10к",
-      "sent": 7,
-      "reply_pct": 14.3,
+      "sent": 8,
+      "reply_pct": 12.5,
       "kp": 0,
       "kp_prev": 0,
       "kp1000": null,
@@ -483,6 +531,18 @@
       "source": "@portnyaginlive (комментаторы)",
       "sent": 5,
       "reply_pct": 20.0,
+      "kp": 0,
+      "kp_prev": 0,
+      "kp1000": null,
+      "small": true,
+      "flag_rocket": false,
+      "flag_waste": false,
+      "flag_drop": false
+    },
+    {
+      "source": "@romancev768 (комментаторы)",
+      "sent": 4,
+      "reply_pct": 25.0,
       "kp": 0,
       "kp_prev": 0,
       "kp1000": null,
@@ -528,6 +588,30 @@
       "flag_drop": false
     },
     {
+      "source": "@baza_directorov",
+      "sent": 2,
+      "reply_pct": 100.0,
+      "kp": 0,
+      "kp_prev": 3,
+      "kp1000": null,
+      "small": true,
+      "flag_rocket": false,
+      "flag_waste": false,
+      "flag_drop": true
+    },
+    {
+      "source": "@avleonov (комментаторы)",
+      "sent": 1,
+      "reply_pct": 0.0,
+      "kp": 0,
+      "kp_prev": 0,
+      "kp1000": null,
+      "small": true,
+      "flag_rocket": false,
+      "flag_waste": false,
+      "flag_drop": false
+    },
+    {
       "source": "@singularityfm (комментаторы)",
       "sent": 1,
       "reply_pct": 0.0,
@@ -562,18 +646,6 @@
       "flag_rocket": false,
       "flag_waste": false,
       "flag_drop": false
-    },
-    {
-      "source": "@baza_directorov",
-      "sent": 1,
-      "reply_pct": 100.0,
-      "kp": 0,
-      "kp_prev": 3,
-      "kp1000": null,
-      "small": true,
-      "flag_rocket": false,
-      "flag_waste": false,
-      "flag_drop": true
     },
     {
       "source": "C-Level Days VIP + C-Level Days",

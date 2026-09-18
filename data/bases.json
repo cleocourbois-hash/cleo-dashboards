@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-17 15:15",
-  "total_sent": 7646,
+  "updated_at": "2026-09-18 12:15",
+  "total_sent": 7805,
   "bases": [
     {
       "source": "@baza_directorov",
@@ -19,8 +19,8 @@
     {
       "source": "Правила проекта Сколково (участники)",
       "sent": 289,
-      "reply_pct": 27.0,
-      "mql_pct": 3.1,
+      "reply_pct": 27.3,
+      "mql_pct": 3.5,
       "burn": false
     },
     {
@@ -157,10 +157,17 @@
       "burn": false
     },
     {
+      "source": "Rusprofile",
+      "sent": 83,
+      "reply_pct": 8.4,
+      "mql_pct": 1.2,
+      "burn": true
+    },
+    {
       "source": "Digital Club",
-      "sent": 79,
-      "reply_pct": 51.9,
-      "mql_pct": 7.6,
+      "sent": 80,
+      "reply_pct": 51.2,
+      "mql_pct": 7.5,
       "burn": false
     },
     {
@@ -292,7 +299,7 @@
     {
       "source": "@Resident Accounting",
       "sent": 52,
-      "reply_pct": 26.9,
+      "reply_pct": 28.8,
       "mql_pct": 5.8,
       "burn": false
     },
@@ -437,6 +444,13 @@
       "burn": false
     },
     {
+      "source": "Телеграм база 10к",
+      "sent": 31,
+      "reply_pct": 32.3,
+      "mql_pct": 3.2,
+      "burn": false
+    },
+    {
       "source": "Startup Village",
       "sent": 31,
       "reply_pct": 35.5,
@@ -455,13 +469,6 @@
       "sent": 31,
       "reply_pct": 12.9,
       "mql_pct": 0.0,
-      "burn": false
-    },
-    {
-      "source": "Телеграм база 10к",
-      "sent": 30,
-      "reply_pct": 33.3,
-      "mql_pct": 3.3,
       "burn": false
     },
     {
@@ -497,6 +504,13 @@
       "sent": 28,
       "reply_pct": 10.7,
       "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@skolkovodubai",
+      "sent": 27,
+      "reply_pct": 29.6,
+      "mql_pct": 7.4,
       "burn": false
     },
     {
@@ -545,6 +559,13 @@
       "source": "Builder Momentum (@builder_momentum)",
       "sent": 23,
       "reply_pct": 39.1,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "@spbcioclub (комментаторы)",
+      "sent": 23,
+      "reply_pct": 30.4,
       "mql_pct": 0.0,
       "burn": false
     },
@@ -731,6 +752,13 @@
       "burn": false
     },
     {
+      "source": "@startup_breakfast",
+      "sent": 14,
+      "reply_pct": 21.4,
+      "mql_pct": 7.1,
+      "burn": false
+    },
+    {
       "source": "TMA Builders Network",
       "sent": 13,
       "reply_pct": 38.5,
@@ -864,6 +892,20 @@
       "burn": false
     },
     {
+      "source": "@makrushin (комментаторы)",
+      "sent": 8,
+      "reply_pct": 37.5,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
+      "source": "Telegram",
+      "sent": 8,
+      "reply_pct": 100.0,
+      "mql_pct": 0.0,
+      "burn": false
+    },
+    {
       "source": "Бизнес-чат Ковалев",
       "sent": 7,
       "reply_pct": 0.0,
@@ -909,13 +951,6 @@
       "source": "Бехруз 2",
       "sent": 6,
       "reply_pct": 33.3,
-      "mql_pct": 0.0,
-      "burn": false
-    },
-    {
-      "source": "@skolkovodubai",
-      "sent": 6,
-      "reply_pct": 0.0,
       "mql_pct": 0.0,
       "burn": false
     },

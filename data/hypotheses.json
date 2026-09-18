@@ -9,10 +9,10 @@
         {
           "channel": "TG",
           "name": "@skolkovodubai",
-          "sent": 13,
-          "replied": 2,
-          "mql": 1,
-          "qual": 0,
+          "sent": 28,
+          "replied": 8,
+          "mql": 2,
+          "qual": 1,
           "zvonok": 0,
           "kp": 0,
           "dogovor": 0,
@@ -55,10 +55,10 @@
           "sdelka": 0
         }
       ],
-      "sent": 37,
-      "replied": 11,
-      "mql": 2,
-      "qual": 2,
+      "sent": 52,
+      "replied": 17,
+      "mql": 3,
+      "qual": 3,
       "zvonok": 2,
       "kp": 2,
       "dogovor": 0,
@@ -230,6 +230,18 @@
         },
         {
           "channel": "TG",
+          "name": "@spbcioclub (комментаторы)",
+          "sent": 23,
+          "replied": 8,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        {
+          "channel": "TG",
           "name": "@iGaming chat (комментаторы)",
           "sent": 17,
           "replied": 9,
@@ -290,6 +302,18 @@
         },
         {
           "channel": "TG",
+          "name": "@makrushin (комментаторы)",
+          "sent": 8,
+          "replied": 3,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        {
+          "channel": "TG",
           "name": "@portnyaginlive (комментаторы)",
           "sent": 5,
           "replied": 1,
@@ -314,7 +338,31 @@
         },
         {
           "channel": "TG",
+          "name": "@romancev768 (комментаторы)",
+          "sent": 4,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        {
+          "channel": "TG",
           "name": "@singularityfm (комментаторы)",
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        {
+          "channel": "TG",
+          "name": "@avleonov (комментаторы)",
           "sent": 1,
           "replied": 0,
           "mql": 0,
@@ -325,9 +373,9 @@
           "sdelka": 0
         }
       ],
-      "sent": 550,
-      "replied": 115,
-      "mql": 16,
+      "sent": 586,
+      "replied": 127,
+      "mql": 17,
       "qual": 4,
       "zvonok": 2,
       "kp": 2,
@@ -450,6 +498,18 @@
         },
         {
           "channel": "TG",
+          "name": "Rusprofile",
+          "sent": 85,
+          "replied": 8,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        {
+          "channel": "TG",
           "name": "Rusprofile parsing (Сергей ручной рисерч",
           "sent": 39,
           "replied": 6,
@@ -473,9 +533,9 @@
           "sdelka": null
         }
       ],
-      "sent": 325,
-      "replied": 41,
-      "mql": 4,
+      "sent": 410,
+      "replied": 49,
+      "mql": 6,
       "qual": 1,
       "zvonok": 0,
       "kp": 0,
@@ -484,13 +544,13 @@
     }
   ],
   "unassigned": {
-    "sent": 2781,
-    "replied": 151,
+    "sent": 2963,
+    "replied": 161,
     "members": [
       {
         "channel": "Apollo",
         "name": "Россия",
-        "sent": 2232,
+        "sent": 2373,
         "replied": 2,
         "mql": null,
         "qual": null,
@@ -515,7 +575,7 @@
         "channel": "TG",
         "name": "@Resident Accounting",
         "sent": 52,
-        "replied": 14,
+        "replied": 15,
         "mql": 3,
         "qual": 0,
         "zvonok": 0,
@@ -548,6 +608,18 @@
         "sdelka": 0
       },
       {
+        "channel": "Apollo",
+        "name": "TP - Balkans CEO IT — Cross-border Payments",
+        "sent": 43,
+        "replied": 0,
+        "mql": null,
+        "qual": null,
+        "zvonok": null,
+        "kp": null,
+        "dogovor": null,
+        "sdelka": null
+      },
+      {
         "channel": "TG",
         "name": "Бухгалтеры всея Руси",
         "sent": 41,
@@ -573,8 +645,8 @@
       },
       {
         "channel": "Apollo",
-        "name": "TP - Balkans CEO IT — Cross-border Payments",
-        "sent": 26,
+        "name": "Head of AI / Russia / AI offer",
+        "sent": 21,
         "replied": 0,
         "mql": null,
         "qual": null,
@@ -586,7 +658,7 @@
       {
         "channel": "TG",
         "name": "Digital Club",
-        "sent": 19,
+        "sent": 20,
         "replied": 12,
         "mql": 6,
         "qual": 0,
@@ -596,24 +668,24 @@
         "sdelka": 0
       },
       {
-        "channel": "Apollo",
-        "name": "Head of AI / Russia / AI offer",
-        "sent": 19,
-        "replied": 0,
-        "mql": null,
-        "qual": null,
-        "zvonok": null,
-        "kp": null,
-        "dogovor": null,
-        "sdelka": null
-      },
-      {
         "channel": "TG",
         "name": "heg.ai митап 27.08.2026",
         "sent": 18,
         "replied": 9,
         "mql": 5,
         "qual": 1,
+        "zvonok": 0,
+        "kp": 0,
+        "dogovor": 0,
+        "sdelka": 0
+      },
+      {
+        "channel": "TG",
+        "name": "@startup_breakfast",
+        "sent": 14,
+        "replied": 3,
+        "mql": 1,
+        "qual": 0,
         "zvonok": 0,
         "kp": 0,
         "dogovor": 0,
@@ -657,8 +729,20 @@
       },
       {
         "channel": "TG",
+        "name": "Не указано",
+        "sent": 11,
+        "replied": 11,
+        "mql": 5,
+        "qual": 1,
+        "zvonok": 1,
+        "kp": 1,
+        "dogovor": 0,
+        "sdelka": 0
+      },
+      {
+        "channel": "TG",
         "name": "Телеграм база 10к",
-        "sent": 7,
+        "sent": 8,
         "replied": 1,
         "mql": 1,
         "qual": 0,
@@ -681,18 +765,6 @@
       },
       {
         "channel": "TG",
-        "name": "Не указано",
-        "sent": 6,
-        "replied": 6,
-        "mql": 4,
-        "qual": 1,
-        "zvonok": 1,
-        "kp": 1,
-        "dogovor": 0,
-        "sdelka": 0
-      },
-      {
-        "channel": "TG",
         "name": "heg.ai офлайн-митап Москва",
         "sent": 6,
         "replied": 0,
@@ -709,6 +781,18 @@
         "sent": 2,
         "replied": 0,
         "mql": 0,
+        "qual": 0,
+        "zvonok": 0,
+        "kp": 0,
+        "dogovor": 0,
+        "sdelka": 0
+      },
+      {
+        "channel": "TG",
+        "name": "@baza_directorov",
+        "sent": 2,
+        "replied": 2,
+        "mql": 1,
         "qual": 0,
         "zvonok": 0,
         "kp": 0,
@@ -754,18 +838,6 @@
       {
         "channel": "TG",
         "name": "Португалия ИТ (@portugal_it) — участники",
-        "sent": 1,
-        "replied": 1,
-        "mql": 0,
-        "qual": 0,
-        "zvonok": 0,
-        "kp": 0,
-        "dogovor": 0,
-        "sdelka": 0
-      },
-      {
-        "channel": "TG",
-        "name": "@baza_directorov",
         "sent": 1,
         "replied": 1,
         "mql": 0,

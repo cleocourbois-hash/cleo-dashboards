@@ -446,20 +446,22 @@ function renderBases() {
   const bases = basesData.bases.sort((a,b) => (b.sent||0) - (a.sent||0));
 
   const totSent = bases.reduce((s,b) => s+(b.sent||0), 0);
-  const totRepl = bases.reduce((s,b) => s+(b.replied||0), 0);
+  const totRepl = bases.reduce((s,b) => s+Math.round((b.sent||0)*(b.reply_pct||0)/100), 0);
   document.getElementById('bases-kpis').innerHTML = `
     <div class="kpi-sm">Баз<strong>${bases.length}</strong></div>
     <div class="kpi-sm">Всего отправлено<strong>${totSent.toLocaleString()}</strong></div>
-    <div class="kpi-sm">Всего ответов<strong>${totRepl}</strong></div>
+    <div class="kpi-sm">Всего ответов<strong>~${totRepl.toLocaleString()}</strong></div>
   `;
 
   const thead = document.querySelector('#bases-table thead');
   const tbody = document.querySelector('#bases-table tbody');
-  thead.innerHTML = '<tr><th>Источник</th><th>Sent</th><th>Replied</th><th>Reply%</th><th>MQL</th><th>MQL%</th></tr>';
+  thead.innerHTML = '<tr><th>Источник</th><th>Sent</th><th>~Replied</th><th>Reply%</th><th>MQL%</th><th>Burn</th></tr>';
   tbody.innerHTML = bases.filter(b => b.sent > 0).map(b => {
-    const rr = b.sent ? (b.replied/b.sent*100).toFixed(1) : '0';
-    const mr = b.replied ? ((b.mql||0)/b.replied*100).toFixed(1) : '0';
-    return `<tr><td>${b.source||b.name||''}</td><td>${b.sent}</td><td>${b.replied||0}</td><td>${rr}%</td><td>${b.mql||0}</td><td>${mr}%</td></tr>`;
+    const rr = b.reply_pct != null ? b.reply_pct.toFixed(1) : '0';
+    const mr = b.mql_pct != null ? b.mql_pct.toFixed(1) : '0';
+    const replied = Math.round((b.sent||0) * (b.reply_pct||0) / 100);
+    const burnTag = b.burn ? '<span class="tag tag-paused">burn</span>' : '';
+    return `<tr><td>${b.source||b.name||''}</td><td>${b.sent}</td><td>${replied}</td><td>${rr}%</td><td>${mr}%</td><td>${burnTag}</td></tr>`;
   }).join('');
 }
 

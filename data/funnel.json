@@ -1,15 +1,15 @@
 {
   "month": "2026-09",
-  "updated_at": "2026-09-17T15:59:28.277653Z",
+  "updated_at": "2026-09-18T12:35:51.252872Z",
   "errors": {},
   "plan": null,
   "brands": {
     "tp": {
       "total": {
-        "sent": 1361,
-        "replied": 294,
-        "mql": 46,
-        "qual": 9,
+        "sent": 1516,
+        "replied": 327,
+        "mql": 52,
+        "qual": 10,
         "zvonok": 7,
         "kp": 7,
         "dogovor": 0,
@@ -17,9 +17,9 @@
       },
       "pos": {
         "CEO / Founder / Владелец": {
-          "sent": 911,
-          "replied": 181,
-          "mql": 27,
+          "sent": 1019,
+          "replied": 198,
+          "mql": 31,
           "qual": 6,
           "zvonok": 5,
           "kp": 5,
@@ -27,9 +27,9 @@
           "sdelka": 0
         },
         "Директор / Руководитель": {
-          "sent": 138,
-          "replied": 20,
-          "mql": 4,
+          "sent": 153,
+          "replied": 23,
+          "mql": 6,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -37,8 +37,8 @@
           "sdelka": 0
         },
         "Прочее / не указано": {
-          "sent": 106,
-          "replied": 27,
+          "sent": 119,
+          "replied": 32,
           "mql": 6,
           "qual": 1,
           "zvonok": 0,
@@ -47,12 +47,22 @@
           "sdelka": 0
         },
         "CTO / IT": {
-          "sent": 48,
-          "replied": 13,
+          "sent": 61,
+          "replied": 17,
           "mql": 3,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Продажи / BizDev": {
+          "sent": 46,
+          "replied": 21,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
           "dogovor": 0,
           "sdelka": 0
         },
@@ -63,16 +73,6 @@
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Продажи / BizDev": {
-          "sent": 42,
-          "replied": 18,
-          "mql": 2,
-          "qual": 1,
-          "zvonok": 1,
-          "kp": 1,
           "dogovor": 0,
           "sdelka": 0
         },
@@ -87,8 +87,8 @@
           "sdelka": 0
         },
         "CPO / Продукт": {
-          "sent": 16,
-          "replied": 4,
+          "sent": 17,
+          "replied": 5,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -97,10 +97,10 @@
           "sdelka": 0
         },
         "CFO / Финансы": {
-          "sent": 16,
+          "sent": 17,
           "replied": 6,
           "mql": 2,
-          "qual": 1,
+          "qual": 2,
           "zvonok": 1,
           "kp": 1,
           "dogovor": 0,
@@ -139,19 +139,19 @@
       },
       "geo": {
         "Не указано": {
-          "sent": 657,
-          "replied": 181,
-          "mql": 34,
-          "qual": 6,
+          "sent": 704,
+          "replied": 198,
+          "mql": 37,
+          "qual": 7,
           "zvonok": 4,
           "kp": 4,
           "dogovor": 0,
           "sdelka": 0
         },
         "Россия": {
-          "sent": 506,
-          "replied": 88,
-          "mql": 9,
+          "sent": 593,
+          "replied": 103,
+          "mql": 12,
           "qual": 1,
           "zvonok": 1,
           "kp": 1,
@@ -168,8 +168,18 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Свердловская область": {
+          "sent": 13,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Московская область": {
-          "sent": 11,
+          "sent": 13,
           "replied": 3,
           "mql": 0,
           "qual": 0,
@@ -178,9 +188,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Свердловская область": {
-          "sent": 10,
-          "replied": 1,
+        "Республика Татарстан": {
+          "sent": 12,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -198,9 +208,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Республика Татарстан": {
-          "sent": 10,
-          "replied": 0,
+        "Пермский край": {
+          "sent": 9,
+          "replied": 1,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -208,9 +218,39 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Пермский край": {
+        "Тульская область": {
           "sent": 8,
-          "replied": 0,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Новосибирская область": {
+          "sent": 8,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Самарская область": {
+          "sent": 7,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Краснодарский край": {
+          "sent": 7,
+          "replied": 1,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -228,47 +268,7 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Тульская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 1,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Челябинская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Новосибирская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Самарская область": {
-          "sent": 6,
-          "replied": 2,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Краснодарский край": {
           "sent": 6,
           "replied": 1,
           "mql": 0,
@@ -318,7 +318,27 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Калининградская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Иркутская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нижегородская область": {
           "sent": 4,
           "replied": 0,
           "mql": 0,
@@ -348,16 +368,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Калининградская область": {
-          "sent": 3,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Томская область": {
           "sent": 3,
           "replied": 0,
@@ -371,6 +381,16 @@
         "Башкортостан (Республика)": {
           "sent": 3,
           "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ставропольский край": {
+          "sent": 3,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -408,17 +428,7 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Ставропольский край": {
-          "sent": 2,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Нижегородская область": {
+        "Ленинградская область": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
@@ -429,6 +439,16 @@
           "sdelka": 0
         },
         "Воронежская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Белгородская область": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
@@ -548,16 +568,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Ленинградская область": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Оренбургская область": {
           "sent": 1,
           "replied": 0,
@@ -589,16 +599,6 @@
           "sdelka": 0
         },
         "Республика Крым": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Белгородская область": {
           "sent": 1,
           "replied": 0,
           "mql": 0,
@@ -678,6 +678,16 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Орловская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Россия (Москва/Сколково)": {
           "sent": 0,
           "replied": 0,
@@ -714,6 +724,16 @@
           "sent": 102,
           "replied": 21,
           "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Rusprofile": {
+          "sent": 84,
+          "replied": 8,
+          "mql": 2,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -762,7 +782,7 @@
         },
         "@Resident Accounting": {
           "sent": 52,
-          "replied": 14,
+          "replied": 15,
           "mql": 3,
           "qual": 0,
           "zvonok": 0,
@@ -860,8 +880,28 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@skolkovodubai": {
+          "sent": 28,
+          "replied": 8,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@spbcioclub (комментаторы)": {
+          "sent": 23,
+          "replied": 7,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Digital Club": {
-          "sent": 19,
+          "sent": 20,
           "replied": 12,
           "mql": 6,
           "qual": 0,
@@ -890,8 +930,8 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Dubai Startups": {
-          "sent": 13,
+        "@startup_breakfast": {
+          "sent": 14,
           "replied": 3,
           "mql": 1,
           "qual": 0,
@@ -900,9 +940,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "@skolkovodubai": {
+        "Dubai Startups": {
           "sent": 13,
-          "replied": 2,
+          "replied": 3,
           "mql": 1,
           "qual": 0,
           "zvonok": 0,
@@ -950,6 +990,26 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Не указано": {
+          "sent": 9,
+          "replied": 9,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Телеграм база 10к": {
+          "sent": 8,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "@ruminblog (комментаторы)": {
           "sent": 8,
           "replied": 4,
@@ -960,10 +1020,10 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Телеграм база 10к": {
-          "sent": 7,
-          "replied": 1,
-          "mql": 1,
+        "@makrushin (комментаторы)": {
+          "sent": 8,
+          "replied": 3,
+          "mql": 0,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -974,16 +1034,6 @@
           "sent": 7,
           "replied": 5,
           "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Не указано": {
-          "sent": 6,
-          "replied": 6,
-          "mql": 4,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -1010,10 +1060,30 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@romancev768 (комментаторы)": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Бехруз 2": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@baza_directorov": {
+          "sent": 2,
+          "replied": 2,
+          "mql": 1,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -1050,16 +1120,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "@baza_directorov": {
-          "sent": 1,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "@singularityfm (комментаторы)": {
           "sent": 1,
           "replied": 0,
@@ -1077,6 +1137,16 @@
           "qual": 2,
           "zvonok": 2,
           "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@avleonov (комментаторы)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
           "dogovor": 0,
           "sdelka": 0
         },
@@ -1104,9 +1174,9 @@
     },
     "jft": {
       "total": {
-        "sent": 1150,
-        "replied": 228,
-        "mql": 23,
+        "sent": 1285,
+        "replied": 251,
+        "mql": 26,
         "qual": 4,
         "zvonok": 1,
         "kp": 1,
@@ -1115,9 +1185,9 @@
       },
       "pos": {
         "CEO / Founder / Владелец": {
-          "sent": 782,
-          "replied": 138,
-          "mql": 11,
+          "sent": 877,
+          "replied": 151,
+          "mql": 14,
           "qual": 1,
           "zvonok": 0,
           "kp": 0,
@@ -1125,8 +1195,8 @@
           "sdelka": 0
         },
         "Директор / Руководитель": {
-          "sent": 132,
-          "replied": 18,
+          "sent": 146,
+          "replied": 21,
           "mql": 3,
           "qual": 0,
           "zvonok": 0,
@@ -1135,8 +1205,8 @@
           "sdelka": 0
         },
         "Прочее / не указано": {
-          "sent": 63,
-          "replied": 17,
+          "sent": 71,
+          "replied": 18,
           "mql": 1,
           "qual": 1,
           "zvonok": 0,
@@ -1145,8 +1215,8 @@
           "sdelka": 0
         },
         "CTO / IT": {
-          "sent": 40,
-          "replied": 13,
+          "sent": 53,
+          "replied": 17,
           "mql": 3,
           "qual": 1,
           "zvonok": 1,
@@ -1165,8 +1235,8 @@
           "sdelka": 0
         },
         "Продажи / BizDev": {
-          "sent": 33,
-          "replied": 13,
+          "sent": 37,
+          "replied": 14,
           "mql": 1,
           "qual": 0,
           "zvonok": 0,
@@ -1195,8 +1265,8 @@
           "sdelka": 0
         },
         "CPO / Продукт": {
-          "sent": 14,
-          "replied": 3,
+          "sent": 15,
+          "replied": 4,
           "mql": 0,
           "qual": 1,
           "zvonok": 0,
@@ -1236,28 +1306,38 @@
         }
       },
       "geo": {
-        "Не указано": {
-          "sent": 502,
-          "replied": 128,
-          "mql": 16,
-          "qual": 2,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Россия": {
-          "sent": 490,
-          "replied": 80,
-          "mql": 5,
+          "sent": 577,
+          "replied": 95,
+          "mql": 6,
           "qual": 2,
           "zvonok": 1,
           "kp": 1,
           "dogovor": 0,
           "sdelka": 0
         },
+        "Не указано": {
+          "sent": 529,
+          "replied": 135,
+          "mql": 18,
+          "qual": 2,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Свердловская область": {
+          "sent": 13,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Московская область": {
-          "sent": 11,
+          "sent": 13,
           "replied": 3,
           "mql": 0,
           "qual": 0,
@@ -1266,9 +1346,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Свердловская область": {
-          "sent": 10,
-          "replied": 1,
+        "Республика Татарстан": {
+          "sent": 12,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -1286,9 +1366,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Республика Татарстан": {
-          "sent": 10,
-          "replied": 0,
+        "Пермский край": {
+          "sent": 9,
+          "replied": 1,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -1296,9 +1376,39 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Пермский край": {
+        "Тульская область": {
           "sent": 8,
-          "replied": 0,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Новосибирская область": {
+          "sent": 8,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Самарская область": {
+          "sent": 7,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Краснодарский край": {
+          "sent": 7,
+          "replied": 1,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -1316,47 +1426,7 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Тульская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 1,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Челябинская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Новосибирская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Самарская область": {
-          "sent": 6,
-          "replied": 2,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Краснодарский край": {
           "sent": 6,
           "replied": 1,
           "mql": 0,
@@ -1406,7 +1476,27 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Калининградская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Иркутская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нижегородская область": {
           "sent": 4,
           "replied": 0,
           "mql": 0,
@@ -1436,16 +1526,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Калининградская область": {
-          "sent": 3,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Томская область": {
           "sent": 3,
           "replied": 0,
@@ -1459,6 +1539,16 @@
         "Башкортостан (Республика)": {
           "sent": 3,
           "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ставропольский край": {
+          "sent": 3,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -1496,17 +1586,7 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Ставропольский край": {
-          "sent": 2,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Нижегородская область": {
+        "Ленинградская область": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
@@ -1517,6 +1597,16 @@
           "sdelka": 0
         },
         "Воронежская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Белгородская область": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
@@ -1606,16 +1696,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Ленинградская область": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Оренбургская область": {
           "sent": 1,
           "replied": 0,
@@ -1647,16 +1727,6 @@
           "sdelka": 0
         },
         "Республика Крым": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Белгородская область": {
           "sent": 1,
           "replied": 0,
           "mql": 0,
@@ -1735,6 +1805,16 @@
           "kp": 0,
           "dogovor": 0,
           "sdelka": 0
+        },
+        "Орловская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
         }
       },
       "src": {
@@ -1763,6 +1843,16 @@
           "replied": 21,
           "mql": 2,
           "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Rusprofile": {
+          "sent": 84,
+          "replied": 8,
+          "mql": 1,
+          "qual": 0,
           "zvonok": 0,
           "kp": 0,
           "dogovor": 0,
@@ -1878,6 +1968,26 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@spbcioclub (комментаторы)": {
+          "sent": 23,
+          "replied": 7,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@startup_breakfast": {
+          "sent": 14,
+          "replied": 3,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "DeFrens (комментаторы)": {
           "sent": 12,
           "replied": 1,
@@ -1938,6 +2048,16 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@makrushin (комментаторы)": {
+          "sent": 8,
+          "replied": 3,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "iGaming Chat": {
           "sent": 6,
           "replied": 5,
@@ -1958,10 +2078,10 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "BalticDigitalDays chat — участники (@bdd": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
+        "@romancev768 (комментаторы)": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 1,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -1969,8 +2089,18 @@
           "sdelka": 0
         },
         "@baza_directorov": {
+          "sent": 2,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "BalticDigitalDays chat — участники (@bdd": {
           "sent": 1,
-          "replied": 1,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -2001,6 +2131,16 @@
         "Dubai Startups": {
           "sent": 1,
           "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@avleonov (комментаторы)": {
+          "sent": 1,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -2252,10 +2392,10 @@
   "groups": {
     "Все": {
       "total": {
-        "sent": 1516,
-        "replied": 330,
-        "mql": 55,
-        "qual": 14,
+        "sent": 1671,
+        "replied": 363,
+        "mql": 61,
+        "qual": 15,
         "zvonok": 8,
         "kp": 8,
         "dogovor": 0,
@@ -2263,9 +2403,9 @@
       },
       "pos": {
         "CEO / Founder / Владелец": {
-          "sent": 935,
-          "replied": 189,
-          "mql": 31,
+          "sent": 1043,
+          "replied": 206,
+          "mql": 35,
           "qual": 8,
           "zvonok": 5,
           "kp": 5,
@@ -2273,9 +2413,9 @@
           "sdelka": 0
         },
         "Директор / Руководитель": {
-          "sent": 142,
-          "replied": 21,
-          "mql": 4,
+          "sent": 157,
+          "replied": 24,
+          "mql": 6,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -2283,8 +2423,8 @@
           "sdelka": 0
         },
         "Прочее / не указано": {
-          "sent": 166,
-          "replied": 42,
+          "sent": 179,
+          "replied": 47,
           "mql": 11,
           "qual": 2,
           "zvonok": 0,
@@ -2293,9 +2433,19 @@
           "sdelka": 0
         },
         "CTO / IT": {
-          "sent": 55,
-          "replied": 15,
+          "sent": 68,
+          "replied": 19,
           "mql": 3,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Продажи / BizDev": {
+          "sent": 48,
+          "replied": 23,
+          "mql": 2,
           "qual": 1,
           "zvonok": 1,
           "kp": 1,
@@ -2312,16 +2462,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Продажи / BizDev": {
-          "sent": 44,
-          "replied": 20,
-          "mql": 2,
-          "qual": 1,
-          "zvonok": 1,
-          "kp": 1,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "COO / Операционка": {
           "sent": 19,
           "replied": 5,
@@ -2333,8 +2473,8 @@
           "sdelka": 0
         },
         "CPO / Продукт": {
-          "sent": 16,
-          "replied": 4,
+          "sent": 17,
+          "replied": 5,
           "mql": 0,
           "qual": 1,
           "zvonok": 0,
@@ -2343,10 +2483,10 @@
           "sdelka": 0
         },
         "CFO / Финансы": {
-          "sent": 72,
+          "sent": 73,
           "replied": 13,
           "mql": 2,
-          "qual": 1,
+          "qual": 2,
           "zvonok": 1,
           "kp": 1,
           "dogovor": 0,
@@ -2385,19 +2525,19 @@
       },
       "geo": {
         "Не указано": {
-          "sent": 657,
-          "replied": 181,
-          "mql": 34,
-          "qual": 8,
+          "sent": 704,
+          "replied": 198,
+          "mql": 37,
+          "qual": 9,
           "zvonok": 4,
           "kp": 4,
           "dogovor": 0,
           "sdelka": 0
         },
         "Россия": {
-          "sent": 595,
-          "replied": 108,
-          "mql": 17,
+          "sent": 682,
+          "replied": 123,
+          "mql": 20,
           "qual": 4,
           "zvonok": 2,
           "kp": 2,
@@ -2414,8 +2554,18 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Свердловская область": {
+          "sent": 13,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Московская область": {
-          "sent": 11,
+          "sent": 13,
           "replied": 3,
           "mql": 0,
           "qual": 0,
@@ -2424,9 +2574,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Свердловская область": {
-          "sent": 10,
-          "replied": 1,
+        "Республика Татарстан": {
+          "sent": 12,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -2444,9 +2594,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Республика Татарстан": {
-          "sent": 10,
-          "replied": 0,
+        "Пермский край": {
+          "sent": 9,
+          "replied": 1,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -2454,9 +2604,39 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Пермский край": {
+        "Тульская область": {
           "sent": 8,
-          "replied": 0,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Новосибирская область": {
+          "sent": 8,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Самарская область": {
+          "sent": 7,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Краснодарский край": {
+          "sent": 7,
+          "replied": 1,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -2474,47 +2654,7 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Тульская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 1,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Челябинская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Новосибирская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Самарская область": {
-          "sent": 6,
-          "replied": 2,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Краснодарский край": {
           "sent": 6,
           "replied": 1,
           "mql": 0,
@@ -2564,7 +2704,27 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Калининградская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Иркутская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нижегородская область": {
           "sent": 4,
           "replied": 0,
           "mql": 0,
@@ -2594,16 +2754,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Калининградская область": {
-          "sent": 3,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Томская область": {
           "sent": 3,
           "replied": 0,
@@ -2617,6 +2767,16 @@
         "Башкортостан (Республика)": {
           "sent": 3,
           "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ставропольский край": {
+          "sent": 3,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -2654,17 +2814,7 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Ставропольский край": {
-          "sent": 2,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Нижегородская область": {
+        "Ленинградская область": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
@@ -2675,6 +2825,16 @@
           "sdelka": 0
         },
         "Воронежская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Белгородская область": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
@@ -2794,16 +2954,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Ленинградская область": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Оренбургская область": {
           "sent": 1,
           "replied": 0,
@@ -2835,16 +2985,6 @@
           "sdelka": 0
         },
         "Республика Крым": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Белгородская область": {
           "sent": 1,
           "replied": 0,
           "mql": 0,
@@ -2924,6 +3064,16 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Орловская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Россия (Москва/Сколково)": {
           "sent": 0,
           "replied": 0,
@@ -2986,6 +3136,16 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Rusprofile": {
+          "sent": 84,
+          "replied": 8,
+          "mql": 2,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "@Oskar_Hartmann (комментаторы)": {
           "sent": 74,
           "replied": 10,
@@ -3028,7 +3188,7 @@
         },
         "@Resident Accounting": {
           "sent": 52,
-          "replied": 14,
+          "replied": 15,
           "mql": 3,
           "qual": 0,
           "zvonok": 0,
@@ -3126,8 +3286,28 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@skolkovodubai": {
+          "sent": 28,
+          "replied": 8,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@spbcioclub (комментаторы)": {
+          "sent": 23,
+          "replied": 7,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Digital Club": {
-          "sent": 19,
+          "sent": 20,
           "replied": 12,
           "mql": 6,
           "qual": 0,
@@ -3156,8 +3336,8 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Dubai Startups": {
-          "sent": 13,
+        "@startup_breakfast": {
+          "sent": 14,
           "replied": 3,
           "mql": 1,
           "qual": 0,
@@ -3166,9 +3346,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "@skolkovodubai": {
+        "Dubai Startups": {
           "sent": 13,
-          "replied": 2,
+          "replied": 3,
           "mql": 1,
           "qual": 0,
           "zvonok": 0,
@@ -3216,6 +3396,26 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Не указано": {
+          "sent": 9,
+          "replied": 9,
+          "mql": 4,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Телеграм база 10к": {
+          "sent": 8,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "@ruminblog (комментаторы)": {
           "sent": 8,
           "replied": 4,
@@ -3226,10 +3426,10 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Телеграм база 10к": {
-          "sent": 7,
-          "replied": 1,
-          "mql": 1,
+        "@makrushin (комментаторы)": {
+          "sent": 8,
+          "replied": 3,
+          "mql": 0,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -3243,16 +3443,6 @@
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Не указано": {
-          "sent": 6,
-          "replied": 6,
-          "mql": 4,
-          "qual": 1,
-          "zvonok": 1,
-          "kp": 1,
           "dogovor": 0,
           "sdelka": 0
         },
@@ -3276,10 +3466,30 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@romancev768 (комментаторы)": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Бехруз 2": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@baza_directorov": {
+          "sent": 2,
+          "replied": 2,
+          "mql": 1,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -3316,16 +3526,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "@baza_directorov": {
-          "sent": 1,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "@singularityfm (комментаторы)": {
           "sent": 1,
           "replied": 0,
@@ -3343,6 +3543,16 @@
           "qual": 2,
           "zvonok": 2,
           "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@avleonov (комментаторы)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
           "dogovor": 0,
           "sdelka": 0
         },
@@ -3469,9 +3679,9 @@
       },
       "hyp": {
         "C-level Россия": {
-          "sent": 325,
-          "replied": 41,
-          "mql": 4,
+          "sent": 409,
+          "replied": 49,
+          "mql": 6,
           "qual": 1,
           "zvonok": 0,
           "kp": 0,
@@ -3479,9 +3689,9 @@
           "sdelka": 0
         },
         "Без гипотезы": {
-          "sent": 501,
-          "replied": 149,
-          "mql": 31,
+          "sent": 521,
+          "replied": 157,
+          "mql": 33,
           "qual": 7,
           "zvonok": 4,
           "kp": 4,
@@ -3489,9 +3699,9 @@
           "sdelka": 0
         },
         "Комментаторы каналов бизнесменов": {
-          "sent": 550,
-          "replied": 115,
-          "mql": 16,
+          "sent": 586,
+          "replied": 126,
+          "mql": 17,
           "qual": 4,
           "zvonok": 2,
           "kp": 2,
@@ -3509,10 +3719,10 @@
           "sdelka": 0
         },
         "Сколково": {
-          "sent": 37,
-          "replied": 11,
-          "mql": 2,
-          "qual": 2,
+          "sent": 52,
+          "replied": 17,
+          "mql": 3,
+          "qual": 3,
           "zvonok": 2,
           "kp": 2,
           "dogovor": 0,
@@ -3522,10 +3732,10 @@
     },
     "TalentPay": {
       "total": {
-        "sent": 1361,
-        "replied": 294,
-        "mql": 46,
-        "qual": 9,
+        "sent": 1516,
+        "replied": 327,
+        "mql": 52,
+        "qual": 10,
         "zvonok": 7,
         "kp": 7,
         "dogovor": 0,
@@ -3533,9 +3743,9 @@
       },
       "pos": {
         "CEO / Founder / Владелец": {
-          "sent": 911,
-          "replied": 181,
-          "mql": 27,
+          "sent": 1019,
+          "replied": 198,
+          "mql": 31,
           "qual": 6,
           "zvonok": 5,
           "kp": 5,
@@ -3543,9 +3753,9 @@
           "sdelka": 0
         },
         "Директор / Руководитель": {
-          "sent": 138,
-          "replied": 20,
-          "mql": 4,
+          "sent": 153,
+          "replied": 23,
+          "mql": 6,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -3553,8 +3763,8 @@
           "sdelka": 0
         },
         "Прочее / не указано": {
-          "sent": 106,
-          "replied": 27,
+          "sent": 119,
+          "replied": 32,
           "mql": 6,
           "qual": 1,
           "zvonok": 0,
@@ -3563,12 +3773,22 @@
           "sdelka": 0
         },
         "CTO / IT": {
-          "sent": 48,
-          "replied": 13,
+          "sent": 61,
+          "replied": 17,
           "mql": 3,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Продажи / BizDev": {
+          "sent": 46,
+          "replied": 21,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 1,
+          "kp": 1,
           "dogovor": 0,
           "sdelka": 0
         },
@@ -3579,16 +3799,6 @@
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Продажи / BizDev": {
-          "sent": 42,
-          "replied": 18,
-          "mql": 2,
-          "qual": 1,
-          "zvonok": 1,
-          "kp": 1,
           "dogovor": 0,
           "sdelka": 0
         },
@@ -3603,8 +3813,8 @@
           "sdelka": 0
         },
         "CPO / Продукт": {
-          "sent": 16,
-          "replied": 4,
+          "sent": 17,
+          "replied": 5,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -3613,10 +3823,10 @@
           "sdelka": 0
         },
         "CFO / Финансы": {
-          "sent": 16,
+          "sent": 17,
           "replied": 6,
           "mql": 2,
-          "qual": 1,
+          "qual": 2,
           "zvonok": 1,
           "kp": 1,
           "dogovor": 0,
@@ -3655,19 +3865,19 @@
       },
       "geo": {
         "Не указано": {
-          "sent": 657,
-          "replied": 181,
-          "mql": 34,
-          "qual": 6,
+          "sent": 704,
+          "replied": 198,
+          "mql": 37,
+          "qual": 7,
           "zvonok": 4,
           "kp": 4,
           "dogovor": 0,
           "sdelka": 0
         },
         "Россия": {
-          "sent": 506,
-          "replied": 88,
-          "mql": 9,
+          "sent": 593,
+          "replied": 103,
+          "mql": 12,
           "qual": 1,
           "zvonok": 1,
           "kp": 1,
@@ -3684,8 +3894,18 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Свердловская область": {
+          "sent": 13,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Московская область": {
-          "sent": 11,
+          "sent": 13,
           "replied": 3,
           "mql": 0,
           "qual": 0,
@@ -3694,9 +3914,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Свердловская область": {
-          "sent": 10,
-          "replied": 1,
+        "Республика Татарстан": {
+          "sent": 12,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -3714,9 +3934,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Республика Татарстан": {
-          "sent": 10,
-          "replied": 0,
+        "Пермский край": {
+          "sent": 9,
+          "replied": 1,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -3724,9 +3944,39 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Пермский край": {
+        "Тульская область": {
           "sent": 8,
-          "replied": 0,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Новосибирская область": {
+          "sent": 8,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Самарская область": {
+          "sent": 7,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Краснодарский край": {
+          "sent": 7,
+          "replied": 1,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -3744,47 +3994,7 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Тульская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 1,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Челябинская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Новосибирская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Самарская область": {
-          "sent": 6,
-          "replied": 2,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Краснодарский край": {
           "sent": 6,
           "replied": 1,
           "mql": 0,
@@ -3834,7 +4044,27 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Калининградская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Иркутская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нижегородская область": {
           "sent": 4,
           "replied": 0,
           "mql": 0,
@@ -3864,16 +4094,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Калининградская область": {
-          "sent": 3,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Томская область": {
           "sent": 3,
           "replied": 0,
@@ -3887,6 +4107,16 @@
         "Башкортостан (Республика)": {
           "sent": 3,
           "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ставропольский край": {
+          "sent": 3,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -3924,17 +4154,7 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Ставропольский край": {
-          "sent": 2,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Нижегородская область": {
+        "Ленинградская область": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
@@ -3945,6 +4165,16 @@
           "sdelka": 0
         },
         "Воронежская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Белгородская область": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
@@ -4064,16 +4294,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Ленинградская область": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Оренбургская область": {
           "sent": 1,
           "replied": 0,
@@ -4105,16 +4325,6 @@
           "sdelka": 0
         },
         "Республика Крым": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Белгородская область": {
           "sent": 1,
           "replied": 0,
           "mql": 0,
@@ -4194,6 +4404,16 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Орловская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Россия (Москва/Сколково)": {
           "sent": 0,
           "replied": 0,
@@ -4230,6 +4450,16 @@
           "sent": 102,
           "replied": 21,
           "mql": 3,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Rusprofile": {
+          "sent": 84,
+          "replied": 8,
+          "mql": 2,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -4278,7 +4508,7 @@
         },
         "@Resident Accounting": {
           "sent": 52,
-          "replied": 14,
+          "replied": 15,
           "mql": 3,
           "qual": 0,
           "zvonok": 0,
@@ -4376,8 +4606,28 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@skolkovodubai": {
+          "sent": 28,
+          "replied": 8,
+          "mql": 2,
+          "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@spbcioclub (комментаторы)": {
+          "sent": 23,
+          "replied": 7,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Digital Club": {
-          "sent": 19,
+          "sent": 20,
           "replied": 12,
           "mql": 6,
           "qual": 0,
@@ -4406,8 +4656,8 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Dubai Startups": {
-          "sent": 13,
+        "@startup_breakfast": {
+          "sent": 14,
           "replied": 3,
           "mql": 1,
           "qual": 0,
@@ -4416,9 +4666,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "@skolkovodubai": {
+        "Dubai Startups": {
           "sent": 13,
-          "replied": 2,
+          "replied": 3,
           "mql": 1,
           "qual": 0,
           "zvonok": 0,
@@ -4466,6 +4716,26 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Не указано": {
+          "sent": 9,
+          "replied": 9,
+          "mql": 4,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Телеграм база 10к": {
+          "sent": 8,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "@ruminblog (комментаторы)": {
           "sent": 8,
           "replied": 4,
@@ -4476,10 +4746,10 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Телеграм база 10к": {
-          "sent": 7,
-          "replied": 1,
-          "mql": 1,
+        "@makrushin (комментаторы)": {
+          "sent": 8,
+          "replied": 3,
+          "mql": 0,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -4490,16 +4760,6 @@
           "sent": 7,
           "replied": 5,
           "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Не указано": {
-          "sent": 6,
-          "replied": 6,
-          "mql": 4,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -4526,10 +4786,30 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@romancev768 (комментаторы)": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Бехруз 2": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@baza_directorov": {
+          "sent": 2,
+          "replied": 2,
+          "mql": 1,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -4566,16 +4846,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "@baza_directorov": {
-          "sent": 1,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "@singularityfm (комментаторы)": {
           "sent": 1,
           "replied": 0,
@@ -4593,6 +4863,16 @@
           "qual": 2,
           "zvonok": 2,
           "kp": 2,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@avleonov (комментаторы)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
           "dogovor": 0,
           "sdelka": 0
         },
@@ -4619,9 +4899,9 @@
       },
       "hyp": {
         "C-level Россия": {
-          "sent": 325,
-          "replied": 41,
-          "mql": 4,
+          "sent": 409,
+          "replied": 49,
+          "mql": 6,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -4629,9 +4909,9 @@
           "sdelka": 0
         },
         "Без гипотезы": {
-          "sent": 346,
-          "replied": 113,
-          "mql": 22,
+          "sent": 366,
+          "replied": 121,
+          "mql": 24,
           "qual": 4,
           "zvonok": 3,
           "kp": 3,
@@ -4639,9 +4919,9 @@
           "sdelka": 0
         },
         "Комментаторы каналов бизнесменов": {
-          "sent": 550,
-          "replied": 115,
-          "mql": 16,
+          "sent": 586,
+          "replied": 126,
+          "mql": 17,
           "qual": 3,
           "zvonok": 2,
           "kp": 2,
@@ -4659,10 +4939,10 @@
           "sdelka": 0
         },
         "Сколково": {
-          "sent": 37,
-          "replied": 11,
-          "mql": 2,
-          "qual": 2,
+          "sent": 52,
+          "replied": 17,
+          "mql": 3,
+          "qual": 3,
           "zvonok": 2,
           "kp": 2,
           "dogovor": 0,
@@ -4672,9 +4952,9 @@
     },
     "JustFinTech": {
       "total": {
-        "sent": 1150,
-        "replied": 228,
-        "mql": 23,
+        "sent": 1285,
+        "replied": 251,
+        "mql": 26,
         "qual": 4,
         "zvonok": 1,
         "kp": 1,
@@ -4683,9 +4963,9 @@
       },
       "pos": {
         "CEO / Founder / Владелец": {
-          "sent": 782,
-          "replied": 138,
-          "mql": 11,
+          "sent": 877,
+          "replied": 151,
+          "mql": 14,
           "qual": 1,
           "zvonok": 0,
           "kp": 0,
@@ -4693,8 +4973,8 @@
           "sdelka": 0
         },
         "Директор / Руководитель": {
-          "sent": 132,
-          "replied": 18,
+          "sent": 146,
+          "replied": 21,
           "mql": 3,
           "qual": 0,
           "zvonok": 0,
@@ -4703,8 +4983,8 @@
           "sdelka": 0
         },
         "Прочее / не указано": {
-          "sent": 63,
-          "replied": 17,
+          "sent": 71,
+          "replied": 18,
           "mql": 1,
           "qual": 1,
           "zvonok": 0,
@@ -4713,8 +4993,8 @@
           "sdelka": 0
         },
         "CTO / IT": {
-          "sent": 40,
-          "replied": 13,
+          "sent": 53,
+          "replied": 17,
           "mql": 3,
           "qual": 1,
           "zvonok": 1,
@@ -4733,8 +5013,8 @@
           "sdelka": 0
         },
         "Продажи / BizDev": {
-          "sent": 33,
-          "replied": 13,
+          "sent": 37,
+          "replied": 14,
           "mql": 1,
           "qual": 0,
           "zvonok": 0,
@@ -4763,8 +5043,8 @@
           "sdelka": 0
         },
         "CPO / Продукт": {
-          "sent": 14,
-          "replied": 3,
+          "sent": 15,
+          "replied": 4,
           "mql": 0,
           "qual": 1,
           "zvonok": 0,
@@ -4804,28 +5084,38 @@
         }
       },
       "geo": {
-        "Не указано": {
-          "sent": 502,
-          "replied": 128,
-          "mql": 16,
-          "qual": 2,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Россия": {
-          "sent": 490,
-          "replied": 80,
-          "mql": 5,
+          "sent": 577,
+          "replied": 95,
+          "mql": 6,
           "qual": 2,
           "zvonok": 1,
           "kp": 1,
           "dogovor": 0,
           "sdelka": 0
         },
+        "Не указано": {
+          "sent": 529,
+          "replied": 135,
+          "mql": 18,
+          "qual": 2,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Свердловская область": {
+          "sent": 13,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Московская область": {
-          "sent": 11,
+          "sent": 13,
           "replied": 3,
           "mql": 0,
           "qual": 0,
@@ -4834,9 +5124,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Свердловская область": {
-          "sent": 10,
-          "replied": 1,
+        "Республика Татарстан": {
+          "sent": 12,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -4854,9 +5144,9 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Республика Татарстан": {
-          "sent": 10,
-          "replied": 0,
+        "Пермский край": {
+          "sent": 9,
+          "replied": 1,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -4864,9 +5154,39 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Пермский край": {
+        "Тульская область": {
           "sent": 8,
-          "replied": 0,
+          "replied": 1,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Новосибирская область": {
+          "sent": 8,
+          "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Самарская область": {
+          "sent": 7,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Краснодарский край": {
+          "sent": 7,
+          "replied": 1,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -4884,47 +5204,7 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Тульская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 1,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Челябинская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Новосибирская область": {
-          "sent": 6,
-          "replied": 1,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Самарская область": {
-          "sent": 6,
-          "replied": 2,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Краснодарский край": {
           "sent": 6,
           "replied": 1,
           "mql": 0,
@@ -4974,7 +5254,27 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "Калининградская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Иркутская область": {
+          "sent": 4,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Нижегородская область": {
           "sent": 4,
           "replied": 0,
           "mql": 0,
@@ -5004,16 +5304,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Калининградская область": {
-          "sent": 3,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Томская область": {
           "sent": 3,
           "replied": 0,
@@ -5027,6 +5317,16 @@
         "Башкортостан (Республика)": {
           "sent": 3,
           "replied": 1,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Ставропольский край": {
+          "sent": 3,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -5064,17 +5364,7 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Ставропольский край": {
-          "sent": 2,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Нижегородская область": {
+        "Ленинградская область": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
@@ -5085,6 +5375,16 @@
           "sdelka": 0
         },
         "Воронежская область": {
+          "sent": 2,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Белгородская область": {
           "sent": 2,
           "replied": 0,
           "mql": 0,
@@ -5174,16 +5474,6 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "Ленинградская область": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
         "Оренбургская область": {
           "sent": 1,
           "replied": 0,
@@ -5215,16 +5505,6 @@
           "sdelka": 0
         },
         "Республика Крым": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
-          "qual": 0,
-          "zvonok": 0,
-          "kp": 0,
-          "dogovor": 0,
-          "sdelka": 0
-        },
-        "Белгородская область": {
           "sent": 1,
           "replied": 0,
           "mql": 0,
@@ -5303,6 +5583,16 @@
           "kp": 0,
           "dogovor": 0,
           "sdelka": 0
+        },
+        "Орловская область": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
         }
       },
       "src": {
@@ -5331,6 +5621,16 @@
           "replied": 21,
           "mql": 2,
           "qual": 1,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "Rusprofile": {
+          "sent": 84,
+          "replied": 8,
+          "mql": 1,
+          "qual": 0,
           "zvonok": 0,
           "kp": 0,
           "dogovor": 0,
@@ -5446,6 +5746,26 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@spbcioclub (комментаторы)": {
+          "sent": 23,
+          "replied": 7,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "@startup_breakfast": {
+          "sent": 14,
+          "replied": 3,
+          "mql": 1,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "DeFrens (комментаторы)": {
           "sent": 12,
           "replied": 1,
@@ -5506,6 +5826,16 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@makrushin (комментаторы)": {
+          "sent": 8,
+          "replied": 3,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "iGaming Chat": {
           "sent": 6,
           "replied": 5,
@@ -5526,10 +5856,10 @@
           "dogovor": 0,
           "sdelka": 0
         },
-        "BalticDigitalDays chat — участники (@bdd": {
-          "sent": 1,
-          "replied": 0,
-          "mql": 0,
+        "@romancev768 (комментаторы)": {
+          "sent": 4,
+          "replied": 1,
+          "mql": 1,
           "qual": 0,
           "zvonok": 0,
           "kp": 0,
@@ -5537,8 +5867,18 @@
           "sdelka": 0
         },
         "@baza_directorov": {
+          "sent": 2,
+          "replied": 2,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
+        "BalticDigitalDays chat — участники (@bdd": {
           "sent": 1,
-          "replied": 1,
+          "replied": 0,
           "mql": 0,
           "qual": 0,
           "zvonok": 0,
@@ -5576,6 +5916,16 @@
           "dogovor": 0,
           "sdelka": 0
         },
+        "@avleonov (комментаторы)": {
+          "sent": 1,
+          "replied": 0,
+          "mql": 0,
+          "qual": 0,
+          "zvonok": 0,
+          "kp": 0,
+          "dogovor": 0,
+          "sdelka": 0
+        },
         "Не указано": {
           "sent": 0,
           "replied": 0,
@@ -5599,9 +5949,9 @@
       },
       "hyp": {
         "C-level Россия": {
-          "sent": 325,
-          "replied": 41,
-          "mql": 3,
+          "sent": 409,
+          "replied": 49,
+          "mql": 4,
           "qual": 1,
           "zvonok": 0,
           "kp": 0,
@@ -5609,9 +5959,9 @@
           "sdelka": 0
         },
         "Без гипотезы": {
-          "sent": 276,
-          "replied": 74,
-          "mql": 9,
+          "sent": 291,
+          "replied": 78,
+          "mql": 10,
           "qual": 2,
           "zvonok": 1,
           "kp": 1,
@@ -5619,9 +5969,9 @@
           "sdelka": 0
         },
         "Комментаторы каналов бизнесменов": {
-          "sent": 524,
-          "replied": 103,
-          "mql": 10,
+          "sent": 560,
+          "replied": 114,
+          "mql": 11,
           "qual": 1,
           "zvonok": 0,
           "kp": 0,
