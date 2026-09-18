@@ -282,17 +282,19 @@ function parseCost(c) {
   if (s.includes('к') && num < 1000) num *= 1000;
   return num;
 }
+function ticketOk(e) { return (e.ticket || '').includes('✅'); }
+function confirmedCost(e) { return ticketOk(e) ? parseCost(e.cost) : 0; }
 function nv(v) { return v > 0 ? `<span class="num-good">${v}</span>` : '<span class="num-zero">0</span>'; }
 function pct(a, b) { return b > 0 ? (a / b * 100).toFixed(1) + '%' : '-'; }
 function costPer(cost, n) { return n > 0 && cost > 0 ? Math.round(cost / n).toLocaleString() + ' ₽' : '-'; }
 
 async function init() {
   [funnelData, eventsData, edemData, overviewData, eventOutreachData] = await Promise.all([
-    fetch('data/event_funnel.json').then(r => r.json()).catch(() => []),
-    fetch('data/events.json').then(r => r.json()).catch(() => []),
-    fetch('data/edem.json').then(r => r.json()).catch(() => []),
-    fetch('data/overview.json').then(r => r.json()).catch(() => null),
-    fetch('data/event_outreach.json').then(r => r.json()).catch(() => []),
+    fetch('data/event_funnel.json?v='+Date.now()).then(r => r.json()).catch(() => []),
+    fetch('data/events.json?v='+Date.now()).then(r => r.json()).catch(() => []),
+    fetch('data/edem.json?v='+Date.now()).then(r => r.json()).catch(() => []),
+    fetch('data/overview.json?v='+Date.now()).then(r => r.json()).catch(() => null),
+    fetch('data/event_outreach.json?v='+Date.now()).then(r => r.json()).catch(() => []),
   ]);
   renderFunnelCompare();
   renderProductToggle();
@@ -576,9 +578,20 @@ function renderOutreach() {
   const eoData = (eventOutreachData || []).filter(r => r.sent > 0);
   const eoTotal = eoData.reduce((a, r) => ({ sent: a.sent + r.sent, replied: a.replied + r.replied, kp: a.kp + r.kp }), { sent: 0, replied: 0, kp: 0 });
 
+  const norm = s => (s||'').toLowerCase().replace(/[×x]/g, 'x').replace(/\s+/g, ' ').trim();
+  const outreachNorm = new Set(eoData.map(r => norm(r.event)));
+  const NO_CHAT = new Set(['-', '—', '', 'программа']);
+  const chatEvents = [];
+  const seenChat = new Set();
+  (funnelData || []).forEach(r => {
+    if (!r.tag || !r.parsing || NO_CHAT.has(r.parsing) || outreachNorm.has(norm(r.name)) || seenChat.has(r.name)) return;
+    seenChat.add(r.name);
+    chatEvents.push({ event: r.name, date: r.date, parsing: r.parsing, sent: 0, replied: 0, kp: 0 });
+  });
+
   const otHead = document.querySelector('#outreach-table thead');
   const otBody = document.querySelector('#outreach-table tbody');
-  otHead.innerHTML = '<tr><th>Ивент</th><th>Отправлено</th><th>Ответы</th><th>Reply%</th><th>КП</th><th>Источники</th></tr>';
+  otHead.innerHTML = '<tr><th>Ивент</th><th>Отправлено</th><th>Ответы</th><th>Reply%</th><th>КП</th><th>Источник</th></tr>';
   otBody.innerHTML = eoData.map(r => {
     const rr = r.sent > 0 ? (r.replied / r.sent * 100).toFixed(1) : '0';
     const srcList = r.sources.map(s => s.name).join(', ');
@@ -590,8 +603,12 @@ function renderOutreach() {
       <td>${nv(r.kp)}</td>
       <td style="font-size:10px;color:var(--text2);max-width:200px" title="${srcList}">${r.sources.length > 1 ? r.sources.length + ' баз' : srcList}</td>
     </tr>`;
-  }).join('') + `<tr class="totals-row">
-    <td><strong>ИТОГО</strong></td>
+  }).join('') + chatEvents.map(r => `<tr style="opacity:0.6">
+      <td><strong>${r.event}</strong></td>
+      <td>-</td><td>-</td><td>-</td><td>-</td>
+      <td style="font-size:10px;color:var(--text2)">${r.parsing}</td>
+    </tr>`).join('') + `<tr class="totals-row">
+    <td><strong>ИТОГО</strong> <span style="font-size:10px;font-weight:400;color:var(--text2)">(+ ${chatEvents.length} с чатом)</span></td>
     <td><strong>${eoTotal.sent.toLocaleString()}</strong></td>
     <td><strong>${eoTotal.replied}</strong></td>
     <td><strong>${eoTotal.sent > 0 ? (eoTotal.replied / eoTotal.sent * 100).toFixed(1) : 0}%</strong></td>
@@ -610,11 +627,11 @@ function renderEdem() {
   });
   const sortedMonths = Object.keys(grouped).sort();
 
-  const totalCost = valid.reduce((s, e) => s + parseCost(e.cost), 0);
+  const totalCost = valid.reduce((s, e) => s + confirmedCost(e), 0);
   const isTP = (p) => /^T[PР]\s*$/i.test(p || '') || p === 'TР';
   const isJF = (p) => /^JF\s*$/i.test(p || '');
-  const tpCost = valid.filter(e => isTP(e.product)).reduce((s, e) => s + parseCost(e.cost), 0);
-  const jfCost = valid.filter(e => isJF(e.product)).reduce((s, e) => s + parseCost(e.cost), 0);
+  const tpCost = valid.filter(e => isTP(e.product)).reduce((s, e) => s + confirmedCost(e), 0);
+  const jfCost = valid.filter(e => isJF(e.product)).reduce((s, e) => s + confirmedCost(e), 0);
   const sharedCost = totalCost - tpCost - jfCost;
   document.getElementById('edem-kpis').innerHTML = `
     <div class="kpi"><div class="kpi-label">Ивентов</div><div class="kpi-value">${valid.length}</div></div>
@@ -628,7 +645,7 @@ function renderEdem() {
 
   sortedMonths.forEach(m => {
     const events = grouped[m];
-    const monthCost = events.reduce((s, e) => s + parseCost(e.cost), 0);
+    const monthCost = events.reduce((s, e) => s + confirmedCost(e), 0);
     const collapsed = m < '09';
 
     const block = document.createElement('div');
