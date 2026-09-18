@@ -1,24 +1,5 @@
 [
   {
-    "name": "🟦 МАЙ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
     "name": "Startup Village 2026",
     "tag": "Startup Village 2026",
     "date": "28–29 мая",
@@ -33,28 +14,7 @@
     "kp": 2,
     "contract": 0,
     "deal": 0,
-    "verdict": "—",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "🟦 ИЮНЬ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "—"
   },
   {
     "name": "PeopleSense'26",
@@ -64,16 +24,14 @@
     "who": "—",
     "product": "TP",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 18000,
     "contacts": 460,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "TechRec AI HR Day",
@@ -83,16 +41,14 @@
     "who": "—",
     "product": "TP",
     "parsing": "прил. ивента, тг чат",
-    "cost": 0,
+    "cost": 11500,
     "contacts": 27,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "TECH WEEK 2026",
@@ -102,16 +58,14 @@
     "who": "Олеся, Наташа, Максим",
     "product": "TP",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 25500,
     "contacts": 972,
     "mql": 17,
     "qual": 11,
     "kp": 2,
     "contract": 0,
     "deal": 0,
-    "verdict": "👎 Много стартаперов/малых компаний, все продают, с каждым годом хуже. Блокеры: бейджи без компаний (нельзя таргетить), ЦА не та.",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "👎 Много стартаперов/малых компаний, все продают, с каждым годом хуже. Блокеры: бейджи без компаний (нельзя таргетить), ЦА не та."
   },
   {
     "name": "HREXPO PRO 2026",
@@ -121,16 +75,14 @@
     "who": "Настя",
     "product": "TP",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 12000,
     "contacts": 672,
     "mql": 7,
     "qual": 3,
     "kp": 1,
     "contract": 0,
     "deal": 0,
-    "verdict": "👎 Не сильно целевая (ивентологи, HR-фрилансеры). 2-й раз не пошли бы.",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "👎 Не сильно целевая (ивентологи, HR-фрилансеры). 2-й раз не пошли бы."
   },
   {
     "name": "Project Management Forum",
@@ -140,16 +92,14 @@
     "who": "Олеся",
     "product": "TP",
     "parsing": "закрытый ТГ-чат",
-    "cost": 0,
+    "cost": 22495,
     "contacts": 20,
     "mql": 2,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "👎 Больше для экспертов. Формат не для продаж/нетворкинга.",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "👎 Больше для экспертов. Формат не для продаж/нетворкинга."
   },
   {
     "name": "Управление киберрисками",
@@ -166,9 +116,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Неделя Российского Ритейла",
@@ -185,9 +133,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Conversations 2026 SPb",
@@ -197,16 +143,14 @@
     "who": "Андрей, Самед",
     "product": "TP",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 22000,
     "contacts": 439,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "самый дорогой билет месяца",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "самый дорогой билет месяца"
   },
   {
     "name": "HUMAN IT",
@@ -216,16 +160,14 @@
     "who": "Наташа",
     "product": "TP",
     "parsing": "программа",
-    "cost": 0,
+    "cost": 12500,
     "contacts": 25,
     "mql": 9,
     "qual": 9,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "KRI 2026",
@@ -242,47 +184,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "ИТОГО",
-    "tag": "",
-    "date": "",
-    "format": "офф 8 / он 2",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 37,
-    "qual": 25,
-    "kp": 3,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "🟦 ИЮЛЬ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "ИИ КОНФА 2026",
@@ -292,16 +194,14 @@
     "who": "Бехруз, Наташа, Максим",
     "product": "TP",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 23000,
     "contacts": 613,
     "mql": 4,
-    "qual": 1,
-    "kp": 0,
-    "contract": 0,
+    "qual": 2,
+    "kp": 1,
+    "contract": 1,
     "deal": 0,
-    "verdict": "👎 Формат чистых конференций — не наш. Техноград плохая локация (3 этажа, много аудиторий, все слушают спикеров; нет кофе/нетворк-зоны; нетворкинг полупустой, одни продажники).",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "👎 Формат чистых конференций — не наш. Техноград плохая локация (3 этажа, много аудиторий, все слушают спикеров; нет кофе/нетворк-зоны; нетворкинг полупустой, одни продажники)."
   },
   {
     "name": "Сетевое лето 2026",
@@ -318,9 +218,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "HR Brunch",
@@ -330,16 +228,14 @@
     "who": "Настя",
     "product": "TP",
     "parsing": "—",
-    "cost": 0,
+    "cost": 3750,
     "contacts": 0,
     "mql": 1,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "DATA DAY 2026",
@@ -349,16 +245,14 @@
     "who": "Настя, Артем",
     "product": "TP",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 5000,
     "contacts": 76,
     "mql": 19,
     "qual": 3,
     "kp": 2,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "ProIT Fest Лето 2026",
@@ -368,16 +262,14 @@
     "who": "",
     "product": "TP",
     "parsing": "закрытый чат",
-    "cost": 0,
+    "cost": 2250,
     "contacts": 18,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Marketing Stars",
@@ -387,16 +279,14 @@
     "who": "Настя",
     "product": "TP",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 7500,
     "contacts": 0,
     "mql": 16,
-    "qual": 1,
-    "kp": 0,
+    "qual": 4,
+    "kp": 3,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "CyberCamp «Лето»",
@@ -406,16 +296,14 @@
     "who": "Артем",
     "product": "TP",
     "parsing": "—",
-    "cost": 0,
+    "cost": 500,
     "contacts": 0,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Kuber Community Day 2026",
@@ -432,47 +320,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "ИТОГО",
-    "tag": "",
-    "date": "",
-    "format": "офф 8 / он 1",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 40,
-    "qual": 5,
-    "kp": 2,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "🟦 АВГУСТ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "II Всероссийский бизнес-форум «СВОИ ЛЮДИ» 2026",
@@ -482,16 +330,14 @@
     "who": "Артем",
     "product": "TP",
     "parsing": "—",
-    "cost": 0,
+    "cost": 20000,
     "contacts": 0,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Voice AI Dev Meetup #1",
@@ -508,9 +354,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "C-level Days 2026",
@@ -520,16 +364,14 @@
     "who": "онлайн/Настя",
     "product": "TP",
     "parsing": "",
-    "cost": 0,
+    "cost": 11400,
     "contacts": 0,
-    "mql": 3,
-    "qual": 2,
+    "mql": 1,
+    "qual": 1,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "CFO Russia: Внутренний контроль и аудит (XVI)",
@@ -539,16 +381,14 @@
     "who": "Артем",
     "product": "TP",
     "parsing": "",
-    "cost": 0,
+    "cost": 56900,
     "contacts": 0,
     "mql": 1,
     "qual": 1,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "FINTECH FEST 2026",
@@ -565,9 +405,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "ТОК 2026 (Точка Банк)",
@@ -577,16 +415,14 @@
     "who": "Настя",
     "product": "TP",
     "parsing": "—",
-    "cost": 0,
+    "cost": 7900,
     "contacts": 0,
-    "mql": 6,
-    "qual": 4,
+    "mql": 5,
+    "qual": 3,
     "kp": 1,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "heg.ai × Captain Builders Meetup",
@@ -596,58 +432,18 @@
     "who": "Олеся",
     "product": "TP",
     "parsing": "Чат",
-    "cost": 0,
+    "cost": 6000,
     "contacts": 0,
-    "mql": 5,
-    "qual": 2,
-    "kp": 0,
+    "mql": 6,
+    "qual": 5,
+    "kp": 2,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "ИТОГО",
-    "tag": "",
-    "date": "",
-    "format": "офф 6 / он 0",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 15,
-    "qual": 9,
-    "kp": 1,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "🟦 СЕНТЯБРЬ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "CNews Conf «Цифровые технологии в финансовом секторе»",
-    "tag": "",
+    "tag": "cnewsfintech2026september",
     "date": "8 сен",
     "format": "offline",
     "who": "Артем",
@@ -660,13 +456,11 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "IT Elements 2026",
-    "tag": "",
+    "tag": "itelements2026september",
     "date": "9-10 сен",
     "format": "offline",
     "who": "Артем",
@@ -679,9 +473,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "AV FOCUS Москва 2026",
@@ -698,32 +490,28 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "HR Days (XIX)",
-    "tag": "",
+    "tag": "hrdays2026september",
     "date": "22-23 сен",
     "format": "offline",
     "who": "Настя",
     "product": "TP",
     "parsing": "Чат",
-    "cost": 0,
+    "cost": 36750,
     "contacts": 0,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Московский Стартап Саммит 2026",
-    "tag": "",
+    "tag": "mskstartupsummit2026september",
     "date": "29-30 сен",
     "format": "offline",
     "who": "Настя",
@@ -736,13 +524,11 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "ИИ в HR 2026",
-    "tag": "",
+    "tag": "aiinhr2026september",
     "date": "30 сен",
     "format": "offline",
     "who": "",
@@ -755,51 +541,11 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "ИТОГО",
-    "tag": "",
-    "date": "",
-    "format": "офф 6 / он 0",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0.0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "🟦 ОКТЯБРЬ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Конференция СисАдмин 2026",
-    "tag": "",
+    "tag": "sysadmin2026october",
     "date": "9 окт",
     "format": "offline",
     "who": "Артем",
@@ -812,66 +558,24 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "GLOBAL TECH FORUM 2026",
-    "tag": "",
+    "tag": "globaltechforum2026october",
     "date": "16 окт",
     "format": "offline",
     "who": "",
     "product": "TP",
     "parsing": "Приложение",
-    "cost": 0,
+    "cost": 10500,
     "contacts": 0,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "ИТОГО",
-    "tag": "",
-    "date": "",
-    "format": "офф 2 / он 0",
-    "who": "",
-    "product": "TP",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0.0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "🟦 МАЙ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Startup Village 2026",
@@ -888,28 +592,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "—",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "🟦 ИЮНЬ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "—"
   },
   {
     "name": "PeopleSense'26",
@@ -919,16 +602,14 @@
     "who": "—",
     "product": "JF",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 18000,
     "contacts": 460,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "TechRec AI HR Day",
@@ -938,16 +619,14 @@
     "who": "—",
     "product": "JF",
     "parsing": "прил. ивента, тг чат",
-    "cost": 0,
+    "cost": 11500,
     "contacts": 27,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "TECH WEEK 2026",
@@ -957,16 +636,14 @@
     "who": "Олеся, Наташа, Максим",
     "product": "JF",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 25500,
     "contacts": 972,
     "mql": 1,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "👎 Много стартаперов/малых компаний, все продают, с каждым годом хуже. Блокеры: бейджи без компаний (нельзя таргетить), ЦА не та.",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "👎 Много стартаперов/малых компаний, все продают, с каждым годом хуже. Блокеры: бейджи без компаний (нельзя таргетить), ЦА не та."
   },
   {
     "name": "HREXPO PRO 2026",
@@ -976,16 +653,14 @@
     "who": "Настя",
     "product": "JF",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 12000,
     "contacts": 672,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "👎 Не сильно целевая (ивентологи, HR-фрилансеры). 2-й раз не пошли бы.",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "👎 Не сильно целевая (ивентологи, HR-фрилансеры). 2-й раз не пошли бы."
   },
   {
     "name": "Project Management Forum",
@@ -995,16 +670,14 @@
     "who": "Олеся",
     "product": "JF",
     "parsing": "закрытый ТГ-чат",
-    "cost": 0,
+    "cost": 22495,
     "contacts": 20,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "👎 Больше для экспертов. Формат не для продаж/нетворкинга.",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "👎 Больше для экспертов. Формат не для продаж/нетворкинга."
   },
   {
     "name": "Управление киберрисками",
@@ -1021,9 +694,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Неделя Российского Ритейла",
@@ -1040,9 +711,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Conversations 2026 SPb",
@@ -1052,16 +721,14 @@
     "who": "Андрей, Самед",
     "product": "JF",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 22000,
     "contacts": 439,
     "mql": 17,
-    "qual": 12,
-    "kp": 2,
+    "qual": 13,
+    "kp": 4,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "HUMAN IT",
@@ -1071,16 +738,14 @@
     "who": "Наташа",
     "product": "JF",
     "parsing": "программа",
-    "cost": 0,
+    "cost": 12500,
     "contacts": 25,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "KRI 2026",
@@ -1097,47 +762,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "ИТОГО",
-    "tag": "",
-    "date": "",
-    "format": "офф 8 / он 2",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 18,
-    "qual": 12,
-    "kp": 2,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "🟦 ИЮЛЬ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "ИИ КОНФА 2026",
@@ -1147,16 +772,14 @@
     "who": "Бехруз, Наташа, Максим",
     "product": "JF",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 23000,
     "contacts": 613,
     "mql": 1,
     "qual": 1,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "👎 Формат чистых конференций — не наш. Техноград плохая локация (3 этажа, много аудиторий, все слушают спикеров; нет кофе/нетворк-зоны; нетворкинг полупустой, одни продажники).",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": "👎 Формат чистых конференций — не наш. Техноград плохая локация (3 этажа, много аудиторий, все слушают спикеров; нет кофе/нетворк-зоны; нетворкинг полупустой, одни продажники)."
   },
   {
     "name": "Сетевое лето 2026",
@@ -1173,9 +796,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "HR Brunch",
@@ -1185,16 +806,14 @@
     "who": "Настя",
     "product": "JF",
     "parsing": "—",
-    "cost": 0,
+    "cost": 3750,
     "contacts": 0,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "DATA DAY 2026",
@@ -1204,16 +823,14 @@
     "who": "Настя, Артем",
     "product": "JF",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 5000,
     "contacts": 76,
     "mql": 9,
-    "qual": 6,
-    "kp": 3,
+    "qual": 7,
+    "kp": 4,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "ProIT Fest Лето 2026",
@@ -1223,16 +840,14 @@
     "who": "",
     "product": "JF",
     "parsing": "закрытый чат",
-    "cost": 0,
+    "cost": 2250,
     "contacts": 18,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Marketing Stars",
@@ -1242,16 +857,14 @@
     "who": "Настя",
     "product": "JF",
     "parsing": "прил. ивента",
-    "cost": 0,
+    "cost": 7500,
     "contacts": 0,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "CyberCamp «Лето»",
@@ -1261,16 +874,14 @@
     "who": "Артем",
     "product": "JF",
     "parsing": "—",
-    "cost": 0,
+    "cost": 500,
     "contacts": 0,
     "mql": 5,
-    "qual": 1,
-    "kp": 0,
+    "qual": 4,
+    "kp": 3,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Kuber Community Day 2026",
@@ -1287,47 +898,7 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "ИТОГО",
-    "tag": "",
-    "date": "",
-    "format": "офф 6 / он 1",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 707,
-    "mql": 19,
-    "qual": 9,
-    "kp": 3,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "🟦 АВГУСТ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "II Всероссийский бизнес-форум «СВОИ ЛЮДИ» 2026",
@@ -1337,16 +908,14 @@
     "who": "Артем",
     "product": "JF",
     "parsing": "—",
-    "cost": 0,
+    "cost": 20000,
     "contacts": 0,
     "mql": 7,
     "qual": 7,
     "kp": 7,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Voice AI Dev Meetup #1",
@@ -1363,9 +932,7 @@
     "kp": 1,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "C-level Days 2026",
@@ -1375,16 +942,14 @@
     "who": "онлайн/Настя",
     "product": "JF",
     "parsing": "",
-    "cost": 0,
+    "cost": 11400,
     "contacts": 0,
     "mql": 2,
     "qual": 2,
     "kp": 2,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "CFO Russia: Внутренний контроль и аудит (XVI)",
@@ -1394,16 +959,14 @@
     "who": "Артем",
     "product": "JF",
     "parsing": "",
-    "cost": 0,
+    "cost": 56900,
     "contacts": 0,
     "mql": 4,
     "qual": 4,
     "kp": 4,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "FINTECH FEST 2026",
@@ -1416,13 +979,11 @@
     "cost": 0,
     "contacts": 0,
     "mql": 3,
-    "qual": 2,
-    "kp": 2,
+    "qual": 3,
+    "kp": 3,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "ТОК 2026 (Точка Банк)",
@@ -1432,16 +993,14 @@
     "who": "Настя",
     "product": "JF",
     "parsing": "—",
-    "cost": 0,
+    "cost": 7900,
     "contacts": 0,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "heg.ai × Captain Builders Meetup",
@@ -1451,58 +1010,18 @@
     "who": "Олеся",
     "product": "JF",
     "parsing": "Чат",
-    "cost": 0,
+    "cost": 6000,
     "contacts": 0,
     "mql": 1,
     "qual": 1,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "ИТОГО",
-    "tag": "",
-    "date": "",
-    "format": "офф 6 / он 0",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 21,
-    "qual": 18,
-    "kp": 16,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "🟦 СЕНТЯБРЬ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "CNews Conf «Цифровые технологии в финансовом секторе»",
-    "tag": "",
+    "tag": "cnewsfintech2026september",
     "date": "8 сен",
     "format": "offline",
     "who": "Артем",
@@ -1515,13 +1034,11 @@
     "kp": 2,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "IT Elements 2026",
-    "tag": "",
+    "tag": "itelements2026september",
     "date": "9-10 сен",
     "format": "offline",
     "who": "Артем",
@@ -1529,14 +1046,12 @@
     "parsing": "-",
     "cost": 0,
     "contacts": 0,
-    "mql": 2,
+    "mql": 7,
     "qual": 1,
     "kp": 1,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "AV FOCUS Москва 2026",
@@ -1553,32 +1068,28 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "HR Days (XIX)",
-    "tag": "",
+    "tag": "hrdays2026september",
     "date": "22-23 сен",
     "format": "offline",
     "who": "Настя",
     "product": "JF",
     "parsing": "Чат",
-    "cost": 0,
+    "cost": 36750,
     "contacts": 0,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Московский Стартап Саммит 2026",
-    "tag": "",
+    "tag": "mskstartupsummit2026september",
     "date": "29-30 сен",
     "format": "offline",
     "who": "Настя",
@@ -1591,13 +1102,11 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "ИИ в HR 2026",
-    "tag": "",
+    "tag": "aiinhr2026september",
     "date": "30 сен",
     "format": "offline",
     "who": "",
@@ -1610,51 +1119,11 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "ИТОГО",
-    "tag": "",
-    "date": "",
-    "format": "офф 6 / он 0",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 7,
-    "qual": 4,
-    "kp": 3,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0.0,
-    "cost_per_kp": 0.0
-  },
-  {
-    "name": "🟦 ОКТЯБРЬ 2026",
-    "tag": "",
-    "date": "",
-    "format": "",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "Конференция СисАдмин 2026",
-    "tag": "",
+    "tag": "sysadmin2026october",
     "date": "9 окт",
     "format": "offline",
     "who": "Артем",
@@ -1667,46 +1136,23 @@
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
+    "verdict": ""
   },
   {
     "name": "GLOBAL TECH FORUM 2026",
-    "tag": "",
+    "tag": "globaltechforum2026october",
     "date": "16 окт",
     "format": "offline",
     "who": "",
     "product": "JF",
     "parsing": "Приложение",
-    "cost": 0,
+    "cost": 10500,
     "contacts": 0,
     "mql": 0,
     "qual": 0,
     "kp": 0,
     "contract": 0,
     "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0,
-    "cost_per_kp": 0
-  },
-  {
-    "name": "ИТОГО",
-    "tag": "",
-    "date": "",
-    "format": "офф 2 / он 0",
-    "who": "",
-    "product": "JF",
-    "parsing": "",
-    "cost": 0,
-    "contacts": 0,
-    "mql": 0,
-    "qual": 0,
-    "kp": 0,
-    "contract": 0,
-    "deal": 0,
-    "verdict": "",
-    "cost_per_mql": 0.0,
-    "cost_per_kp": 0
+    "verdict": ""
   }
 ]
