@@ -81,16 +81,16 @@ h1 { font-size: 24px; font-weight: 700; margin: 8px 0 4px; }
 /* --- Tables --- */
 .table-wrap { overflow-x: auto; }
 #roi-section .table-wrap { max-height: calc(100vh - 260px); overflow-y: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
 thead th {
   position: sticky; top: 0; z-index: 10;
-  background: var(--surface); text-align: right; padding: 4px 5px;
+  background: var(--surface); text-align: right; padding: 6px 8px;
   border-bottom: 2px solid var(--border); color: var(--text2);
-  font-weight: 500; font-size: 9px; text-transform: uppercase;
+  font-weight: 500; font-size: 10px; text-transform: uppercase;
   letter-spacing: 0.03em; white-space: nowrap;
 }
 thead th:first-child, thead th:nth-child(2), thead th:nth-child(3), thead th:nth-child(4) { text-align: left; }
-td { padding: 4px 5px; border-bottom: 1px solid var(--border); text-align: right; font-variant-numeric: tabular-nums; }
+td { padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: right; font-variant-numeric: tabular-nums; }
 td:first-child, td:nth-child(2), td:nth-child(3), td:nth-child(4) { text-align: left; }
 .has-tip { cursor: help; border-bottom: 1px dashed var(--text2); }
 tr:hover td { background: var(--accent-light); }
@@ -403,15 +403,17 @@ function renderROI() {
   const thead = document.querySelector('#roi-table thead');
   const tbody = document.querySelector('#roi-table tbody');
 
-  const colSpan = 21;
+  const colSpan = 13;
   thead.innerHTML = `<tr>
-    <th>Ивент</th><th>Дата</th><th>Прод.</th><th>Кто</th>
-    <th class="col-sep">Стоим.</th><th>Контактов</th><th>₽/конт.</th>
-    <th class="col-sep">MQL</th><th>₽/MQL</th><th>конт→MQL</th>
-    <th class="col-sep">Квал</th><th>₽/квал</th><th>MQL→квал</th>
-    <th class="col-sep">КП</th><th>₽/КП</th><th>квал→КП</th>
-    <th class="col-sep">Дог.</th><th>₽/дог.</th><th>КП→дог.</th>
-    <th class="col-sep">Сделка</th><th>дог→сделка</th>
+    <th style="min-width:140px">Ивент</th><th>Дата</th><th>Прод.</th><th>Кто</th>
+    <th class="col-sep">Стоим.</th><th>Контактов</th>
+    <th class="col-sep">MQL</th>
+    <th class="col-sep">Квал</th>
+    <th class="col-sep">КП</th>
+    <th class="col-sep">Дог.</th>
+    <th class="col-sep">Сделка</th>
+    <th class="col-sep">₽/КП</th>
+    <th>ROI заметки</th>
   </tr>`;
 
   let merged;
@@ -472,6 +474,12 @@ function renderROI() {
         ? prods.map(p => `<span class="tag tag-${p==='TP'?'tp':'jf'}">${p}</span>`).join(' ')
         : `<span class="tag tag-${r.product==='TP'?'tp':'jf'}">${r.product}</span>`;
 
+      const cpKp = r.kp > 0 && cost > 0 ? Math.round(cost / r.kp).toLocaleString() + ' ₽' : '-';
+      const notes = [];
+      if (contacts > 0 && r.mql > 0) notes.push('конт→MQL ' + pct(r.mql, contacts));
+      if (r.mql > 0 && r.qual > 0) notes.push('MQL→квал ' + pct(r.qual, r.mql));
+      if (r.qual > 0 && r.kp > 0) notes.push('квал→КП ' + pct(r.kp, r.qual));
+
       html += `<tr>
         <td><strong>${r.name}</strong></td>
         <td style="white-space:nowrap">${r.date}</td>
@@ -479,67 +487,45 @@ function renderROI() {
         <td>${r.who}</td>
         <td class="col-sep cost-cell">${cost > 0 ? cost.toLocaleString() + ' ₽' : '-'}</td>
         <td>${contacts > 0 ? contacts.toLocaleString() : '-'}</td>
-        <td class="cost-cell">${costPer(cost, contacts)}</td>
         <td class="col-sep">${tip(r.mql, null, costPer(cost, r.mql))}</td>
-        <td class="cost-cell">${costPer(cost, r.mql)}</td>
-        <td class="pct">${pct(r.mql, contacts)}</td>
         <td class="col-sep">${tip(r.qual, r.qual_companies, costPer(cost, r.qual))}</td>
-        <td class="cost-cell">${costPer(cost, r.qual)}</td>
-        <td class="pct">${pct(r.qual, r.mql)}</td>
-        <td class="col-sep">${tip(r.kp, r.kp_companies, costPer(cost, r.kp))}</td>
-        <td class="cost-cell">${costPer(cost, r.kp)}</td>
-        <td class="pct">${pct(r.kp, r.qual)}</td>
+        <td class="col-sep">${tip(r.kp, r.kp_companies, cpKp)}</td>
         <td class="col-sep">${tip(r.contract, r.contract_companies, costPer(cost, r.contract))}</td>
-        <td class="cost-cell">${costPer(cost, r.contract)}</td>
-        <td class="pct">${pct(r.contract, r.kp)}</td>
         <td class="col-sep">${tip(deal, r.deal_companies)}</td>
-        <td class="pct">${pct(deal, r.contract)}</td>
+        <td class="col-sep cost-cell">${cpKp}</td>
+        <td class="verdict-cell">${notes.join(' - ')}</td>
       </tr>`;
     });
 
+    const mCpKp = mKp > 0 && mCost > 0 ? Math.round(mCost / mKp).toLocaleString() + ' ₽' : '-';
     html += `<tr class="subtotal-row">
       <td colspan="4" style="text-align:right;font-size:10px"><strong>${mName}</strong></td>
       <td class="col-sep cost-cell">${mCost > 0 ? mCost.toLocaleString() + ' ₽' : '-'}</td>
       <td><strong>${mContacts.toLocaleString()}</strong></td>
-      <td class="cost-cell">${costPer(mCost, mContacts)}</td>
       <td class="col-sep"><strong>${mMql}</strong></td>
-      <td class="cost-cell">${costPer(mCost, mMql)}</td>
-      <td class="pct">${pct(mMql, mContacts)}</td>
       <td class="col-sep"><strong>${mQual}</strong></td>
-      <td class="cost-cell">${costPer(mCost, mQual)}</td>
-      <td class="pct">${pct(mQual, mMql)}</td>
       <td class="col-sep"><strong>${mKp}</strong></td>
-      <td class="cost-cell">${costPer(mCost, mKp)}</td>
-      <td class="pct">${pct(mKp, mQual)}</td>
       <td class="col-sep"><strong>${mContract}</strong></td>
-      <td class="cost-cell">${costPer(mCost, mContract)}</td>
-      <td class="pct">${pct(mContract, mKp)}</td>
       <td class="col-sep"><strong>${mDeal}</strong></td>
-      <td class="pct">${pct(mDeal, mContract)}</td>
+      <td class="col-sep cost-cell">${mCpKp}</td>
+      <td class="verdict-cell">${pct(mMql, mContacts)} конт→MQL - ${pct(mKp, mQual)} квал→КП</td>
     </tr>`;
 
     gCost += mCost; gContacts += mContacts; gMql += mMql; gQual += mQual; gKp += mKp; gContract += mContract; gDeal += mDeal;
   });
 
+  const gCpKp = gKp > 0 && gCost > 0 ? Math.round(gCost / gKp).toLocaleString() + ' ₽' : '-';
   html += `<tr class="totals-row">
     <td colspan="4"><strong>ИТОГО</strong></td>
     <td class="col-sep cost-cell"><strong>${gCost > 0 ? gCost.toLocaleString() + ' ₽' : '-'}</strong></td>
     <td><strong>${gContacts.toLocaleString()}</strong></td>
-    <td class="cost-cell">${costPer(gCost, gContacts)}</td>
     <td class="col-sep"><strong>${gMql}</strong></td>
-    <td class="cost-cell">${costPer(gCost, gMql)}</td>
-    <td class="pct">${pct(gMql, gContacts)}</td>
     <td class="col-sep"><strong>${gQual}</strong></td>
-    <td class="cost-cell">${costPer(gCost, gQual)}</td>
-    <td class="pct">${pct(gQual, gMql)}</td>
     <td class="col-sep"><strong>${gKp}</strong></td>
-    <td class="cost-cell">${costPer(gCost, gKp)}</td>
-    <td class="pct">${pct(gKp, gQual)}</td>
     <td class="col-sep"><strong>${gContract}</strong></td>
-    <td class="cost-cell">${costPer(gCost, gContract)}</td>
-    <td class="pct">${pct(gContract, gKp)}</td>
     <td class="col-sep"><strong>${gDeal}</strong></td>
-    <td class="pct">${pct(gDeal, gContract)}</td>
+    <td class="col-sep cost-cell"><strong>${gCpKp}</strong></td>
+    <td class="verdict-cell">${pct(gMql, gContacts)} конт→MQL - ${pct(gKp, gQual)} квал→КП</td>
   </tr>`;
 
   tbody.innerHTML = html;

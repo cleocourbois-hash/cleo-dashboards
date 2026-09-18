@@ -148,7 +148,7 @@ h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
     <a href="hypotheses.html" class="card">
       <div><span class="card-icon">🧪</span> <span class="badge badge-live">LIVE API</span></div>
       <div class="card-title">Гипотезы лидгена</div>
-      <div class="card-desc" id="hyp-desc">Карта гипотез, воронка по источникам, результаты тестов каналов.</div>
+      <div class="card-desc" id="hyp-desc">Фокус ICP, SQL цели по гипотезам, карта источников. TP: 28 SQL, JF: 16 SQL.</div>
       <div class="card-stats" id="hyp-stats"></div>
     </a>
 
@@ -199,20 +199,29 @@ async function loadStats() {
     document.getElementById('updated').textContent = 'Данные: ' + ov.updated_at.slice(0, 10);
   } catch(e) {}
   try {
-    const hyp = await fetch('data/hypotheses.json').then(r => r.json());
-    const active = hyp.hypotheses.filter(h => h.status === 'в работе');
-    const planned = hyp.hypotheses.filter(h => h.status === 'план');
+    const [hyp, dashboard] = await Promise.all([
+      fetch('data/hypotheses.json?v='+Date.now()).then(r => r.json()),
+      fetch('data/hyp_dashboard.json?v='+Date.now()).then(r => r.json()),
+    ]);
     const totalSent = hyp.hypotheses.reduce((s,h) => s + (h.members||[]).reduce((a,m) => a+(m.sent||0), 0), 0);
     const totalKP = hyp.hypotheses.reduce((s,h) => s + (h.members||[]).reduce((a,m) => a+(m.kp||0), 0), 0);
-    const activeNames = active.map(h => h.name).join(', ');
-    const plannedNames = planned.map(h => h.name).join(', ');
+    let tpSQL = 0, jfSQL = 0, curProd = '';
+    (dashboard || []).slice(1).forEach(r => {
+      r = (r || []).concat(Array(11).fill('')).slice(0, 11);
+      if (r[1]) curProd = r[1];
+      const sql = parseInt(r[10]) || 0;
+      if (!sql) return;
+      const pl = (curProd || '').toLowerCase();
+      if (pl.includes('jf') || pl.includes('по')) jfSQL += sql;
+      else if (pl.includes('tp')) tpSQL += sql;
+    });
     document.getElementById('hyp-desc').innerHTML =
-      `<strong>В работе (${active.length}):</strong> ${activeNames}<br>` +
-      `<span style="color:var(--text2)">В плане (${planned.length}):</span> <span style="font-size:12px">${plannedNames}</span>`;
+      `<strong>SQL цели сен-дек:</strong> TP ${tpSQL} + JF ${jfSQL} = ${tpSQL+jfSQL}<br>` +
+      `<span style="color:var(--text2)">Фокус: CFO, CIO, HRD - закрыть ICP-гэпы</span>`;
     document.getElementById('hyp-stats').innerHTML = `
       <div>Sent<span class="stat-value">${totalSent.toLocaleString()}</span></div>
       <div>КП<span class="stat-value">${totalKP}</span></div>
-      <div>Гипотез<span class="stat-value">${hyp.hypotheses.length}</span></div>
+      <div>SQL цель<span class="stat-value">${tpSQL+jfSQL}</span></div>
     `;
   } catch(e) {}
   try {
