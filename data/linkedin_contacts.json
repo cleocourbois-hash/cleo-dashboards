@@ -1,909 +1,3021 @@
 [
   [
-    "ГИПОТЕЗА: CEO/фаундеры tech-стартапов из рекомендаций LinkedIn (русскоязычные, релоцировавшиеся на Кипр/Дубай/Европу, с распределёнными командами). ICP: фаундеры с командами 10-200 чел в РФ/СНГ. Боль: cross-border выплаты команде. Продукт: TalentPay. Аутрич: LinkedIn + cold email."
-  ],
-  [
+    "Приоритет",
     "Имя",
+    "Должность",
     "Компания",
-    "Роль",
-    "Что делают",
-    "Страна/Локация",
-    "Команда",
-    "Фит TP",
-    "Фит JF",
+    "Сайт компании",
+    "Страна",
     "Email",
-    "Телефон"
+    "LinkedIn",
+    "Чат-источник",
+    "ICP fit",
+    "TG ссылка",
+    "TG ник"
   ],
   [
-    "Bronislav Labetskiy",
-    "WazzApps",
+    "A - C-level",
+    "Alexander Dolgov",
+    "Chief Information Officer",
+    "First Cargo Company - PGK (Первая грузовая компания - ПГК)",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/alexander-dolgov-a8509419",
+      "text": "профиль"
+    },
+    "🔴🟡🟢 ИТ-директор и его друзья)👍",
+    "TP",
+    {
+      "url": "https://t.me/vachpr",
+      "text": "@vachpr"
+    },
+    "vachpr"
+  ],
+  [
+    "A - C-level",
+    "Aidar Seleubayev",
+    "CIO / IT Director (text)",
+    "",
+    "",
+    "Kazakhstan",
+    "",
+    {
+      "url": "https://linkedin.com/in/aidar-seleubayev-45290090",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/qazaqitcom",
+      "text": "Qazaq IT Community"
+    },
+    "JF / TP",
+    {
+      "url": "https://t.me/aidarseleubayev",
+      "text": "@aidarseleubayev"
+    },
+    "aidarseleubayev"
+  ],
+  [
+    "A - C-level",
+    "Oleg Zuzin",
+    "Head of video production / CEO",
+    "",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/olegzuzin",
+      "text": "профиль"
+    },
+    "Комьюнити @Explain.in.Huma",
+    "TP",
+    {
+      "url": "https://t.me/olegzuzin",
+      "text": "@olegzuzin"
+    },
+    "olegzuzin"
+  ],
+  [
+    "A - C-level",
+    "Darya Kupko",
+    "Chief Executive Officer",
+    "ANX Technologies",
+    {
+      "url": "https://anxtechnologies.ru",
+      "text": "anxtechnologies.ru"
+    },
+    "Belarus",
+    "d.kupko@anxtechnologies.ru",
+    {
+      "url": "http://www.linkedin.com/in/dkupko",
+      "text": "профиль"
+    },
+    "ITSpace.by",
+    "TP",
+    {
+      "url": "https://t.me/kate4kon",
+      "text": "@kate4kon"
+    },
+    "kate4kon"
+  ],
+  [
+    "A - C-level",
+    "Dmitriy Serebryakov",
+    "Founder, CEO",
+    "Digital HR platform",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/sdmitriy",
+      "text": "профиль"
+    },
+    "Product Radar x Москва",
+    "TP",
+    {
+      "url": "https://t.me/SDmitriy_t",
+      "text": "@SDmitriy_t"
+    },
+    "SDmitriy_t"
+  ],
+  [
+    "A - C-level",
+    "Sergei Sarkisian",
     "CEO",
-    "Мобильные казуальные/idle игры",
-    "Кипр (из Новосибирска)",
-    "30-40 чел",
-    "HIGH",
-    "NO"
-  ],
-  [
-    "Eugene Khafizov",
-    "Yoonion/Sibe/Imity",
-    "Multifounder, Investor",
-    "OXM-платформа, коллаборация для SolidWorks-инженеров",
-    "Дубай (из РФ)",
-    "Remote-first",
-    "HIGH",
-    "NO"
-  ],
-  [
-    "Leonid Aleksandrov",
-    "Brickit",
-    "CEO & Co-founder",
-    "LEGO-сканер приложение, 100K+ отзывов",
-    "UK (из Москвы)",
-    "14+ чел",
-    "HIGH",
-    "NO"
-  ],
-  [
-    "Michael Dubakov",
-    "Fibery",
-    "Founder",
-    "Connected workspace SaaS, ARR $1.8M",
-    "Кипр/Польша (из Минска)",
-    "30 чел, 5 стран",
-    "HIGH",
-    "NO"
-  ],
-  [
-    "Nikolay Shapovalov",
-    "Ducky (playducky.com)",
-    "CPO",
-    "Гипер-казуальный гейм-паблишер, фокус Китай",
-    "Кипр",
-    "11-50 чел",
-    "HIGH",
-    "NO"
-  ],
-  [
-    "Noushad P",
-    "RadixHR",
-    "Founder & CEO",
-    "AI HR & payroll platform UAE",
-    "UAE",
+    "Talk Labs",
     "",
-    "HIGH",
-    "NO"
+    "United States",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/sergei-sarkisian",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VP0VxHa2SyU-HZf1",
+      "text": "Эдтехи"
+    },
+    "TP",
+    {
+      "url": "https://t.me/duran",
+      "text": "@duran"
+    },
+    "duran"
   ],
   [
-    "Sergey Neskin",
-    "Neskin Games",
-    "CEO & Co-Founder",
-    "Мобильные игры (merge-3, EverMerge)",
-    "Кипр (из Минска)",
-    "100-200 чел",
-    "HIGH",
-    "NO"
+    "A - C-level",
+    "Alexandr Smolyaninov",
+    "CEO at FirstBit Middle East",
+    "First Bit Middle East",
+    {
+      "url": "https://firstbit.ae",
+      "text": "firstbit.ae"
+    },
+    "United Arab Emirates",
+    "asmolyaninov@firstbit.ae",
+    {
+      "url": "http://www.linkedin.com/in/alexandrsmolyaninov",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/marketologiyuga",
+      "text": "Маркетологи Юга"
+    },
+    "TP",
+    {
+      "url": "https://t.me/creating_history",
+      "text": "@creating_history"
+    },
+    "creating_history"
   ],
   [
-    "Sergey Voronovich",
-    "Nemiga Gaming",
+    "A - C-level",
+    "Vlad Kaliakin",
     "CEO",
-    "Esports-организация (CS2)",
-    "Кипр (ex-Беларусь)",
-    "",
-    "HIGH",
-    "NO"
+    "IgamingTextLab",
+    {
+      "url": "https://igamingtextlab.com",
+      "text": "igamingtextlab.com"
+    },
+    "Thailand",
+    "vlad@igamingtextlab.com",
+    {
+      "url": "http://www.linkedin.com/in/vladimirkaliakin",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VCjtmkWogw94rlzG",
+      "text": "AI BOOST'26 — 22-23.10: Агентства о..."
+    },
+    "TP",
+    {
+      "url": "https://t.me/letotime",
+      "text": "@letotime"
+    },
+    "letotime"
   ],
   [
-    "Vitaliy Borodovsky",
-    "Press Fire Games",
-    "CEO",
-    "Геймдев, мультиплеерные шутеры (Battle Prime), свой движок",
-    "Кипр (из Беларуси)",
-    "Средняя студия",
-    "HIGH",
-    "NO"
+    "A - C-level",
+    "Judith Erwin",
+    "Chief Executive Officer",
+    "Grasshopper Bank",
+    {
+      "url": "https://grasshopper.bank",
+      "text": "grasshopper.bank"
+    },
+    "United States",
+    "judith@grasshopper.bank",
+    {
+      "url": "http://www.linkedin.com/in/judith-erwin-38b7781",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "?",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
   ],
   [
-    "Yury Mazanik",
-    "Belka Games",
-    "Co-Founder",
-    "Gaming / Angel Investor",
-    "",
-    "",
-    "HIGH",
-    "NO"
+    "A - C-level",
+    "Mike Butler",
+    "President and CEO",
+    "Grasshopper Bank",
+    {
+      "url": "https://grasshopper.bank",
+      "text": "grasshopper.bank"
+    },
+    "United States",
+    "michael.butler@grasshopper.bank",
+    {
+      "url": "http://www.linkedin.com/in/mike-butler-70027013",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
   ],
   [
-    "Leo Pavlinskiy",
-    "FTG Boutique",
-    "Founder",
-    "Product studio, web-разработка",
-    "Дубай",
-    "",
-    "MEDIUM-HIGH",
-    "NO"
+    "A - C-level",
+    "Leonid Pudov",
+    "Chief Executive Officer",
+    "mr.Booster agency",
+    {
+      "url": "https://mrbooster.com",
+      "text": "mrbooster.com"
+    },
+    "Cyprus",
+    "l.pudov@mrbooster.com",
+    {
+      "url": "http://www.linkedin.com/in/leonid-pudov-a41798253",
+      "text": "профиль"
+    },
+    "G GATE CHAT",
+    "TP"
   ],
   [
-    "Aidar Sabirov",
-    "ASG Compute",
-    "CEO",
-    "GPU-cloud инфраструктура для AI",
-    "Дубай",
-    "",
-    "MEDIUM",
-    "NO"
+    "A - C-level",
+    "Serge Predko",
+    "Co-Chief Executive Officer",
+    "Eduson",
+    {
+      "url": "https://eduson.tv",
+      "text": "eduson.tv"
+    },
+    "United Kingdom",
+    "s.predko@eduson.tv",
+    {
+      "url": "http://www.linkedin.com/in/sergeypredko",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/predko",
+      "text": "@predko"
+    },
+    "predko"
   ],
   [
-    "Alexander Tkachev",
-    "Rock'n'Block",
-    "CBDO & Co-founder",
-    "Web3/blockchain dev studio",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
+    "A - C-level",
+    "Anastasia Kozlova",
+    "Deputy CEO",
+    "BuildDevCon",
+    {
+      "url": "https://renegadeunderdogs.com",
+      "text": "renegadeunderdogs.com"
+    },
+    "United Arab Emirates",
+    "giles@renegadeunderdogs.com",
+    {
+      "url": "http://www.linkedin.com/in/anastasia-kozlova-2843018b",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/nastena_kozlova",
+      "text": "@nastena_kozlova"
+    },
+    "nastena_kozlova"
   ],
   [
-    "Alexandra Radchenko",
-    "Strikerz Inc.",
-    "COO",
-    "Геймдев (UFL football game)",
-    "Кипр",
+    "A - C-level",
+    "Dmitry Vazhinin",
+    "Commercial Director (text)",
+    "Creonit",
+    {
+      "url": "https://softline.com",
+      "text": "softline.com"
+    },
+    "Russia",
     "",
-    "MEDIUM",
-    "NO"
+    {
+      "url": "https://linkedin.com/in/vazhendima",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/vazhendima",
+      "text": "@vazhendima"
+    },
+    "vazhendima"
   ],
   [
-    "Alexey Florinsky",
-    "",
-    "Chief Executive Officer / Co-Founder",
-    "Simbirsk/Tech",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
+    "A - C-level",
+    "Ilya Andreyev",
+    "Executive Creative Director",
+    "Cheil Worldwide",
+    {
+      "url": "https://cheil.com",
+      "text": "cheil.com"
+    },
+    "Russia",
+    "i.andreyev@cheil.com",
+    {
+      "url": "http://www.linkedin.com/in/ilyaandreyev",
+      "text": "профиль"
+    },
+    "ХОТ ДИДЖИТАЛ от Влада Ситникова",
+    "TP",
+    {
+      "url": "https://t.me/HotDigital",
+      "text": "@HotDigital"
+    },
+    "HotDigital"
   ],
   [
-    "Anna Chichaeva",
-    "Finery Markets",
-    "COO",
-    "Non-custodial crypto ECN",
-    "Кипр, Лимассол",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Anton Sizemin",
-    "WEE.ae Marketplace",
-    "CCO",
-    "Non-grocery e-commerce маркетплейс UAE",
-    "Дубай",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Anton Slesarev",
-    "Agnify.ai",
-    "Founder",
-    "AI agent для видеоаналитики",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Artem Batin",
-    "NUMU Frontline",
-    "CEO",
-    "AI-платформа для роста ресторанов на delivery",
-    "Дубай",
-    "Стартап",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Artem Bezrukov",
-    "Raised",
-    "Founder",
-    "AI-enabled recruitment",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Artem Timanov",
-    "Cattle Care",
-    "Founder & CEO",
-    "CV/ML для молочных ферм",
-    "США, SF (ex-Россия)",
-    "",
-    "MEDIUM",
-    "LOW"
-  ],
-  [
-    "Artemiy Parshakov",
-    "P2P.org",
-    "VP of Institutions",
-    "Крипто staking инфраструктура",
-    "Кипр, Лимассол",
-    "",
-    "MEDIUM",
-    "NO",
-    "parshakov2603@gmail.com"
-  ],
-  [
-    "Beksultan Buitekov",
-    "LOOQ",
-    "Co-Founder",
-    "AI-платформа для наружной рекламы (DOOH)",
-    "Казахстан/международный",
-    "Стартап",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Denis Shevchenko",
-    "GreenPixel LLC",
-    "Co-Founder & CEO",
-    "Gaming/Tech",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Dmitry Shubeykin",
-    "DeusCraft",
-    "CEO",
-    "Gaming/Tech",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Eitan Zinger",
-    "Sibe.io",
+    "A - C-level",
+    "Yuri Sauchuk",
     "Founder/CEO",
-    "Cloud PDM SaaS для инженеров",
-    "Израиль, TLV",
+    "Tehno-Sky, LLC",
     "",
-    "MEDIUM",
-    "NO"
+    "Belarus",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/yuri-savchuk1",
+      "text": "профиль"
+    },
+    "Open Eurasia Community",
+    "TP",
+    {
+      "url": "https://t.me/SavchukYri",
+      "text": "@SavchukYri"
+    },
+    "SavchukYri"
   ],
   [
-    "Evgeny Grishakov",
-    "Garden of Dreams",
-    "CEO",
-    "Gaming/Tech",
+    "A - C-level",
+    "Dmitrii Adushev",
+    "Managing Director, International Business Development",
     "",
     "",
-    "MEDIUM",
-    "NO"
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/adushev",
+      "text": "профиль"
+    },
+    "?",
+    "TP"
   ],
   [
-    "Evgeny Pisarev",
-    "Nmbr.homes",
-    "Founder",
-    "AI-платформа для аренды жилья",
-    "США, NY",
+    "A - C-level",
+    "Talap Kenzhebaev",
+    "CEO, Co-Founder",
+    "Digital Juz",
     "",
-    "MEDIUM",
-    "NO",
-    "pisarevevgeniy7@gmail.com"
+    "Kazakhstan",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/talap-kenzhebaev-product-manager",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/remocate",
+      "text": "Remocate: релокация, удалёнка, рабо..."
+    },
+    "TP"
   ],
   [
-    "Gevorg Beglarian",
-    "KEYGO",
-    "Co-Founder",
-    "Proptech: управление краткосрочной арендой",
-    "Ереван/Бангкок",
-    "16 чел",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Malin Petkov",
-    "GHNL",
-    "Founder & CEO",
-    "IoT/LoRaWAN smart city solutions",
-    "Кипр, Лимассол",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Max Kolpakov",
-    "Wachanga",
-    "CEO",
-    "Femtech & Parenting",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Max Tsygankov",
-    "EasyVision",
-    "Founder/CEO",
-    "AI visual agent для ресторанов",
-    "США, San Jose",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Mike Bukhovtsev",
-    "Cinemood",
-    "Founder/CEO",
-    "Мини-проектор + контент для детей",
-    "Дубай",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Nikita Daniels",
-    "GDEV Inc. ($GDEV)",
-    "CBDO",
-    "Mobile gaming (public company)",
-    "Кипр",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Nurbolat Sagenov",
-    "ooon.ai",
-    "Co-Founder",
-    "AI for calls and chats",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Oxana Timanovskaya",
-    "Playkot",
-    "Chief of Staff",
-    "Мобильные/social игры, 70M+ игроков",
-    "Кипр/Белград (из СПб)",
-    "160-300 чел, 25 стран",
-    "MEDIUM",
-    "LOW"
-  ],
-  [
-    "Samvel Aramyan",
-    "Chameleon 42 / XDS",
-    "CEO & Co-Founder",
-    "Gaming/Tech",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Sofoklis Papasofokli",
-    "RadiantFleet",
-    "CEO & CTO",
-    "Maritime/ship management SaaS",
-    "Кипр, Лимассол",
-    "~11",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Stan Suchkov",
-    "Evolve",
-    "CEO & Co-founder",
-    "AI corporate learning/onboarding",
-    "Испания, Барселона",
-    "",
-    "MEDIUM",
-    "NO",
-    "sutchkov.stanislav@gmail.com"
-  ],
-  [
-    "Tigran Vartazaryan",
-    "Datamatica",
-    "CEO & Founder",
-    "Data/Analytics",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Vadim Galeev",
-    "TestGear",
-    "CEO / GTM Architect",
-    "Go-to-market стратегия, advisory",
-    "Дубай",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Vito Mtsariashvili",
-    "Aspis",
-    "Co-founder & CEO",
-    "500 Global portfolio",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Vladimir Nichiporovich",
-    "Mantah",
-    "Founder/CEO",
-    "RMS для ресторанов",
-    "Кипр (из Беларуси)",
-    "~22 чел",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Vladimir Nikolsky",
-    "",
-    "Co-founder",
-    "Gaming industry veteran",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Vladimir Razuvaev",
-    "Yango Tech/Yango Group",
-    "ex-CEO / Head of Legal",
-    "AI-интегратор, часть бывш. Yandex international",
-    "Дубай (из РФ)",
-    "1000-5000 чел, 30+ стран",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Vladislav Laptev",
-    "Fork-Tech",
-    "Co-Founder & CTIO",
-    "IT & AI",
-    "",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Константин Сафонов",
-    "",
-    "CIO / DevOps Manager",
-    "Финтех (не подтверждено)",
-    "Россия (предп.)",
-    "",
-    "MEDIUM",
-    "MEDIUM"
-  ],
-  [
-    "Никита Карпук",
-    "CatLogic",
-    "Head of AI",
-    "AI в HR/рекрутменте",
-    "Кипр (ex-Беларусь)",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Сергей Жданович",
-    "",
-    "Директор",
-    "Не определено",
-    "Беларусь (предп.)",
-    "",
-    "MEDIUM",
-    "NO"
-  ],
-  [
-    "Aleksandr Abalakin",
-    "DefendSphere",
-    "Co-Founder",
-    "AI-кибербезопасность для SME",
-    "Испания, Валенсия",
-    "",
-    "LOW",
-    "NO"
-  ],
-  [
-    "Aleksei Dolgikh",
-    "Scout VC",
-    "CVO",
-    "VC/PE/FO investor-relations",
-    "Дубай",
-    "",
-    "LOW",
-    "NO"
-  ],
-  [
-    "Aleksei S.",
-    "",
-    "CISO / Head of InfoSec",
-    "Не определено",
-    "",
-    "",
-    "LOW",
-    "MEDIUM"
-  ],
-  [
-    "Alexandra Gulamova",
-    "Savant.chat",
-    "Co-founder",
-    "AI-аудитор смарт-контрактов",
-    "Дубай (из Москвы)",
-    "Малый стартап",
-    "LOW",
-    "NO"
-  ],
-  [
-    "Anatoly Norenko",
-    "Puzzle Point Ltd",
-    "CEO, Founder",
-    "Tech",
-    "",
-    "",
-    "LOW",
-    "NO"
-  ],
-  [
-    "Anjelika Pogosyan",
-    "iDWELL",
-    "HR Director",
-    "PropTech SaaS",
-    "Австрия, Вена",
-    "~80",
-    "LOW",
-    "NO"
-  ],
-  [
-    "Anton Kochetkov",
-    "NeuroVision Global",
-    "Co-Founder & CTO",
-    "KYC/identity verification",
-    "",
-    "",
-    "LOW",
-    "NO"
-  ],
-  [
-    "Anton Krokhmalyuk",
+    "A - C-level",
+    "Anna Shul'deshova",
+    "Operational Director",
     "Yandex",
-    "Chief Growth Officer",
-    "Поиск, ecommerce, Yandex Plus",
-    "США, NY",
-    "Large",
-    "LOW",
-    "LOW",
-    "krokhmalyuk@gmail.com",
-    "79500361282"
-  ],
-  [
-    "Ayan Zikirin",
-    "BI Group",
-    "Country Manager",
-    "Крупнейшая строит. группа ЦА",
-    "Казахстан",
-    "Large",
-    "LOW",
-    "NO"
-  ],
-  [
-    "Diana Agliamutdinova",
-    "Madrid Tech Brunch",
-    "Community builder",
-    "Tech-нетворкинг ивенты в Мадриде",
-    "Испания, Мадрид",
     "",
-    "LOW",
-    "NO"
-  ],
-  [
-    "Ed Kniep",
-    "yWhales / CC2G Holdings",
-    "CEO/President",
-    "Web3 community/investment ecosystem",
-    "США, St. Louis",
+    "Russia",
     "",
-    "LOW",
-    "NO"
+    {
+      "url": "http://www.linkedin.com/in/anna-shul-deshova-b5218786",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/OlgaEnn",
+      "text": "@OlgaEnn"
+    },
+    "OlgaEnn"
   ],
   [
-    "Evgeny Chernikov",
-    "Yango Tech",
-    "COO",
-    "Grocery retail tech SaaS",
-    "Абу-Даби",
-    "500+",
-    "LOW",
-    "NO"
-  ],
-  [
-    "Fatima Slimani",
-    "Quba",
-    "Founder",
-    "Secure AI adoption / data protection",
-    "Дубай",
+    "A - C-level",
+    "Denis Shevchenko",
+    "Director of Marketing",
+    "M.Video-Eldorado Group",
     "",
-    "LOW",
-    "NO"
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/denis-shevchenko-678b277b",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/geni_al",
+      "text": "@geni_al"
+    },
+    "geni_al"
   ],
   [
-    "Grikor Mnatsakanyan",
-    "",
-    "Head of Franchising Department",
-    "Telecom",
-    "",
-    "",
-    "LOW",
-    "NO"
+    "A - C-level",
+    "Dmitriy Koltsov",
+    "CTO (Цифровой опыт покупателя)",
+    "M.Tech",
+    {
+      "url": "https://rize.io",
+      "text": "rize.io"
+    },
+    "Russia",
+    "dmitriy@rize.io",
+    {
+      "url": "http://www.linkedin.com/in/dmitriy-koltsov-50304751",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/geni_al",
+      "text": "@geni_al"
+    },
+    "geni_al"
   ],
   [
-    "Ilya Chernetskiy",
-    "CoinKeeper/Disrapp",
-    "Founder",
-    "Приложение личных финансов, 10M+ скачиваний",
-    "СПб, Россия",
-    "~20 чел",
-    "LOW",
-    "LOW",
+    "A - C-level",
+    "Dmitriy Yupatov",
+    "Product Director",
+    "Pointer (Поинтер)",
+    {
+      "url": "https://pntr.io",
+      "text": "pntr.io"
+    },
+    "Russia",
+    "dy@pntr.io",
+    {
+      "url": "http://www.linkedin.com/in/dyupatov",
+      "text": "профиль"
+    },
+    "Unknown",
+    "TP"
+  ],
+  [
+    "A - C-level",
+    "Pavel Mikhnovets",
+    "R&D Director, Atomics LLC",
+    "Lumex Instruments",
     "",
-    "79119236447"
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/pavel-mikhnovets-a76a0242",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/p_mikhnovets",
+      "text": "@p_mikhnovets"
+    },
+    "p_mikhnovets"
   ],
   [
-    "Ilya Kolin",
-    "Cattle Care",
-    "Founder",
-    "AI видеоаналитика для молочных ферм",
-    "США/Израиль (из Беларуси)",
-    "~3 чел",
-    "LOW",
-    "NO"
+    "A - C-level",
+    "Alexey Chistyakov",
+    "Director of Development (text)",
+    "CloudFort",
+    "",
+    "Kazakhstan",
+    "",
+    {
+      "url": "https://linkedin.com/in/achistyakov",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/qazaqitcom",
+      "text": "Qazaq IT Community"
+    },
+    "TP",
+    {
+      "url": "https://t.me/alyoalyosha",
+      "text": "@alyoalyosha"
+    },
+    "alyoalyosha"
   ],
   [
-    "José Alfredo Quintero Sáez",
-    "TERAH2O",
+    "A - C-level",
+    "Valeriy Kotelov",
+    "CEO & Founder",
+    "KOTELOV",
+    {
+      "url": "https://kotelov.com",
+      "text": "kotelov.com"
+    },
+    "United Kingdom",
+    "valeriy@kotelov.com",
+    {
+      "url": "http://www.linkedin.com/in/kotelov",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VCjtmkWogw94rlzG",
+      "text": "AI BOOST'26 — 22-23.10: Агентства о..."
+    },
+    "TP",
+    {
+      "url": "https://t.me/Savinvlad",
+      "text": "@Savinvlad"
+    },
+    "Savinvlad"
+  ],
+  [
+    "A - C-level",
+    "Nils Feigenwinter",
+    "Co-Founder & CEO",
+    "Bling",
+    {
+      "url": "https://bling.de",
+      "text": "bling.de"
+    },
+    "Germany",
+    "nfeigenwinter@bling.de",
+    {
+      "url": "http://www.linkedin.com/in/nilsfeigenwinter",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
+  ],
+  [
+    "A - C-level",
+    "Soups Ranjan",
+    "Co-founder, CEO",
+    "Sardine",
+    {
+      "url": "https://sardine.ai",
+      "text": "sardine.ai"
+    },
+    "United States",
+    "soups@sardine.ai",
+    {
+      "url": "http://www.linkedin.com/in/soupsranjan",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
+  ],
+  [
+    "A - C-level",
+    "Magnus Larsson",
+    "Founder and CEO",
+    "MAJORITY",
+    {
+      "url": "https://majority.com",
+      "text": "majority.com"
+    },
+    "United States",
+    "magnus.larsson@majority.com",
+    {
+      "url": "http://www.linkedin.com/in/maglarone",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
+  ],
+  [
+    "A - C-level",
+    "Jordan Wexler",
+    "Co-Founder - CEO",
+    "EarlyBird (Acquired by Acorns)",
+    {
+      "url": "https://getearlybird.io",
+      "text": "getearlybird.io"
+    },
+    "United States",
+    "jordan@getearlybird.io",
+    {
+      "url": "http://www.linkedin.com/in/jordan-wexler",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
+  ],
+  [
+    "A - C-level",
+    "Nadia Zueva",
+    "CEO, Co-founder",
+    "AESTY: Cookbook for outfits",
+    {
+      "url": "https://aesty.ai",
+      "text": "aesty.ai"
+    },
+    "Singapore",
+    "nadia@aesty.ai",
+    {
+      "url": "http://www.linkedin.com/in/nadia-zueva",
+      "text": "профиль"
+    },
+    "Пресидский залив",
+    "TP",
+    {
+      "url": "https://t.me/neural_prosecco",
+      "text": "@neural_prosecco"
+    },
+    "neural_prosecco"
+  ],
+  [
+    "A - C-level",
+    "Gadzhimurad Aliev",
+    "Co-Founder and CEO",
+    "GoAsia",
+    "",
+    "Malaysia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/alievskey",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/sberstartup_chat",
+      "text": "СберСтартап Chat"
+    },
+    "TP",
+    {
+      "url": "https://t.me/sergeimazuk",
+      "text": "@sergeimazuk"
+    },
+    "sergeimazuk"
+  ],
+  [
+    "A - C-level",
+    "Nikita Obukhov",
     "Founder & CEO",
-    "SaaS для водоочистки",
-    "Эквадор",
-    "",
-    "LOW",
-    "NO"
+    "Tilda – Website Builder",
+    {
+      "url": "https://tilda.cc",
+      "text": "tilda.cc"
+    },
+    "Ireland",
+    "nikita@tilda.cc",
+    {
+      "url": "http://www.linkedin.com/in/nikita-obukhov",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+UlVRNMtW7rXucyZ9",
+      "text": "Чат Fast Founder"
+    },
+    "TP",
+    {
+      "url": "https://t.me/SNFX555",
+      "text": "@SNFX555"
+    },
+    "SNFX555"
   ],
   [
-    "Karen Babayan",
-    "Body Bloom AI",
-    "CEO",
-    "AI/Health",
-    "",
-    "",
-    "LOW",
-    "NO"
+    "A - C-level",
+    "Dmitriy Vazhenin",
+    "Director of Development",
+    "Softline Group",
+    {
+      "url": "https://softline.com",
+      "text": "softline.com"
+    },
+    "Kazakhstan",
+    "dmitriy.vazhenin@softline.com",
+    {
+      "url": "http://www.linkedin.com/in/vazhendima",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/vazhendima",
+      "text": "@vazhendima"
+    },
+    "vazhendima"
   ],
   [
-    "Konstantin Peshekhonov",
-    "",
-    "CIO / CTO / Advisor",
-    "Retail / Ecom / Travel",
-    "",
-    "",
-    "LOW",
-    "LOW"
+    "A - C-level",
+    "Irma Shlosberg",
+    "Founder & CEO",
+    "Brandin Club",
+    {
+      "url": "https://brandin.club",
+      "text": "brandin.club"
+    },
+    "Israel",
+    "irma@brandin.club",
+    {
+      "url": "http://www.linkedin.com/in/irma-shlosberg",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/Shl_Irma",
+      "text": "@Shl_Irma"
+    },
+    "Shl_Irma"
   ],
   [
-    "Konstantin Zaitcev",
-    "P2P.org",
-    "co-CEO",
-    "Institutional-grade crypto/blockchain",
+    "A - C-level",
+    "Natalia Bessilina",
+    "CEO and Founder",
+    "EduRocket",
     "",
+    "Republic of Indonesia",
     "",
-    "LOW",
-    "NO"
+    {
+      "url": "http://www.linkedin.com/in/natalia-bessilina",
+      "text": "профиль"
+    },
+    "Unknown",
+    "TP"
   ],
   [
-    "Manuel Gulias",
-    "",
-    "Entrepreneur",
-    "Не определено",
-    "",
-    "",
-    "LOW",
-    "LOW"
+    "A - C-level",
+    "Oleg Aksenov",
+    "CTO, Co-founder",
+    "Teez",
+    {
+      "url": "https://teez.kz",
+      "text": "teez.kz"
+    },
+    "Thailand",
+    "oleg.aksenov@teez.kz",
+    {
+      "url": "http://www.linkedin.com/in/olegx",
+      "text": "профиль"
+    },
+    "🔴🟡🟢 ИТ-директор и его друзья)👍",
+    "TP",
+    {
+      "url": "https://t.me/OlegTeez",
+      "text": "@OlegTeez"
+    },
+    "OlegTeez"
   ],
   [
-    "Max Grinevich",
+    "A - C-level",
+    "Evgeniy K",
+    "Managing Director (GE)",
+    "MIGx AG",
+    {
+      "url": "https://migx.ch",
+      "text": "migx.ch"
+    },
+    "United States",
+    "ek@migx.ch",
+    {
+      "url": "http://www.linkedin.com/in/evgeniykolesnikov",
+      "text": "профиль"
+    },
+    "🔴🟡🟢 ИТ-директор и его друзья)👍",
+    "TP",
+    {
+      "url": "https://t.me/Kirill_KIRG_Shagin",
+      "text": "@Kirill_KIRG_Shagin"
+    },
+    "Kirill_KIRG_Shagin"
+  ],
+  [
+    "A - C-level",
+    "Nikita Susoev",
+    "Account Director (text)",
+    "Datanomix",
     "",
+    "?",
+    "",
+    {
+      "url": "https://linkedin.com/in/susoev",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/qazaqitcom",
+      "text": "Qazaq IT Community"
+    },
+    "TP",
+    {
+      "url": "https://t.me/cycoe8",
+      "text": "@cycoe8"
+    },
+    "cycoe8"
+  ],
+  [
+    "A - C-level",
+    "Vladimir Rubin",
+    "CTO/top manager (text)",
+    "",
+    "",
+    "?",
+    "",
+    {
+      "url": "https://linkedin.com/in/vrubin",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/qazaqitcom",
+      "text": "Qazaq IT Community"
+    },
+    "TP",
+    {
+      "url": "https://t.me/jl3ohapdo",
+      "text": "@jl3ohapdo"
+    },
+    "jl3ohapdo"
+  ],
+  [
+    "A - C-level",
+    "Mark Williams-Cook",
+    "Director",
+    "Candour",
+    {
+      "url": "https://withcandour.co.uk",
+      "text": "withcandour.co.uk"
+    },
+    "United Kingdom",
+    "mark.cook@withcandour.co.uk",
+    {
+      "url": "http://www.linkedin.com/in/markseo",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/b2bchaat",
+      "text": "ЧАТ B2B маркетинг и продажи"
+    },
+    "TP",
+    {
+      "url": "https://t.me/ekostrov",
+      "text": "@ekostrov"
+    },
+    "ekostrov"
+  ],
+  [
+    "A - C-level",
+    "Shreyas Sathe",
+    "Managing Director & Co-founder - Hybrid INSEA",
+    "Hybrid Europe",
+    {
+      "url": "https://hybrid.ai",
+      "text": "hybrid.ai"
+    },
+    "Germany",
+    "s.sathe@hybrid.ai",
+    {
+      "url": "http://www.linkedin.com/in/shreyassathe",
+      "text": "профиль"
+    },
+    "ХОТ ДИДЖИТАЛ от Влада Ситникова",
+    "TP",
+    {
+      "url": "https://t.me/HotDigital",
+      "text": "@HotDigital"
+    },
+    "HotDigital"
+  ],
+  [
+    "A - C-level",
+    "Anna Kulik",
+    "Director of Strategic Marketing & Communications",
+    "Wizium",
+    "",
+    "",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/anna-kulik-ai",
+      "text": "профиль"
+    },
+    "?",
+    "TP"
+  ],
+  [
+    "A - C-level",
+    "Stanislav Nedelko",
+    "Co-Founder, CTO",
+    "Fincake",
+    "",
+    "Thailand",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/stanislav-nedelko",
+      "text": "профиль"
+    },
+    "Unknown",
+    "TP"
+  ],
+  [
+    "A - C-level",
+    "Alexander Soltan",
+    "Co-Owner | Business Development Director",
+    "Бюро Brele",
+    "",
+    "Portugal",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/alexander-soltan",
+      "text": "профиль"
+    },
+    "Unknown",
+    "TP"
+  ],
+  [
+    "A - C-level",
+    "Irena Radyu",
+    "Marketing Director",
+    "POLYWALL Software Solutions",
+    "",
+    "Turkey",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/irena-radyu",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/irenaradyu",
+      "text": "@irenaradyu"
+    },
+    "irenaradyu"
+  ],
+  [
+    "A - C-level",
+    "Alex Diatlov",
+    "COO | Commercial & Market Access",
+    "HQ Science",
+    {
+      "url": "https://highquality.science",
+      "text": "highquality.science"
+    },
+    "United Kingdom",
+    "alex@highquality.science",
+    {
+      "url": "http://www.linkedin.com/in/diatlov",
+      "text": "профиль"
+    },
+    "Ciao 🏡",
+    "TP",
+    {
+      "url": "https://t.me/lisa_dziuba",
+      "text": "@lisa_dziuba"
+    },
+    "lisa_dziuba"
+  ],
+  [
+    "A - C-level",
+    "Khoroshii",
+    "COO/CCO/CBDO (text)",
+    "",
+    "",
+    "?",
+    "",
+    {
+      "url": "https://linkedin.com/in/lemaks",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/qazaqitcom",
+      "text": "Qazaq IT Community"
+    },
+    "TP",
+    {
+      "url": "https://t.me/khoroshii",
+      "text": "@khoroshii"
+    },
+    "khoroshii"
+  ],
+  [
+    "A - C-level",
+    "Ksenia Khlabystina",
+    "COO/CPO (text)",
+    "Influencers",
+    "",
+    "?",
+    "",
+    {
+      "url": "https://linkedin.com/in/kseniya-khlabystina",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/qazaqitcom",
+      "text": "Qazaq IT Community"
+    },
+    "TP",
+    {
+      "url": "https://t.me/pm_mom_almaty",
+      "text": "@pm_mom_almaty"
+    },
+    "pm_mom_almaty"
+  ],
+  [
+    "A - C-level",
+    "Vladlen Vasilev",
+    "COO (text)",
+    "KitLine",
+    {
+      "url": "https://kitline.net",
+      "text": "kitline.net"
+    },
+    "?",
+    "",
+    {
+      "url": "https://linkedin.com/in/vladlen-vasilev",
+      "text": "профиль"
+    },
+    "G GATE CHAT",
+    "TP"
+  ],
+  [
+    "A - C-level",
+    "Vladlen Vasilev",
+    "Chief Operating Officer",
+    "Kitline LTD",
+    {
+      "url": "https://kitline.net",
+      "text": "kitline.net"
+    },
+    "Bulgaria",
+    "vladlen@kitline.net",
+    {
+      "url": "http://www.linkedin.com/in/vladlen-vasilev",
+      "text": "профиль"
+    },
+    "G GATE CHAT",
+    "TP"
+  ],
+  [
+    "B - Founder/Owner",
+    "Valentin Dombrovsky",
+    "Cofounder",
+    "aiaiai",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/vdombrovsky",
+      "text": "профиль"
+    },
+    "Product Radar x Москва",
+    "TP",
+    {
+      "url": "https://t.me/v_dombrovsky",
+      "text": "@v_dombrovsky"
+    },
+    "v_dombrovsky"
+  ],
+  [
+    "B - Founder/Owner",
+    "Yulia Pronoza",
+    "Co-founder (text)",
+    "АС Смета (SaaS)",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "https://linkedin.com/in/yapronoza",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/startupvillage_chat",
+      "text": "Startup Village Chat"
+    },
+    "TP",
+    {
+      "url": "https://t.me/ya_pronoza",
+      "text": "@ya_pronoza"
+    },
+    "ya_pronoza"
+  ],
+  [
+    "B - Founder/Owner",
+    "Yulia Pronoza",
+    "Co-Founder",
+    "AS Smeta (АС Смета)",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/yapronoza",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/startupvillage_chat",
+      "text": "Startup Village Chat"
+    },
+    "TP",
+    {
+      "url": "https://t.me/ya_pronoza",
+      "text": "@ya_pronoza"
+    },
+    "ya_pronoza"
+  ],
+  [
+    "B - Founder/Owner",
+    "Konstantin Minchenkov",
+    "Co-founder",
+    "Challenge Factory",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/minchenkov",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/Klison",
+      "text": "@Klison"
+    },
+    "Klison"
+  ],
+  [
+    "B - Founder/Owner",
+    "Ilya Smirdin",
+    "Co-Founder / CPO",
+    "Urban-baza",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/ilya-smirdin-product-manager",
+      "text": "профиль"
+    },
+    "Unknown",
+    "TP"
+  ],
+  [
+    "B - Founder/Owner",
+    "Mikhail Nikishin",
     "Founder",
-    "Music education (Zoom-like)",
+    "Startend",
     "",
+    "Russia",
     "",
-    "LOW",
-    "NO"
+    {
+      "url": "http://www.linkedin.com/in/manikishin",
+      "text": "профиль"
+    },
+    "Unknown",
+    "TP"
   ],
   [
-    "Michael Swetly",
+    "B - Founder/Owner",
+    "Natalia Fedyachkina",
+    "Co-founder & Owner",
     "",
-    "CMO / Brand Strategy",
-    "Не определено",
-    "Казахстан (предп.)",
     "",
-    "LOW",
-    "LOW",
-    "micilangello.gb@gmail.com"
+    "Kyrgyzstan",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/natalia-fedyachkina",
+      "text": "профиль"
+    },
+    "ОНЛАЙН-НЕТВОРКИНГ «КОС партнерс»",
+    "TP",
+    {
+      "url": "https://t.me/Natalia_Fedyachkina",
+      "text": "@Natalia_Fedyachkina"
+    },
+    "Natalia_Fedyachkina"
   ],
   [
-    "Natasha Chobat",
-    "Thera",
-    "Co-founder/CEO",
-    "App",
-    "",
-    "",
-    "LOW",
-    "NO"
+    "B - Founder/Owner",
+    "Wahat Bastimiyev",
+    "Sales & Co-Founder",
+    "Verigram",
+    {
+      "url": "https://verigram.ai",
+      "text": "verigram.ai"
+    },
+    "Singapore",
+    "uakhat@verigram.ai",
+    {
+      "url": "http://www.linkedin.com/in/uakhat",
+      "text": "профиль"
+    },
+    "Astana Hub ️",
+    "TP",
+    {
+      "url": "https://t.me/astana_hub",
+      "text": "@astana_hub"
+    },
+    "astana_hub"
   ],
   [
-    "Olesia Kuznetsova",
-    "Yango Play",
-    "Chief Growth Officer",
-    "Стриминг (видео/аудио)",
-    "",
-    "",
-    "LOW",
-    "LOW",
-    "olesia.kuznetsova@gmail.com",
-    "79859266622"
+    "B - Founder/Owner",
+    "Antonin Molle",
+    "Founder & CPO, Chairman of The Board",
+    "OpenAge Initiative",
+    {
+      "url": "https://openageinitiative.org",
+      "text": "openageinitiative.org"
+    },
+    "France",
+    "antonin@openageinitiative.org",
+    {
+      "url": "http://www.linkedin.com/in/antoninmolle",
+      "text": "профиль"
+    },
+    "🔴🟡🟢 ИТ-директор и его друзья)👍",
+    "TP",
+    {
+      "url": "https://t.me/vachpr",
+      "text": "@vachpr"
+    },
+    "vachpr"
   ],
   [
-    "Ran Strauss",
-    "Leverate",
-    "CEO & Co-Founder",
-    "SaaS для Forex-брокеров",
-    "Израиль",
-    "100+",
-    "LOW",
-    "NO"
+    "B - Founder/Owner",
+    "Mara Rudman",
+    "Co-Founder",
+    "Vital Center Network",
+    "",
+    "United States",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/mararudman",
+      "text": "профиль"
+    },
+    "СИГНАЛ",
+    "TP",
+    {
+      "url": "https://t.me/ssigny",
+      "text": "@ssigny"
+    },
+    "ssigny"
   ],
   [
-    "Rodion Mostovoi",
-    "CodeAlive",
+    "B - Founder/Owner",
+    "Dimitri Niarez",
+    "Co-Founder",
+    "Teamlex AI",
+    {
+      "url": "https://teamlex.pro",
+      "text": "teamlex.pro"
+    },
+    "Spain",
+    "dmitrii@teamlex.pro",
+    {
+      "url": "http://www.linkedin.com/in/dniarez",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VP0VxHa2SyU-HZf1",
+      "text": "Эдтехи"
+    },
+    "TP",
+    {
+      "url": "https://t.me/dimanayt",
+      "text": "@dimanayt"
+    },
+    "dimanayt"
+  ],
+  [
+    "B - Founder/Owner",
+    "Sergey Nosov",
+    "Founder (text)",
+    "WOW startup studio",
+    "",
+    "?",
+    "",
+    {
+      "url": "https://linkedin.com/in/serjeynosov",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+UlVRNMtW7rXucyZ9",
+      "text": "Чат Fast Founder"
+    },
+    "TP",
+    {
+      "url": "https://t.me/NosovSergey",
+      "text": "@NosovSergey"
+    },
+    "NosovSergey"
+  ],
+  [
+    "B - Founder/Owner",
+    "Alexander Gorbunov",
+    "Co-founder (text)",
+    "freelancer/engineer",
+    {
+      "url": "https://smart-steel-technologies.com",
+      "text": "smart-steel-technologies.com"
+    },
+    "Serbia",
+    "",
+    {
+      "url": "https://linkedin.com/in/gorbunovalex",
+      "text": "профиль"
+    },
+    "Belgrade Entrepreneurs and Startups",
+    "TP",
+    {
+      "url": "https://t.me/GorbunovAlexander",
+      "text": "@GorbunovAlexander"
+    },
+    "GorbunovAlexander"
+  ],
+  [
+    "B - Founder/Owner",
+    "Ivan Shishkin",
+    "founder",
+    "",
+    "",
+    "United Kingdom",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/shishkinii",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VP0VxHa2SyU-HZf1",
+      "text": "Эдтехи"
+    },
+    "TP",
+    {
+      "url": "https://t.me/shishkinii",
+      "text": "@shishkinii"
+    },
+    "shishkinii"
+  ],
+  [
+    "B - Founder/Owner",
+    "Chris Long",
+    "Co-Founder",
+    "Nectiv",
+    {
+      "url": "https://nectivdigital.com",
+      "text": "nectivdigital.com"
+    },
+    "United States",
+    "chris.long@nectivdigital.com",
+    {
+      "url": "http://www.linkedin.com/in/chris-long-marketing",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/b2bchaat",
+      "text": "ЧАТ B2B маркетинг и продажи"
+    },
+    "TP",
+    {
+      "url": "https://t.me/ekostrov",
+      "text": "@ekostrov"
+    },
+    "ekostrov"
+  ],
+  [
+    "B - Founder/Owner",
+    "Sergei Kondratev",
+    "Founder; Unibase - A Single Platform for Searching Universities in Russia",
+    "Unibase",
+    "",
+    "United Arab Emirates",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/kondratev-s",
+      "text": "профиль"
+    },
+    "Open Eurasia Community",
+    "TP"
+  ],
+  [
+    "B - Founder/Owner",
+    "Tania Aidrus",
+    "Co-Founder",
+    "Rayn",
+    {
+      "url": "https://waseela.global",
+      "text": "waseela.global"
+    },
+    "Pakistan",
+    "tania.aidrus@waseela.global",
+    {
+      "url": "http://www.linkedin.com/in/tania-aidrus-b68607",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
+  ],
+  [
+    "B - Founder/Owner",
+    "Sima Gandhi",
+    "Co-Founder",
+    "Coalition for Financial Ecosystem Standards",
+    {
+      "url": "https://thecfes.com",
+      "text": "thecfes.com"
+    },
+    "United States",
+    "sima@thecfes.com",
+    {
+      "url": "http://www.linkedin.com/in/sima-gandhi",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
+  ],
+  [
+    "B - Founder/Owner",
+    "Christoffer Rosqvist",
+    "Chief Executive Officer - Founder",
+    "Zevoy",
+    {
+      "url": "https://zevoy.com",
+      "text": "zevoy.com"
+    },
+    "Finland",
+    "christoffer.rosqvist@zevoy.com",
+    {
+      "url": "http://www.linkedin.com/in/cr12345",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
+  ],
+  [
+    "B - Founder/Owner",
+    "Greg Krasnov",
     "Founder",
-    "Tech/Dev tools",
-    "",
-    "",
-    "LOW",
-    "NO"
+    "Tonik",
+    {
+      "url": "https://tonikbank.com",
+      "text": "tonikbank.com"
+    },
+    "Philippines",
+    "gkrasnov@tonikbank.com",
+    {
+      "url": "http://www.linkedin.com/in/gregkrasnov",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
   ],
   [
-    "Roman Barinov",
-    "Stealth",
-    "Founder",
-    "Не определено",
-    "",
-    "",
-    "LOW",
-    "LOW"
+    "B - Founder/Owner",
+    "Alexandr Safonov",
+    "Chief Executive Officer - co-Founder",
+    "BUTTON Wallet",
+    {
+      "url": "https://buttonwallet.com",
+      "text": "buttonwallet.com"
+    },
+    "United States",
+    "main@buttonwallet.com",
+    {
+      "url": "http://www.linkedin.com/in/alexandr-safonov-014457127",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
   ],
   [
-    "Sergey Klinkov",
-    "Finery Markets",
-    "MD, Brand & Strategy",
-    "Институциональная крипто-ECN",
-    "Кипр",
-    "",
-    "LOW",
-    "NO"
+    "B - Founder/Owner",
+    "Gleb Nemov",
+    "CBDO/Co-Founder, Owner",
+    "Scoremachine.ai",
+    {
+      "url": "https://scoremachine.ai",
+      "text": "scoremachine.ai"
+    },
+    "Netherlands",
+    "gleb@scoremachine.ai",
+    {
+      "url": "http://www.linkedin.com/in/gnemov",
+      "text": "профиль"
+    },
+    "G GATE CHAT",
+    "TP",
+    {
+      "url": "https://t.me/f4t4l1t3",
+      "text": "@f4t4l1t3"
+    },
+    "f4t4l1t3"
   ],
   [
-    "Sergey Kubasov",
-    "Advix",
-    "Co-Founder/Advisor",
-    "Крипто/DeFi advisory",
-    "Кипр",
+    "B - Founder/Owner",
+    "Nicholas Shevchik",
+    "Co-Founder",
+    "Remocate",
     "",
-    "LOW",
-    "NO"
+    "Spain",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/nicholas-shevchik",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/remocate",
+      "text": "Remocate: релокация, удалёнка, рабо..."
+    },
+    "TP"
   ],
   [
-    "Sergey Kutylev",
-    "",
-    "CTO / IT Architect",
-    "Не определено",
-    "",
-    "",
-    "LOW",
-    "LOW"
+    "B - Founder/Owner",
+    "Nikolay Gekht",
+    "VP of Professional Development, Cofounder",
+    "Gehtsoft USA LLC",
+    {
+      "url": "https://gehtsoftusa.com",
+      "text": "gehtsoftusa.com"
+    },
+    "United States",
+    "nikolay.gekht@gehtsoftusa.com",
+    {
+      "url": "http://www.linkedin.com/in/nikolay-gekht",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/rinattyutin",
+      "text": "@rinattyutin"
+    },
+    "rinattyutin"
   ],
   [
-    "Victor Chirkov",
-    "",
-    "Head of Partnerships",
-    "",
-    "",
-    "",
-    "LOW",
-    "NO"
+    "B - Founder/Owner",
+    "Darina Biriulina",
+    "Growth Strategist & Co-founder",
+    "Renkka",
+    {
+      "url": "https://renkka.ai",
+      "text": "renkka.ai"
+    },
+    "Germany",
+    "darina@renkka.ai",
+    {
+      "url": "http://www.linkedin.com/in/darinabiriulina",
+      "text": "профиль"
+    },
+    "Unknown",
+    "TP"
   ],
   [
-    "Yulia Farber",
-    "Onside",
-    "CPO",
-    "Product company",
-    "Сербия",
-    "",
-    "LOW",
-    "NO"
+    "B - Founder/Owner",
+    "Leo Tokarev",
+    "Co-Founder",
+    "Pickles team",
+    {
+      "url": "https://pickles.team",
+      "text": "pickles.team"
+    },
+    "United States",
+    "tokarev@pickles.team",
+    {
+      "url": "http://www.linkedin.com/in/leonid-tokarev",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/leotokarev",
+      "text": "@leotokarev"
+    },
+    "leotokarev"
   ],
   [
-    "Yuval Barak",
-    "",
-    "Investor/Advisor",
-    "Gaming, mobile apps, M&A advisory",
-    "Израиль",
-    "",
-    "LOW",
-    "NO"
+    "B - Founder/Owner",
+    "Ali Ileri",
+    "Founder & Managing Partner",
+    "Forward Istanbul A.S. (F.IST)",
+    {
+      "url": "https://forwardistanbul.com",
+      "text": "forwardistanbul.com"
+    },
+    "Turkey",
+    "ali@forwardistanbul.com",
+    {
+      "url": "http://www.linkedin.com/in/ali-ileri-889b4525",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/digital_partners_chat",
+      "text": "Digital: партнерства и поиск подряд..."
+    },
+    "TP",
+    {
+      "url": "https://t.me/Al_pin",
+      "text": "@Al_pin"
+    },
+    "Al_pin"
   ],
   [
-    "Денис Жуковский",
+    "B - Founder/Owner",
+    "Nadia Eliseeva",
+    "Co-Founder and CCO",
+    "GrowthYears",
     "",
-    "Эксперт по цифровизации и ИИ",
-    "Не определено",
-    "Россия (предп.)",
+    "Netherlands",
     "",
-    "LOW",
-    "MEDIUM"
+    {
+      "url": "http://www.linkedin.com/in/nadia-eliseeva",
+      "text": "профиль"
+    },
+    "Комьюнити @Explain.in.Huma",
+    "TP",
+    {
+      "url": "https://t.me/nadiaeliseeva",
+      "text": "@nadiaeliseeva"
+    },
+    "nadiaeliseeva"
   ],
   [
-    "Dias Udanov",
-    "IEK Kazakhstan",
-    "CEO",
-    "B2B sales",
-    "Казахстан",
+    "B - Founder/Owner",
+    "Thomas Capiotti",
+    "Founders' Council",
+    "Associação Gaúcha de Startups (AGS)",
     "",
-    "NO",
-    "LOW"
+    "Brazil",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/thomascapiotti",
+      "text": "профиль"
+    },
+    "Belgrade Entrepreneurs and Startups",
+    "TP",
+    {
+      "url": "https://t.me/tcapiotti",
+      "text": "@tcapiotti"
+    },
+    "tcapiotti"
   ],
   [
-    "Ivan Reshetov",
-    "TOP100 IT Global CIO",
-    "CIO",
-    "Сообщество IT-лидеров РФ",
-    "Россия",
-    "",
-    "NO",
-    "HIGH",
-    "ivr8com@gmail.com",
-    "79057805285"
+    "B - Founder/Owner",
+    "Roman Pustovoit",
+    "Partner of Concepts",
+    "Human Code",
+    {
+      "url": "https://humancode.ru",
+      "text": "humancode.ru"
+    },
+    "Russia",
+    "r.pustovoit@humancode.ru",
+    {
+      "url": "http://www.linkedin.com/in/roman-pustovoit",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/r_pustovoit",
+      "text": "@r_pustovoit"
+    },
+    "r_pustovoit"
   ],
   [
-    "Oleksandr Ivanov",
-    "DataCall",
-    "CEO & Co-Founder",
-    "Data/Tech",
-    "",
-    "",
-    "NO",
-    "NO"
+    "B - Founder/Owner",
+    "Roman Pustovoit",
+    "Partner of Concepts",
+    "Human Code",
+    {
+      "url": "https://humancode.ru",
+      "text": "humancode.ru"
+    },
+    "Russia",
+    "r.pustovoit@humancode.ru",
+    {
+      "url": "http://www.linkedin.com/in/roman-pustovoit-5bb3b81a",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/r_pustovoit",
+      "text": "@r_pustovoit"
+    },
+    "r_pustovoit"
   ],
   [
-    "Luba Voskoboynik",
-    "Mellow",
-    "Global BDM",
-    "Contractor-of-record / global payments",
-    "Испания, Барселона",
+    "B - Founder/Owner",
+    "Daria Ivanova",
+    "Talent Partner",
+    "Valiotti Data",
+    {
+      "url": "https://valiotti.com",
+      "text": "valiotti.com"
+    },
+    "Armenia",
+    "ivanova.d@valiotti.com",
+    {
+      "url": "http://www.linkedin.com/in/dariaivanova",
+      "text": "профиль"
+    },
+    "ProIT Fest Чат",
+    "TP",
+    {
+      "url": "https://t.me/proitfest",
+      "text": "@proitfest"
+    },
+    "proitfest"
+  ],
+  [
+    "B - Founder/Owner",
+    "Simon Collard",
+    "Partner",
+    "Draft Partners",
+    {
+      "url": "https://draftpartners.co.uk",
+      "text": "draftpartners.co.uk"
+    },
+    "United Kingdom",
+    "sc@draftpartners.co.uk",
+    {
+      "url": "http://www.linkedin.com/in/simon-collard-68021713",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/agencyboss",
+      "text": "Чат «Управление агентством»"
+    },
+    "JF",
+    {
+      "url": "https://t.me/certum",
+      "text": "@certum"
+    },
+    "certum"
+  ],
+  [
+    "B - Founder/Owner",
+    "Vladilen Sitnikov",
+    "Partner",
+    "Skillbox English School",
     "",
-    "КОНКУРЕНТ",
-    "NO"
+    "Israel",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/vladsitnikov",
+      "text": "профиль"
+    },
+    "ХОТ ДИДЖИТАЛ от Влада Ситникова",
+    "TP",
+    {
+      "url": "https://t.me/HotDigital",
+      "text": "@HotDigital"
+    },
+    "HotDigital"
+  ],
+  [
+    "B - Founder/Owner",
+    "Sergei Mazuk",
+    "Growth Partner",
+    "SOMIN",
+    {
+      "url": "https://somin.ai",
+      "text": "somin.ai"
+    },
+    "Singapore",
+    "sergei@somin.ai",
+    {
+      "url": "http://www.linkedin.com/in/mazuk",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/startupvillage_chat",
+      "text": "Startup Village Chat"
+    },
+    "?",
+    {
+      "url": "https://t.me/sergeimazuk",
+      "text": "@sergeimazuk"
+    },
+    "sergeimazuk"
+  ],
+  [
+    "B - Founder/Owner",
+    "Adrien Ollier",
+    "IT Nearshore Business Partner",
+    "",
+    "",
+    "Serbia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/adrienollier",
+      "text": "профиль"
+    },
+    "Belgrade Entrepreneurs and Startups",
+    "TP",
+    {
+      "url": "https://t.me/AdriaNoFuture",
+      "text": "@AdriaNoFuture"
+    },
+    "AdriaNoFuture"
+  ],
+  [
+    "C - CMO/CPO/VP",
+    "Denis Shevchenko",
+    "CMO (text)",
+    "М.Видео-Эльдорадо",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "https://linkedin.com/in/denis-shevchenko-678b277b",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/geni_al",
+      "text": "@geni_al"
+    },
+    "geni_al"
+  ],
+  [
+    "C - CMO/CPO/VP",
+    "Margarita Babakova",
+    "CMO (text)",
+    "Sibedge",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "https://linkedin.com/in/margaritababakova",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VCjtmkWogw94rlzG",
+      "text": "AI BOOST"
+    },
+    "TP",
+    {
+      "url": "https://t.me/RitaRita_MargaritaB",
+      "text": "@RitaRita_MargaritaB"
+    },
+    "RitaRita_MargaritaB"
+  ],
+  [
+    "C - CMO/CPO/VP",
+    "Margarita Babakova",
+    "Chief Marketing Officer",
+    "sibedge",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/margaritababakova",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VCjtmkWogw94rlzG",
+      "text": "AI BOOST'26 — 22-23.10: Агентства о..."
+    },
+    "TP",
+    {
+      "url": "https://t.me/RitaRita_MargaritaB",
+      "text": "@RitaRita_MargaritaB"
+    },
+    "RitaRita_MargaritaB"
+  ],
+  [
+    "C - CMO/CPO/VP",
+    "Marina Detinko",
+    "Board Member, CMO",
+    "OctoProctor",
+    {
+      "url": "https://octoproctor.com",
+      "text": "octoproctor.com"
+    },
+    "United Kingdom",
+    "md@octoproctor.com",
+    {
+      "url": "http://www.linkedin.com/in/marina-detinko",
+      "text": "профиль"
+    },
+    "ITSpace.by",
+    "TP",
+    {
+      "url": "https://t.me/kate4kon",
+      "text": "@kate4kon"
+    },
+    "kate4kon"
+  ],
+  [
+    "C - CMO/CPO/VP",
+    "Bakhytzhan Zhakazhanov",
+    "Chief Product Officer",
+    "Astana Hub",
+    "",
+    "Kazakhstan",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/bakhytzhan-zhakazhanov",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VCjtmkWogw94rlzG",
+      "text": "AI BOOST'26 — 22-23.10: Агентства о..."
+    },
+    "TP",
+    {
+      "url": "https://t.me/agima_agencies",
+      "text": "@agima_agencies"
+    },
+    "agima_agencies"
+  ],
+  [
+    "C - CMO/CPO/VP",
+    "Akhil Sarin",
+    "Chief Marketing Officer",
+    "Easygo",
+    {
+      "url": "https://easygo.io",
+      "text": "easygo.io"
+    },
+    "Australia",
+    "akhil@easygo.io",
+    {
+      "url": "http://www.linkedin.com/in/akhilsarin",
+      "text": "профиль"
+    },
+    "G GATE CHAT",
+    "TP",
+    {
+      "url": "https://t.me/NikitaKozevich",
+      "text": "@NikitaKozevich"
+    },
+    "NikitaKozevich"
+  ],
+  [
+    "C - CMO/CPO/VP",
+    "Alexei Dozortsev",
+    "CMO",
+    "ArisGlobal",
+    "",
+    "Cyprus",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/dazortsau",
+      "text": "профиль"
+    },
+    "G GATE CHAT",
+    "TP"
+  ],
+  [
+    "C - CMO/CPO/VP",
+    "Igor Popov",
+    "Chief Business Development Officer",
+    "",
+    {
+      "url": "https://army.mil",
+      "text": "army.mil"
+    },
+    "Switzerland",
+    "igor.popov@army.mil",
+    {
+      "url": "http://www.linkedin.com/in/fintech-development",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VCjtmkWogw94rlzG",
+      "text": "AI BOOST'26 — 22-23.10: Агентства о..."
+    },
+    "?",
+    {
+      "url": "https://t.me/DentaTalkAI",
+      "text": "@DentaTalkAI"
+    },
+    "DentaTalkAI"
+  ],
+  [
+    "C - CMO/CPO/VP",
+    "Evgeny Aksakov",
+    "Chief Business Development Officer",
+    "Karma Korp.",
+    "",
+    "United Arab Emirates",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/evgeny-aksakov",
+      "text": "профиль"
+    },
+    "G GATE CHAT",
+    "TP",
+    {
+      "url": "https://t.me/evgeniyaksakov",
+      "text": "@evgeniyaksakov"
+    },
+    "evgeniyaksakov"
+  ],
+  [
+    "D - Director/Head",
+    "Alexander Veselov",
+    "Head of Department",
+    "Alfa-Bank",
+    {
+      "url": "https://alfabank.ru",
+      "text": "alfabank.ru"
+    },
+    "Russia",
+    "aveselov@alfabank.ru",
+    {
+      "url": "http://www.linkedin.com/in/alexander-veselov-bb034863",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "?",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
+  ],
+  [
+    "D - Director/Head",
+    "Vladimir Vasilev",
+    "Head of FBP Product and Sales Development",
+    "OZON.ru",
+    {
+      "url": "https://ozon.com",
+      "text": "ozon.com"
+    },
+    "Russia",
+    "vasilev@ozon.com",
+    {
+      "url": "http://www.linkedin.com/in/vladimir-vasilev-a0461b55",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/krlchtkt",
+      "text": "@krlchtkt"
+    },
+    "krlchtkt"
+  ],
+  [
+    "D - Director/Head",
+    "Anastasia Bianco",
+    "Head of Recruitment",
+    "Cian",
+    {
+      "url": "https://cian.ru",
+      "text": "cian.ru"
+    },
+    "Russia",
+    "a.kirillova@cian.ru",
+    {
+      "url": "http://www.linkedin.com/in/anastasia-bianco-14410292",
+      "text": "профиль"
+    },
+    "Unknown",
+    "TP"
+  ],
+  [
+    "D - Director/Head",
+    "Igor Samoylik",
+    "Head of Product",
+    "Moscow Exchange",
+    {
+      "url": "https://moex.com",
+      "text": "moex.com"
+    },
+    "Russia",
+    "igor.samoylik@moex.com",
+    {
+      "url": "http://www.linkedin.com/in/igor-samoylik-995326209",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/Igor012345",
+      "text": "@Igor012345"
+    },
+    "Igor012345"
+  ],
+  [
+    "D - Director/Head",
+    "Nadezhda Shipilova",
+    "Руководитель проектов, продукт по hr-консалтингу, управлению брендом работодателя",
+    "BI TO BE Consulting Group (BI TO BE Консалтинговая группа)",
+    {
+      "url": "https://bitobe.ru",
+      "text": "bitobe.ru"
+    },
+    "Russia",
+    "n.shipilova@bitobe.ru",
+    {
+      "url": "http://www.linkedin.com/in/shipilova-nad",
+      "text": "профиль"
+    },
+    "Эйчарлогия | HR-клуб",
+    "TP",
+    {
+      "url": "https://t.me/ship_i_love",
+      "text": "@ship_i_love"
+    },
+    "ship_i_love"
+  ],
+  [
+    "D - Director/Head",
+    "Volha Kublitskaya",
+    "Head of Web Development",
+    "21vek.by",
+    {
+      "url": "https://21vek.by",
+      "text": "21vek.by"
+    },
+    "Belarus",
+    "v.kublitskaya@21vek.by",
+    {
+      "url": "http://www.linkedin.com/in/volha-kublitskaya",
+      "text": "профиль"
+    },
+    "ITSpace.by",
+    "?",
+    {
+      "url": "https://t.me/kate4kon",
+      "text": "@kate4kon"
+    },
+    "kate4kon"
+  ],
+  [
+    "D - Director/Head",
+    "Veronika Zhuk",
+    "Head of Business Analysis Deparment",
+    "VEBTECH",
+    "",
+    "Belarus",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/veronika-zhuk-a26582234",
+      "text": "профиль"
+    },
+    "ITSpace.by",
+    "?",
+    {
+      "url": "https://t.me/kate4kon",
+      "text": "@kate4kon"
+    },
+    "kate4kon"
+  ],
+  [
+    "D - Director/Head",
+    "Anton Malyavsky",
+    "Head of Product",
+    "21vek.by",
+    {
+      "url": "https://21vek.by",
+      "text": "21vek.by"
+    },
+    "Belarus",
+    "a.malyavskij@21vek.by",
+    {
+      "url": "http://www.linkedin.com/in/anton-malyavskij",
+      "text": "профиль"
+    },
+    "ITSpace.by",
+    "?",
+    {
+      "url": "https://t.me/kate4kon",
+      "text": "@kate4kon"
+    },
+    "kate4kon"
+  ],
+  [
+    "D - Director/Head",
+    "Sergei Liashenko",
+    "Head of CX Team in Quality at Yandex Travel",
+    "Yandex",
+    "",
+    "Georgia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/sergeiliashenko",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/geni_al",
+      "text": "@geni_al"
+    },
+    "geni_al"
+  ],
+  [
+    "D - Director/Head",
+    "Sergey Zhvakin",
+    "Head of an IT Department",
+    "Orekhprom JSC",
+    {
+      "url": "https://orekhprom.ru",
+      "text": "orekhprom.ru"
+    },
+    "Croatia",
+    "sergey@orekhprom.ru",
+    {
+      "url": "http://www.linkedin.com/in/vsw2407",
+      "text": "профиль"
+    },
+    "🔴🟡🟢 ИТ-директор и его друзья)👍",
+    "?",
+    {
+      "url": "https://t.me/VSW2407",
+      "text": "@VSW2407"
+    },
+    "VSW2407"
+  ],
+  [
+    "D - Director/Head",
+    "Lisa Dziuba",
+    "Head of Marketing",
+    "Cerbos",
+    {
+      "url": "https://cerbos.dev",
+      "text": "cerbos.dev"
+    },
+    "United Kingdom",
+    "lisa@cerbos.dev",
+    {
+      "url": "http://www.linkedin.com/in/lisa-dziuba",
+      "text": "профиль"
+    },
+    "Ciao 🏡",
+    "?",
+    {
+      "url": "https://t.me/lisa_dziuba",
+      "text": "@lisa_dziuba"
+    },
+    "lisa_dziuba"
+  ],
+  [
+    "D - Director/Head",
+    "Evgeniia Plenidina",
+    "Head of B2B",
+    "Alter",
+    "",
+    "Spain",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/evgeniia-plenidina",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VP0VxHa2SyU-HZf1",
+      "text": "Эдтехи"
+    },
+    "?",
+    {
+      "url": "https://t.me/plidya",
+      "text": "@plidya"
+    },
+    "plidya"
+  ],
+  [
+    "D - Director/Head",
+    "Lidia Chilikova",
+    "Head of International Expansion (MENA & Europe)",
+    "Legacy Online School",
+    "",
+    "United Arab Emirates",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/lidia-chilikova",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VP0VxHa2SyU-HZf1",
+      "text": "Эдтехи"
+    },
+    "?",
+    {
+      "url": "https://t.me/lidia_expert_online",
+      "text": "@lidia_expert_online"
+    },
+    "lidia_expert_online"
+  ],
+  [
+    "D - Director/Head",
+    "Tetiana Karpenko",
+    "Head of Customer",
+    "",
+    "",
+    "Spain",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/tetiana-karpenko-tttka",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VP0VxHa2SyU-HZf1",
+      "text": "Эдтехи"
+    },
+    "?",
+    {
+      "url": "https://t.me/mazurinvlad",
+      "text": "@mazurinvlad"
+    },
+    "mazurinvlad"
+  ],
+  [
+    "D - Director/Head",
+    "Anastasia Moskovchenko",
+    "Head of Product",
+    "RepRally",
+    "",
+    "United States",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/nmosk",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/producttrends",
+      "text": "@producttrends"
+    },
+    "producttrends"
+  ],
+  [
+    "D - Director/Head",
+    "Pavel Kureev",
+    "Head of Services&Loyalty, b2c",
+    "Platinumlist",
+    "",
+    "United Arab Emirates",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/pakureev",
+      "text": "профиль"
+    },
+    "Unknown",
+    "TP"
+  ],
+  [
+    "D - Director/Head",
+    "Yuliia Sabirova",
+    "Head of web3 Projects",
+    "Xsolla",
+    {
+      "url": "https://xsolla.com",
+      "text": "xsolla.com"
+    },
+    "Turkey",
+    "y.sabirova@xsolla.com",
+    {
+      "url": "http://www.linkedin.com/in/yuliia-sabirova",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/Sabirovayuliia",
+      "text": "@Sabirovayuliia"
+    },
+    "Sabirovayuliia"
+  ],
+  [
+    "E - Other",
+    "Dmitry Gaidoutchenko",
+    "Lead Architect",
+    "X5",
+    {
+      "url": "https://x5.ru",
+      "text": "x5.ru"
+    },
+    "Russia",
+    "dmitry.gaidoutchenko@x5.ru",
+    {
+      "url": "http://www.linkedin.com/in/dmitryvg",
+      "text": "профиль"
+    },
+    "🔴🟡🟢 ИТ-директор и его друзья)👍",
+    "JF / TP",
+    {
+      "url": "https://t.me/dmitryvg",
+      "text": "@dmitryvg"
+    },
+    "dmitryvg"
+  ],
+  [
+    "E - Other",
+    "Yury Gluschenko",
+    "Implementation Project Manager",
+    "",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/yurikgl",
+      "text": "профиль"
+    },
+    "🔴🟡🟢 ИТ-директор и его друзья)👍",
+    "JF / TP",
+    {
+      "url": "https://t.me/yurikgl",
+      "text": "@yurikgl"
+    },
+    "yurikgl"
+  ],
+  [
+    "E - Other",
+    "Ekaterina Komar",
+    "Project Office Manager",
+    "Avito",
+    {
+      "url": "https://avito.ru",
+      "text": "avito.ru"
+    },
+    "Russia",
+    "ekomar@avito.ru",
+    {
+      "url": "http://www.linkedin.com/in/hissin",
+      "text": "профиль"
+    },
+    "🔴🟡🟢 ИТ-директор и его друзья)👍",
+    "?",
+    {
+      "url": "https://t.me/Hissin_eg",
+      "text": "@Hissin_eg"
+    },
+    "Hissin_eg"
+  ],
+  [
+    "E - Other",
+    "Anastasiya Blokhina",
+    "Художник, владелец сообщества",
+    "",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/anastasiya-blokhina-856630102",
+      "text": "профиль"
+    },
+    "E-CODE 🔹 Ozon Tech",
+    "?",
+    {
+      "url": "https://t.me/ConstanceFinn",
+      "text": "@ConstanceFinn"
+    },
+    "ConstanceFinn"
+  ],
+  [
+    "E - Other",
+    "Sergey Nosov",
+    "A People-centric and Results-driven Leader With Over 6,5+ Years of Product Management Experience and a Positive Outlook on Life.",
+    "New Venture Fund",
+    "",
+    "Russia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/serjeynosov",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+UlVRNMtW7rXucyZ9",
+      "text": "Чат Fast Founder"
+    },
+    "TP",
+    {
+      "url": "https://t.me/NosovSergey",
+      "text": "@NosovSergey"
+    },
+    "NosovSergey"
+  ],
+  [
+    "E - Other",
+    "Darima Aiurzhanaeva",
+    "Senior Business Analyst",
+    "Raiffeisen Bank Russia",
+    {
+      "url": "https://raiffeisen.ru",
+      "text": "raiffeisen.ru"
+    },
+    "Russia",
+    "aiurzhanaeva.darima@raiffeisen.ru",
+    {
+      "url": "http://www.linkedin.com/in/darima01",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/mia0109",
+      "text": "@mia0109"
+    },
+    "mia0109"
+  ],
+  [
+    "E - Other",
+    "Dmitry Novicky",
+    "B2B Manager",
+    "MobileUp",
+    {
+      "url": "https://mobileup.ru",
+      "text": "mobileup.ru"
+    },
+    "Russia",
+    "dmitry.novicky@mobileup.ru",
+    {
+      "url": "http://www.linkedin.com/in/dmitry-novicky-79969b132",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/digital_partners_chat",
+      "text": "Digital: партнерства и поиск подряд..."
+    },
+    "TP",
+    {
+      "url": "https://t.me/d_n_ang",
+      "text": "@d_n_ang"
+    },
+    "d_n_ang"
+  ],
+  [
+    "E - Other",
+    "Liudmila Barshcheuskaya",
+    "IT Consultant",
+    "",
+    "",
+    "Belarus",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/liudmila-barshcheuskaya",
+      "text": "профиль"
+    },
+    "ITSpace.by",
+    "TP",
+    {
+      "url": "https://t.me/liudmila_bar",
+      "text": "@liudmila_bar"
+    },
+    "liudmila_bar"
+  ],
+  [
+    "E - Other",
+    "Javid Jafarov",
+    "General Manager",
+    "HeroComputer",
+    "",
+    "Azerbaijan",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/javidherocomp",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VCjtmkWogw94rlzG",
+      "text": "AI BOOST'26 — 22-23.10: Агентства о..."
+    },
+    "TP",
+    {
+      "url": "https://t.me/flutter_javid_dev",
+      "text": "@flutter_javid_dev"
+    },
+    "flutter_javid_dev"
+  ],
+  [
+    "E - Other",
+    "Roman Nadein",
+    "Startup Mentor",
+    "Astana Hub",
+    {
+      "url": "https://rocketfirm.tech",
+      "text": "rocketfirm.tech"
+    },
+    "Kazakhstan",
+    "roman@rocketfirm.tech",
+    {
+      "url": "http://www.linkedin.com/in/roman-nadein",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/+VCjtmkWogw94rlzG",
+      "text": "AI BOOST'26 — 22-23.10: Агентства о..."
+    },
+    "TP",
+    {
+      "url": "https://t.me/agima_agencies",
+      "text": "@agima_agencies"
+    },
+    "agima_agencies"
+  ],
+  [
+    "E - Other",
+    "Nikita Pustovoytov",
+    "Chief AI Officer",
+    "Fortis",
+    "",
+    "Georgia",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/flashnik",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/flashnik",
+      "text": "@flashnik"
+    },
+    "flashnik"
+  ],
+  [
+    "E - Other",
+    "Nadejda Shipilova",
+    "HR Consultant (text)",
+    "",
+    {
+      "url": "https://bitobe.ru",
+      "text": "bitobe.ru"
+    },
+    "?",
+    "",
+    {
+      "url": "https://linkedin.com/in/shipilova-nad",
+      "text": "профиль"
+    },
+    "Эйчарлогия | HR-клуб",
+    "?",
+    {
+      "url": "https://t.me/ship_i_love",
+      "text": "@ship_i_love"
+    },
+    "ship_i_love"
+  ],
+  [
+    "E - Other",
+    "Alissa Starzak",
+    "Chief Legal Officer",
+    "Cloudflare",
+    {
+      "url": "https://cloudflare.com",
+      "text": "cloudflare.com"
+    },
+    "United States",
+    "alissa@cloudflare.com",
+    {
+      "url": "http://www.linkedin.com/in/alissa-starzak",
+      "text": "профиль"
+    },
+    "?",
+    "?"
+  ],
+  [
+    "E - Other",
+    "Maksim Gusev",
+    "Chief Project Officer",
+    "iSky Transport Systems Pvt Ltd",
+    {
+      "url": "https://unitsky.com",
+      "text": "unitsky.com"
+    },
+    "United Kingdom",
+    "m.gusev@unitsky.com",
+    {
+      "url": "http://www.linkedin.com/in/maksim-gusev",
+      "text": "профиль"
+    },
+    "ITSpace.by",
+    "?",
+    {
+      "url": "https://t.me/DianaPichugina",
+      "text": "@DianaPichugina"
+    },
+    "DianaPichugina"
+  ],
+  [
+    "E - Other",
+    "Oxana Raim",
+    "Venture Capitalist (text)",
+    "ICLUB.vc",
+    "",
+    "?",
+    "",
+    {
+      "url": "https://linkedin.com/in/oxana-raim-a7a73a52",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/qazaqitcom",
+      "text": "Qazaq IT Community"
+    },
+    "?",
+    {
+      "url": "https://t.me/oxanaraim",
+      "text": "@oxanaraim"
+    },
+    "oxanaraim"
+  ],
+  [
+    "E - Other",
+    "Yuri Korobov",
+    "Creative Lead (In-house Studio)",
+    "Avito",
+    "",
+    "Spain",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/koroboi",
+      "text": "профиль"
+    },
+    "ХОТ ДИДЖИТАЛ от Влада Ситникова",
+    "?",
+    {
+      "url": "https://t.me/HotDigital",
+      "text": "@HotDigital"
+    },
+    "HotDigital"
+  ],
+  [
+    "E - Other",
+    "Caesar Sengupta",
+    "Product Builder",
+    "EveryChild.SG",
+    {
+      "url": "https://everychild.sg",
+      "text": "everychild.sg"
+    },
+    "Singapore",
+    "caesar@everychild.sg",
+    {
+      "url": "http://www.linkedin.com/in/caesar-s",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "TP",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
+  ],
+  [
+    "E - Other",
+    "Caleb Frankel",
+    "Group Product Manager (Family)",
+    "Acorns",
+    {
+      "url": "https://acorns.com",
+      "text": "acorns.com"
+    },
+    "United States",
+    "caleb.frankel@acorns.com",
+    {
+      "url": "http://www.linkedin.com/in/caleb-frankel-6307b323b",
+      "text": "профиль"
+    },
+    "?",
+    "TP"
+  ],
+  [
+    "E - Other",
+    "Ezra Cooperstein",
+    "President",
+    "Night Ventures",
+    {
+      "url": "https://nightventures.com",
+      "text": "nightventures.com"
+    },
+    "United States",
+    "ezra@nightventures.com",
+    {
+      "url": "http://www.linkedin.com/in/ezra-cooperstein-1596b86",
+      "text": "профиль"
+    },
+    "Финтехно",
+    "?",
+    {
+      "url": "https://t.me/fintexno",
+      "text": "@fintexno"
+    },
+    "fintexno"
+  ],
+  [
+    "E - Other",
+    "Margarita Zryanina",
+    "Operations & People Lead | Management consulting  | Mentor",
+    "",
+    "",
+    "Cyprus",
+    "",
+    {
+      "url": "http://www.linkedin.com/in/margaritazryanina",
+      "text": "профиль"
+    },
+    {
+      "url": "https://t.me/joinchat/Box5A0LRxHz0V72JEVBQ8w",
+      "text": "ProductCamp Russia (&EE)"
+    },
+    "TP",
+    {
+      "url": "https://t.me/gvennivar",
+      "text": "@gvennivar"
+    },
+    "gvennivar"
+  ],
+  [
+    "E - Other",
+    "Gin Lippelt",
+    "Translator Russian (Category 1)",
+    "Ministerie van Defensie",
+    {
+      "url": "https://werkenbijdefensie.nl",
+      "text": "werkenbijdefensie.nl"
+    },
+    "Netherlands",
+    "gin@werkenbijdefensie.nl",
+    {
+      "url": "http://www.linkedin.com/in/gin-lippelt-95875937",
+      "text": "профиль"
+    },
+    "Комьюнити @Explain.in.Huma",
+    "TP",
+    {
+      "url": "https://t.me/Anya_morc",
+      "text": "@Anya_morc"
+    },
+    "Anya_morc"
+  ],
+  [
+    "E - Other",
+    "Alex Jurtan",
+    "Freelance Video Producer",
+    "Drop of Lemon Studio",
+    {
+      "url": "https://dropoflemon.com",
+      "text": "dropoflemon.com"
+    },
+    "Netherlands",
+    "alex@dropoflemon.com",
+    {
+      "url": "http://www.linkedin.com/in/ajurtan",
+      "text": "профиль"
+    },
+    "Комьюнити @Explain.in.Huma",
+    "TP",
+    {
+      "url": "https://t.me/Ulishe",
+      "text": "@Ulishe"
+    },
+    "Ulishe"
+  ],
+  [
+    "E - Other",
+    "Lidia Timkovskaya",
+    "International Women’s Leadership & Career Growth Programs Lead & Coach at Fortune 500 Companies",
+    "WOW Humans!",
+    {
+      "url": "https://wow-humans.com",
+      "text": "wow-humans.com"
+    },
+    "Estonia",
+    "lidia@wow-humans.com",
+    {
+      "url": "http://www.linkedin.com/in/lidiatimkovskaya",
+      "text": "профиль"
+    },
+    "Комьюнити @Explain.in.Huma",
+    "TP",
+    {
+      "url": "https://t.me/LidiaTimkovskaya",
+      "text": "@LidiaTimkovskaya"
+    },
+    "LidiaTimkovskaya"
   ]
 ]

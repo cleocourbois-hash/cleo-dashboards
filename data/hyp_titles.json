@@ -8,13 +8,6 @@
       "CEO/Founder": 1552,
       "Director/Other": 331,
       "Other": 10
-    },
-    "top_raw": {
-      "генеральный директор": 1549,
-      "директор": 325,
-      "управляющий": 5,
-      "исполнительный директор": 3,
-      "управляющий индивидуальный предпринимате": 2
     }
   },
   "rusprofile": {
@@ -26,13 +19,6 @@
       "CEO/Founder": 1126,
       "Director/Other": 216,
       "Other": 8
-    },
-    "top_raw": {
-      "генеральный директор": 1109,
-      "директор": 209,
-      "управляющий": 3,
-      "президент": 3,
-      "исполнительный директор, генеральный дир": 2
     }
   },
   "sergey_manual": {
@@ -44,13 +30,6 @@
       "CEO/Founder": 78,
       "Director/Other": 10,
       "Other": 2
-    },
-    "top_raw": {
-      "генеральный директор": 78,
-      "директор": 9,
-      "управляющий - индивидуальный предпринима": 1,
-      "управляющий": 1,
-      "исполнительный директор": 1
     }
   },
   "tt_digital": {
@@ -64,13 +43,6 @@
       "Other": 19,
       "COO/Ops": 7,
       "HRD/HR": 1
-    },
-    "top_raw": {
-      "founder": 56,
-      "director": 37,
-      "ceo": 30,
-      "entrepreneur": 14,
-      "coo": 7
     }
   },
   "tt_bizrf": {
@@ -85,13 +57,6 @@
       "HRD/HR": 11,
       "CFO/Finance": 2,
       "COO/Ops": 2
-    },
-    "top_raw": {
-      "director": 42,
-      "founder": 35,
-      "ceo": 17,
-      "entrepreneur": 14,
-      "partner": 11
     }
   },
   "tt_abroad": {
@@ -104,13 +69,6 @@
       "CTO/Tech": 4,
       "Other": 2,
       "COO/Ops": 1
-    },
-    "top_raw": {
-      "founder": 13,
-      "ceo": 7,
-      "director": 3,
-      "owner": 1,
-      "cto": 1
     }
   },
   "tt_startups": {
@@ -120,9 +78,6 @@
     "title_pct": 100.0,
     "buckets": {
       "CEO/Founder": 1
-    },
-    "top_raw": {
-      "ceo": 1
     }
   },
   "technoparks": {
@@ -132,21 +87,14 @@
     "title_pct": 43.7,
     "buckets": {
       "Other": 640,
-      "CEO/Founder": 130,
-      "Director/Other": 31,
-      "Manager": 26,
+      "CEO/Founder": 132,
+      "Director/Other": 30,
       "CTO/Tech": 25,
+      "Manager": 25,
       "CFO/Finance": 6,
       "CIO/IT": 3,
       "HRD/HR": 1,
       "COO/Ops": 1
-    },
-    "top_raw": {
-      "ceo": 6,
-      "chief technology officer": 5,
-      "co-founder": 4,
-      "chief executive officer": 3,
-      "предприниматель": 3
     }
   },
   "pokupnaya": {
@@ -158,13 +106,6 @@
       "CEO/Founder": 424,
       "Director/Other": 129,
       "Other": 11
-    },
-    "top_raw": {
-      "генеральный директор": 422,
-      "директор": 128,
-      "управляющий - индивидуальный  предприним": 7,
-      "президент": 2,
-      "управляющий": 1
     }
   },
   "technoparks2": {
@@ -177,13 +118,6 @@
       "Other": 5,
       "CEO/Founder": 4,
       "CFO/Finance": 1
-    },
-    "top_raw": {
-      "founder, ceo": 2,
-      "regional director": 1,
-      "director of sales in nearby foreign coun": 1,
-      "chief marketing officer": 1,
-      "co-founder and ceo": 1
     }
   },
   "recruiter_chats": {
@@ -198,13 +132,6 @@
       "HRD/HR": 12,
       "COO/Ops": 10,
       "CFO/Finance": 2
-    },
-    "top_raw": {
-      "founder": 104,
-      "director": 82,
-      "ceo": 55,
-      "entrepreneur": 29,
-      "partner": 17
     }
   },
   "agencies": {
@@ -217,13 +144,6 @@
       "CEO/Founder": 2,
       "CTO/Tech": 1,
       "Other": 1
-    },
-    "top_raw": {
-      "bd manager": 1,
-      "commercial director": 1,
-      "founder": 1,
-      "chief business development officer": 1,
-      "research project manager": 1
     }
   },
   "leadget": {
@@ -231,8 +151,7 @@
     "total": 19,
     "with_title": 0,
     "title_pct": 0.0,
-    "buckets": {},
-    "top_raw": {}
+    "buckets": {}
   },
   "4cio": {
     "tab": "4cio",
@@ -241,19 +160,12 @@
     "title_pct": 98.4,
     "buckets": {
       "Director/Other": 66,
-      "Other": 59,
-      "CIO/IT": 34,
+      "Other": 60,
+      "CIO/IT": 33,
       "CEO/Founder": 18,
       "Manager": 2,
       "CTO/Tech": 1,
       "COO/Ops": 1
-    },
-    "top_raw": {
-      "директор по ит": 16,
-      "cio": 9,
-      "исполнительный директор": 4,
-      "зам гд": 4,
-      "руководитель направления": 4
     }
   },
   "ai_integrators": {
@@ -266,13 +178,6 @@
       "CTO/Tech": 5,
       "Other": 2,
       "COO/Ops": 1
-    },
-    "top_raw": {
-      "ceo": 5,
-      "сооснователь": 2,
-      "cto": 2,
-      "coo": 1,
-      "ceo, red_mad_robot ai": 1
     }
   },
   "linkedin_recs": {
@@ -288,13 +193,6 @@
       "CTO/Tech": 3,
       "CIO/IT": 2,
       "Manager": 1
-    },
-    "top_raw": {
-      "founder": 11,
-      "ceo": 10,
-      "co-founder": 7,
-      "ceo & co-founder": 6,
-      "founder & ceo": 4
     }
   },
   "russoft": {
@@ -302,40 +200,35 @@
     "total": 0,
     "with_title": 0,
     "title_pct": 0,
-    "buckets": {},
-    "top_raw": {}
+    "buckets": {}
   },
   "arpp": {
     "tab": "АРПП",
     "total": 0,
     "with_title": 0,
     "title_pct": 0,
-    "buckets": {},
-    "top_raw": {}
+    "buckets": {}
   },
   "rating_runeta": {
     "tab": "Рейтинг Рунета",
     "total": 0,
     "with_title": 0,
     "title_pct": 0,
-    "buckets": {},
-    "top_raw": {}
+    "buckets": {}
   },
   "raek": {
     "tab": "РАЭК",
     "total": 0,
     "with_title": 0,
     "title_pct": 0,
-    "buckets": {},
-    "top_raw": {}
+    "buckets": {}
   },
   "data_insight": {
     "tab": "Data Insight Top",
     "total": 0,
     "with_title": 0,
     "title_pct": 0,
-    "buckets": {},
-    "top_raw": {}
+    "buckets": {}
   },
   "linkedin_tg": {
     "tab": "LinkedIn из TG-чатов",
@@ -350,13 +243,6 @@
       "Manager": 10,
       "COO/Ops": 5,
       "CIO/IT": 1
-    },
-    "top_raw": {
-      "co-founder": 9,
-      "chief executive officer": 3,
-      "founder": 3,
-      "head of product": 3,
-      "ceo": 2
     }
   }
 }
