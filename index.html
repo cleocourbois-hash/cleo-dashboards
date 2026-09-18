@@ -74,6 +74,7 @@ h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
 .card-icon { font-size: 32px; }
 .card-title { font-size: 18px; font-weight: 600; }
 .card-desc { font-size: 13px; color: var(--text2); line-height: 1.5; }
+.card-desc strong { color: var(--text); font-weight: 600; }
 .card-stats {
   display: flex;
   gap: 16px;
@@ -145,9 +146,9 @@ h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
     </a>
 
     <a href="hypotheses.html" class="card">
-      <div><span class="card-icon">🧪</span> <span class="badge badge-sheets">SHEETS</span></div>
+      <div><span class="card-icon">🧪</span> <span class="badge badge-live">LIVE API</span></div>
       <div class="card-title">Гипотезы лидгена</div>
-      <div class="card-desc">Карта гипотез, воронка по источникам, результаты тестов каналов.</div>
+      <div class="card-desc" id="hyp-desc">Карта гипотез, воронка по источникам, результаты тестов каналов.</div>
       <div class="card-stats" id="hyp-stats"></div>
     </a>
 
@@ -196,6 +197,23 @@ async function loadStats() {
       <div>КП<span class="stat-value">${ov.tg.kp}</span></div>
     `;
     document.getElementById('updated').textContent = 'Данные: ' + ov.updated_at.slice(0, 10);
+  } catch(e) {}
+  try {
+    const hyp = await fetch('data/hypotheses.json').then(r => r.json());
+    const active = hyp.hypotheses.filter(h => h.status === 'в работе');
+    const planned = hyp.hypotheses.filter(h => h.status === 'план');
+    const totalSent = hyp.hypotheses.reduce((s,h) => s + (h.members||[]).reduce((a,m) => a+(m.sent||0), 0), 0);
+    const totalKP = hyp.hypotheses.reduce((s,h) => s + (h.members||[]).reduce((a,m) => a+(m.kp||0), 0), 0);
+    const activeNames = active.map(h => h.name).join(', ');
+    const plannedNames = planned.map(h => h.name).join(', ');
+    document.getElementById('hyp-desc').innerHTML =
+      `<strong>В работе (${active.length}):</strong> ${activeNames}<br>` +
+      `<span style="color:var(--text2)">В плане (${planned.length}):</span> <span style="font-size:12px">${plannedNames}</span>`;
+    document.getElementById('hyp-stats').innerHTML = `
+      <div>Sent<span class="stat-value">${totalSent.toLocaleString()}</span></div>
+      <div>КП<span class="stat-value">${totalKP}</span></div>
+      <div>Гипотез<span class="stat-value">${hyp.hypotheses.length}</span></div>
+    `;
   } catch(e) {}
   try {
     const funnel = await fetch('data/event_funnel.json').then(r => r.json());
