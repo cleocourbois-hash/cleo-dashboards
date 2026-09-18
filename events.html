@@ -318,19 +318,36 @@ function renderFunnelCompare() {
   const outKp = tg.kp;
   const outDogovor = tg.dogovor;
 
+  const tpQual = real.filter(r => r.product === 'TP').reduce((s, r) => s + r.qual, 0);
+  const jfQual = real.filter(r => r.product === 'JF').reduce((s, r) => s + r.qual, 0);
+  const tpEvents = real.filter(r => r.product === 'TP').length;
+  const jfEvents = real.filter(r => r.product === 'JF').length;
+
   document.getElementById('funnel-compare').innerHTML = `
     <div class="fc-card">
-      <h2><span class="fc-icon">🎤</span> Офлайн ивенты</h2>
+      <h2><span class="fc-icon">🎤</span> Ивенты - TalentPay</h2>
       <div class="fc-metrics">
-        <div class="fc-metric"><div class="fc-label">MQL</div><div class="fc-val">${evMql}</div><div class="fc-sub">${real.length} ивентов</div></div>
-        <div class="fc-metric"><div class="fc-label">КП</div><div class="fc-val">${evKp}</div><div class="fc-sub">${pct(evKp, evMql)} из MQL</div></div>
-        <div class="fc-metric"><div class="fc-label">Договор</div><div class="fc-val">${evContract}</div><div class="fc-sub">${pct(evContract, evKp)} из КП</div></div>
+        <div class="fc-metric"><div class="fc-label">MQL</div><div class="fc-val">${tpMql}</div><div class="fc-sub">${tpEvents} ивентов</div></div>
+        <div class="fc-metric"><div class="fc-label">КП</div><div class="fc-val">${tpKp}</div><div class="fc-sub">${pct(tpKp, tpMql)} из MQL</div></div>
+        <div class="fc-metric"><div class="fc-label">Договор</div><div class="fc-val">${tpContract}</div><div class="fc-sub">${pct(tpContract, tpKp)} из КП</div></div>
       </div>
       <div class="fc-breakdown">
-        <div class="fc-bp"><strong>${tpMql}</strong> MQL TP</div>
-        <div class="fc-bp"><strong>${jfMql}</strong> MQL JF</div>
-        <div class="fc-bp"><strong>${tpKp}</strong> КП TP</div>
-        <div class="fc-bp"><strong>${jfKp}</strong> КП JF</div>
+        <div class="fc-bp"><strong>${tpQual}</strong> квалов</div>
+        <div class="fc-bp"><strong>${pct(tpQual, tpMql)}</strong> MQL→квал</div>
+        <div class="fc-bp"><strong>${pct(tpKp, tpQual)}</strong> квал→КП</div>
+      </div>
+    </div>
+    <div class="fc-card">
+      <h2><span class="fc-icon">🎤</span> Ивенты - JustFinTech</h2>
+      <div class="fc-metrics">
+        <div class="fc-metric"><div class="fc-label">MQL</div><div class="fc-val">${jfMql}</div><div class="fc-sub">${jfEvents} ивентов</div></div>
+        <div class="fc-metric"><div class="fc-label">КП</div><div class="fc-val">${jfKp}</div><div class="fc-sub">${pct(jfKp, jfMql)} из MQL</div></div>
+        <div class="fc-metric"><div class="fc-label">Договор</div><div class="fc-val">${jfContract}</div><div class="fc-sub">${pct(jfContract, jfKp)} из КП</div></div>
+      </div>
+      <div class="fc-breakdown">
+        <div class="fc-bp"><strong>${jfQual}</strong> квалов</div>
+        <div class="fc-bp"><strong>${pct(jfQual, jfMql)}</strong> MQL→квал</div>
+        <div class="fc-bp"><strong>${pct(jfKp, jfQual)}</strong> квал→КП</div>
       </div>
     </div>
     <div class="fc-card">
