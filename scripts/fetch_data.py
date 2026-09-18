@@ -132,6 +132,104 @@ def fetch_hyp_titles(svc, hyp_sid):
     print(f"OK: hyp_titles ({len(all_data)} tabs)")
 
 
+def parse_int(s):
+    if not s:
+        return 0
+    s = str(s).strip().replace('\xa0', '').replace(' ', '').replace(',', '')
+    try:
+        return int(float(s))
+    except (ValueError, TypeError):
+        return 0
+
+
+def fetch_event_funnel(svc, es_sid):
+    REPORT_TABS = [
+        ("Отчет ТП", "TP"),
+        ("Отчёт ПО", "JF"),
+    ]
+    meta = svc.get(spreadsheetId=es_sid, fields="sheets(properties(title))").execute()
+    tab_names = [s["properties"]["title"] for s in meta["sheets"]]
+
+    all_rows = []
+    for report_name, product in REPORT_TABS:
+        tab = next((t for t in tab_names if report_name.lower() in t.lower()), None)
+        if not tab:
+            continue
+        try:
+            hdr_r = svc.values().get(spreadsheetId=es_sid, range=f"'{tab}'!A1:Z1").execute()
+            headers = [h.strip().lower() for h in hdr_r.get("values", [[]])[0]]
+
+            result = svc.values().get(spreadsheetId=es_sid, range=f"'{tab}'!A2:Z").execute()
+            rows = result.get("values", [])
+
+            def col(name):
+                for i, h in enumerate(headers):
+                    if name in h:
+                        return i
+                return None
+
+            ci = {
+                "name": col("ивент") or col("мероприят") or 0,
+                "tag": col("тег") or col("tag"),
+                "date": col("дата"),
+                "format": col("формат"),
+                "who": col("кто") or col("ездил"),
+                "parsing": col("парсинг") or col("способ"),
+                "cost": col("затрат") or col("стоимость"),
+                "contacts": col("спарсили") or col("контакт"),
+                "mql": col("mql") or col("передали"),
+                "qual": col("квалов") or col("квал"),
+                "kp": col("кп"),
+                "contract": col("договор"),
+                "deal": col("сделка") or col("сделок"),
+                "verdict": col("вердикт"),
+            }
+
+            for row in rows:
+                row += [""] * (26 - len(row))
+                name = row[ci["name"]] if ci["name"] is not None else ""
+                if not name.strip():
+                    continue
+
+                is_month = name.startswith("🟦") or name.startswith("🟧")
+                is_total = "итого" in name.lower()
+
+                mql = parse_int(row[ci["mql"]]) if ci["mql"] is not None else 0
+                qual = parse_int(row[ci["qual"]]) if ci["qual"] is not None else 0
+                kp = parse_int(row[ci["kp"]]) if ci["kp"] is not None else 0
+                contract = parse_int(row[ci["contract"]]) if ci["contract"] is not None else 0
+                deal = parse_int(row[ci["deal"]]) if ci["deal"] is not None else 0
+                contacts = parse_int(row[ci["contacts"]]) if ci["contacts"] is not None else 0
+                cost = parse_int(row[ci["cost"]]) if ci["cost"] is not None else 0
+
+                r = {
+                    "name": name.strip(),
+                    "tag": (row[ci["tag"]] if ci["tag"] is not None else "").strip(),
+                    "date": (row[ci["date"]] if ci["date"] is not None else "").strip(),
+                    "format": (row[ci["format"]] if ci["format"] is not None else "").strip(),
+                    "who": (row[ci["who"]] if ci["who"] is not None else "").strip(),
+                    "product": product,
+                    "parsing": (row[ci["parsing"]] if ci["parsing"] is not None else "").strip(),
+                    "cost": cost,
+                    "contacts": contacts,
+                    "mql": mql,
+                    "qual": qual,
+                    "kp": kp,
+                    "contract": contract,
+                    "deal": deal,
+                    "verdict": (row[ci["verdict"]] if ci["verdict"] is not None else "").strip(),
+                    "cost_per_mql": int(cost / mql) if mql > 0 and cost > 0 else 0,
+                    "cost_per_kp": int(cost / kp) if kp > 0 and cost > 0 else 0,
+                }
+                all_rows.append(r)
+        except Exception as e:
+            print(f"ERR: event_funnel/{report_name} - {e}", file=sys.stderr)
+
+    with open(os.path.join(DATA_DIR, "event_funnel.json"), "w") as f:
+        json.dump(all_rows, f, ensure_ascii=False, indent=2)
+    print(f"OK: event_funnel ({len(all_rows)} rows)")
+
+
 def fetch_sheets():
     try:
         from google.oauth2 import service_account
@@ -215,6 +313,7 @@ def fetch_sheets():
         save("hyp_dashboard", HYP_SID, f"'{dash_tab}'!A:Z")
 
     fetch_hyp_titles(svc, HYP_SID)
+    fetch_event_funnel(svc, ES_SID)
 
     li_tab = next((t for t in hyp_tabs if "linkedin из" in t.lower()), None)
     if li_tab:
