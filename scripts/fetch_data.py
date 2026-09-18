@@ -39,6 +39,99 @@ def fetch_funnel_api():
             print(f"ERR: {name} - {e}", file=sys.stderr)
 
 
+def normalize_title(t):
+    if not t:
+        return None
+    tl = t.lower().strip()
+    if any(kw in tl for kw in ['ceo', 'founder', 'co-founder', 'cofounder', 'основатель',
+            'владелец', 'собственник', 'owner', 'генеральный директор', 'ген. директор',
+            'general director', 'managing director', 'управляющий директор', 'president',
+            'президент', 'chairman', 'председатель', 'multifounder']):
+        return 'CEO/Founder'
+    if any(kw in tl for kw in ['cto', 'vp engineering', 'chief technology',
+            'технический директор', 'tech lead', 'technical director', 'head of engineering']):
+        return 'CTO/Tech'
+    if any(kw in tl for kw in ['cio', 'chief information', 'директор по ит',
+            'ит-директор', 'it director', 'директор по информационн',
+            'руководитель ит', 'head of it']):
+        return 'CIO/IT'
+    if any(kw in tl for kw in ['cfo', 'chief financial', 'финансовый директор',
+            'finance director', 'главный бухгалтер', 'главбух']):
+        return 'CFO/Finance'
+    if any(kw in tl for kw in ['hrd', 'hr director', 'chief people', 'chro',
+            'hr-директор', 'директор по персоналу', 'head of hr', 'head of people',
+            'hr manager', 'recruiter', 'рекрутер', 'head of talent']):
+        return 'HRD/HR'
+    if any(kw in tl for kw in ['coo', 'chief operating', 'операционный директор']):
+        return 'COO/Ops'
+    if any(kw in tl for kw in ['director', 'директор', 'руководитель', 'head of',
+            'vp', 'vice president', 'заместитель']):
+        return 'Director/Other'
+    if any(kw in tl for kw in ['manager', 'менеджер', 'lead', 'team lead']):
+        return 'Manager'
+    return 'Other'
+
+
+def fetch_hyp_titles(svc, hyp_sid):
+    from collections import Counter
+    TABS = [
+        ("Сергей - рост штата 24/25", 4, 3, "sergey"),
+        ("rusprofile", 4, 3, "rusprofile"),
+        ("Сергей Ручной Рисерч✅", 2, 3, "sergey_manual"),
+        ("TT - Digital/IT", 6, 3, "tt_digital"),
+        ("TT - Бизнес РФ", 6, 3, "tt_bizrf"),
+        ("TT - За рубежом", 6, 3, "tt_abroad"),
+        ("TT - Стартапы", 6, 3, "tt_startups"),
+        ("технопарки", 2, 3, "technoparks"),
+        ("покупная база IT❌", 3, 3, "pokupnaya"),
+        ("технопарки 2", 2, 3, "technoparks2"),
+        ("Рекрутерские TG чаты", 6, 3, "recruiter_chats"),
+        ("Агентства (researchops)", 6, 3, "agencies"),
+        ("LeadGet тест", None, 3, "leadget"),
+        ("4cio", 2, 3, "4cio"),
+        ("AI интеграторы (партнёрка)", 4, 3, "ai_integrators"),
+        ("LinkedIn рекомендации", 2, 3, "linkedin_recs"),
+        ("RUSSOFT", 2, 3, "russoft"),
+        ("АРПП", 2, 3, "arpp"),
+        ("Рейтинг Рунета", 2, 3, "rating_runeta"),
+        ("РАЭК", 2, 3, "raek"),
+        ("Data Insight Top", 2, 3, "data_insight"),
+        ("LinkedIn из TG-чатов", 2, 2, "linkedin_tg"),
+    ]
+    all_data = {}
+    for tab_name, title_col, start_row, key in TABS:
+        try:
+            max_col = chr(65 + max(title_col or 0, 6) + 1)
+            r = svc.values().get(
+                spreadsheetId=hyp_sid,
+                range=f"'{tab_name}'!A{start_row}:{max_col}5000"
+            ).execute()
+            rows = r.get("values", [])
+            total = with_title = 0
+            buckets = Counter()
+            for row in rows:
+                if not row or not any(c.strip() for c in row if c):
+                    continue
+                total += 1
+                if title_col is not None and len(row) > title_col:
+                    title = row[title_col].strip()
+                    if title:
+                        with_title += 1
+                        b = normalize_title(title)
+                        if b:
+                            buckets[b] += 1
+            all_data[key] = {
+                "tab": tab_name, "total": total, "with_title": with_title,
+                "title_pct": round(100 * with_title / total, 1) if total else 0,
+                "buckets": dict(buckets.most_common()),
+            }
+        except Exception as e:
+            all_data[key] = {"tab": tab_name, "total": 0, "error": str(e)}
+    with open(os.path.join(DATA_DIR, "hyp_titles.json"), "w") as f:
+        json.dump(all_data, f, ensure_ascii=False, indent=2)
+    print(f"OK: hyp_titles ({len(all_data)} tabs)")
+
+
 def fetch_sheets():
     try:
         from google.oauth2 import service_account
@@ -120,6 +213,8 @@ def fetch_sheets():
     dash_tab = next((t for t in hyp_tabs if "дашборд" in t.lower()), None)
     if dash_tab:
         save("hyp_dashboard", HYP_SID, f"'{dash_tab}'!A:Z")
+
+    fetch_hyp_titles(svc, HYP_SID)
 
     li_tab = next((t for t in hyp_tabs if "linkedin из" in t.lower()), None)
     if li_tab:
