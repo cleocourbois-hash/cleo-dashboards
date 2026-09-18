@@ -40,9 +40,9 @@ h1 { font-size: 24px; font-weight: 700; margin: 8px 0 24px; }
   padding: 12px 20px; font-size: 12px; color: var(--text2);
 }
 .kpi-sm strong { font-size: 20px; color: var(--text); display: block; font-variant-numeric: tabular-nums; }
-.table-wrap { overflow-x: auto; }
+.table-wrap { overflow-x: auto; max-height: calc(100vh - 240px); overflow-y: auto; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
-th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; }
+th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; position: sticky; top: 0; z-index: 10; background: var(--surface); }
 td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
 tr:hover td { background: var(--accent-light); }
 .tag { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 500; }

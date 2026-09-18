@@ -35,9 +35,9 @@ h1 { font-size: 24px; font-weight: 700; margin: 8px 0 24px; }
 .filter-btn { padding: 4px 12px; border-radius: 4px; font-size: 12px; background: var(--surface); border: 1px solid var(--border); cursor: pointer; color: var(--text); }
 .filter-btn.active { background: var(--accent-light); border-color: var(--accent); color: var(--accent); }
 .search { padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; width: 240px; background: var(--surface); color: var(--text); margin-bottom: 16px; }
-.table-wrap { overflow-x: auto; }
+.table-wrap { overflow-x: auto; max-height: calc(100vh - 240px); overflow-y: auto; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
-th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; cursor: pointer; white-space: nowrap; }
+th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; cursor: pointer; white-space: nowrap; position: sticky; top: 0; z-index: 10; background: var(--surface); }
 th:hover { color: var(--accent); }
 td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
 tr:hover td { background: var(--accent-light); }

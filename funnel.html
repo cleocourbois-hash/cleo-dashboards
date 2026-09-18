@@ -40,7 +40,7 @@ h1 { font-size: 24px; font-weight: 700; margin: 8px 0 4px; }
 .section { margin-bottom: 32px; }
 .section-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
-th { text-align: left; padding: 8px 12px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+th { text-align: left; padding: 8px 12px; border-bottom: 2px solid var(--border); color: var(--text2); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; position: sticky; top: 0; z-index: 10; background: var(--surface); }
 td { padding: 8px 12px; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; }
 tr:hover td { background: var(--accent-light); }
 .bar-cell { position: relative; }
@@ -60,7 +60,7 @@ tr:hover td { background: var(--accent-light); }
   background: var(--surface); border: 1px solid var(--border); cursor: pointer;
 }
 .brand-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-.table-wrap { overflow-x: auto; }
+.table-wrap { overflow-x: auto; max-height: calc(100vh - 240px); overflow-y: auto; }
 </style>
 </head>
 <body>
