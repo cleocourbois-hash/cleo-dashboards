@@ -53,6 +53,12 @@ tr:hover td { background: var(--accent-light); }
 .bar-fill { height: 6px; border-radius: 2px; background: var(--accent); display: block; }
 .section { margin-bottom: 32px; }
 .section-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+.summary-row td { background: var(--accent-light); font-weight: 700; border-bottom: 2px solid var(--accent); }
+.icp-note { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 20px; font-size: 13px; line-height: 1.6; }
+.icp-note strong { color: var(--accent); }
+.icp-note .product-tag { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin: 0 2px; }
+.icp-note .tag-tp { background: #dcfce7; color: #166534; }
+.icp-note .tag-jf { background: #dbeafe; color: #1e40af; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .tag-active { background: #064e3b; color: #6ee7b7; }
   :root:not([data-theme="light"]) .tag-paused { background: #451a03; color: #fcd34d; }
@@ -78,6 +84,11 @@ tr:hover td { background: var(--accent-light); }
   </div>
 
   <div id="map-section" class="section" style="display:none">
+    <div class="icp-note">
+      <strong>ICP по продуктам:</strong><br>
+      <span class="product-tag tag-tp">TP</span> CEO, CTO, HRD, CFO, Founders стартапов/IT с удалёнными командами<br>
+      <span class="product-tag tag-jf">JF/ПО</span> CIO, CISO, директора по закупкам средних и крупных компаний
+    </div>
     <div class="table-wrap">
       <table id="hyp-map"><thead></thead><tbody></tbody></table>
     </div>
@@ -173,7 +184,10 @@ function renderMap() {
   thead.innerHTML = '<tr>' + displayCols.map(i => `<th>${(header[i]||'').replace(/\n/g,' ')}</th>`).join('') + '</tr>';
   tbody.innerHTML = rows.map(r => {
     r = r.concat(Array(11).fill('')).slice(0,11);
-    return '<tr>' + displayCols.map(i => `<td>${r[i]||''}</td>`).join('') + '</tr>';
+    const cell0 = (r[0]||'').toLowerCase();
+    const isSummary = cell0.startsWith('итого') || cell0 === 'итого';
+    const cls = isSummary ? ' class="summary-row"' : '';
+    return `<tr${cls}>` + displayCols.map(i => `<td>${r[i]||''}</td>`).join('') + '</tr>';
   }).join('');
 }
 

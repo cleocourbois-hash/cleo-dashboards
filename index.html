@@ -109,7 +109,7 @@ h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
     <a href="funnel.html" class="card">
       <div><span class="card-icon">📊</span> <span class="badge badge-live">LIVE API</span></div>
       <div class="card-title">Воронка аутрича</div>
-      <div class="card-desc">Отправлено, ответы, MQL, квалы, КП, сделки. Данные из CRM Алисы.</div>
+      <div class="card-desc">Отправлено, ответы, MQL, квалы, КП, сделки. Данные из Мартины.</div>
       <div class="card-stats" id="funnel-stats"></div>
     </a>
 
@@ -129,15 +129,10 @@ h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
 
     <a href="http://46.225.131.16:8090/" class="card" target="_blank">
       <div><span class="card-icon">🔗</span> <span class="badge badge-live">EXTERNAL</span></div>
-      <div class="card-title">CRM Алисы (полная)</div>
+      <div class="card-title">Мартина</div>
       <div class="card-desc">Полный интерфейс воронки: диагностика, базы, аналитика по источникам, лиды.</div>
     </a>
 
-    <a href="contacts.html" class="card">
-      <div><span class="card-icon">👤</span> <span class="badge badge-sheets">SHEETS</span></div>
-      <div class="card-title">LinkedIn из TG-чатов</div>
-      <div class="card-desc">135 ICP-контактов, собранных из LinkedIn-ссылок в Telegram-чатах.</div>
-    </a>
   </div>
 
   <p class="updated" id="updated"></p>
@@ -155,11 +150,30 @@ async function loadStats() {
     document.getElementById('updated').textContent = 'Данные: ' + ov.updated_at.slice(0, 10);
   } catch(e) {}
   try {
-    const ev = await fetch('data/events.json').then(r => r.json());
-    const future = ev.filter(e => e.timing === 'future').length;
+    const edem = await fetch('data/edem.json').then(r => r.json());
+    const MONTH_MAP = {янв:'01',фев:'02',мар:'03',апр:'04',мая:'05',май:'05',июн:'06',июл:'07',авг:'08',сен:'09',окт:'10',ноя:'11',дек:'12'};
+    function parseMonth(d) {
+      if (!d || d.includes('@')) return null;
+      const dl = d.toLowerCase();
+      for (const [k,v] of Object.entries(MONTH_MAP)) { if (dl.includes(k)) return v; }
+      return null;
+    }
+    function parseCost(c) {
+      if (!c) return 0;
+      const s = c.toLowerCase();
+      if (s.includes('бесплатно') || s === '-') return 0;
+      const m = s.match(/([\d\s]+)/);
+      if (!m) return 0;
+      let n = parseInt(m[1].replace(/\s/g,''), 10);
+      if (isNaN(n)) return 0;
+      if (s.includes('к') && n < 1000) n *= 1000;
+      return n;
+    }
+    const sep = edem.filter(e => parseMonth(e.date) === '09');
+    const sepCost = sep.reduce((s, e) => s + parseCost(e.cost), 0);
     document.getElementById('events-stats').innerHTML = `
-      <div>Всего<span class="stat-value">${ev.length}</span></div>
-      <div>Предстоящих<span class="stat-value">${future}</span></div>
+      <div>Сентябрь<span class="stat-value">${sep.length} ивентов</span></div>
+      <div>Потрачено<span class="stat-value">${sepCost > 0 ? sepCost.toLocaleString() + ' ₽' : '-'}</span></div>
     `;
   } catch(e) {}
 }

@@ -121,9 +121,29 @@ def fetch_sheets():
     if dash_tab:
         save("hyp_dashboard", HYP_SID, f"'{dash_tab}'!A:Z")
 
-    li_tab = next((t for t in hyp_tabs if "linkedin" in t.lower()), None)
+    li_tab = next((t for t in hyp_tabs if "linkedin из" in t.lower()), None)
     if li_tab:
-        save("linkedin_contacts", HYP_SID, f"'{li_tab}'!A:J")
+        try:
+            import re
+            result = svc.values().get(
+                spreadsheetId=HYP_SID, range=f"'{li_tab}'!A:L",
+                valueRenderOption="FORMULA"
+            ).execute()
+            rows = result.get("values", [])
+            hl_re = re.compile(r'=HYPERLINK\("([^"]+)"\s*,\s*"([^"]*)"\)')
+            def parse_cell(c):
+                if not isinstance(c, str):
+                    return c
+                m = hl_re.match(c)
+                if m:
+                    return {"url": m.group(1), "text": m.group(2)}
+                return c
+            parsed = [[parse_cell(c) for c in row] for row in rows]
+            with open(os.path.join(DATA_DIR, "linkedin_contacts.json"), "w") as f:
+                json.dump(parsed, f, ensure_ascii=False, indent=2)
+            print(f"OK: linkedin_contacts ({len(rows)} rows)")
+        except Exception as e:
+            print(f"ERR: linkedin_contacts - {e}", file=sys.stderr)
 
 
 if __name__ == "__main__":

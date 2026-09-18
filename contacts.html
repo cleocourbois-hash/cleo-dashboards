@@ -79,13 +79,14 @@ async function init() {
   function cellUrl(c) { return c && typeof c === 'object' ? c.url || '' : (c || ''); }
 
   contacts = data.slice(1).map(r => {
-    r = r.concat(Array(10).fill('')).slice(0,10);
+    r = r.concat(Array(12).fill('')).slice(0,12);
     return {
       prio: cellText(r[0]), name: cellText(r[1]), title: cellText(r[2]),
       company: cellText(r[3]), siteUrl: cellUrl(r[4]), siteText: cellText(r[4]),
       country: cellText(r[5]), email: cellText(r[6]),
       linkedinUrl: cellUrl(r[7]), linkedinText: cellText(r[7]),
-      chatUrl: cellUrl(r[8]), chat: cellText(r[8]), icp: cellText(r[9])
+      chatUrl: cellUrl(r[8]), chat: cellText(r[8]), icp: cellText(r[9]),
+      tgUrl: cellUrl(r[10]), tgText: cellText(r[10]), tgUsername: cellText(r[11])
     };
   });
 
@@ -95,6 +96,7 @@ async function init() {
   document.getElementById('kpis').innerHTML = `
     <div class="kpi-sm">Всего<strong>${contacts.length}</strong></div>
     <div class="kpi-sm">С email<strong>${contacts.filter(c=>c.email).length}</strong></div>
+    <div class="kpi-sm">С TG<strong>${contacts.filter(c=>c.tgUsername).length}</strong></div>
   `;
 
   const prios = [...new Set(contacts.map(c=>c.prio))].sort();
@@ -121,7 +123,7 @@ function renderTable() {
 
   const thead = document.querySelector('#contacts-table thead');
   const tbody = document.querySelector('#contacts-table tbody');
-  thead.innerHTML = '<tr><th>Приоритет</th><th>Имя</th><th>Должность</th><th>Компания</th><th>Страна</th><th>Email</th><th>LinkedIn</th><th>Чат</th></tr>';
+  thead.innerHTML = '<tr><th>Приоритет</th><th>Имя</th><th>Должность</th><th>Компания</th><th>Страна</th><th>Email</th><th>LinkedIn</th><th>Telegram</th><th>Чат</th></tr>';
 
   tbody.innerHTML = filtered.map(c => {
     const tagClass = c.prio.startsWith('A') ? 'a' : c.prio.startsWith('B') ? 'b' : c.prio.startsWith('C') ? 'c' : c.prio.startsWith('D') ? 'd' : 'e';
@@ -136,6 +138,7 @@ function renderTable() {
       <td>${c.country}</td>
       <td style="font-size:12px">${c.email}</td>
       <td>${liLink}</td>
+      <td style="font-size:12px">${c.tgUrl ? `<a class="link" href="${c.tgUrl}" target="_blank">@${c.tgUsername}</a>` : ''}</td>
       <td style="font-size:12px">${c.chat}</td>
     </tr>`;
   }).join('');

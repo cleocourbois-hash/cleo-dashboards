@@ -59,6 +59,19 @@ tr:hover td { background: var(--accent-light); }
 .tag-both { background: #ede9fe; color: #5b21b6; }
 .tag-future { background: #dcfce7; color: #166534; }
 .tag-past { background: #f3f4f6; color: #6b7280; }
+.month-block { margin-bottom: 16px; }
+.month-header {
+  display: flex; align-items: center; gap: 8px; padding: 10px 12px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  cursor: pointer; user-select: none;
+}
+.month-header:hover { border-color: var(--accent); }
+.month-header .arrow { font-size: 12px; color: var(--text2); transition: transform 0.15s; width: 16px; }
+.month-header.collapsed .arrow { transform: rotate(-90deg); }
+.month-header .month-name { font-weight: 600; font-size: 15px; }
+.month-header .month-meta { font-size: 12px; color: var(--text2); margin-left: auto; display: flex; gap: 16px; }
+.month-body { overflow: hidden; }
+.month-body.collapsed { display: none; }
 .tag-online { background: #e0f2fe; color: #0369a1; }
 .tag-offline { background: #fce7f3; color: #9d174d; }
 .tag-hybrid { background: #f0fdf4; color: #15803d; }
@@ -121,28 +134,96 @@ async function init() {
   renderEvents();
 }
 
+const MONTH_MAP = {янв:'01',фев:'02',мар:'03',апр:'04',мая:'05',май:'05',июн:'06',июл:'07',авг:'08',сен:'09',окт:'10',ноя:'11',дек:'12'};
+const MONTH_NAMES = {'05':'Май','06':'Июнь','07':'Июль','08':'Август','09':'Сентябрь','10':'Октябрь','11':'Ноябрь','12':'Декабрь'};
+
+function parseMonth(dateStr) {
+  if (!dateStr || dateStr.includes('@')) return null;
+  const d = dateStr.toLowerCase();
+  for (const [key, val] of Object.entries(MONTH_MAP)) {
+    if (d.includes(key)) return val;
+  }
+  return null;
+}
+
+function parseCost(costStr) {
+  if (!costStr) return 0;
+  const s = costStr.toLowerCase();
+  if (s.includes('бесплатно') || s === '-') return 0;
+  const m = s.match(/([\d\s]+)/);
+  if (!m) return 0;
+  let num = parseInt(m[1].replace(/\s/g, ''), 10);
+  if (isNaN(num)) return 0;
+  if (s.includes('к') && num < 1000) num *= 1000;
+  return num;
+}
+
 function renderEdem() {
-  const count = edemData.length;
+  const valid = edemData.filter(e => parseMonth(e.date));
+  const grouped = {};
+  valid.forEach(e => {
+    const m = parseMonth(e.date);
+    if (!grouped[m]) grouped[m] = [];
+    grouped[m].push(e);
+  });
+  const sortedMonths = Object.keys(grouped).sort();
+
+  const totalCost = valid.reduce((s, e) => s + parseCost(e.cost), 0);
   document.getElementById('edem-kpis').innerHTML = `
-    <div class="kpi-sm">Ивентов<strong>${count}</strong></div>
+    <div class="kpi-sm">Ивентов<strong>${valid.length}</strong></div>
+    <div class="kpi-sm">Потрачено<strong>${totalCost.toLocaleString()} ₽</strong></div>
   `;
-  const thead = document.querySelector('#edem-table thead');
-  const tbody = document.querySelector('#edem-table tbody');
-  thead.innerHTML = '<tr><th>Ивент</th><th>Дата</th><th>ГЕО</th><th>Продукт</th><th>Сейлз</th><th>Билет</th><th>Стоимость</th><th>Нетворк</th></tr>';
-  tbody.innerHTML = edemData.map(e => {
-    const prodTag = (e.product||'').toLowerCase().includes('tp') && (e.product||'').toLowerCase().includes('jf')
-      ? 'both' : (e.product||'').toLowerCase().includes('jf') ? 'jf' : 'tp';
-    return `<tr>
-      <td><strong>${e.name}</strong></td>
-      <td style="white-space:nowrap">${e.date}</td>
-      <td>${e.geo}</td>
-      <td><span class="tag tag-${prodTag}">${e.product}</span></td>
-      <td>${e.sales}</td>
-      <td>${e.ticket}</td>
-      <td>${e.cost}</td>
-      <td>${e.network}</td>
-    </tr>`;
-  }).join('');
+
+  const container = document.getElementById('edem-table').parentElement;
+  document.getElementById('edem-table').remove();
+  container.innerHTML = '';
+
+  const now = new Date();
+  const curMonth = String(now.getMonth() + 1).padStart(2, '0');
+
+  sortedMonths.forEach(m => {
+    const events = grouped[m];
+    const monthCost = events.reduce((s, e) => s + parseCost(e.cost), 0);
+    const collapsed = m < '09';
+
+    const block = document.createElement('div');
+    block.className = 'month-block';
+    block.innerHTML = `
+      <div class="month-header ${collapsed ? 'collapsed' : ''}" onclick="toggleMonth(this)">
+        <span class="arrow">▼</span>
+        <span class="month-name">${MONTH_NAMES[m] || m}</span>
+        <div class="month-meta">
+          <span>${events.length} ивентов</span>
+          <span>${monthCost > 0 ? monthCost.toLocaleString() + ' ₽' : 'бесплатно'}</span>
+        </div>
+      </div>
+      <div class="month-body ${collapsed ? 'collapsed' : ''}">
+        <table style="width:100%;border-collapse:collapse;font-size:13px;">
+          <thead><tr><th>Ивент</th><th>Дата</th><th>ГЕО</th><th>Продукт</th><th>Сейлз</th><th>Билет</th><th>Стоимость</th><th>Нетворк</th></tr></thead>
+          <tbody>${events.map(e => {
+            const prodTag = (e.product||'').toLowerCase().includes('tp') && (e.product||'').toLowerCase().includes('jf')
+              ? 'both' : (e.product||'').toLowerCase().includes('jf') ? 'jf' : 'tp';
+            return `<tr>
+              <td><strong>${e.name}</strong></td>
+              <td style="white-space:nowrap">${e.date}</td>
+              <td>${e.geo}</td>
+              <td><span class="tag tag-${prodTag}">${e.product}</span></td>
+              <td>${e.sales}</td>
+              <td>${e.ticket}</td>
+              <td>${e.cost}</td>
+              <td>${e.network}</td>
+            </tr>`;
+          }).join('')}</tbody>
+        </table>
+      </div>
+    `;
+    container.appendChild(block);
+  });
+}
+
+function toggleMonth(header) {
+  header.classList.toggle('collapsed');
+  header.nextElementSibling.classList.toggle('collapsed');
 }
 
 function renderEventsKPIs() {
