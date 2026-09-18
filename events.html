@@ -408,26 +408,49 @@ function renderROI() {
   const thead = document.querySelector('#roi-table thead');
   const tbody = document.querySelector('#roi-table tbody');
 
-  const colSpan = 11;
+  const colSpan = 21;
   thead.innerHTML = `<tr>
     <th>Ивент</th><th>Дата</th><th>Прод.</th><th>Кто</th>
-    <th class="col-sep">MQL</th>
-    <th class="col-sep">Квал</th><th>%</th>
-    <th class="col-sep">КП</th><th>%</th>
-    <th class="col-sep">Дог.</th><th>%</th>
+    <th class="col-sep">Стоим.</th><th>Контактов</th><th>₽/конт.</th>
+    <th class="col-sep">MQL</th><th>₽/MQL</th><th>конт→MQL</th>
+    <th class="col-sep">Квал</th><th>₽/квал</th><th>MQL→квал</th>
+    <th class="col-sep">КП</th><th>₽/КП</th><th>квал→КП</th>
+    <th class="col-sep">Дог.</th><th>₽/дог.</th><th>КП→дог.</th>
+    <th class="col-sep">Сделка</th><th>дог→сделка</th>
   </tr>`;
 
-  // Group by month, dedup by event name+date+product
-  const seen = new Set();
-  const unique = data.filter(r => {
-    const key = r.name + '|' + r.date + '|' + r.product;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
+  let merged;
+  if (activeProduct === 'all') {
+    const map = {};
+    data.forEach(r => {
+      const key = r.name + '|' + r.date;
+      if (!map[key]) {
+        map[key] = {...r, products: [r.product],
+          qual_companies: [...(r.qual_companies||[])],
+          kp_companies: [...(r.kp_companies||[])],
+          contract_companies: [...(r.contract_companies||[])],
+          deal_companies: [...(r.deal_companies||[])]};
+      } else {
+        const m = map[key];
+        m.mql += r.mql; m.qual += r.qual; m.kp += r.kp;
+        m.contract += r.contract; m.deal = (m.deal||0) + (r.deal||0);
+        m.contacts = Math.max(m.contacts, r.contacts);
+        m.cost = Math.max(m.cost, r.cost);
+        if (!m.products.includes(r.product)) m.products.push(r.product);
+        if (r.who && r.who !== '—' && !m.who.includes(r.who)) m.who += ', ' + r.who;
+        (r.qual_companies||[]).forEach(c => { if (!m.qual_companies.includes(c)) m.qual_companies.push(c); });
+        (r.kp_companies||[]).forEach(c => { if (!m.kp_companies.includes(c)) m.kp_companies.push(c); });
+        (r.contract_companies||[]).forEach(c => { if (!m.contract_companies.includes(c)) m.contract_companies.push(c); });
+        (r.deal_companies||[]).forEach(c => { if (!m.deal_companies.includes(c)) m.deal_companies.push(c); });
+      }
+    });
+    merged = Object.values(map);
+  } else {
+    merged = [...data];
+  }
 
   const grouped = {};
-  unique.forEach(r => {
+  merged.forEach(r => {
     const m = parseMonth(r.date) || '99';
     if (!grouped[m]) grouped[m] = [];
     grouped[m].push(r);
@@ -436,53 +459,96 @@ function renderROI() {
 
   let html = '';
   let monthIdx = 0;
-  let grandMql = 0, grandQual = 0, grandKp = 0, grandContract = 0;
+  let gCost = 0, gContacts = 0, gMql = 0, gQual = 0, gKp = 0, gContract = 0, gDeal = 0;
 
-  months.forEach(m => {
-    const events = grouped[m];
-    const mName = MONTH_NAMES[m] || 'Другое';
+  months.forEach(mo => {
+    const events = grouped[mo];
+    const mName = MONTH_NAMES[mo] || 'Другое';
     const stripe = monthIdx % 2 === 0 ? 'stripe-a' : 'stripe-b';
 
     html += `<tr class="month-row"><td colspan="${colSpan}">${mName}</td></tr>`;
 
-    let mMql = 0, mQual = 0, mKp = 0, mContract = 0;
+    let mCost = 0, mContacts = 0, mMql = 0, mQual = 0, mKp = 0, mContract = 0, mDeal = 0;
     events.forEach(r => {
-      mMql += r.mql; mQual += r.qual; mKp += r.kp; mContract += r.contract;
-      const prodTag = r.product === 'TP' ? 'tp' : 'jf';
-      const cp = (n) => r.cost > 0 && n > 0 ? 'Цена: ' + Math.round(r.cost / n).toLocaleString() + ' ₽' : '';
+      const cost = r.cost || 0;
+      const contacts = r.contacts || 0;
+      const deal = r.deal || 0;
+      mCost += cost; mContacts += contacts; mMql += r.mql; mQual += r.qual; mKp += r.kp; mContract += r.contract; mDeal += deal;
+
+      const prods = r.products || [r.product];
+      const prodHtml = prods.length > 1
+        ? prods.map(p => `<span class="tag tag-${p==='TP'?'tp':'jf'}">${p}</span>`).join(' ')
+        : `<span class="tag tag-${r.product==='TP'?'tp':'jf'}">${r.product}</span>`;
+
       html += `<tr class="${stripe}">
         <td><strong>${r.name}</strong></td>
         <td style="white-space:nowrap">${r.date}</td>
-        <td><span class="tag tag-${prodTag}">${r.product}</span></td>
+        <td>${prodHtml}</td>
         <td>${r.who}</td>
-        <td class="col-sep">${r.mql > 0 ? `<span class="num-good" title="${cp(r.mql)}">${r.mql}</span>` : '<span class="num-zero">0</span>'}</td>
-        <td class="col-sep">${tip(r.qual, r.qual_companies, cp(r.qual))}</td>
+        <td class="col-sep cost-cell">${cost > 0 ? cost.toLocaleString() + ' ₽' : '-'}</td>
+        <td>${contacts > 0 ? contacts.toLocaleString() : '-'}</td>
+        <td class="cost-cell">${costPer(cost, contacts)}</td>
+        <td class="col-sep">${tip(r.mql, null, costPer(cost, r.mql))}</td>
+        <td class="cost-cell">${costPer(cost, r.mql)}</td>
+        <td class="pct">${pct(r.mql, contacts)}</td>
+        <td class="col-sep">${tip(r.qual, r.qual_companies, costPer(cost, r.qual))}</td>
+        <td class="cost-cell">${costPer(cost, r.qual)}</td>
         <td class="pct">${pct(r.qual, r.mql)}</td>
-        <td class="col-sep">${tip(r.kp, r.kp_companies, cp(r.kp))}</td>
+        <td class="col-sep">${tip(r.kp, r.kp_companies, costPer(cost, r.kp))}</td>
+        <td class="cost-cell">${costPer(cost, r.kp)}</td>
         <td class="pct">${pct(r.kp, r.qual)}</td>
-        <td class="col-sep">${tip(r.contract, r.contract_companies, cp(r.contract))}</td>
+        <td class="col-sep">${tip(r.contract, r.contract_companies, costPer(cost, r.contract))}</td>
+        <td class="cost-cell">${costPer(cost, r.contract)}</td>
         <td class="pct">${pct(r.contract, r.kp)}</td>
+        <td class="col-sep">${tip(deal, r.deal_companies)}</td>
+        <td class="pct">${pct(deal, r.contract)}</td>
       </tr>`;
     });
 
     html += `<tr class="subtotal-row">
       <td colspan="4" style="text-align:right;font-size:10px"><strong>${mName}</strong></td>
+      <td class="col-sep cost-cell">${mCost > 0 ? mCost.toLocaleString() + ' ₽' : '-'}</td>
+      <td><strong>${mContacts.toLocaleString()}</strong></td>
+      <td class="cost-cell">${costPer(mCost, mContacts)}</td>
       <td class="col-sep"><strong>${mMql}</strong></td>
-      <td class="col-sep"><strong>${mQual}</strong></td><td class="pct">${pct(mQual, mMql)}</td>
-      <td class="col-sep"><strong>${mKp}</strong></td><td class="pct">${pct(mKp, mQual)}</td>
-      <td class="col-sep"><strong>${mContract}</strong></td><td class="pct">${pct(mContract, mKp)}</td>
+      <td class="cost-cell">${costPer(mCost, mMql)}</td>
+      <td class="pct">${pct(mMql, mContacts)}</td>
+      <td class="col-sep"><strong>${mQual}</strong></td>
+      <td class="cost-cell">${costPer(mCost, mQual)}</td>
+      <td class="pct">${pct(mQual, mMql)}</td>
+      <td class="col-sep"><strong>${mKp}</strong></td>
+      <td class="cost-cell">${costPer(mCost, mKp)}</td>
+      <td class="pct">${pct(mKp, mQual)}</td>
+      <td class="col-sep"><strong>${mContract}</strong></td>
+      <td class="cost-cell">${costPer(mCost, mContract)}</td>
+      <td class="pct">${pct(mContract, mKp)}</td>
+      <td class="col-sep"><strong>${mDeal}</strong></td>
+      <td class="pct">${pct(mDeal, mContract)}</td>
     </tr>`;
 
-    grandMql += mMql; grandQual += mQual; grandKp += mKp; grandContract += mContract;
+    gCost += mCost; gContacts += mContacts; gMql += mMql; gQual += mQual; gKp += mKp; gContract += mContract; gDeal += mDeal;
     monthIdx++;
   });
 
   html += `<tr class="totals-row">
     <td colspan="4"><strong>ИТОГО</strong></td>
-    <td class="col-sep"><strong>${grandMql}</strong></td>
-    <td class="col-sep"><strong>${grandQual}</strong></td><td class="pct">${pct(grandQual, grandMql)}</td>
-    <td class="col-sep"><strong>${grandKp}</strong></td><td class="pct">${pct(grandKp, grandQual)}</td>
-    <td class="col-sep"><strong>${grandContract}</strong></td><td class="pct">${pct(grandContract, grandKp)}</td>
+    <td class="col-sep cost-cell"><strong>${gCost > 0 ? gCost.toLocaleString() + ' ₽' : '-'}</strong></td>
+    <td><strong>${gContacts.toLocaleString()}</strong></td>
+    <td class="cost-cell">${costPer(gCost, gContacts)}</td>
+    <td class="col-sep"><strong>${gMql}</strong></td>
+    <td class="cost-cell">${costPer(gCost, gMql)}</td>
+    <td class="pct">${pct(gMql, gContacts)}</td>
+    <td class="col-sep"><strong>${gQual}</strong></td>
+    <td class="cost-cell">${costPer(gCost, gQual)}</td>
+    <td class="pct">${pct(gQual, gMql)}</td>
+    <td class="col-sep"><strong>${gKp}</strong></td>
+    <td class="cost-cell">${costPer(gCost, gKp)}</td>
+    <td class="pct">${pct(gKp, gQual)}</td>
+    <td class="col-sep"><strong>${gContract}</strong></td>
+    <td class="cost-cell">${costPer(gCost, gContract)}</td>
+    <td class="pct">${pct(gContract, gKp)}</td>
+    <td class="col-sep"><strong>${gDeal}</strong></td>
+    <td class="pct">${pct(gDeal, gContract)}</td>
   </tr>`;
 
   tbody.innerHTML = html;
