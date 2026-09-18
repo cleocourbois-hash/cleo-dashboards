@@ -352,7 +352,7 @@ function renderFunnelCompare() {
       </div>
     </div>
     <div class="fc-card">
-      <h2><span class="fc-icon">💬</span> Онлайн аутрич</h2>
+      <h2><span class="fc-icon">💬</span> Онлайн аутрич <span style="font-size:12px;font-weight:400;color:var(--text2)">(весь)</span></h2>
       <div class="fc-metrics">
         <div class="fc-metric"><div class="fc-label">MQL</div><div class="fc-val">${outMql}</div><div class="fc-sub">${outSent.toLocaleString()} отправлено</div></div>
         <div class="fc-metric"><div class="fc-label">КП</div><div class="fc-val">${outKp}</div><div class="fc-sub">${pct(outKp, outMql)} из MQL</div></div>
@@ -499,9 +499,16 @@ function renderEdem() {
   const sortedMonths = Object.keys(grouped).sort();
 
   const totalCost = valid.reduce((s, e) => s + parseCost(e.cost), 0);
+  const isTP = (p) => /^T[PР]\s*$/i.test(p || '') || p === 'TР';
+  const isJF = (p) => /^JF\s*$/i.test(p || '');
+  const tpCost = valid.filter(e => isTP(e.product)).reduce((s, e) => s + parseCost(e.cost), 0);
+  const jfCost = valid.filter(e => isJF(e.product)).reduce((s, e) => s + parseCost(e.cost), 0);
+  const sharedCost = totalCost - tpCost - jfCost;
   document.getElementById('edem-kpis').innerHTML = `
     <div class="kpi"><div class="kpi-label">Ивентов</div><div class="kpi-value">${valid.length}</div></div>
-    <div class="kpi"><div class="kpi-label">Потрачено</div><div class="kpi-value">${totalCost.toLocaleString()} ₽</div></div>
+    <div class="kpi"><div class="kpi-label">Потрачено</div><div class="kpi-value">${totalCost.toLocaleString()} ₽</div>
+      <div class="kpi-sub"><span class="tag tag-tp">TP</span> ${tpCost.toLocaleString()} ₽ &nbsp; <span class="tag tag-jf">JF</span> ${jfCost.toLocaleString()} ₽${sharedCost > 0 ? ` &nbsp; общие ${sharedCost.toLocaleString()} ₽` : ''}</div>
+    </div>
   `;
 
   const container = document.getElementById('edem-months');
